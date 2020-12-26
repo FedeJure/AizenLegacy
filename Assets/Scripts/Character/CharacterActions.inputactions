@@ -1,0 +1,140 @@
+{
+    "name": "CharacterActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "9875fc0f-da75-4e87-b134-3242be9aa60d",
+            "actions": [
+                {
+                    "name": "MortalAdelante",
+                    "type": "Button",
+                    "id": "8cf5fd19-a545-4c9b-8026-e0f410cf7710",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MortalAtras",
+                    "type": "Button",
+                    "id": "5bfd4160-d566-42bc-957b-65b562373bb5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MedioGiro",
+                    "type": "Button",
+                    "id": "3bb6784a-fa4d-485d-812d-ee09400a7803",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "CPosition",
+                    "type": "Button",
+                    "id": "4f563e06-57df-4493-b5e0-a1400376b899",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "VPosition",
+                    "type": "Button",
+                    "id": "f17ed0df-68cb-4798-83a0-08514ec0db36",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "APosition",
+                    "type": "Button",
+                    "id": "4f774ee1-500b-4190-865b-3617593bec38",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f41df7d5-368f-4f36-872c-fd6290de2d87",
+                    "path": "<Keyboard>/b",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard Controls",
+                    "action": "MortalAdelante",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "63326c5e-c26a-49f6-ba89-fbdb3f88798f",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard Controls",
+                    "action": "MortalAtras",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d144419-996a-4ecf-af29-2f08804d6824",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard Controls",
+                    "action": "MedioGiro",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c8e9b61f-5062-433e-9134-3aa69d82d7d2",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard Controls",
+                    "action": "CPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e7a8dbee-aac7-4616-8c0f-04075e1406ed",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard Controls",
+                    "action": "VPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0aa513c9-3f75-41cf-b52f-fb4f5a07d679",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard Controls",
+                    "action": "APosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard Controls",
+            "bindingGroup": "Keyboard Controls",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

@@ -2714,6 +2714,7 @@ GameObject:
   - component: {fileID: 8213899133093319586}
   - component: {fileID: 4013242331171521322}
   - component: {fileID: 4631641533766599204}
+  - component: {fileID: 4882836335720437546}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -2805,6 +2806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 8213899133093319586}
   animator: {fileID: 95616669273576650}
+  trampolineLimit: {fileID: 0}
 --- !u!114 &4631641533766599204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2830,6 +2832,19 @@ MonoBehaviour:
   feetRotationIKWeight: 1
   chestTarget: {fileID: 7416353941080100422}
   chestIKWeight: 1
+--- !u!114 &4882836335720437546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966953781761372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346d760d9f397b141af846e9fea8522d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 4013242331171521322}
 --- !u!1 &1998244342047426
 GameObject:
   m_ObjectHideFlags: 0

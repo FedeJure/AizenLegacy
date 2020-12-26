@@ -1,4 +1,5 @@
 ﻿using System;
+using UniRx;
 using UnityEngine;
 
 namespace Character
@@ -8,12 +9,28 @@ namespace Character
         [SerializeField] private Rigidbody rigidbody;
         [SerializeField] private Animator animator;
         [SerializeField] private Transform trampolineLimit;
+        [SerializeField] private IKCharacterView ikView;
 
         private int velocityKey = Animator.StringToHash("verticalVelocity");
         private int heightFactor = Animator.StringToHash("heightFactor");
         private int startRaising = Animator.StringToHash("startRaising");
 
-        private bool isFalling = false;
+        
+        private int cPosition = Animator.StringToHash("cPosition");
+        private int vPosition = Animator.StringToHash("vPosition");
+        private int aPosition = Animator.StringToHash("aPosition");
+        private int inPosition = Animator.StringToHash("inPosition");
+
+        private IObservable<Unit> actionChain;
+
+        private bool isFalling;
+
+        private void Awake()
+        {
+            EventBus.OnEnterTrampoline()
+                .Do(_ => RemovePositions())
+                .Subscribe();
+        }
 
         private void FixedUpdate()
         {
@@ -40,14 +57,49 @@ namespace Character
             return factor * fallDuration;
         }
 
-        public Vector3 GetVelocity()
-        {
-            return rigidbody.velocity;
-        }
-
         public void AddVerticalImpulse(float value)
         {
             rigidbody.AddForce(Vector3.up * value);
+        }
+
+        public void MakeCPosition()
+        {
+            EventBus.EmitOnPositionStarted();
+            CreateChainIfNeeded();
+            RemovePositions();
+            animator.SetLayerWeight(0, 1);
+            animator.SetBool(cPosition, true);
+        }
+        
+        public void MakeVPosition()
+        {
+            EventBus.EmitOnPositionStarted();
+            CreateChainIfNeeded();
+            RemovePositions();
+            animator.SetLayerWeight(0, 1);
+            animator.SetBool(vPosition, true);
+
+        }
+        
+        public void MakeAPosition()
+        {
+            EventBus.EmitOnPositionStarted();
+            CreateChainIfNeeded();
+            RemovePositions();
+            animator.SetBool(aPosition, true);
+
+        }
+        
+        private void RemovePositions()
+        {
+            animator.SetBool(cPosition, false);
+            animator.SetBool(vPosition, false);
+            animator.SetBool(aPosition, false);
+        }
+
+        private void CreateChainIfNeeded()
+        {
+            if (actionChain == null) actionChain = Observable.ReturnUnit();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using UniRx;
 using UnityEngine;
 
 namespace Character
@@ -23,8 +24,20 @@ namespace Character
         //Chest
         [SerializeField] private Transform chestTarget;
         [SerializeField] private float chestIKWeight;
-        
-        
+
+        private bool disabled = false;
+
+        private void Awake()
+        {
+            EventBus.OnPositionStarted()
+                .Do(_ => disabled = true)
+                .Subscribe();
+            
+            EventBus.OnPositionEnded()
+                .Do(_ => disabled = false)
+                .Subscribe();
+        }
+
         private void FixedUpdate()
         {
             var trampPosition = trampoline.position;
@@ -81,7 +94,14 @@ namespace Character
 
         private void OnAnimatorIK(int layerIndex)
         {
-            if (!isIKActive) return;
+            if (!isIKActive || disabled)
+            {
+                animator.SetIKPositionWeight(AvatarIKGoal.RightFoot, 0);
+                animator.SetIKRotationWeight(AvatarIKGoal.RightFoot, 0);
+                animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, 0);
+                animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot, 0);
+                return;
+            }
             OnFeetAnimatorIK();
             OnChestAnimatorIK();
         }
