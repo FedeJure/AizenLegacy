@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Fede\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Fede\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_AizenGame.1185042929.00" t="ExcludeRecursive" />
+    <e p="F:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame" t="IncludeRecursive">
+      <e p="AizenGame.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Akishaqs" t="Include">
+          <e p="Characters" t="Include">
+            <e p="_CommonFiles" t="Include">
+              <e p="_DemoStuff" t="Include">
+                <e p="Fonts" t="Include">
+                  <e p="OFL.txt" t="Include" />
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="Animations.cs" t="Include" />
+                  <e p="Customizations.cs" t="Include" />
+                  <e p="DragToRotate.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Character" t="Include">
+            <e p="CharacterView.cs" t="Include" />
+            <e p="IKCharacterView.cs" t="Include" />
+          </e>
+          <e p="Trampoline" t="Include">
+            <e p="TrampolineView.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
