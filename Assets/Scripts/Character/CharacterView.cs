@@ -2,12 +2,14 @@
 using UniRx;
 using UnityEngine;
 
+
 namespace Character
 {
     public class CharacterView : MonoBehaviour
     {
         [SerializeField] private Rigidbody rigidbody;
         [SerializeField] private Animator animator;
+        [SerializeField] private GameObject pivotModel;
         [SerializeField] private Transform trampolineLimit;
         [SerializeField] private IKCharacterView ikView;
 
@@ -19,17 +21,38 @@ namespace Character
         private int cPosition = Animator.StringToHash("cPosition");
         private int vPosition = Animator.StringToHash("vPosition");
         private int aPosition = Animator.StringToHash("aPosition");
-        private int inPosition = Animator.StringToHash("inPosition");
 
-        private IObservable<Unit> actionChain;
+        private LTDescr actionChain;
+        private int twistMultiplier = 1;
+        private int actionsStashed = 0;
 
         private bool isFalling;
 
         private void Awake()
         {
             EventBus.OnEnterTrampoline()
-                .Do(_ => RemovePositions())
+                .Do(_ => ResetState())
                 .Subscribe();
+
+            EventBus.OnExitTrampoline()
+                .Do(_ => InitState())
+                .Subscribe();
+        }
+
+        private void Update()
+        {
+            if (actionChain != null && !LeanTween.isTweening(pivotModel)) RemovePositions();
+    }
+
+        private void InitState()
+        {
+        }
+
+        private void ResetState()
+        {
+            RemovePositions();
+            actionChain = null;
+            actionsStashed = 0;
         }
 
         private void FixedUpdate()
@@ -51,7 +74,6 @@ namespace Character
 
         private float CalculateHeightFactor(Vector3 position, Vector3 velocity)
         {
-            var vel = velocity.y;
             var factor = (-0 + (float)Math.Sqrt(0 + 2 * 9.8f * (position.y - trampolineLimit.position.y)))/ 9.8f;
             var fallDuration = 2.2f;
             return factor * fallDuration;
@@ -64,27 +86,25 @@ namespace Character
 
         public void MakeCPosition()
         {
+            if (actionChain != null) return;
             EventBus.EmitOnPositionStarted();
-            CreateChainIfNeeded();
             RemovePositions();
-            animator.SetLayerWeight(0, 1);
             animator.SetBool(cPosition, true);
         }
         
         public void MakeVPosition()
         {
+            if (actionChain != null) return;
             EventBus.EmitOnPositionStarted();
-            CreateChainIfNeeded();
             RemovePositions();
-            animator.SetLayerWeight(0, 1);
             animator.SetBool(vPosition, true);
 
         }
         
         public void MakeAPosition()
         {
+            if (actionChain != null) return;
             EventBus.EmitOnPositionStarted();
-            CreateChainIfNeeded();
             RemovePositions();
             animator.SetBool(aPosition, true);
 
@@ -97,9 +117,37 @@ namespace Character
             animator.SetBool(aPosition, false);
         }
 
-        private void CreateChainIfNeeded()
+        public void MakeFront()
         {
-            if (actionChain == null) actionChain = Observable.ReturnUnit();
+            AddAction(() => LeanTween.rotateAround(pivotModel, Vector3.right * twistMultiplier, 360, 0.5f));
+        }
+
+        public void MakeHalfTwist()
+        {
+            AddAction(() =>
+            {
+                RemovePositions();
+                return LeanTween.rotateAroundLocal(pivotModel, Vector3.up, 180, 0.5f)
+                    .setOnComplete(() => twistMultiplier *= -1);
+            });
+
+        }
+
+        public void MakeBack()
+        {
+            AddAction(() => LeanTween.rotateAround(pivotModel, Vector3.right * twistMultiplier, -360, 0.5f));
+        }
+
+        private void AddAction(Func<LTDescr> action)
+        {
+            if (actionChain == null)
+            {
+                actionChain = action();
+                return;
+            }
+            Debug.LogWarning(actionChain.hasExtraOnCompletes);
+
+            actionChain.setOnComplete(() => action());
         }
     }
 }

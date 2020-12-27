@@ -9,7 +9,6 @@ namespace Character
         [SerializeField] private Transform trampoline;
         [SerializeField] private Animator animator;
 
-        [SerializeField] private CharacterView character;
         [SerializeField] private bool isIKActive;
         [SerializeField] private float distance;
 
@@ -21,10 +20,6 @@ namespace Character
         [SerializeField] private float feetIKWeight;
         [SerializeField] private float feetRotationIKWeight;
 
-        //Chest
-        [SerializeField] private Transform chestTarget;
-        [SerializeField] private float chestIKWeight;
-
         private bool disabled = false;
 
         private void Awake()
@@ -33,7 +28,7 @@ namespace Character
                 .Do(_ => disabled = true)
                 .Subscribe();
             
-            EventBus.OnPositionEnded()
+            EventBus.OnEnterTrampoline()
                 .Do(_ => disabled = false)
                 .Subscribe();
         }

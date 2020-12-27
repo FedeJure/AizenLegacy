@@ -21,14 +21,17 @@ namespace Character
 
         private void HandleMedioGiro()
         {
+            character.MakeHalfTwist();
         }
 
         private void HandleMortalAtras()
         {
+            character.MakeBack();
         }
 
         private void HandleMortalAdelante()
         {
+            character.MakeFront();
         }
 
         private void HandleCPosition()
