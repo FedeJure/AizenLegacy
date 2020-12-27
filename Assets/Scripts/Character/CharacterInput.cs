@@ -41,7 +41,7 @@ namespace Character
         
         private void HandleVPosition()
         {
-            character.MakeVPosition();
+            character.MakeBPosition();
 
         }
         

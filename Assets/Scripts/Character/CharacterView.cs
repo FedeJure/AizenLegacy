@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
 
@@ -23,36 +24,41 @@ namespace Character
         private int aPosition = Animator.StringToHash("aPosition");
 
         private LTDescr actionChain;
+        private Queue<CharacterAction> stashedActions = new Queue<CharacterAction>();
         private int twistMultiplier = 1;
         private int actionsStashed = 0;
 
         private bool isFalling;
 
+        private Position? selectedPosition = null;
+        private Dictionary<Position, int> positionKeyMap;
+        
         private void Awake()
         {
             EventBus.OnEnterTrampoline()
                 .Do(_ => ResetState())
                 .Subscribe();
 
-            EventBus.OnExitTrampoline()
-                .Do(_ => InitState())
-                .Subscribe();
+            positionKeyMap = new Dictionary<Position, int>
+            {
+                {Position.APosition, aPosition},
+                {Position.BPosition, vPosition},
+                {Position.CPosition, cPosition}
+            };
         }
 
         private void Update()
         {
-            if (actionChain != null && !LeanTween.isTweening(pivotModel)) RemovePositions();
-    }
-
-        private void InitState()
-        {
+            if (actionChain != null && !LeanTween.isTweening(pivotModel) && !LeanTween.isTweening(gameObject)) RemovePositions();
         }
+
 
         private void ResetState()
         {
             RemovePositions();
             actionChain = null;
             actionsStashed = 0;
+            stashedActions = new Queue<CharacterAction>();
         }
 
         private void FixedUpdate()
@@ -87,14 +93,16 @@ namespace Character
         public void MakeCPosition()
         {
             if (actionChain != null) return;
+            selectedPosition = Position.CPosition;
             EventBus.EmitOnPositionStarted();
             RemovePositions();
             animator.SetBool(cPosition, true);
         }
         
-        public void MakeVPosition()
+        public void MakeBPosition()
         {
             if (actionChain != null) return;
+            selectedPosition = Position.BPosition;
             EventBus.EmitOnPositionStarted();
             RemovePositions();
             animator.SetBool(vPosition, true);
@@ -104,6 +112,7 @@ namespace Character
         public void MakeAPosition()
         {
             if (actionChain != null) return;
+            selectedPosition = Position.APosition;
             EventBus.EmitOnPositionStarted();
             RemovePositions();
             animator.SetBool(aPosition, true);
@@ -119,35 +128,40 @@ namespace Character
 
         public void MakeFront()
         {
-            AddAction(() => LeanTween.rotateAround(pivotModel, Vector3.right * twistMultiplier, 360, 0.5f));
+            stashedActions.Enqueue(new FrontAction(gameObject, Vector3.right * twistMultiplier,
+                () =>
+                {
+                    if (selectedPosition.HasValue) animator.SetBool(positionKeyMap[selectedPosition.Value], true);
+                }));
+            if (actionChain != null) return;
+            StartActions();
         }
 
         public void MakeHalfTwist()
         {
-            AddAction(() =>
-            {
-                RemovePositions();
-                return LeanTween.rotateAroundLocal(pivotModel, Vector3.up, 180, 0.5f)
-                    .setOnComplete(() => twistMultiplier *= -1);
-            });
-
+            new HalfTwistAction(pivotModel,
+                RemovePositions,
+                () => twistMultiplier *= -1).Execute(stashedActions.Count > 0 ? stashedActions.Peek() : null);
+            if (actionChain != null) return;
+            StartActions();
         }
 
         public void MakeBack()
         {
-            AddAction(() => LeanTween.rotateAround(pivotModel, Vector3.right * twistMultiplier, -360, 0.5f));
+            stashedActions.Enqueue(new BackAction(gameObject, Vector3.right * twistMultiplier,
+                () =>
+                {
+                    if (selectedPosition.HasValue) animator.SetBool(positionKeyMap[selectedPosition.Value], true);
+                }));
+            if (actionChain != null) return;
+            StartActions();
         }
 
-        private void AddAction(Func<LTDescr> action)
+        private void StartActions()
         {
-            if (actionChain == null)
-            {
-                actionChain = action();
-                return;
-            }
-            Debug.LogWarning(actionChain.hasExtraOnCompletes);
-
-            actionChain.setOnComplete(() => action());
+            if (stashedActions.Count == 0) return;
+            actionChain = stashedActions.Dequeue().Execute(stashedActions.Count > 0 ? stashedActions.Peek() : null)
+                .setOnComplete(StartActions);
         }
     }
 }
