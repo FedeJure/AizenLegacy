@@ -46,27 +46,27 @@ namespace Character
                 },
                 {
                     ""name"": ""CPosition"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""4f563e06-57df-4493-b5e0-a1400376b899"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(pressPoint=0.1,behavior=2)""
                 },
                 {
                     ""name"": ""VPosition"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""f17ed0df-68cb-4798-83a0-08514ec0db36"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(pressPoint=0.1)""
                 },
                 {
                     ""name"": ""APosition"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""4f774ee1-500b-4190-865b-3617593bec38"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(pressPoint=0.1)""
                 }
             ],
             ""bindings"": [

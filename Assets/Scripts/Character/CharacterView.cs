@@ -66,6 +66,7 @@ namespace Character
             actionsStashed = 0;
             stashedActions = new Queue<CharacterAction>();
             selectedPosition = null;
+            pivotModel.transform.rotation = Quaternion.Euler(0, twistMultiplier < 0 ? 180 : 0, 0);
         }
 
         private void FixedUpdate()
@@ -97,33 +98,28 @@ namespace Character
             rigidbody.AddForce(Vector3.up * value);
         }
 
-        public void MakeCPosition()
+        public void MakeCPosition(bool pressed)
         {
-            if (actionChain != null) return;
-            selectedPosition = Position.CPosition;
-            EventBus.EmitOnPositionStarted();
-            RemovePositions();
-            animator.SetBool(cPosition, true);
+            MakePosition(Position.CPosition, pressed);
         }
         
-        public void MakeBPosition()
+        public void MakeBPosition(bool pressed)
         {
-            if (actionChain != null) return;
-            selectedPosition = Position.BPosition;
-            EventBus.EmitOnPositionStarted();
-            RemovePositions();
-            animator.SetBool(vPosition, true);
-
+            MakePosition(Position.BPosition, pressed);
         }
         
-        public void MakeAPosition()
+        public void MakeAPosition(bool pressed)
         {
-            if (actionChain != null) return;
-            selectedPosition = Position.APosition;
+            MakePosition(Position.APosition, pressed);
+        }
+
+        private void MakePosition(Position position, bool pressed)
+        {
+            if (!selectedPosition.HasValue && pressed) selectedPosition = position;
+            if (selectedPosition.HasValue && selectedPosition.Value.Equals(position) && !pressed)
+                selectedPosition = null;
             EventBus.EmitOnPositionStarted();
             RemovePositions();
-            animator.SetBool(aPosition, true);
-
         }
         
         private void RemovePositions()

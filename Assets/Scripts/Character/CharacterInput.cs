@@ -10,9 +10,13 @@ namespace Character
         private void Awake()
         {
             controls = new CharacterActions();
-            controls.Player.CPosition.performed += _ => HandleCPosition();
-            controls.Player.VPosition.performed += _ => HandleVPosition();
-            controls.Player.APosition.performed += _ => HandleAPosition();
+            controls.Player.CPosition.performed += _ => HandleCPosition(true);
+            controls.Player.VPosition.performed += _ => HandleVPosition(true);
+            controls.Player.APosition.performed += _ => HandleAPosition(true);
+            
+            controls.Player.CPosition.canceled += _ => HandleCPosition(false);
+            controls.Player.VPosition.canceled += _ => HandleVPosition(false);
+            controls.Player.APosition.canceled += _ => HandleAPosition(false);
             
             controls.Player.MortalAdelante.performed += _ => HandleMortalAdelante();
             controls.Player.MortalAtras.performed += _ => HandleMortalAtras();
@@ -34,20 +38,20 @@ namespace Character
             character.MakeFront();
         }
 
-        private void HandleCPosition()
+        private void HandleCPosition(bool pressed)
         {
-            character.MakeCPosition();
+            character.MakeCPosition(pressed);
         }
         
-        private void HandleVPosition()
+        private void HandleVPosition(bool pressed)
         {
-            character.MakeBPosition();
+            character.MakeBPosition(pressed);
 
         }
         
-        private void HandleAPosition()
+        private void HandleAPosition(bool pressed)
         {
-            character.MakeAPosition();
+            character.MakeAPosition(pressed);
 
         }
 
