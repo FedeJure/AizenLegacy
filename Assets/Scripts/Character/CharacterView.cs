@@ -17,6 +17,7 @@ namespace Character
         private int velocityKey = Animator.StringToHash("verticalVelocity");
         private int heightFactor = Animator.StringToHash("heightFactor");
         private int startRaising = Animator.StringToHash("startRaising");
+        private int inTrampoline = Animator.StringToHash("inTrampoline");
 
         
         private int cPosition = Animator.StringToHash("cPosition");
@@ -38,6 +39,10 @@ namespace Character
             EventBus.OnEnterTrampoline()
                 .Do(_ => ResetState())
                 .Subscribe();
+            
+            EventBus.OnExitTrampoline()
+                .Do(_ => animator.SetBool(inTrampoline, false))
+                .Subscribe();
 
             positionKeyMap = new Dictionary<Position, int>
             {
@@ -56,9 +61,11 @@ namespace Character
         private void ResetState()
         {
             RemovePositions();
+            animator.SetBool(inTrampoline, true);
             actionChain = null;
             actionsStashed = 0;
             stashedActions = new Queue<CharacterAction>();
+            selectedPosition = null;
         }
 
         private void FixedUpdate()
@@ -128,6 +135,7 @@ namespace Character
 
         public void MakeFront()
         {
+            if (! selectedPosition.HasValue) return;
             stashedActions.Enqueue(new FrontAction(gameObject, Vector3.right * twistMultiplier,
                 () =>
                 {
@@ -140,14 +148,18 @@ namespace Character
         public void MakeHalfTwist()
         {
             new HalfTwistAction(pivotModel,
-                RemovePositions,
-                () => twistMultiplier *= -1).Execute(stashedActions.Count > 0 ? stashedActions.Peek() : null);
+                () =>
+                {
+                    twistMultiplier *= -1;
+                    RemovePositions();
+                }).Execute(stashedActions.Count > 0 ? stashedActions.Peek() : null);
             if (actionChain != null) return;
             StartActions();
         }
 
         public void MakeBack()
         {
+            if (! selectedPosition.HasValue) return;
             stashedActions.Enqueue(new BackAction(gameObject, Vector3.right * twistMultiplier,
                 () =>
                 {

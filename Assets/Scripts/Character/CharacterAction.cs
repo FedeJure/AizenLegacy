@@ -31,19 +31,16 @@ namespace Character
     {
         private readonly GameObject _target;
         private readonly Action _onStart;
-        private readonly Action _onComplete;
 
-        public HalfTwistAction(GameObject target,Action onStart, Action onComplete)
+        public HalfTwistAction(GameObject target,Action onStart)
         {
             _target = target;
             _onStart = onStart;
-            _onComplete = onComplete;
         }
         public LTDescr Execute(CharacterAction nextAction)
         {
             _onStart();
-            return LeanTween.rotateAroundLocal(_target, Vector3.up, 180, 0.5f)
-                .setOnComplete(() =>_onComplete());
+            return LeanTween.rotateAroundLocal(_target, Vector3.up, 180, 0.5f);
         }
     }
     
