@@ -13,6 +13,7 @@ namespace Character
         [SerializeField] private GameObject pivotModel;
         [SerializeField] private Transform trampolineLimit;
         [SerializeField] private IKCharacterView ikView;
+        [SerializeField] private float baseRotationVelocity = 100;
 
         private int velocityKey = Animator.StringToHash("verticalVelocity");
         private int heightFactor = Animator.StringToHash("heightFactor");
@@ -24,14 +25,11 @@ namespace Character
         private int vPosition = Animator.StringToHash("vPosition");
         private int aPosition = Animator.StringToHash("aPosition");
 
-        private LTDescr actionChain;
-        private Queue<CharacterAction> stashedActions = new Queue<CharacterAction>();
         private int twistMultiplier = 1;
-        private int actionsStashed = 0;
 
         private bool isFalling;
 
-        private Position? selectedPosition = null;
+        private Position? selectedPosition;
         private Dictionary<Position, int> positionKeyMap;
         
         private void Awake()
@@ -50,11 +48,8 @@ namespace Character
                 {Position.BPosition, vPosition},
                 {Position.CPosition, cPosition}
             };
-        }
-
-        private void Update()
-        {
-            if (actionChain != null && !LeanTween.isTweening(pivotModel) && !LeanTween.isTweening(gameObject)) RemovePositions();
+            
+            rigidbody.maxAngularVelocity = 20;
         }
 
 
@@ -62,11 +57,12 @@ namespace Character
         {
             RemovePositions();
             animator.SetBool(inTrampoline, true);
-            actionChain = null;
-            actionsStashed = 0;
-            stashedActions = new Queue<CharacterAction>();
             selectedPosition = null;
             pivotModel.transform.rotation = Quaternion.Euler(0, twistMultiplier < 0 ? 180 : 0, 0);
+            transform.rotation = Quaternion.Euler(0, twistMultiplier < 0 ? 180 : 0, 0);
+            rigidbody.angularVelocity = Vector3.zero;
+            rigidbody.ResetInertiaTensor();
+            rigidbody.ResetCenterOfMass();
         }
 
         private void FixedUpdate()
@@ -95,6 +91,7 @@ namespace Character
 
         public void AddVerticalImpulse(float value)
         {
+            if (rigidbody.velocity.y >= rigidbody.mass / 7) return;
             rigidbody.AddForce(Vector3.up * value);
         }
 
@@ -117,7 +114,11 @@ namespace Character
         {
             if (!selectedPosition.HasValue && pressed) selectedPosition = position;
             if (selectedPosition.HasValue && selectedPosition.Value.Equals(position) && !pressed)
+            {
+                //rigidbody.AddTorque(rigidbody.angularVelocity * -0.5f);
                 selectedPosition = null;
+            }
+                
             EventBus.EmitOnPositionStarted();
             RemovePositions();
         }
@@ -131,45 +132,25 @@ namespace Character
 
         public void MakeFront()
         {
-            if (! selectedPosition.HasValue) return;
-            stashedActions.Enqueue(new FrontAction(gameObject, Vector3.right * twistMultiplier,
-                () =>
-                {
-                    if (selectedPosition.HasValue) animator.SetBool(positionKeyMap[selectedPosition.Value], true);
-                }));
-            if (actionChain != null) return;
-            StartActions();
-        }
+            if (!selectedPosition.HasValue || rigidbody.angularVelocity.x * twistMultiplier < 0) return;
 
-        public void MakeHalfTwist()
-        {
-            new HalfTwistAction(pivotModel,
-                () =>
-                {
-                    twistMultiplier *= -1;
-                    RemovePositions();
-                }).Execute(stashedActions.Count > 0 ? stashedActions.Peek() : null);
-            if (actionChain != null) return;
-            StartActions();
+            rigidbody.AddRelativeTorque(rigidbody.angularVelocity + (Vector3.right * (baseRotationVelocity * twistMultiplier)),ForceMode.Impulse);
+            animator.SetBool(positionKeyMap[selectedPosition.Value], true);
         }
 
         public void MakeBack()
         {
-            if (! selectedPosition.HasValue) return;
-            stashedActions.Enqueue(new BackAction(gameObject, Vector3.right * twistMultiplier,
-                () =>
-                {
-                    if (selectedPosition.HasValue) animator.SetBool(positionKeyMap[selectedPosition.Value], true);
-                }));
-            if (actionChain != null) return;
-            StartActions();
+            if (!selectedPosition.HasValue || rigidbody.angularVelocity.x * twistMultiplier > 0) return;
+
+            rigidbody.AddRelativeTorque(rigidbody.angularVelocity + Vector3.left * (baseRotationVelocity * twistMultiplier),ForceMode.Impulse);
+            animator.SetBool(positionKeyMap[selectedPosition.Value], true);
         }
 
-        private void StartActions()
+        public void MakeHalfTwist()
         {
-            if (stashedActions.Count == 0) return;
-            actionChain = stashedActions.Dequeue().Execute(stashedActions.Count > 0 ? stashedActions.Peek() : null)
-                .setOnComplete(StartActions);
+            LeanTween.rotateAroundLocal(pivotModel, Vector3.up, 180, 0.5f);
+            twistMultiplier *= -1;
+            RemovePositions();
         }
     }
 }

@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 5180757704603369734}
   - component: {fileID: 5819908365755651359}
   - component: {fileID: 4139355411172559665}
-  - component: {fileID: 630607585349447392}
-  - component: {fileID: 5836472133240895038}
   m_Layer: 0
   m_Name: Character 1
   m_TagString: Untagged
@@ -83,41 +81,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b914585721e9c641bd9b36a92c9e1a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidbody: {fileID: 5836472133240895038}
+  rigidbody: {fileID: 0}
   animator: {fileID: 7414928448166324934}
   pivotModel: {fileID: 4164988334721628161}
   trampolineLimit: {fileID: 0}
   ikView: {fileID: 5819908365755651359}
---- !u!136 &630607585349447392
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4164988334721628161}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.18
-  m_Height: 1.9
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.94, z: 0}
---- !u!54 &5836472133240895038
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4164988334721628161}
-  serializedVersion: 2
-  m_Mass: 65
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
+  baseRotationVelocity: 50
 --- !u!136 &6520353252751671392
 CapsuleCollider:
   m_ObjectHideFlags: 0
