@@ -7,6 +7,7 @@ public static class EventBus
         static ISubject<Unit> onPositionEnded = new Subject<Unit>();
         static ISubject<Unit> onEnterTrampoline = new Subject<Unit>();
         static ISubject<Unit> onExitTrampoline = new Subject<Unit>();
+        static ISubject<Unit> onSideChange = new Subject<Unit>();
 
         public static IObservable<Unit> OnPositionStarted()
         {
@@ -27,6 +28,11 @@ public static class EventBus
         {
                 return onExitTrampoline;
         }
+        
+        public static IObservable<Unit> OnSideChange()
+        {
+                return onSideChange;
+        }
 
         public static void EmitOnPositionStarted()
         {
@@ -46,5 +52,10 @@ public static class EventBus
         public static void EmitOnExitTrampoline()
         {
                 onExitTrampoline.OnNext(Unit.Default);
+        }
+
+        public static void EmitOnSideChange()
+        {
+                onSideChange.OnNext(Unit.Default);
         }
 }

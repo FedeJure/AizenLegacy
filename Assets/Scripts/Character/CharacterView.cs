@@ -155,6 +155,7 @@ namespace Character
         {
             LeanTween.rotateAroundLocal(pivotModel, Vector3.up, 180, 0.5f);
             twistMultiplier *= -1;
+            EventBus.EmitOnSideChange();
             RemovePositions();
         }
     }

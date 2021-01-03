@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5180757704603369734}
   - component: {fileID: 5819908365755651359}
   - component: {fileID: 4139355411172559665}
+  - component: {fileID: 8935121804861415303}
   m_Layer: 0
   m_Name: Character 1
   m_TagString: Untagged
@@ -60,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trampoline: {fileID: 0}
-  animator: {fileID: 7414928448166324934}
+  animator: {fileID: 8935121804861415303}
   isIKActive: 1
   distance: 10
   feetsTransform: {fileID: 7474810588857728998}
@@ -82,11 +83,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 0}
-  animator: {fileID: 7414928448166324934}
-  pivotModel: {fileID: 4164988334721628161}
+  animator: {fileID: 8935121804861415303}
+  pivotModel: {fileID: 7472122789332233040}
   trampolineLimit: {fileID: 0}
   ikView: {fileID: 5819908365755651359}
   baseRotationVelocity: 100
+--- !u!95 &8935121804861415303
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4164988334721628161}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 2aa49f5484494544aab36119827b19bc, type: 3}
+  m_Controller: {fileID: 9100000, guid: 58008931967815e46b0a9d98a8a1e5b4, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!136 &6520353252751671392
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -418,6 +438,7 @@ PrefabInstance:
     - {fileID: 4013242331171521322, guid: 0abb5b4092ab487459e444882e4b34b8, type: 3}
     - {fileID: 8213899133093319586, guid: 0abb5b4092ab487459e444882e4b34b8, type: 3}
     - {fileID: 857240424025766631, guid: 0abb5b4092ab487459e444882e4b34b8, type: 3}
+    - {fileID: 95616669273576650, guid: 0abb5b4092ab487459e444882e4b34b8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0abb5b4092ab487459e444882e4b34b8, type: 3}
 --- !u!1 &7472122789332233040 stripped
 GameObject:
@@ -428,12 +449,6 @@ GameObject:
 --- !u!4 &7468133226690444694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4661257363833754, guid: 0abb5b4092ab487459e444882e4b34b8,
-    type: 3}
-  m_PrefabInstance: {fileID: 7472787869800349196}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &7414928448166324934 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 95616669273576650, guid: 0abb5b4092ab487459e444882e4b34b8,
     type: 3}
   m_PrefabInstance: {fileID: 7472787869800349196}
   m_PrefabAsset: {fileID: 0}

@@ -20,6 +20,8 @@ namespace Character
         [SerializeField] private float feetIKWeight;
         [SerializeField] private float feetRotationIKWeight;
 
+        private bool front = true;
+
         private bool disabled = false;
 
         private void Awake()
@@ -31,6 +33,18 @@ namespace Character
             EventBus.OnEnterTrampoline()
                 .Do(_ => disabled = false)
                 .Subscribe();
+            
+            EventBus.OnSideChange()
+                .Do(_=> front = !front )
+                .Subscribe();
+        }
+
+        private void ResetPosition()
+        {
+            animator.SetIKPositionWeight(AvatarIKGoal.RightFoot, 0);
+            animator.SetIKRotationWeight(AvatarIKGoal.RightFoot, 0);
+            animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, 0);
+            animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot, 0);
         }
 
         private void FixedUpdate()
@@ -44,35 +58,28 @@ namespace Character
             }
             
             ProcessFeetAnimations(trampPosition, distanceFromTrampoline);
-            ProcessChestAnimations();
-        }
-
-        private void ProcessChestAnimations()
-        {
-            
         }
 
         private void ProcessFeetAnimations(Vector3 trampPosition, float distanceFromTrampoline)
         {
-            var leftFeetPosition = leftFeet.position;
-            var rightFeetPosition = rightFeet.position;
-            var distanceFeetTrampoline = feetsTransform.position.y - trampPosition.y;
+            var feetsPosition = feetsTransform.position;
+            var distanceFeetTrampoline = feetsPosition.y - trampPosition.y;
 
             isIKActive = true;
             var feetSeparation = getFeetSeparation(distanceFeetTrampoline);
-            leftFeet.position = new Vector3(- feetSeparation, trampPosition.y, leftFeetPosition.z);
-            rightFeet.position = new Vector3(feetSeparation, trampPosition.y, rightFeetPosition.z);
-
+            leftFeet.position = new Vector3(- feetSeparation, trampPosition.y, feetsPosition.z);
+            rightFeet.position = new Vector3(feetSeparation, trampPosition.y, feetsPosition.z);
+            
             var newRotation = GetFeetRotation(distanceFromTrampoline);
-            leftFeet.rotation = Quaternion.Euler(newRotation, 0, 0);
-            rightFeet.rotation = Quaternion.Euler(newRotation, 0, 0);
+            leftFeet.rotation = Quaternion.Euler(newRotation, front? 0 : 180, 0);
+            rightFeet.rotation = Quaternion.Euler(newRotation, front ? 0 : 180, 0);
         }
 
         private float getFeetSeparation(float distanceFromTrampoline)
         {
             var min = 0.05f;
             var maxFlying = 0.1f;
-            var maxOnLona = 0.1f;
+            var maxOnLona = 0.2f;
             var transformedDistance = distanceFromTrampoline;
             if (transformedDistance < 0) return Math.Min(Math.Abs(transformedDistance) + min, maxOnLona);
             return Math.Min(transformedDistance + min, maxFlying);
@@ -91,18 +98,10 @@ namespace Character
         {
             if (!isIKActive || disabled)
             {
-                animator.SetIKPositionWeight(AvatarIKGoal.RightFoot, 0);
-                animator.SetIKRotationWeight(AvatarIKGoal.RightFoot, 0);
-                animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, 0);
-                animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot, 0);
+                ResetPosition();
                 return;
             }
             OnFeetAnimatorIK();
-            OnChestAnimatorIK();
-        }
-
-        private void OnChestAnimatorIK()
-        {
         }
 
         private void OnFeetAnimatorIK()
