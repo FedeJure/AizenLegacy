@@ -58,8 +58,8 @@ namespace Character
             RemovePositions();
             animator.SetBool(inTrampoline, true);
             selectedPosition = null;
-            pivotModel.transform.rotation = Quaternion.Euler(0, twistMultiplier < 0 ? 180 : 0, 0);
             transform.rotation = Quaternion.Euler(0, twistMultiplier < 0 ? 180 : 0, 0);
+            pivotModel.transform.rotation = transform.rotation;
             rigidbody.angularVelocity = Vector3.zero;
             rigidbody.ResetInertiaTensor();
             rigidbody.ResetCenterOfMass();
@@ -69,6 +69,7 @@ namespace Character
         {
             var velocity = rigidbody.velocity;
             var position = rigidbody.position;
+            if (rigidbody.worldCenterOfMass.y >= 7) rigidbody.AddForce(0, -velocity.y, 0, ForceMode.Impulse);
             animator.SetFloat(velocityKey, velocity.y);
             if (isFalling && velocity.y > 0)
             {
@@ -115,14 +116,18 @@ namespace Character
             if (!selectedPosition.HasValue && pressed) selectedPosition = position;
             if (selectedPosition.HasValue && selectedPosition.Value.Equals(position) && !pressed)
             {
-                //rigidbody.AddTorque(rigidbody.angularVelocity * -0.5f);
+                StabilizateInFly();
                 selectedPosition = null;
             }
                 
             EventBus.EmitOnPositionStarted();
             RemovePositions();
         }
-        
+
+        private void StabilizateInFly()
+        {
+        }
+
         private void RemovePositions()
         {
             animator.SetBool(cPosition, false);
@@ -134,7 +139,7 @@ namespace Character
         {
             if (!selectedPosition.HasValue || rigidbody.angularVelocity.x * twistMultiplier < 0) return;
 
-            rigidbody.AddRelativeTorque(rigidbody.angularVelocity + (Vector3.right * (baseRotationVelocity * twistMultiplier)),ForceMode.Impulse);
+            rigidbody.AddTorque(rigidbody.angularVelocity + (Vector3.right * (baseRotationVelocity * twistMultiplier)),ForceMode.Impulse);
             animator.SetBool(positionKeyMap[selectedPosition.Value], true);
         }
 
@@ -142,7 +147,7 @@ namespace Character
         {
             if (!selectedPosition.HasValue || rigidbody.angularVelocity.x * twistMultiplier > 0) return;
 
-            rigidbody.AddRelativeTorque(rigidbody.angularVelocity + Vector3.left * (baseRotationVelocity * twistMultiplier),ForceMode.Impulse);
+            rigidbody.AddTorque(rigidbody.angularVelocity + Vector3.left * (baseRotationVelocity * twistMultiplier),ForceMode.Impulse);
             animator.SetBool(positionKeyMap[selectedPosition.Value], true);
         }
 

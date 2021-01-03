@@ -26,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterActions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD504953-D81E-4C1F-9A1B-8F7BBFB7FDA8/ed/7b04fb2b/AvatarIKGoal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Position.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -64,10 +65,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9224">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="9224" />
       <method v="2" />
     </configuration>
   </component>
@@ -108,6 +109,42 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1270" y="201" key="#xdebugger.evaluate" timestamp="1609637391925">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1270" y="201" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1609637391925" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1609637267112">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609637267112" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1609637267112">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609637267112" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1609637267111">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609637267111" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1609637267112">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609637267112" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1609637313954">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609637313954" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1609637313954">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609637313954" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1609637313953">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609637313953" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1609637313954">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609637313954" />
     <state x="616" y="242" key="run.anything.popup" timestamp="1609021415250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -86,7 +86,7 @@ MonoBehaviour:
   pivotModel: {fileID: 4164988334721628161}
   trampolineLimit: {fileID: 0}
   ikView: {fileID: 5819908365755651359}
-  baseRotationVelocity: 50
+  baseRotationVelocity: 100
 --- !u!136 &6520353252751671392
 CapsuleCollider:
   m_ObjectHideFlags: 0
