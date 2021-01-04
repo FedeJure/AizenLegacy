@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab31ca314cc846a3aaa95394369b8129, type: 3}
+  m_Name: SantiSkin
+  m_EditorClassIdentifier: 
+  skines:
+  - mesh: {fileID: 4300030, guid: 2aa49f5484494544aab36119827b19bc, type: 3}
+    materials:
+    - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
+    bodyPart: 0
+  - mesh: {fileID: 4300000, guid: 2aa49f5484494544aab36119827b19bc, type: 3}
+    materials:
+    - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
+    bodyPart: 1
+  - mesh: {fileID: 4300004, guid: 2aa49f5484494544aab36119827b19bc, type: 3}
+    materials:
+    - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
+    bodyPart: 2
+  - mesh: {fileID: 4300012, guid: 2aa49f5484494544aab36119827b19bc, type: 3}
+    materials:
+    - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
+    bodyPart: 3
+  - mesh: {fileID: 4300020, guid: 2aa49f5484494544aab36119827b19bc, type: 3}
+    materials:
+    - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
+    bodyPart: 4
