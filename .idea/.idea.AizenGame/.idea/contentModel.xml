@@ -299,6 +299,7 @@
             </e>
           </e>
         </e>
+        <e p="Prueba.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Character" t="Include">
             <e p="CharacterAction.cs" t="Include" />

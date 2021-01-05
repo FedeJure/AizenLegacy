@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UniRx;
 using UnityEngine;
-
 
 namespace Character
 {
@@ -32,6 +32,7 @@ namespace Character
         private Position? selectedPosition;
         private Dictionary<Position, int> positionKeyMap;
         
+        List<CharacterAction> actions = new List<CharacterAction>();
         private void Awake()
         {
             EventBus.OnEnterTrampoline()
@@ -49,7 +50,7 @@ namespace Character
                 {Position.CPosition, cPosition}
             };
             
-            rigidbody.maxAngularVelocity = 20;
+            rigidbody.maxAngularVelocity = 25;
         }
 
 
@@ -63,10 +64,21 @@ namespace Character
             rigidbody.angularVelocity = Vector3.zero;
             rigidbody.ResetInertiaTensor();
             rigidbody.ResetCenterOfMass();
+            actions.Clear();
+        }
+
+        private void ApplyActions()
+        {
+            if (selectedPosition == null) return;
+            var rotation = actions.Aggregate(Vector3.zero, (current, characterAction) => characterAction.Execute(current));
+            var localRotation = transform.InverseTransformVector(rotation);
+            pivotModel.transform.Rotate(0, localRotation.y, 0 , Space.Self);
+            transform.Rotate(Math.Abs(rotation.x), 0,0 , Space.Self);
         }
 
         private void FixedUpdate()
         {
+            ApplyActions();
             var velocity = rigidbody.velocity;
             var position = rigidbody.position;
             if (rigidbody.worldCenterOfMass.y >= 7) rigidbody.AddForce(0, -velocity.y, 0, ForceMode.Impulse);
@@ -76,11 +88,10 @@ namespace Character
                 isFalling = false;
                 animator.SetTrigger(startRaising);
             }
-            if (!isFalling && velocity.y < 0)
-            {
-                isFalling = true;
-                animator.SetFloat(heightFactor, CalculateHeightFactor(position, velocity));
-            }
+
+            if (isFalling || !(velocity.y < 0)) return;
+            isFalling = true;
+            animator.SetFloat(heightFactor, CalculateHeightFactor(position, velocity));
         }
 
         private float CalculateHeightFactor(Vector3 position, Vector3 velocity)
@@ -126,6 +137,7 @@ namespace Character
 
         private void StabilizateInFly()
         {
+            rigidbody.AddTorque(-rigidbody.angularVelocity, ForceMode.Acceleration);
         }
 
         private void RemovePositions()
@@ -139,7 +151,7 @@ namespace Character
         {
             if (!selectedPosition.HasValue || rigidbody.angularVelocity.x * twistMultiplier < 0) return;
 
-            rigidbody.AddTorque(rigidbody.angularVelocity + (Vector3.right * (baseRotationVelocity * twistMultiplier)),ForceMode.Impulse);
+            actions.Add(new FrontAction(pivotModel.transform));
             animator.SetBool(positionKeyMap[selectedPosition.Value], true);
         }
 
@@ -147,13 +159,13 @@ namespace Character
         {
             if (!selectedPosition.HasValue || rigidbody.angularVelocity.x * twistMultiplier > 0) return;
 
-            rigidbody.AddTorque(rigidbody.angularVelocity + Vector3.left * (baseRotationVelocity * twistMultiplier),ForceMode.Impulse);
+            actions.Add(new BackAction(pivotModel.transform));
             animator.SetBool(positionKeyMap[selectedPosition.Value], true);
         }
 
         public void MakeHalfTwist()
         {
-            LeanTween.rotateAroundLocal(pivotModel, Vector3.up, 180, 0.5f);
+            actions.Add(new HalfTwistAction(pivotModel.transform));
             twistMultiplier *= -1;
             EventBus.EmitOnSideChange();
             RemovePositions();

@@ -5,61 +5,55 @@ namespace Character
 {
     public interface CharacterAction
     {
-        LTDescr Execute(CharacterAction nextAction);
+        Vector3 Execute(Vector3 angularVelocity);
     }
 
     public class FrontAction : CharacterAction
     {
-        private readonly GameObject _target;
-        private readonly Vector3 _axis;
-        private readonly Action _onStart;
+        private readonly Transform _target;
+        private readonly float completeRotation = 360;
 
-        public FrontAction(GameObject target, Vector3 axis, Action onStart)
+        public FrontAction(Transform target)
         {
             _target = target;
-            _axis = axis;
-            _onStart = onStart;
         }
-        public LTDescr Execute(CharacterAction nextAction)
+        public Vector3 Execute(Vector3 angularVelocity)
         {
-            _onStart();
-            return LeanTween.rotateAround(_target, _axis, 360 , 0.5f );
+            return angularVelocity + _target.TransformVector(Vector3.right * (completeRotation * Time.deltaTime));
+        }
+    }
+
+    public class BackAction : CharacterAction
+    {
+        private readonly Transform _target;
+        private readonly float completeRotation = 360;
+
+        public BackAction(Transform target)
+        {
+            _target = target;
+        }
+        public Vector3 Execute(Vector3 angularVelocity)
+        {
+            return angularVelocity + _target.TransformVector(Vector3.left * (completeRotation * Time.deltaTime));
         }
     }
 
     public class HalfTwistAction : CharacterAction
     {
-        private readonly GameObject _target;
-        private readonly Action _onStart;
+        private readonly Transform _target;
+        private readonly float _completeRotation = 180;
+        private float _durationInSeconds = 0.5f; 
+        private DateTime _startTime;
 
-        public HalfTwistAction(GameObject target,Action onStart)
+        public HalfTwistAction(Transform target)
         {
             _target = target;
-            _onStart = onStart;
+            _startTime = DateTime.Now;
         }
-        public LTDescr Execute(CharacterAction nextAction)
+        public Vector3 Execute(Vector3 angularVelocity)
         {
-            _onStart();
-            return LeanTween.rotateAroundLocal(_target, Vector3.up, 180, 0.5f);
+            if (DateTime.Now > _startTime.AddSeconds(_durationInSeconds)) return angularVelocity;
+            return angularVelocity + _target.TransformVector(Vector3.up * (_completeRotation * Time.deltaTime * (1/_durationInSeconds))) ;
         }
     }
-    
-    public class BackAction : CharacterAction
-    {
-        private readonly GameObject _target;
-        private readonly Vector3 _axis;
-        private readonly Action _onStart;
-
-        public BackAction(GameObject target, Vector3 axis, Action onStart)
-        {
-            _target = target;
-            _axis = axis;
-            _onStart = onStart;
-        }
-        public LTDescr Execute(CharacterAction nextAction)
-        {
-            _onStart();
-            return LeanTween.rotateAround(_target, _axis, -360, 0.5f);
-        }
-    };
 }
