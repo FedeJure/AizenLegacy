@@ -20,7 +20,6 @@ namespace Character
         [SerializeField] private float feetIKWeight;
         [SerializeField] private float feetRotationIKWeight;
 
-        private bool front = true;
 
         private bool disabled = false;
 
@@ -32,10 +31,6 @@ namespace Character
             
             EventBus.OnEnterTrampoline()
                 .Do(_ => disabled = false)
-                .Subscribe();
-            
-            EventBus.OnSideChange()
-                .Do(_=> front = !front )
                 .Subscribe();
         }
 
@@ -71,8 +66,8 @@ namespace Character
             rightFeet.position = new Vector3(feetSeparation, trampPosition.y, feetsPosition.z);
             
             var newRotation = GetFeetRotation(distanceFromTrampoline);
-            leftFeet.rotation = Quaternion.Euler(newRotation, front? 0 : 180, 0);
-            rightFeet.rotation = Quaternion.Euler(newRotation, front ? 0 : 180, 0);
+            leftFeet.rotation = Quaternion.Euler(newRotation, leftFeet.rotation.y, 0);
+            rightFeet.rotation = Quaternion.Euler(newRotation, rightFeet.rotation.y, 0);
         }
 
         private float getFeetSeparation(float distanceFromTrampoline)

@@ -19,7 +19,8 @@ namespace Character
         }
         public Vector3 Execute(Vector3 angularVelocity)
         {
-            return angularVelocity + _target.TransformVector(Vector3.right * (completeRotation * Time.deltaTime));
+            _target.Rotate(_target.TransformVector(_target.right * (completeRotation * Time.deltaTime )), Space.Self);
+            return angularVelocity ;
         }
     }
 
@@ -34,7 +35,8 @@ namespace Character
         }
         public Vector3 Execute(Vector3 angularVelocity)
         {
-            return angularVelocity + _target.TransformVector(Vector3.left * (completeRotation * Time.deltaTime));
+            _target.Rotate(_target.TransformVector(-_target.right * (completeRotation * Time.deltaTime )));
+            return angularVelocity ;
         }
     }
 
@@ -53,7 +55,8 @@ namespace Character
         public Vector3 Execute(Vector3 angularVelocity)
         {
             if (DateTime.Now > _startTime.AddSeconds(_durationInSeconds)) return angularVelocity;
-            return angularVelocity + _target.TransformVector(Vector3.up * (_completeRotation * Time.deltaTime * (1/_durationInSeconds))) ;
+            _target.Rotate(Vector3.up * (_completeRotation * Time.deltaTime * (1/_durationInSeconds)),Space.Self);
+            return angularVelocity;
         }
     }
 }

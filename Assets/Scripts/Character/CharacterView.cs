@@ -24,10 +24,13 @@ namespace Character
         private int cPosition = Animator.StringToHash("cPosition");
         private int vPosition = Animator.StringToHash("vPosition");
         private int aPosition = Animator.StringToHash("aPosition");
-
-        private int twistMultiplier = 1;
-
+        
         private bool isFalling;
+
+        private bool onFront
+        {
+            get { return pivotModel.transform.right.x > 0; }
+        }
 
         private Position? selectedPosition;
         private Dictionary<Position, int> positionKeyMap;
@@ -59,21 +62,11 @@ namespace Character
             RemovePositions();
             animator.SetBool(inTrampoline, true);
             selectedPosition = null;
-            transform.rotation = Quaternion.Euler(0, twistMultiplier < 0 ? 180 : 0, 0);
-            pivotModel.transform.rotation = transform.rotation;
-            rigidbody.angularVelocity = Vector3.zero;
+            pivotModel.transform.rotation = Quaternion.Euler(0, onFront ? 0 : 180, 0);
+            transform.rotation = Quaternion.Euler(Vector3.zero);
             rigidbody.ResetInertiaTensor();
             rigidbody.ResetCenterOfMass();
             actions.Clear();
-        }
-
-        private void ApplyActions()
-        {
-            if (selectedPosition == null) return;
-            var rotation = actions.Aggregate(Vector3.zero, (current, characterAction) => characterAction.Execute(current));
-            var localRotation = transform.InverseTransformVector(rotation);
-            pivotModel.transform.Rotate(0, localRotation.y, 0 , Space.Self);
-            transform.Rotate(Math.Abs(rotation.x), 0,0 , Space.Self);
         }
 
         private void FixedUpdate()
@@ -92,6 +85,17 @@ namespace Character
             if (isFalling || !(velocity.y < 0)) return;
             isFalling = true;
             animator.SetFloat(heightFactor, CalculateHeightFactor(position, velocity));
+        }
+
+        private void ApplyActions()
+        {
+            if (selectedPosition == null) return;
+            
+            var rotation = actions.Aggregate(Vector3.zero, (current, characterAction) => characterAction.Execute(current));
+            var localRotation = transform.InverseTransformVector(rotation);
+            pivotModel.transform.Rotate(0, Math.Abs(localRotation.y), 0 , Space.Self);
+            
+            transform.Rotate(Math.Abs(rotation.x) * transform.right.x, 0,0 , Space.Self);
         }
 
         private float CalculateHeightFactor(Vector3 position, Vector3 velocity)
@@ -137,7 +141,10 @@ namespace Character
 
         private void StabilizateInFly()
         {
-            rigidbody.AddTorque(-rigidbody.angularVelocity, ForceMode.Acceleration);
+            if (isFalling && Math.Abs(transform.rotation.x) < 45)
+            {
+                LeanTween.rotateX(gameObject, 0, 0.5f);
+            }
         }
 
         private void RemovePositions()
@@ -149,24 +156,21 @@ namespace Character
 
         public void MakeFront()
         {
-            if (!selectedPosition.HasValue || rigidbody.angularVelocity.x * twistMultiplier < 0) return;
-
-            actions.Add(new FrontAction(pivotModel.transform));
+            if (!selectedPosition.HasValue) return;
+            actions.Add( new FrontAction(transform));
             animator.SetBool(positionKeyMap[selectedPosition.Value], true);
         }
 
         public void MakeBack()
         {
-            if (!selectedPosition.HasValue || rigidbody.angularVelocity.x * twistMultiplier > 0) return;
-
-            actions.Add(new BackAction(pivotModel.transform));
+            if (!selectedPosition.HasValue) return;
+            actions.Add(new BackAction(transform));
             animator.SetBool(positionKeyMap[selectedPosition.Value], true);
         }
 
         public void MakeHalfTwist()
         {
             actions.Add(new HalfTwistAction(pivotModel.transform));
-            twistMultiplier *= -1;
             EventBus.EmitOnSideChange();
             RemovePositions();
         }
