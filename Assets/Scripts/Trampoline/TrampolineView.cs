@@ -18,14 +18,21 @@ namespace Trampoline
         private Vector3 leftPosition;
         private Vector3 rigthPosition;
 
+        private bool isStable = true;
+
         private void Awake()
         {
             leftPosition = leftBone.transform.position;
             rigthPosition = rigthBone.transform.position;
+
+            EventBus.OnLoseStability()
+                .Do(_ => isStable = false)
+                .Subscribe();
         }
 
         private void OnTriggerEnter(Collider other)
         {
+            if (other.gameObject.GetHashCode() != characterModel.GetHashCode()) return;
             EventBus.EmitOnEnterTrampoline();
             disposer = Observable.EveryUpdate()
                 .Do(_ => FollowFeets())
@@ -34,6 +41,8 @@ namespace Trampoline
 
         private void OnTriggerExit(Collider other)
         {
+            if (other.gameObject.GetHashCode() != characterModel.GetHashCode()) return;
+            if (!isStable) force /= 10;
             EventBus.EmitOnExitTrampoline();
             disposer.Dispose();
             rigthBone.transform.position = rigthPosition;
@@ -44,7 +53,7 @@ namespace Trampoline
         {
             if (characterCollider.gameObject.GetHashCode() != characterModel.GetHashCode()) return;
             var magnitude = transform.position.y - feet.transform.position.y;
-            var value = magnitude * force;
+            var value = Math.Min(force ,magnitude * force);
             characterView.AddVerticalImpulse(value); 
         }
 

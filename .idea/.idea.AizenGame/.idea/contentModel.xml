@@ -313,7 +313,9 @@
             <e p="SkinInit.cs" t="Include" />
           </e>
           <e p="EventBus.cs" t="Include" />
+          <e p="GamePlayState.cs" t="Include" />
           <e p="Trampoline" t="Include">
+            <e p="TopLimitTrampoline.cs" t="Include" />
             <e p="TrampolineView.cs" t="Include" />
           </e>
         </e>

@@ -8,12 +8,12 @@ namespace Character
 {
     public class CharacterView : MonoBehaviour
     {
-        [SerializeField] private Rigidbody rigidbody;
+        [SerializeField] private Rigidbody rbody;
         [SerializeField] private Animator animator;
         [SerializeField] private GameObject pivotModel;
         [SerializeField] private Transform trampolineLimit;
-        [SerializeField] private IKCharacterView ikView;
         [SerializeField] private float baseRotationVelocity = 100;
+        [SerializeField] private float maxInclinationAlowed = 40;
 
         private int velocityKey = Animator.StringToHash("verticalVelocity");
         private int heightFactor = Animator.StringToHash("heightFactor");
@@ -26,6 +26,7 @@ namespace Character
         private int aPosition = Animator.StringToHash("aPosition");
         
         private bool isFalling;
+        private bool isStable = true;
 
         private bool onFront
         {
@@ -53,28 +54,34 @@ namespace Character
                 {Position.CPosition, cPosition}
             };
             
-            rigidbody.maxAngularVelocity = 25;
+            rbody.maxAngularVelocity = 25;
         }
 
 
         private void ResetState()
         {
+            if (Math.Abs(transform.localRotation.eulerAngles.x) > maxInclinationAlowed)
+            {
+                isStable = false;
+                rbody.freezeRotation = false;
+                EventBus.EmitOnLoseStability();
+            }
             RemovePositions();
             animator.SetBool(inTrampoline, true);
             selectedPosition = null;
             pivotModel.transform.rotation = Quaternion.Euler(0, onFront ? 0 : 180, 0);
             transform.rotation = Quaternion.Euler(Vector3.zero);
-            rigidbody.ResetInertiaTensor();
-            rigidbody.ResetCenterOfMass();
+            rbody.ResetInertiaTensor();
+            rbody.ResetCenterOfMass();
             actions.Clear();
         }
 
         private void FixedUpdate()
         {
             ApplyActions();
-            var velocity = rigidbody.velocity;
-            var position = rigidbody.position;
-            if (rigidbody.worldCenterOfMass.y >= 7) rigidbody.AddForce(0, -velocity.y, 0, ForceMode.Impulse);
+            var velocity = rbody.velocity;
+            var position = rbody.position;
+            if (rbody.worldCenterOfMass.y >= 7) rbody.AddForce(0, -velocity.y, 0, ForceMode.Impulse);
             animator.SetFloat(velocityKey, velocity.y);
             if (isFalling && velocity.y > 0)
             {
@@ -107,8 +114,14 @@ namespace Character
 
         public void AddVerticalImpulse(float value)
         {
-            if (rigidbody.velocity.y >= rigidbody.mass / 7) return;
-            rigidbody.AddForce(Vector3.up * value);
+            if (rbody.velocity.y >= rbody.mass / 7) return;
+            if (!isStable)
+            {
+                var localUp = pivotModel.transform.up;
+                var direction = new Vector3(localUp.x, Math.Max(25, localUp.y), localUp.z);
+                rbody.AddForce(direction * (rbody.velocity.magnitude * 2));
+            }
+            rbody.AddForce(Vector3.up * value);
         }
 
         public void MakeCPosition(bool pressed)
@@ -141,7 +154,8 @@ namespace Character
 
         private void StabilizateInFly()
         {
-            if (isFalling && Math.Abs(transform.rotation.x) < 45)
+            actions.Clear();
+            if (isFalling && Math.Abs(transform.rotation.x) < maxInclinationAlowed)
             {
                 LeanTween.rotateX(gameObject, 0, 0.5f);
             }
