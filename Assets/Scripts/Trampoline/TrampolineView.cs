@@ -43,7 +43,7 @@ namespace Trampoline
         private void OnTriggerStay(Collider characterCollider)
         {
             if (characterCollider.gameObject.GetHashCode() != characterModel.GetHashCode()) return;
-            var magnitude = transform.position.y - characterCollider.transform.position.y;
+            var magnitude = transform.position.y - feet.transform.position.y;
             var value = magnitude * force;
             characterView.AddVerticalImpulse(value); 
         }

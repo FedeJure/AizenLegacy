@@ -17,6 +17,10 @@ namespace Character
         [SerializeField] private Transform feetTarget;
         [SerializeField] private Transform leftFeet;
         [SerializeField] private Transform rightFeet;
+
+        [SerializeField] private Transform loneLeftFeet;
+        [SerializeField] private Transform loneRightFeet;
+        
         [SerializeField] private float feetIKWeight;
         [SerializeField] private float feetRotationIKWeight;
 
@@ -62,8 +66,9 @@ namespace Character
 
             isIKActive = true;
             var feetSeparation = getFeetSeparation(distanceFeetTrampoline);
-            leftFeet.position = new Vector3(- feetSeparation, trampPosition.y, feetsPosition.z);
-            rightFeet.position = new Vector3(feetSeparation, trampPosition.y, feetsPosition.z);
+            var loneDistance = Math.Abs(loneLeftFeet.position.y - trampPosition.y) / 3;
+            leftFeet.position = new Vector3(-feetSeparation, loneDistance, feetsPosition.z);
+            rightFeet.position = new Vector3(feetSeparation, loneDistance, feetsPosition.z);
             
             var newRotation = GetFeetRotation(distanceFromTrampoline);
             leftFeet.rotation = Quaternion.Euler(newRotation, leftFeet.rotation.y, 0);
@@ -72,9 +77,9 @@ namespace Character
 
         private float getFeetSeparation(float distanceFromTrampoline)
         {
-            var min = 0.05f;
-            var maxFlying = 0.1f;
-            var maxOnLona = 0.2f;
+            var min = 0.1f;
+            var maxFlying = 0.2f;
+            var maxOnLona = 0.15f;
             var transformedDistance = distanceFromTrampoline;
             if (transformedDistance < 0) return Math.Min(Math.Abs(transformedDistance) + min, maxOnLona);
             return Math.Min(transformedDistance + min, maxFlying);
