@@ -9,10 +9,10 @@ namespace Character
     public class CharacterView : MonoBehaviour
     {
         [SerializeField] private Rigidbody rbody;
+        [SerializeField] private CapsuleCollider coll;
         [SerializeField] private Animator animator;
         [SerializeField] private GameObject pivotModel;
         [SerializeField] private Transform trampolineLimit;
-        [SerializeField] private float baseRotationVelocity = 100;
         [SerializeField] private float maxInclinationAlowed = 40;
 
         private int velocityKey = Animator.StringToHash("verticalVelocity");
@@ -63,7 +63,7 @@ namespace Character
             if (Math.Abs(transform.localRotation.eulerAngles.x) > maxInclinationAlowed)
             {
                 isStable = false;
-                rbody.freezeRotation = false;
+                Disable();
                 EventBus.EmitOnLoseStability();
             }
             RemovePositions();
@@ -74,6 +74,14 @@ namespace Character
             rbody.ResetInertiaTensor();
             rbody.ResetCenterOfMass();
             actions.Clear();
+        }
+
+        private void Disable()
+        {
+            rbody.isKinematic = true;
+            rbody.detectCollisions = false;
+            rbody.freezeRotation = false;
+            animator.enabled = false;
         }
 
         private void FixedUpdate()

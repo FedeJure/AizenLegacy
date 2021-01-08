@@ -314,6 +314,12 @@
           </e>
           <e p="EventBus.cs" t="Include" />
           <e p="GamePlayState.cs" t="Include" />
+          <e p="Lobby" t="Include">
+            <e p="CharacterSelection.cs" t="Include" />
+            <e p="CharacterSelector.cs" t="Include" />
+            <e p="LobbyController.cs" t="Include" />
+          </e>
+          <e p="RagdollController.cs" t="Include" />
           <e p="Trampoline" t="Include">
             <e p="TopLimitTrampoline.cs" t="Include" />
             <e p="TrampolineView.cs" t="Include" />

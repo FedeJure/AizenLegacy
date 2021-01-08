@@ -31,7 +31,9 @@ namespace Character
                 indexed[s.bodyPart].location.sharedMesh = s.mesh;
                 for (var i = 0; i < s.materials.Length; i++)
                 {
-                    indexed[s.bodyPart].location.materials[i] = s.materials[i];
+                    var mats = indexed[s.bodyPart].location.materials;
+                    mats[i] = s.materials[i];
+                    indexed[s.bodyPart].location.materials = mats;
                 }
             }
         }

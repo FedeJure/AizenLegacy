@@ -24,6 +24,7 @@ namespace Character
         [SerializeField] private float feetIKWeight;
         [SerializeField] private float feetRotationIKWeight;
 
+        private bool isStable = true;
 
         private bool disabled = false;
 
@@ -35,6 +36,14 @@ namespace Character
             
             EventBus.OnEnterTrampoline()
                 .Do(_ => disabled = false)
+                .Subscribe();
+
+            EventBus.OnLoseStability()
+                .Do(_ =>
+                {
+                    isStable = false;
+                    feetTarget.gameObject.SetActive(false);
+                })
                 .Subscribe();
         }
 
@@ -48,6 +57,7 @@ namespace Character
 
         private void FixedUpdate()
         {
+            if (!isStable) return;
             var trampPosition = trampoline.position;
             var distanceFromTrampoline = Vector3.Distance(new Vector3(0, trampPosition.y, 0), new Vector3(0, feetTarget.position.y, 0));
             if (distanceFromTrampoline > distance)
@@ -96,6 +106,7 @@ namespace Character
 
         private void OnAnimatorIK(int layerIndex)
         {
+            if (!isStable) return;
             if (!isIKActive || disabled)
             {
                 ResetPosition();

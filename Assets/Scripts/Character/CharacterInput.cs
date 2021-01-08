@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UniRx;
+using UnityEngine;
 
 namespace Character
 {
@@ -21,8 +22,14 @@ namespace Character
             controls.Player.MortalAdelante.performed += _ => HandleMortalAdelante();
             controls.Player.MortalAtras.performed += _ => HandleMortalAtras();
             controls.Player.MedioGiro.performed += _ => HandleMedioGiro();
+            
+            EventBus.OnLoseStability()
+                .Do(_ =>
+                {
+                    controls.Disable();
+                })
+                .Subscribe();
         }
-
         private void HandleMedioGiro()
         {
             character.MakeHalfTwist();
@@ -52,7 +59,6 @@ namespace Character
         private void HandleAPosition(bool pressed)
         {
             character.MakeAPosition(pressed);
-
         }
 
         private void OnEnable()
