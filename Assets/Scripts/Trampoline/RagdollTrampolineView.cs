@@ -8,8 +8,9 @@ namespace Trampoline
     {
         [SerializeField] private Rigidbody rbody;
         [SerializeField] private Collider trampCollider;
-
-        private float force = 300;
+        [SerializeField] private int maxTimes = 3;
+        [SerializeField] private TrampolineView tramp;
+        private float force = 1000;
         private int times = 0;
         private bool enable = false;
 
@@ -19,15 +20,17 @@ namespace Trampoline
                 .Do(_ =>
                 {
                     enable = true;
+                    tramp.ChangeFollowTarget(rbody.gameObject);
                 })
                 .Subscribe();
         }
 
         private void OnTriggerStay(Collider other)
         {
-            if (rbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable) return;
+            if (rbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable || other.transform.position.y > transform.position.y -0.5f) return;
             Debug.Log(force);
-            rbody.AddForce(Random.Range(-2, 2), force, Random.Range(-2, 2), ForceMode.Impulse);
+            rbody.AddForce(Random.Range(-force/2, force/2), force, Random.Range(-force/2, force/2), ForceMode.Impulse);
+            rbody.AddForce(0, -rbody.velocity.y, 0, ForceMode.Force);
         }
 
         private void OnTriggerExit(Collider other)
@@ -37,8 +40,8 @@ namespace Trampoline
             {
                 force -= 10;
             }
-            if (times >= 2) trampCollider.enabled = true;
-        }
+            if (times >= maxTimes) force = 0;
+        }    
 
         private void OnTriggerEnter(Collider other)
         {

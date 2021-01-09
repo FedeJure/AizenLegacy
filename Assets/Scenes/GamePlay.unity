@@ -406,7 +406,7 @@ MonoBehaviour:
   characterModel: {fileID: 1266175333}
   leftBone: {fileID: 1579453188}
   rigthBone: {fileID: 1579453187}
-  feet: {fileID: 2074595629}
+  feet: {fileID: 906981520}
 --- !u!65 &82620301
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -453,6 +453,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbody: {fileID: 926869282}
   trampCollider: {fileID: 745131237}
+  maxTimes: 2
+  tramp: {fileID: 82620300}
 --- !u!1 &156546790 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7472087685832300652, guid: 19e4365fec4f2fc439574b5ff4e2b976,
@@ -1206,6 +1208,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &906981520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7472242537963559432, guid: 19e4365fec4f2fc439574b5ff4e2b976,
+    type: 3}
+  m_PrefabInstance: {fileID: 1769524722}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &926869280 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7472092229452782786, guid: 19e4365fec4f2fc439574b5ff4e2b976,
@@ -3200,12 +3208,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994984301}
   m_CullTransparentMesh: 0
---- !u!1 &2074595629 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7473565170353806006, guid: 19e4365fec4f2fc439574b5ff4e2b976,
-    type: 3}
-  m_PrefabInstance: {fileID: 1769524722}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2132055337 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7471504387012407928, guid: 19e4365fec4f2fc439574b5ff4e2b976,
