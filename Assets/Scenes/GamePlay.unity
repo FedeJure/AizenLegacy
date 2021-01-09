@@ -364,6 +364,7 @@ GameObject:
   - component: {fileID: 82620301}
   - component: {fileID: 82620300}
   - component: {fileID: 82620302}
+  - component: {fileID: 82620303}
   m_Layer: 0
   m_Name: trampoline
   m_TagString: Untagged
@@ -438,6 +439,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &82620303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82620298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81614d383602430da4ed7dcd9e63b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rbody: {fileID: 926869282}
+  trampCollider: {fileID: 745131237}
 --- !u!1 &156546790 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7472087685832300652, guid: 19e4365fec4f2fc439574b5ff4e2b976,
@@ -1145,7 +1160,7 @@ MeshCollider:
   m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 30
+  m_CookingOptions: -1
   m_Mesh: {fileID: 4706481399698306772, guid: e1f7ad5343038c145bb800bc1138826a, type: 3}
 --- !u!1 &762633108
 GameObject:
@@ -1481,12 +1496,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1196119048 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5206535478436743602, guid: 19e4365fec4f2fc439574b5ff4e2b976,
-    type: 3}
-  m_PrefabInstance: {fileID: 1769524722}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &1196119049 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 6393100026603722474, guid: 19e4365fec4f2fc439574b5ff4e2b976,
@@ -1670,7 +1679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e38287172242a9a8a04a75e5fb718c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 1196119048}
+  Target: {fileID: 1266175334}
   camTransform: {fileID: 1249974379}
   Offset: {x: 0, y: 0, z: 0}
   SmoothTime: 0.3
@@ -1811,6 +1820,12 @@ CanvasRenderer:
 --- !u!1 &1266175333 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7472122789332233040, guid: 19e4365fec4f2fc439574b5ff4e2b976,
+    type: 3}
+  m_PrefabInstance: {fileID: 1769524722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1266175334 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7468133226690444694, guid: 19e4365fec4f2fc439574b5ff4e2b976,
     type: 3}
   m_PrefabInstance: {fileID: 1769524722}
   m_PrefabAsset: {fileID: 0}

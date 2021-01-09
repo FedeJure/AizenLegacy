@@ -321,6 +321,7 @@
           </e>
           <e p="RagdollController.cs" t="Include" />
           <e p="Trampoline" t="Include">
+            <e p="RagdollTrampolineView.cs" t="Include" />
             <e p="TopLimitTrampoline.cs" t="Include" />
             <e p="TrampolineView.cs" t="Include" />
           </e>

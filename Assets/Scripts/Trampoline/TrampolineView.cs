@@ -45,7 +45,6 @@ namespace Trampoline
 
         private void OnTriggerExit(Collider other)
         {
-            if (!isStable) force /= 10;
             if (other.gameObject.GetHashCode() != characterModel.GetHashCode()) return;
             EventBus.EmitOnExitTrampoline();
             disposer.Dispose();
@@ -55,19 +54,6 @@ namespace Trampoline
 
         private void OnTriggerStay(Collider characterCollider)
         {
-            if (!isStable)
-            {
-                try
-                {
-                    var rbody = characterCollider.GetComponent<Rigidbody>();
-                    rbody.AddForce(-rbody.velocity.x, 10, -rbody.velocity.z, ForceMode.VelocityChange);
-                    return;
-                }
-                catch (Exception e)
-                {
-                    // ignored
-                }
-            }
             if (characterCollider.gameObject.GetHashCode() != characterModel.GetHashCode()) return;
             var magnitude = transform.position.y - feet.transform.position.y;
             var value = Math.Min(force ,magnitude * force);
