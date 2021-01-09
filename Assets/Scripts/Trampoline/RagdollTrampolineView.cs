@@ -28,7 +28,6 @@ namespace Trampoline
         private void OnTriggerStay(Collider other)
         {
             if (rbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable || other.transform.position.y > transform.position.y -0.5f) return;
-            Debug.Log(force);
             rbody.AddForce(Random.Range(-force/2, force/2), force, Random.Range(-force/2, force/2), ForceMode.Impulse);
             rbody.AddForce(0, -rbody.velocity.y, 0, ForceMode.Force);
         }

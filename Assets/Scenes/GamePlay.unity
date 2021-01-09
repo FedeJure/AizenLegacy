@@ -403,7 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10000
   characterView: {fileID: 1543611915}
-  characterModel: {fileID: 1266175333}
+  characterModel: {fileID: 1970293756}
   leftBone: {fileID: 1579453188}
   rigthBone: {fileID: 1579453187}
   feet: {fileID: 906981520}
@@ -1825,12 +1825,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250321263}
   m_CullTransparentMesh: 0
---- !u!1 &1266175333 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7472122789332233040, guid: 19e4365fec4f2fc439574b5ff4e2b976,
-    type: 3}
-  m_PrefabInstance: {fileID: 1769524722}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1266175334 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7468133226690444694, guid: 19e4365fec4f2fc439574b5ff4e2b976,
@@ -2591,10 +2585,20 @@ PrefabInstance:
       propertyPath: twistRigidBody
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4139355411172559665, guid: 19e4365fec4f2fc439574b5ff4e2b976,
+        type: 3}
+      propertyPath: coll
+      value: 
+      objectReference: {fileID: 1970293758}
     - target: {fileID: 4164988334721628161, guid: 19e4365fec4f2fc439574b5ff4e2b976,
         type: 3}
       propertyPath: m_Name
       value: Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451911882858544748, guid: 19e4365fec4f2fc439574b5ff4e2b976,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5206535478436743602, guid: 19e4365fec4f2fc439574b5ff4e2b976,
         type: 3}
@@ -3013,6 +3017,20 @@ MonoBehaviour:
   ikView: {fileID: 1970293759}
   charView: {fileID: 1543611915}
   input: {fileID: 1970293760}
+--- !u!136 &1970293758
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970293756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.15
+  m_Height: 1.86
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.15, z: 0}
 --- !u!114 &1970293759 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5819908365755651359, guid: 19e4365fec4f2fc439574b5ff4e2b976,
