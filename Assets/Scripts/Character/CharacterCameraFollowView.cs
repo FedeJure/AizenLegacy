@@ -23,6 +23,11 @@ namespace Character
                 .Subscribe();
         }
 
+        private void OnEnable()
+        {
+            currentTarget = Target;
+        }
+
         private void Start()
         {
             Offset = camTransform.position - Target.position;

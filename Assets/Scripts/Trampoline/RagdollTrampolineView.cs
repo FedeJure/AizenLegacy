@@ -1,4 +1,5 @@
-﻿using UniRx;
+﻿using System;
+using UniRx;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -23,6 +24,11 @@ namespace Trampoline
                     tramp.ChangeFollowTarget(rbody.transform);
                 })
                 .Subscribe();
+        }
+
+        private void OnEnable()
+        {
+            enable = false;
         }
 
         private void OnTriggerStay(Collider other)

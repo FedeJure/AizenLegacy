@@ -19,7 +19,6 @@ namespace Character
         [SerializeField] private Transform rightFeet;
 
         [SerializeField] private Transform loneLeftFeet;
-        [SerializeField] private Transform loneRightFeet;
         
         [SerializeField] private float feetIKWeight;
         [SerializeField] private float feetRotationIKWeight;
@@ -27,6 +26,10 @@ namespace Character
         private bool isStable = true;
 
         private bool disabled = false;
+        
+        const float minSeparation = 0.1f;
+        const float maxSeparationFlying = 0.2f;
+        const float maxSeparationOnLona = 0.15f;
 
         private void Awake()
         {
@@ -45,6 +48,14 @@ namespace Character
                     feetTarget.gameObject.SetActive(false);
                 })
                 .Subscribe();
+        }
+
+        private void OnEnable()
+        {
+            ResetPosition();
+            isIKActive = true;
+            disabled = false;
+            isStable = true;
         }
 
         private void ResetPosition()
@@ -88,12 +99,8 @@ namespace Character
 
         private float getFeetSeparation(float distanceFromTrampoline)
         {
-            var min = 0.1f;
-            var maxFlying = 0.2f;
-            var maxOnLona = 0.15f;
             var transformedDistance = distanceFromTrampoline;
-            if (transformedDistance < 0) return Math.Min(Math.Abs(transformedDistance) + min, maxOnLona);
-            return Math.Min(transformedDistance + min, maxFlying);
+            return transformedDistance < 0 ? Math.Min(Math.Abs(transformedDistance) + minSeparation, maxSeparationOnLona) : Math.Min(transformedDistance + minSeparation, maxSeparationFlying);
         }
 
         private float GetFeetRotation(float distanceFromTrampoline)

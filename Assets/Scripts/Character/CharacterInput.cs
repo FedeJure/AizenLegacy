@@ -30,6 +30,8 @@ namespace Character
                 })
                 .Subscribe();
         }
+        
+        
         private void HandleMedioGiro()
         {
             character.MakeHalfTwist();

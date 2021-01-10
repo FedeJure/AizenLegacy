@@ -34,6 +34,7 @@ namespace Trampoline
         {
             ResetBonesPosition();
             isStable = true;
+            feet = characterView.transform;
         }
 
         private void OnTriggerEnter(Collider other)

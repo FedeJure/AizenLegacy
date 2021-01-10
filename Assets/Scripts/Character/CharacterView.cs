@@ -59,13 +59,21 @@ namespace Character
             rbody.maxAngularVelocity = 25;
         }
 
+        private void OnEnable()
+        {
+            transform.SetPositionAndRotation(startLocation.position, Quaternion.identity);
+            isStable = true;
+            SetEnable(true);
+            ResetState();
+        }
+
 
         private void ResetState()
         {
             if (Quaternion.Angle(Quaternion.identity,transform.localRotation) > maxInclinationAlowed)
             {
                 isStable = false;
-                Disable();
+                SetEnable(false);
                 EventBus.EmitOnLoseStability();
             }
             RemovePositions();
@@ -78,12 +86,12 @@ namespace Character
             actions.Clear();
         }
 
-        private void Disable()
+        private void SetEnable(bool value)
         {
-            rbody.isKinematic = true;
-            rbody.detectCollisions = false;
-            rbody.freezeRotation = false;
-            animator.enabled = false;
+            rbody.isKinematic = !value;
+            rbody.detectCollisions = value;
+            rbody.freezeRotation = value;
+            animator.enabled = value;
         }
 
         private void FixedUpdate()

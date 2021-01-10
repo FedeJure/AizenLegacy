@@ -25,6 +25,10 @@ namespace Character
             {
                 indexed.Add(bodyPartsLocation.part, bodyPartsLocation);
             }
+        }
+
+        private void OnEnable()
+        {
             if (skin == null) return;
             foreach (var s in skin.skines)
             {
