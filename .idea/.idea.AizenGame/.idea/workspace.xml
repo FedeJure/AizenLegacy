@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +48,6 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterActions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/Position.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSkin.cs" />
         <option value="$PROJECT_DIR$/Assets/Prueba.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAction.cs" />
@@ -49,16 +55,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RagdollCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlayState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/TopLimitTrampoline.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Events/CharacterInitEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RuntimeReferenceProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" />
       </list>
     </option>
   </component>
@@ -205,6 +214,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="236" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610139089405" />
+    <state x="127" y="139" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610292369099">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="127" y="139" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610292369099" />
     <state x="616" y="242" key="run.anything.popup" timestamp="1609889756975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

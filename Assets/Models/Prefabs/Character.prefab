@@ -47,6 +47,8 @@ GameObject:
   - component: {fileID: 8935121804861415303}
   - component: {fileID: 6393100026603722474}
   - component: {fileID: 1583421602295636646}
+  - component: {fileID: 3845109541888215491}
+  - component: {fileID: 2935981723856203850}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -99,7 +101,7 @@ MonoBehaviour:
   animator: {fileID: 8935121804861415303}
   isIKActive: 1
   distance: 10
-  feetsTransform: {fileID: 7474810588857728998}
+  feetsTransform: {fileID: 7474426453751228778}
   feetTarget: {fileID: 2488516415757157497}
   leftFeet: {fileID: 7102892075437390349}
   rightFeet: {fileID: 7472777378009362221}
@@ -120,11 +122,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rbody: {fileID: 6393100026603722474}
-  coll: {fileID: 4451911882858544748}
+  coll: {fileID: 3845109541888215491}
   animator: {fileID: 8935121804861415303}
   pivotModel: {fileID: 7472122789332233040}
   trampolineLimit: {fileID: 0}
   maxInclinationAlowed: 20
+  startLocation: {fileID: 0}
 --- !u!95 &8935121804861415303
 Animator:
   serializedVersion: 3
@@ -158,7 +161,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 74
+  m_Constraints: 0
   m_CollisionDetection: 2
 --- !u!114 &1583421602295636646
 MonoBehaviour:
@@ -184,6 +187,35 @@ MonoBehaviour:
     location: {fileID: 7376118343879359788}
   - part: 4
     location: {fileID: 7373388801739573640}
+--- !u!136 &3845109541888215491
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4164988334721628161}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.15
+  m_Height: 1.86
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.15, z: 0}
+--- !u!114 &2935981723856203850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4164988334721628161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6be08f7fd78e8443b3c6172b55ceb12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ikView: {fileID: 5819908365755651359}
+  charView: {fileID: 4139355411172559665}
+  input: {fileID: 5180757704603369734}
 --- !u!1 &4290957444818411783
 GameObject:
   m_ObjectHideFlags: 0

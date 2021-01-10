@@ -13,7 +13,9 @@ namespace Character
         [SerializeField] private Animator animator;
         [SerializeField] private GameObject pivotModel;
         [SerializeField] private Transform trampolineLimit;
-        [SerializeField] private float maxInclinationAlowed = 40;
+        [SerializeField] private float maxInclinationAlowed = 20;
+        [SerializeField] private Transform startLocation;
+
 
         private int velocityKey = Animator.StringToHash("verticalVelocity");
         private int heightFactor = Animator.StringToHash("heightFactor");
@@ -60,7 +62,7 @@ namespace Character
 
         private void ResetState()
         {
-            if (Math.Abs(transform.localRotation.eulerAngles.x) > maxInclinationAlowed)
+            if (Quaternion.Angle(Quaternion.identity,transform.localRotation) > maxInclinationAlowed)
             {
                 isStable = false;
                 Disable();
@@ -129,7 +131,7 @@ namespace Character
                 var direction = new Vector3(localUp.x, Math.Max(25, localUp.y), localUp.z);
                 rbody.AddForce(direction * (rbody.velocity.magnitude * 2));
             }
-            rbody.AddForce(Vector3.up * value);
+            rbody.AddForce(Vector3.up * value , ForceMode.Force);
         }
 
         public void MakeCPosition(bool pressed)

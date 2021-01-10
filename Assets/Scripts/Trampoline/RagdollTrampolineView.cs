@@ -20,7 +20,7 @@ namespace Trampoline
                 .Do(_ =>
                 {
                     enable = true;
-                    tramp.ChangeFollowTarget(rbody.gameObject);
+                    tramp.ChangeFollowTarget(rbody.transform);
                 })
                 .Subscribe();
         }

@@ -72,13 +72,14 @@ namespace Character
         private void ProcessFeetAnimations(Vector3 trampPosition, float distanceFromTrampoline)
         {
             var feetsPosition = feetsTransform.position;
+            var characterPosition = transform.position;
             var distanceFeetTrampoline = feetsPosition.y - trampPosition.y;
 
             isIKActive = true;
             var feetSeparation = getFeetSeparation(distanceFeetTrampoline);
             var loneDistance = Math.Abs(loneLeftFeet.position.y - trampPosition.y) / 3;
-            leftFeet.position = new Vector3(-feetSeparation, loneDistance, feetsPosition.z);
-            rightFeet.position = new Vector3(feetSeparation, loneDistance, feetsPosition.z);
+            leftFeet.position = new Vector3(-feetSeparation, loneDistance, characterPosition.z);
+            rightFeet.position = new Vector3(feetSeparation, loneDistance, characterPosition.z);
             
             var newRotation = GetFeetRotation(distanceFromTrampoline);
             leftFeet.rotation = Quaternion.Euler(newRotation, leftFeet.rotation.y, 0);
