@@ -16,9 +16,11 @@ namespace Trampoline
         private Vector3 rigthPosition;
 
         private bool isStable = true;
+        private Transform originalFeets;
 
         private void Awake()
         {
+            originalFeets = feet;
             leftPosition = leftBone.transform.position;
             rigthPosition = rightBone.transform.position;
 
@@ -34,7 +36,7 @@ namespace Trampoline
         {
             ResetBonesPosition();
             isStable = true;
-            feet = characterView.transform;
+            feet = originalFeets;
         }
 
         private void OnTriggerEnter(Collider other)

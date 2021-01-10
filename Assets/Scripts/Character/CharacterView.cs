@@ -65,6 +65,8 @@ namespace Character
             isStable = true;
             SetEnable(true);
             ResetState();
+            pivotModel.transform.rotation = Quaternion.identity;
+            
         }
 
 
