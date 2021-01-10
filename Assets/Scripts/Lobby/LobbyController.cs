@@ -2,6 +2,7 @@
 using Character;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Lobby
@@ -13,7 +14,7 @@ namespace Lobby
         [SerializeField] private Button backButton;
         [SerializeField] private Button playButton;
         [SerializeField] private TextMeshProUGUI nameText;
-        [SerializeField] private CharacterCameraFollowView cameraView;
+        [SerializeField] private LobbyCamera cameraView;
 
         private CharacterSelector currentPlayer;
         private int currentIndex = 0;
@@ -27,11 +28,12 @@ namespace Lobby
             playButton.onClick.AddListener(() => Play());
             cameraView.Target = currentPlayer.target;
             nameText.text = currentPlayer.selection.name;
+            SelectedCharacterRepository.Clear();
         }
 
         private void Play()
         {
-            throw new NotImplementedException();
+            SceneManager.LoadScene(1);
         }
 
         private void MoveSelector(int move)
@@ -56,6 +58,7 @@ namespace Lobby
 
             cameraView.Target = currentPlayer.target;
             nameText.text = currentPlayer.selection.name;
+            SelectedCharacterRepository.Set(new SelectedCharacter(currentPlayer.selection.characterSkin));
 
         }
     }

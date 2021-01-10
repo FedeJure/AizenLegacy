@@ -1,4 +1,6 @@
 ﻿
+using Character;
+
 namespace Lobby
 {
     using UnityEngine;
@@ -6,8 +8,8 @@ namespace Lobby
     [CreateAssetMenu(fileName = "CharacterSelection", menuName = "ScriptableObjects/CharacterSelection", order = 1)]
     public class CharacterSelection : ScriptableObject
     {
-        [SerializeField] private GameObject characterPrefab;
-        [SerializeField] private string name;
+        [SerializeField] public CharacterSkin characterSkin;
+        [SerializeField] public string characterName;
     }
 }
 

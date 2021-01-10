@@ -257,12 +257,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30442514}
   m_CullTransparentMesh: 0
---- !u!4 &32717834 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2447268780324077958, guid: 19e4365fec4f2fc439574b5ff4e2b976,
-    type: 3}
-  m_PrefabInstance: {fileID: 1769524722}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &34607261
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +406,7 @@ MonoBehaviour:
   characterModel: {fileID: 1970293756}
   leftBone: {fileID: 1579453188}
   rightBone: {fileID: 1579453187}
-  feet: {fileID: 32717834}
+  feet: {fileID: 906981521}
 --- !u!65 &82620301
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1244,6 +1238,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &906981521 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7474426453751228778, guid: 19e4365fec4f2fc439574b5ff4e2b976,
+    type: 3}
+  m_PrefabInstance: {fileID: 1769524722}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &926869280 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7472092229452782786, guid: 19e4365fec4f2fc439574b5ff4e2b976,
