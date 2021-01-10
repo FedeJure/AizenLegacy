@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
 
@@ -30,16 +31,24 @@ namespace Character
         const float minSeparation = 0.1f;
         const float maxSeparationFlying = 0.2f;
         const float maxSeparationOnLona = 0.15f;
+        private List<IDisposable> disposer = new List<IDisposable>();
 
         private void Awake()
         {
+
+        }
+
+        private void OnEnable()
+        {
             EventBus.OnPositionStarted()
                 .Do(_ => disabled = true)
-                .Subscribe();
+                .Subscribe()
+                .AddTo(disposer);
             
             EventBus.OnEnterTrampoline()
                 .Do(_ => disabled = false)
-                .Subscribe();
+                .Subscribe()
+                .AddTo(disposer);
 
             EventBus.OnLoseStability()
                 .Do(_ =>
@@ -47,11 +56,9 @@ namespace Character
                     isStable = false;
                     feetTarget.gameObject.SetActive(false);
                 })
-                .Subscribe();
-        }
-
-        private void OnEnable()
-        {
+                .Subscribe()
+                .AddTo(disposer);
+            
             ResetPosition();
             isIKActive = true;
             disabled = false;
@@ -133,6 +140,11 @@ namespace Character
             animator.SetIKPosition(AvatarIKGoal.LeftFoot, leftFeet.position);
             animator.SetIKRotation(AvatarIKGoal.LeftFoot, leftFeet.rotation);
             animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot, feetRotationIKWeight);
+        }
+
+        private void OnDisable()
+        {
+            disposer.ForEach(d => d.Dispose());
         }
     }
 }

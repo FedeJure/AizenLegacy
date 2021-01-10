@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using Character;
 using Trampoline;
 using UniRx;
@@ -11,9 +12,11 @@ public class GamePlayState : MonoBehaviour
     [SerializeField] private IKCharacterView ikView;
     [SerializeField] private CharacterView charView;
     [SerializeField] private CharacterInput input;
+    
+    private List<IDisposable> disposer = new List<IDisposable>();
 
 
-    private void Awake()
+    private void OnEnable()
     {
         EventBus.OnLoseStability()
             .Do(_ =>
@@ -26,6 +29,12 @@ public class GamePlayState : MonoBehaviour
                     .Do(__ => SceneManager.LoadScene(0))
                     .Subscribe();
             })
-            .Subscribe();
+            .Subscribe()
+            .AddTo(disposer);
+    }
+
+    private void OnDisable()
+    {
+        disposer.ForEach(d => d.Dispose());
     }
 }

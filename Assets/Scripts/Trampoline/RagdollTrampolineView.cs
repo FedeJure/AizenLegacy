@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -14,21 +15,21 @@ namespace Trampoline
         private float force = 1000;
         private int times = 0;
         private bool enable = false;
+        
+        private List<IDisposable> disposer = new List<IDisposable>();
+ 
 
-        private void Awake()
+        private void OnEnable()
         {
+            enable = false;
             EventBus.OnLoseStability()
                 .Do(_ =>
                 {
                     enable = true;
                     tramp.ChangeFollowTarget(rbody.transform);
                 })
-                .Subscribe();
-        }
-
-        private void OnEnable()
-        {
-            enable = false;
+                .Subscribe()
+                .AddTo(disposer);
         }
 
         private void OnTriggerStay(Collider other)
@@ -52,6 +53,11 @@ namespace Trampoline
         {
             if (rbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable) return;
             times++;
+        }
+
+        private void OnDisable()
+        {
+            disposer.ForEach(d => d.Dispose());
         }
     }
 }

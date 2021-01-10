@@ -106,7 +106,6 @@ MonoBehaviour:
   leftFeet: {fileID: 7102892075437390349}
   rightFeet: {fileID: 7472777378009362221}
   loneLeftFeet: {fileID: 0}
-  loneRightFeet: {fileID: 0}
   feetIKWeight: 0.3
   feetRotationIKWeight: 1
 --- !u!114 &4139355411172559665
@@ -175,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 959baa49a51e4c93acbf465023c65987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skin: {fileID: 11400000, guid: 517ceb8218e90b14e84a94c5e891b0f0, type: 2}
+  skin: {fileID: 0}
   locations:
   - part: 0
     location: {fileID: 7373465179826188070}

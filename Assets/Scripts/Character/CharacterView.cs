@@ -29,6 +29,7 @@ namespace Character
         
         private bool isFalling;
         private bool isStable = true;
+        private List<IDisposable> disposer = new List<IDisposable>();
 
         private bool onFront
         {
@@ -41,14 +42,6 @@ namespace Character
         List<CharacterAction> actions = new List<CharacterAction>();
         private void Awake()
         {
-            EventBus.OnEnterTrampoline()
-                .Do(_ => ResetState())
-                .Subscribe();
-            
-            EventBus.OnExitTrampoline()
-                .Do(_ => animator.SetBool(inTrampoline, false))
-                .Subscribe();
-
             positionKeyMap = new Dictionary<Position, int>
             {
                 {Position.APosition, aPosition},
@@ -61,6 +54,14 @@ namespace Character
 
         private void OnEnable()
         {
+            EventBus.OnEnterTrampoline()
+                .Do(_ => ResetState())
+                .Subscribe().AddTo(disposer);
+            
+            EventBus.OnExitTrampoline()
+                .Do(_ => animator.SetBool(inTrampoline, false))
+                .Subscribe().AddTo(disposer);
+            
             transform.SetPositionAndRotation(startLocation.position, Quaternion.identity);
             isStable = true;
             SetEnable(true);
@@ -207,6 +208,11 @@ namespace Character
             actions.Add(new HalfTwistAction(pivotModel.transform));
             EventBus.EmitOnSideChange();
             RemovePositions();
+        }
+
+        private void OnDisable()
+        {
+            disposer.ForEach(d => d.Dispose());
         }
     }
 }

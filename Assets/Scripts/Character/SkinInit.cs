@@ -26,7 +26,8 @@ namespace Character
                 indexed.Add(bodyPartsLocation.part, bodyPartsLocation);
             }
 
-            skin = SelectedCharacterRepository.Get()?.skin ? SelectedCharacterRepository.Get()?.skin : skin;
+            if (skin == null)
+                skin = SelectedCharacterRepository.Get()?.skin;
         }
 
         private void OnEnable()
