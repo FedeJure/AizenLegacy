@@ -251,7 +251,7 @@ PlayerSettings:
   templateDefaultScene: Assets/Scenes/SampleScene.unity
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
-  androidSplashScreen: {fileID: 0}
+  androidSplashScreen: {fileID: 2800000, guid: f19fba475637e4848b88ed1034a64e98, type: 3}
   AndroidKeystoreName: '{inproject}: playstore.keystore'
   AndroidKeyaliasName: aizenkeystore
   AndroidBuildApkPerCpuArchitecture: 0
@@ -658,8 +658,7 @@ PlayerSettings:
   ps4IncludedModules: []
   ps4attribVROutputEnabled: 0
   monoEnv: 
-  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: f19fba475637e4848b88ed1034a64e98,
-    type: 3}
+  splashScreenBackgroundSourceLandscape: {fileID: 0}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
   blurSplashScreenBackground: 1
   spritePackerPolicy: 
@@ -766,10 +765,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 3d4f03a8-4f3b-4b27-8618-a9f43a004088
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Trampoline Gymnastics
+  organizationId: fedejure
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 1
   disableOldInputManagerSupport: 1

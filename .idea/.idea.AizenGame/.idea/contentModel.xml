@@ -23,6 +23,9 @@
             </e>
           </e>
         </e>
+        <e p="Free_old_yellow_concrete" t="Include">
+          <e p="ControllLight.cs" t="Include" />
+        </e>
         <e p="LeanTween" t="Include">
           <e p="Framework" t="Include">
             <e p="LeanAudio.cs" t="Include" />
@@ -359,6 +362,15 @@
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
+        </e>
+        <e p="UGUIKit Flat" t="Include">
+          <e p="Content" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="bl_ProgressBar.cs" t="Include" />
+              <e p="bl_ToggleSwitcher.cs" t="Include" />
+            </e>
+          </e>
+          <e p="ReadMe.txt" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

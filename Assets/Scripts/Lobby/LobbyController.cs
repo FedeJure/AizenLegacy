@@ -24,8 +24,8 @@ namespace Lobby
             if (selectors.Length == 0) throw new Exception("Need characters selectors");
             currentPlayer = selectors[currentIndex];
             nextButton.onClick.AddListener(() => MoveSelector(1));
-            backButton.onClick.AddListener(() => MoveSelector(1));
-            playButton.onClick.AddListener(() => Play());
+            backButton.onClick.AddListener(() => MoveSelector(-1));
+            playButton.onClick.AddListener(Play);
             cameraView.Target = currentPlayer.target;
             nameText.text = currentPlayer.selection.name;
             SelectedCharacterRepository.Clear();
