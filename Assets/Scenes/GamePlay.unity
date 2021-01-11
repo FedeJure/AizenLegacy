@@ -2476,6 +2476,16 @@ PrefabInstance:
       propertyPath: loneRightFeet
       value: 
       objectReference: {fileID: 1579453189}
+    - target: {fileID: 6393100026603722474, guid: 19e4365fec4f2fc439574b5ff4e2b976,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6393100026603722474, guid: 19e4365fec4f2fc439574b5ff4e2b976,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7468133226690444694, guid: 19e4365fec4f2fc439574b5ff4e2b976,
         type: 3}
       propertyPath: m_LocalPosition.y

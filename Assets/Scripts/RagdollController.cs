@@ -17,7 +17,7 @@ public class RagdollController : MonoBehaviour
         foreach (var rbody in rbodies)
         {
             rbody.detectCollisions = false;
-            rbody.collisionDetectionMode = CollisionDetectionMode.Continuous;
+            rbody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
         }
         SetEnable(false);
     }

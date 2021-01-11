@@ -13,15 +13,13 @@ namespace Character
         [SerializeField] private Animator animator;
         [SerializeField] private GameObject pivotModel;
         [SerializeField] private Transform trampolineLimit;
-        [SerializeField] private float maxInclinationAlowed = 20;
+        [SerializeField] private float maxInclinationAlowed = 40;
         [SerializeField] private Transform startLocation;
-
 
         private int velocityKey = Animator.StringToHash("verticalVelocity");
         private int heightFactor = Animator.StringToHash("heightFactor");
         private int startRaising = Animator.StringToHash("startRaising");
         private int inTrampoline = Animator.StringToHash("inTrampoline");
-
         
         private int cPosition = Animator.StringToHash("cPosition");
         private int vPosition = Animator.StringToHash("vPosition");
@@ -30,6 +28,7 @@ namespace Character
         private bool isFalling;
         private bool isStable = true;
         private List<IDisposable> disposer = new List<IDisposable>();
+        private bool? rotatingForward = null;
 
         private bool onFront
         {
@@ -87,6 +86,7 @@ namespace Character
             rbody.ResetInertiaTensor();
             rbody.ResetCenterOfMass();
             actions.Clear();
+            rotatingForward = null;
         }
 
         private void SetEnable(bool value)
@@ -117,12 +117,10 @@ namespace Character
 
         private void ApplyActions()
         {
-            if (selectedPosition == null) return;
-            
             var rotation = actions.Aggregate(Vector3.zero, (current, characterAction) => characterAction.Execute(current));
             var localRotation = transform.InverseTransformVector(rotation);
             pivotModel.transform.Rotate(0, Math.Abs(localRotation.y), 0 , Space.Self);
-            
+            if (selectedPosition == null) return;
             transform.Rotate(Math.Abs(rotation.x) * transform.right.x, 0,0 , Space.Self);
         }
 
@@ -175,11 +173,15 @@ namespace Character
 
         private void StabilizateInFly()
         {
+            var angleToGround = Vector3.SignedAngle(transform.up, Vector3.up, transform.right);
+            var currentAngle = Vector3.Angle(transform.up, Vector3.down);
+            if (!(currentAngle < maxInclinationAlowed)) return;
             actions.Clear();
-            if (isFalling && Math.Abs(transform.rotation.x) < maxInclinationAlowed)
-            {
-                LeanTween.rotateX(gameObject, 0, 0.5f);
-            }
+            var value = 0f;
+            if (rotatingForward.HasValue && rotatingForward.Value) value = angleToGround > 0 ? angleToGround : 360 + angleToGround;
+            else value =  angleToGround < 0 ? angleToGround : -(360 - angleToGround);
+            Debug.Log(value);
+            LeanTween.rotateAround(gameObject, Vector3.right, value, 0.5f);
         }
 
         private void RemovePositions()
@@ -191,16 +193,18 @@ namespace Character
 
         public void MakeFront()
         {
-            if (!selectedPosition.HasValue) return;
+            if (!selectedPosition.HasValue || (rotatingForward.HasValue && !rotatingForward.Value)) return;
             actions.Add( new FrontAction(transform));
             animator.SetBool(positionKeyMap[selectedPosition.Value], true);
+            rotatingForward = true;
         }
 
         public void MakeBack()
         {
-            if (!selectedPosition.HasValue) return;
+            if (!selectedPosition.HasValue || (rotatingForward.HasValue && rotatingForward.Value)) return;
             actions.Add(new BackAction(transform));
             animator.SetBool(positionKeyMap[selectedPosition.Value], true);
+            rotatingForward = false;
         }
 
         public void MakeHalfTwist()

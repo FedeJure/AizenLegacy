@@ -23,9 +23,6 @@
             </e>
           </e>
         </e>
-        <e p="Free_old_yellow_concrete" t="Include">
-          <e p="ControllLight.cs" t="Include" />
-        </e>
         <e p="LeanTween" t="Include">
           <e p="Framework" t="Include">
             <e p="LeanAudio.cs" t="Include" />

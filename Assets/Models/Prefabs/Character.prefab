@@ -125,7 +125,7 @@ MonoBehaviour:
   animator: {fileID: 8935121804861415303}
   pivotModel: {fileID: 7472122789332233040}
   trampolineLimit: {fileID: 0}
-  maxInclinationAlowed: 20
+  maxInclinationAlowed: 40
   startLocation: {fileID: 0}
 --- !u!95 &8935121804861415303
 Animator:
