@@ -306,7 +306,10 @@
             <e p="CharacterActions.cs" t="Include" />
             <e p="CharacterCameraFollowView.cs" t="Include" />
             <e p="CharacterInput.cs" t="Include" />
+            <e p="CharacterSharedRepository.cs" t="Include" />
             <e p="CharacterSkin.cs" t="Include" />
+            <e p="CharacterState.cs" t="Include" />
+            <e p="CharacterStats.cs" t="Include" />
             <e p="CharacterView.cs" t="Include" />
             <e p="IKCharacterView.cs" t="Include" />
             <e p="Position.cs" t="Include" />

@@ -8,6 +8,7 @@ namespace Character
 {
     public class CharacterView : MonoBehaviour
     {
+        [SerializeField] private CharacterStats stateRepository;
         [SerializeField] private Rigidbody rbody;
         [SerializeField] private CapsuleCollider coll;
         [SerializeField] private Animator animator;
@@ -24,7 +25,8 @@ namespace Character
         private int cPosition = Animator.StringToHash("cPosition");
         private int vPosition = Animator.StringToHash("vPosition");
         private int aPosition = Animator.StringToHash("aPosition");
-        
+
+        private CharacterState state;
         private bool isFalling;
         private bool isStable = true;
         private List<IDisposable> disposer = new List<IDisposable>();
@@ -49,6 +51,15 @@ namespace Character
             };
             
             rbody.maxAngularVelocity = 25;
+
+            CharacterSharedRepository.characterStats.Subscribe(
+                stats =>
+                {
+                    CharacterSharedRepository.characterState.Value = ScriptableObject.CreateInstance<CharacterState>();
+                    state = CharacterSharedRepository.characterState.Value;
+                });
+
+            
         }
 
         private void OnEnable()
@@ -117,11 +128,7 @@ namespace Character
 
         private void ApplyActions()
         {
-            var rotation = actions.Aggregate(Vector3.zero, (current, characterAction) => characterAction.Execute(current));
-            var localRotation = transform.InverseTransformVector(rotation);
-            pivotModel.transform.Rotate(0, Math.Abs(localRotation.y), 0 , Space.Self);
-            if (selectedPosition == null) return;
-            transform.Rotate(Math.Abs(rotation.x) * transform.right.x, 0,0 , Space.Self);
+            actions.ForEach(action => action.Execute(selectedPosition != null));
         }
 
         private float CalculateHeightFactor(Vector3 position, Vector3 velocity)
@@ -174,14 +181,14 @@ namespace Character
         private void StabilizateInFly()
         {
             var angleToGround = Vector3.SignedAngle(transform.up, Vector3.up, transform.right);
-            var currentAngle = Vector3.Angle(transform.up, Vector3.down);
-            if (!(currentAngle < maxInclinationAlowed)) return;
-            actions.Clear();
+            if (angleToGround == 0) return;
             var value = 0f;
             if (rotatingForward.HasValue && rotatingForward.Value) value = angleToGround > 0 ? angleToGround : 360 + angleToGround;
-            else value =  angleToGround < 0 ? angleToGround : -(360 - angleToGround);
-            Debug.Log(value);
-            LeanTween.rotateAround(gameObject, Vector3.right, value, 0.5f);
+            else value =  angleToGround <= 0 ? angleToGround : -(360 - angleToGround);
+            
+            var time = (float)Math.Sqrt((transform.position.y - trampolineLimit.position.y) * 2f / 9.8f);
+
+            actions.Add(new StabilizateAction(transform, value, time));
         }
 
         private void RemovePositions()
