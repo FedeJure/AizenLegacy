@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FedeSkin
   m_EditorClassIdentifier: 
   skines:
-  - mesh: {fileID: 4300024, guid: 2aa49f5484494544aab36119827b19bc, type: 3}
+  - mesh: {fileID: 4300006, guid: 2aa49f5484494544aab36119827b19bc, type: 3}
     materials:
     - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
     bodyPart: 0
