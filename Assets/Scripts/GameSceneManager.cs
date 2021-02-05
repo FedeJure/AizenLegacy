@@ -9,7 +9,6 @@ public class GameSceneManager : MonoBehaviour
     private void Awake()
     {
         SceneManager.LoadScene(1,LoadSceneMode.Additive);
-        Vungle.onInitializeEvent += () => { interstitialReady = true; };
     }
 
     public static void LoadLobbyScene()
@@ -32,23 +31,23 @@ public class GameSceneManager : MonoBehaviour
         return Observable.ReturnUnit();
     }
 
-    private static IObservable<Unit> ShowInterstitial()
-    {
-        if (!interstitialReady) return Observable.ReturnUnit();
-        var interstitialId = "INSTERTITIAL-2946292";
-        var subject = new Subject<Unit>();
-        Vungle.onAdFinishedEvent += (placementID, args) => {
-            if (placementID != interstitialId) return;
-            subject.OnNext(Unit.Default);
-            subject.OnCompleted();
-            Debug.Log("interstitial showed");
-        };
-        Vungle.onErrorEvent += err =>
-        {
-            subject.OnNext(Unit.Default);
-            subject.OnCompleted();
-        };
-        Vungle.loadAd(interstitialId);
-        return subject;
-    }
+    // private static IObservable<Unit> ShowInterstitial()
+    // {
+    //     if (!interstitialReady) return Observable.ReturnUnit();
+    //     var interstitialId = "INSTERTITIAL-2946292";
+    //     var subject = new Subject<Unit>();
+    //     Vungle.onAdFinishedEvent += (placementID, args) => {
+    //         if (placementID != interstitialId) return;
+    //         subject.OnNext(Unit.Default);
+    //         subject.OnCompleted();
+    //         Debug.Log("interstitial showed");
+    //     };
+    //     Vungle.onErrorEvent += err =>
+    //     {
+    //         subject.OnNext(Unit.Default);
+    //         subject.OnCompleted();
+    //     };
+    //     Vungle.loadAd(interstitialId);
+    //     return subject;
+    // }
 }
