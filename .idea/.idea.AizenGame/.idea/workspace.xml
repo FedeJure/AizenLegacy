@@ -2,40 +2,277 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.IOSResolver_v1.2.162.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.IOSResolver_v1.2.162.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.JarResolver_v1.2.162.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.JarResolver_v1.2.162.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.PackageManagerResolver_v1.2.162.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.PackageManagerResolver_v1.2.162.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandlerImpl_v1.2.162.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandlerImpl_v1.2.162.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/README.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.162_manifest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.162_manifest.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/DemoScene.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/DemoScene/IronSourceDemo.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/DemoScene/IronSourceDemoScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/DemoScene/IronSourceDemoScript.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/DemoScene/logo_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/DemoScene/logo_small.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IAdapterSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IAdapterSettings.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/ISAdMobAdapterDependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/ISAdMobAdapterDependencies.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/ISUnityAdsAdapterDependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/ISUnityAdsAdapterDependencies.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceBuildPostprocessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceBuildPostprocessor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceDependenciesManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceDependenciesManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceEditorCoroutines.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceEditorCoroutines.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceManifestProcessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceManifestProcessor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediatedNetworkSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediatedNetworkSettings.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediatedNetworkSettingsInspector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediatedNetworkSettingsInspector.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediationSettingsInspector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediationSettingsInspector.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMenu.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourcePlistProcessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourcePlistProcessor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceSDKDependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceSDKDependencies.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/libs/android-bridge.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/project.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/project.properties.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/IronSourceUnityConfig.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/IronSourceUnityConfig.m.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/iOSBridge.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/iOSBridge.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/iOSBridge.m.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Resources/IronSourceMediatedNetworkSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Resources/IronSourceMediatedNetworkSettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Resources/IronSourceMediationSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Resources/IronSourceMediationSettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/AndroidAgent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/AndroidAgent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSource.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceConstants.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceConstants.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceError.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceError.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceEvents.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceEvents.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceIAgent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceIAgent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceImpressionData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceImpressionData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInitilizer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInitilizer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceJSON.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceJSON.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceMediationSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceMediationSettings.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourcePlacement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourcePlacement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceSegment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceSegment.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceUtils.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/UnsupportedPlatformAgent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/UnsupportedPlatformAgent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/iOSAgent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/iOSAgent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character.blend.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character.blend1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character.blend1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.annotation.annotation-1.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.annotation.annotation-1.1.0.jar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.arch.core.core-common-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.arch.core.core-common-2.0.1.jar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.arch.core.core-runtime-2.0.1.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.arch.core.core-runtime-2.0.1.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.asynclayoutinflater.asynclayoutinflater-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.asynclayoutinflater.asynclayoutinflater-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.browser.browser-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.browser.browser-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.collection.collection-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.collection.collection-1.0.0.jar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.coordinatorlayout.coordinatorlayout-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.coordinatorlayout.coordinatorlayout-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.core.core-1.2.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.core.core-1.2.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.cursoradapter.cursoradapter-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.cursoradapter.cursoradapter-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.customview.customview-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.customview.customview-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.documentfile.documentfile-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.documentfile.documentfile-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.drawerlayout.drawerlayout-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.drawerlayout.drawerlayout-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.fragment.fragment-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.fragment.fragment-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.interpolator.interpolator-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.interpolator.interpolator-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.legacy.legacy-support-core-ui-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.legacy.legacy-support-core-ui-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.legacy.legacy-support-core-utils-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.legacy.legacy-support-core-utils-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-common-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-common-2.0.0.jar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-livedata-2.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-livedata-2.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-livedata-core-2.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-livedata-core-2.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-runtime-2.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-runtime-2.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-service-2.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-service-2.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-viewmodel-2.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-viewmodel-2.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.loader.loader-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.loader.loader-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.localbroadcastmanager.localbroadcastmanager-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.localbroadcastmanager.localbroadcastmanager-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.print.print-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.print.print-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.room.room-common-2.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.room.room-common-2.1.0.jar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.room.room-runtime-2.1.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.room.room-runtime-2.1.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.slidingpanelayout.slidingpanelayout-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.slidingpanelayout.slidingpanelayout-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.sqlite.sqlite-2.0.1.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.sqlite.sqlite-2.0.1.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.sqlite.sqlite-framework-2.0.1.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.sqlite.sqlite-framework-2.0.1.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.swiperefreshlayout.swiperefreshlayout-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.swiperefreshlayout.swiperefreshlayout-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.versionedparcelable.versionedparcelable-1.1.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.versionedparcelable.versionedparcelable-1.1.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.viewpager.viewpager-1.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.viewpager.viewpager-1.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.work.work-runtime-2.1.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.work.work-runtime-2.1.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-19.6.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-19.6.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-base-19.6.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-base-19.6.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-identifier-17.0.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-identifier-17.0.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-19.6.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-19.6.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-basement-17.3.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-basement-17.3.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-gass-19.6.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-gass-19.6.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-base-17.5.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-base-17.5.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-api-17.5.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-api-17.5.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-tasks-17.1.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-tasks-17.1.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.guava.listenablefuture-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.guava.listenablefuture-1.0.jar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.admobadapter-4.3.15.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.admobadapter-4.3.15.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.unityadsadapter-4.3.9.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.unityadsadapter-4.3.9.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.sdk.mediationsdk-7.1.0.2.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.sdk.mediationsdk-7.1.0.2.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.unity3d.ads.unity-ads-3.6.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.unity3d.ads.unity-ads-3.6.0.aar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/org.jetbrains.annotations-13.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/org.jetbrains.annotations-13.0.jar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-1.3.72.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-1.3.72.jar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-common-1.3.72.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-common-1.3.72.jar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/AdFinishedEventArgs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/AdFinishedEventArgs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal/IVungleHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal/IVungleHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal/VungleAndroid.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal/VungleAndroid.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal/VungleLog.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal/VungleLog.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal/VungleUnityEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal/VungleUnityEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal/VungleWindows.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal/VungleWindows.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal/VungleiOS.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Internal/VungleiOS.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/MiniJSONV.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/MiniJSONV.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Vungle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/Vungle.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/VungleManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/VungleManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/VungleSceneLoom.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Vungle/VungleSceneLoom.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VungleSDKProxy.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VungleSDKProxy.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GamePlayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Vungle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Vungle/VungleGradlePostProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Vungle/VungleGradlePostProcessor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Vungle/VunglePostBuilder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Vungle/VunglePostBuilder.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/AndroidManifest.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/LICENSE.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/libs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/androidx-vng-moat-mobile-app-kit-2.6.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/androidx-vng-moat-mobile-app-kit-2.6.3.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/AndroidManifest.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/core-1.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/core-1.1.0.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/DemoScene/IronSourceDemo.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/gson-2.8.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/gson-2.8.6.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/libs/android-bridge.jar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/localbroadcastmanager-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/localbroadcastmanager-1.0.0.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/LICENSE.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/okhttp-3.12.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/okhttp-3.12.12.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/okio-1.15.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/okio-1.15.0.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/vungle-android-sdk-6.8.1-RC2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/libs/vungle-android-sdk-6.8.1-RC2.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/VungleSDK/project.properties.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleBanner.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleBanner.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/iOSBridge.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleBanner.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleBanner.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleBinding.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleBinding.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleManager.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleManager.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleManager.mm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/Headers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/Headers/VungleSDK.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/Headers/VungleSDK.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/Headers/VungleSDKCreativeTracking.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/Headers/VungleSDKCreativeTracking.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/Headers/VungleSDKHeaderBidding.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/Headers/VungleSDKHeaderBidding.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/Headers/VungleSDKNativeAds.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/Headers/VungleSDKNativeAds.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/Info.plist.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/VungleSDK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/VungleSDK.framework/VungleSDK.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityAds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityAds.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VungleScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VungleScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,44 +283,54 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterSkin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/IronSource/Scripts/UnsupportedPlatformAgent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityAds.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VungleScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterActions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/TopLimitTrampoline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterSharedRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/AsyncSubject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/VungleBuildHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/50/6d778d3b/Space.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/IronSource/Plugins/Android.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/MicroCoroutine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/MessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Concat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prueba.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/e3/03576313/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD504953-D81E-4C1F-9A1B-8F7BBFB7FDA8/ed/7b04fb2b/AvatarIKGoal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterSkin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterActions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WhereSelect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Position.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlayState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterSharedRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/AsyncSubject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/50/6d778d3b/Space.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Vungle/VunglePostBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F8918D0C-C5FC-41A1-BABA-01B207A4C016/7a/cce931ca/Joint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/Bahich.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Concat.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Prueba.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/e3/03576313/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/BuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UGUIKit Flat/Content/Scripts/bl_ToggleSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD504953-D81E-4C1F-9A1B-8F7BBFB7FDA8/ed/7b04fb2b/AvatarIKGoal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -105,7 +352,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs" />
@@ -114,13 +360,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSharedRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAction.cs" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VungleScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlayState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityAds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -275,10 +522,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610295564669" />
-    <state x="621" y="252" width="678" height="536" key="find.popup" timestamp="1612544206190">
+    <state x="621" y="136" width="1120" height="652" key="find.popup" timestamp="1614798445571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="621" y="252" width="678" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612544206190" />
+    <state x="621" y="136" width="1120" height="652" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614798445571" />
     <state x="616" y="242" key="run.anything.popup" timestamp="1609889756975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
