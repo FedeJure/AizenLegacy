@@ -91,7 +91,6 @@ namespace Character
             }
             RemovePositions();
             animator.SetBool(inTrampoline, true);
-            selectedPosition = null;
             pivotModel.transform.rotation = Quaternion.Euler(0, onFront ? 0 : 180, 0);
             transform.rotation = Quaternion.Euler(Vector3.zero);
             rbody.ResetInertiaTensor();
@@ -167,7 +166,7 @@ namespace Character
 
         private void MakePosition(Position position, bool pressed)
         {
-            if (!selectedPosition.HasValue && pressed) selectedPosition = position;
+            if (!selectedPosition.HasValue && pressed && !isFalling) selectedPosition = position;
             if (selectedPosition.HasValue && selectedPosition.Value.Equals(position) && !pressed)
             {
                 StabilizateInFly();

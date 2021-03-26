@@ -26,7 +26,7 @@ public class GamePlayState : MonoBehaviour
                 input.enabled = false;
                 Observable.Timer(TimeSpan.FromSeconds(4))
                     .Last()
-                    .Do(__ => UnityAds.ShowInterstitialAd())
+                    .Do(__ => UnityAdsAdapter.GetInstance().ShowInterstitial())
                     .Do(__ => GameSceneManager.LoadLobbyScene())
                     .Subscribe();
             })
