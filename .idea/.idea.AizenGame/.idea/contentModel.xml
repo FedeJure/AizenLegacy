@@ -24,58 +24,21 @@
             </e>
           </e>
         </e>
-        <e p="Editor" t="Include">
-          <e p="VungleBuildHelper.cs" t="Include" />
-        </e>
         <e p="ExternalDependencyManager" t="Include">
           <e p="Editor" t="Include">
             <e p="external-dependency-manager_version-1.2.162_manifest.txt" t="Include" />
           </e>
         </e>
-        <e p="IronSource" t="Include">
-          <e p="DemoScene" t="Include">
-            <e p="IronSourceDemoScript.cs" t="Include" />
-          </e>
+        <e p="GoogleMobileAds" t="Include">
           <e p="Editor" t="Include">
-            <e p="IAdapterSettings.cs" t="Include" />
-            <e p="IronSourceBuildPostprocessor.cs" t="Include" />
-            <e p="IronSourceDependenciesManager.cs" t="Include" />
-            <e p="IronSourceEditorCoroutines.cs" t="Include" />
-            <e p="IronSourceManifestProcessor.cs" t="Include" />
-            <e p="IronSourceMediatedNetworkSettings.cs" t="Include" />
-            <e p="IronSourceMediatedNetworkSettingsInspector.cs" t="Include" />
-            <e p="IronSourceMediationSettingsInspector.cs" t="Include" />
-            <e p="IronSourceMenu.cs" t="Include" />
-            <e p="IronSourcePlistProcessor.cs" t="Include" />
-            <e p="IronSourceSDKDependencies.xml" t="Include" />
-            <e p="ISAdMobAdapterDependencies.xml" t="Include" />
-            <e p="ISUnityAdsAdapterDependencies.xml" t="Include" />
+            <e p="GoogleMobileAdsDependencies.xml" t="Include" />
+            <e p="GoogleMobileAdsSettings.cs" t="Include" />
+            <e p="GoogleMobileAdsSettingsEditor.cs" t="Include" />
+            <e p="GoogleMobileAdsSKAdNetworkItems.xml" t="Include" />
+            <e p="ManifestProcessor.cs" t="Include" />
+            <e p="PListProcessor.cs" t="Include" />
           </e>
-          <e p="Plugins" t="Include">
-            <e p="Android" t="Include">
-              <e p="IronSource.plugin" t="Include">
-                <e p="AndroidManifest.xml" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="AndroidAgent.cs" t="Include" />
-            <e p="iOSAgent.cs" t="Include" />
-            <e p="IronSource.cs" t="Include" />
-            <e p="IronSourceConfig.cs" t="Include" />
-            <e p="IronSourceConstants.cs" t="Include" />
-            <e p="IronSourceError.cs" t="Include" />
-            <e p="IronSourceEvents.cs" t="Include" />
-            <e p="IronSourceIAgent.cs" t="Include" />
-            <e p="IronSourceImpressionData.cs" t="Include" />
-            <e p="IronSourceInitilizer.cs" t="Include" />
-            <e p="IronSourceJSON.cs" t="Include" />
-            <e p="IronSourceMediationSettings.cs" t="Include" />
-            <e p="IronSourcePlacement.cs" t="Include" />
-            <e p="IronSourceSegment.cs" t="Include" />
-            <e p="IronSourceUtils.cs" t="Include" />
-            <e p="UnsupportedPlatformAgent.cs" t="Include" />
-          </e>
+          <e p="link.xml" t="Include" />
         </e>
         <e p="LeanTween" t="Include">
           <e p="Framework" t="Include">
@@ -89,6 +52,7 @@
             <e p="LTSeq.cs" t="Include" />
           </e>
         </e>
+        <e p="LICENSE.txt" t="Include" />
         <e p="Plugins" t="Include">
           <e p="UniRx" t="Include">
             <e p="Scripts" t="Include">
@@ -363,6 +327,7 @@
             <e p="CharacterSharedRepository.cs" t="Include" />
             <e p="CharacterSkin.cs" t="Include" />
             <e p="CharacterState.cs" t="Include" />
+            <e p="CharacterStatePositionView.cs" t="Include" />
             <e p="CharacterStats.cs" t="Include" />
             <e p="CharacterView.cs" t="Include" />
             <e p="IKCharacterView.cs" t="Include" />
@@ -385,8 +350,7 @@
             <e p="TopLimitTrampoline.cs" t="Include" />
             <e p="TrampolineView.cs" t="Include" />
           </e>
-          <e p="UnityAds.cs" t="Include" />
-          <e p="VungleScript.cs" t="Include" />
+          <e p="UnityAdsAdapter.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
