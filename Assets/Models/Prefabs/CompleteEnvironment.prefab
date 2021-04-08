@@ -1528,6 +1528,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8175538702873873668}
     m_Modifications:
+    - target: {fileID: 3343774612237190318, guid: 2ccfdd0d8976a1f4e8829f193f99f114,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4574128737255795457, guid: 2ccfdd0d8976a1f4e8829f193f99f114,
         type: 3}
       propertyPath: rbody
@@ -1702,6 +1707,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gym
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317754908936144190, guid: d8529ead089913441aaeed12d8ac5243,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8529ead089913441aaeed12d8ac5243, type: 3}
