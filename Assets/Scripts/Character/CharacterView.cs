@@ -8,15 +8,13 @@ namespace Character
 {
     public class CharacterView : MonoBehaviour
     {
-        [SerializeField] private CharacterStats stateRepository;
         [SerializeField] private Rigidbody rbody;
-        [SerializeField] private CapsuleCollider coll;
         [SerializeField] private Animator animator;
         [SerializeField] private GameObject pivotModel;
-        [SerializeField] private Transform trampolineLimit;
         [SerializeField] private float maxInclinationAlowed = 40;
-        [SerializeField] private Transform startLocation;
 
+        [SerializeField] private Transform leftFeetBone;
+        
         private int velocityKey = Animator.StringToHash("verticalVelocity");
         private int heightFactor = Animator.StringToHash("heightFactor");
         private int startRaising = Animator.StringToHash("startRaising");
@@ -26,7 +24,6 @@ namespace Character
         private int vPosition = Animator.StringToHash("vPosition");
         private int aPosition = Animator.StringToHash("aPosition");
 
-        private CharacterState state;
         private bool isFalling;
         private bool isStable = true;
         private List<IDisposable> disposer = new List<IDisposable>();
@@ -43,6 +40,9 @@ namespace Character
         List<CharacterAction> actions = new List<CharacterAction>();
         private void Awake()
         {
+            GameplayContext.GetInstance().SetupPlayerDependencies(this, leftFeetBone );
+            
+            
             positionKeyMap = new Dictionary<Position, int>
             {
                 {Position.APosition, aPosition},
@@ -56,7 +56,6 @@ namespace Character
                 stats =>
                 {
                     CharacterSharedRepository.characterState.Value = ScriptableObject.CreateInstance<CharacterState>();
-                    state = CharacterSharedRepository.characterState.Value;
                 });
 
             
@@ -72,7 +71,7 @@ namespace Character
                 .Do(_ => animator.SetBool(inTrampoline, false))
                 .Subscribe().AddTo(disposer);
             
-            transform.SetPositionAndRotation(startLocation.position, Quaternion.identity);
+            transform.SetPositionAndRotation(GameplayContext.GetInstance().startLocationTransform.position, Quaternion.identity);
             isStable = true;
             SetEnable(true);
             ResetState();
@@ -132,7 +131,7 @@ namespace Character
 
         private float CalculateHeightFactor(Vector3 position, Vector3 velocity)
         {
-            var factor = (-0 + (float)Math.Sqrt(0 + 2 * 9.8f * (position.y - trampolineLimit.position.y)))/ 9.8f;
+            var factor = (-0 + (float)Math.Sqrt(0 + 2 * 9.8f * (position.y - GameplayContext.GetInstance().trampolineLimitTransform.position.y)))/ 9.8f;
             var fallDuration = 2.2f;
             return factor * fallDuration;
         }
@@ -185,7 +184,7 @@ namespace Character
             if (rotatingForward.HasValue && rotatingForward.Value) value = angleToGround > 0 ? angleToGround : 360 + angleToGround;
             else value =  angleToGround <= 0 ? angleToGround : -(360 - angleToGround);
             
-            var time = (float)Math.Sqrt((transform.position.y - trampolineLimit.position.y) * 2f / 9.8f);
+            var time = (float)Math.Sqrt((transform.position.y - GameplayContext.GetInstance().trampolineLimitTransform.position.y) * 2f / 9.8f);
 
             actions.Add(new StabilizateAction(transform, value, time));
         }

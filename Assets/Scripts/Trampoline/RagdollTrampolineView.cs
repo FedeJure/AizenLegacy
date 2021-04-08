@@ -8,7 +8,6 @@ namespace Trampoline
 {
     public class RagdollTrampolineView : MonoBehaviour
     {
-        [SerializeField] private Rigidbody rbody;
         [SerializeField] private Collider trampCollider;
         [SerializeField] private int maxTimes = 3;
         [SerializeField] private TrampolineView tramp;
@@ -26,7 +25,7 @@ namespace Trampoline
                 .Do(_ =>
                 {
                     enable = true;
-                    tramp.ChangeFollowTarget(rbody.transform);
+                    tramp.ChangeFollowTarget(GameplayContext.GetInstance().ragdollPelvisRbody.transform);
                 })
                 .Subscribe()
                 .AddTo(disposer);
@@ -34,14 +33,14 @@ namespace Trampoline
 
         private void OnTriggerStay(Collider other)
         {
-            if (rbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable || other.transform.position.y > transform.position.y -0.5f) return;
-            rbody.AddForce(Random.Range(0, force/2), force, Random.Range(-force/2, force/2), ForceMode.Impulse);
-            rbody.AddForce(0, -rbody.velocity.y, 0, ForceMode.Force);
+            if (GameplayContext.GetInstance().ragdollPelvisRbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable || other.transform.position.y > transform.position.y -0.5f) return;
+            GameplayContext.GetInstance().ragdollPelvisRbody.AddForce(Random.Range(0, force/2), force, Random.Range(-force/2, force/2), ForceMode.Impulse);
+            GameplayContext.GetInstance().ragdollPelvisRbody.AddForce(0, -GameplayContext.GetInstance().ragdollPelvisRbody.velocity.y, 0, ForceMode.Force);
         }
 
         private void OnTriggerExit(Collider other)
         {
-            if (rbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable) return;
+            if (GameplayContext.GetInstance().ragdollPelvisRbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable) return;
             if (enable)
             {
                 force -= 10;
@@ -51,7 +50,7 @@ namespace Trampoline
 
         private void OnTriggerEnter(Collider other)
         {
-            if (rbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable) return;
+            if (GameplayContext.GetInstance().ragdollPelvisRbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable) return;
             times++;
         }
 

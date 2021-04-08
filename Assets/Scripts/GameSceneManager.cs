@@ -1,29 +1,36 @@
 ﻿using System;
 using UniRx;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameSceneManager : MonoBehaviour
 {
     private static bool interstitialReady = false;
+    private static GameSceneManager instance;
+
+    [SerializeField] private GameObject gameplayController;
+    [SerializeField] private GameObject lobbyController;
+
+    private GameObject currentGameplay;
     private void Awake()
     {
-        SceneManager.LoadScene(1,LoadSceneMode.Additive);
+        instance = this;
+        LoadLobbyScene();
     }
 
-    public static void LoadLobbyScene()
+    public void LoadLobbyScene()
     {
-        // ShowInterstitial()
-        //     .DoOnCompleted(() => SceneManager.LoadScene(1, LoadSceneMode.Additive))
-        //     .Subscribe();
-        SceneManager.UnloadSceneAsync(2);
-        SceneManager.LoadScene(1, LoadSceneMode.Additive);
+        if (currentGameplay != null)
+        {
+            Destroy(currentGameplay);
+            currentGameplay = null;
+        }
+        lobbyController.SetActive(true);
     }
     
-    public static void LoadGamePlayScene()
+    public void LoadGamePlayScene()
     {
-        SceneManager.UnloadSceneAsync(1);
-        SceneManager.LoadScene(2, LoadSceneMode.Additive);
+        lobbyController.SetActive(false);
+        currentGameplay = Instantiate(gameplayController);
     }
 
     private static IObservable<Unit> ShowTransition()
@@ -31,23 +38,10 @@ public class GameSceneManager : MonoBehaviour
         return Observable.ReturnUnit();
     }
 
-    // private static IObservable<Unit> ShowInterstitial()
-    // {
-    //     if (!interstitialReady) return Observable.ReturnUnit();
-    //     var interstitialId = "INSTERTITIAL-2946292";
-    //     var subject = new Subject<Unit>();
-    //     Vungle.onAdFinishedEvent += (placementID, args) => {
-    //         if (placementID != interstitialId) return;
-    //         subject.OnNext(Unit.Default);
-    //         subject.OnCompleted();
-    //         Debug.Log("interstitial showed");
-    //     };
-    //     Vungle.onErrorEvent += err =>
-    //     {
-    //         subject.OnNext(Unit.Default);
-    //         subject.OnCompleted();
-    //     };
-    //     Vungle.loadAd(interstitialId);
-    //     return subject;
-    // }
+    public static GameSceneManager GetInstance()
+    {
+        return instance;
+    }
+
+    
 }

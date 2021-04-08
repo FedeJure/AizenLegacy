@@ -27,7 +27,7 @@ public class GamePlayState : MonoBehaviour
                 Observable.Timer(TimeSpan.FromSeconds(4))
                     .Last()
                     .Do(__ => UnityAdsAdapter.GetInstance().ShowInterstitial())
-                    .Do(__ => GameSceneManager.LoadLobbyScene())
+                    .Do(__ => GameSceneManager.GetInstance().LoadLobbyScene())
                     .Subscribe();
             })
             .Subscribe()

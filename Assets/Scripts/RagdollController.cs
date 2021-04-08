@@ -7,10 +7,13 @@ public class RagdollController : MonoBehaviour
 {
     private Collider[] colliders;
     private Rigidbody[] rbodies;
-    
+
+    [SerializeField] private Rigidbody rbody;
+
     private List<IDisposable> disposer = new List<IDisposable>();
     private void Awake()
     {
+        GameplayContext.GetInstance().SetupRagdollCharacterDependencies(rbody);
         colliders = GetComponentsInChildren<Collider>();
         rbodies = GetComponentsInChildren<Rigidbody>();
         

@@ -1,5 +1,4 @@
-﻿using Character;
-using UniRx;
+﻿using UniRx;
 using UnityEngine;
 
 namespace Trampoline
@@ -7,11 +6,15 @@ namespace Trampoline
     public class TrampolineView : MonoBehaviour
     {
         [SerializeField] private float force = 5000;
-        [SerializeField] private CharacterView characterView;
-        [SerializeField] private GameObject characterModel;
         [SerializeField] private GameObject leftBone;
         [SerializeField] private GameObject rightBone;
-        [SerializeField] private Transform feet;
+        [SerializeField] private Transform loneCenter;
+        [SerializeField] private Transform limit;
+        [SerializeField] private Transform startPosition;
+        
+        private Transform feet;
+
+        
         private Vector3 leftPosition;
         private Vector3 rigthPosition;
 
@@ -20,6 +23,16 @@ namespace Trampoline
 
         private void Awake()
         {
+            GameplayContext.GetInstance().SetupTrampolineDependencies(
+                transform,
+                loneCenter,
+                limit,
+                startPosition);
+        }
+
+        private void Start()
+        {
+            feet = GameplayContext.GetInstance().leftFeetBoneTransform;
             originalFeets = feet;
             leftPosition = leftBone.transform.position;
             rigthPosition = rightBone.transform.position;
@@ -30,10 +43,7 @@ namespace Trampoline
                     isStable = false;
                 })
                 .Subscribe();
-        }
-
-        private void OnEnable()
-        {
+            
             ResetBonesPosition();
             isStable = true;
             feet = originalFeets;
@@ -41,7 +51,7 @@ namespace Trampoline
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.GetHashCode() != characterModel.GetHashCode()) return;
+            if (other.gameObject.GetHashCode() != GameplayContext.GetInstance().characterView.gameObject.GetHashCode()) return;
             EventBus.EmitOnEnterTrampoline();
         }
         private void OnTriggerExit(Collider other)
@@ -59,9 +69,9 @@ namespace Trampoline
         private void OnTriggerStay(Collider characterCollider)
         {
             FollowFeets();
-            if (characterCollider.gameObject.GetHashCode() != characterModel.GetHashCode()) return;
+            if (characterCollider.gameObject.GetHashCode() != GameplayContext.GetInstance().characterView.gameObject.GetHashCode()) return;
             var magnitude = transform.position.y - feet.position.y;
-            characterView.AddVerticalImpulse(force); 
+            GameplayContext.GetInstance().characterView.AddVerticalImpulse(force); 
         }
 
         private void FollowFeets()

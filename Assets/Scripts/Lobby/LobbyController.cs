@@ -35,7 +35,7 @@ namespace Lobby
         {
             CharacterSharedRepository.characterStats.Value = ScriptableObject.CreateInstance<CharacterStats>();
             CharacterSharedRepository.characterStats.Value.maxEnergy = 100;
-            GameSceneManager.LoadGamePlayScene();
+            GameSceneManager.GetInstance().LoadGamePlayScene();
         }
 
         private void MoveSelector(int move)

@@ -7,7 +7,6 @@ namespace Character
 {
     public class IKCharacterView : MonoBehaviour
     {
-        [SerializeField] private Transform trampoline;
         [SerializeField] private Animator animator;
 
         [SerializeField] private bool isIKActive;
@@ -19,7 +18,6 @@ namespace Character
         [SerializeField] private Transform leftFeet;
         [SerializeField] private Transform rightFeet;
 
-        [SerializeField] private Transform loneLeftFeet;
         
         [SerializeField] private float feetIKWeight;
         [SerializeField] private float feetRotationIKWeight;
@@ -76,7 +74,7 @@ namespace Character
         private void FixedUpdate()
         {
             if (!isStable) return;
-            var trampPosition = trampoline.position;
+            var trampPosition = GameplayContext.GetInstance().trampolineTransform.position;
             var distanceFromTrampoline = Vector3.Distance(new Vector3(0, trampPosition.y, 0), new Vector3(0, feetTarget.position.y, 0));
             if (distanceFromTrampoline > distance)
             {
@@ -95,7 +93,7 @@ namespace Character
 
             isIKActive = true;
             var feetSeparation = getFeetSeparation(distanceFeetTrampoline);
-            var loneDistance = Math.Abs(loneLeftFeet.position.y - trampPosition.y) / 3;
+            var loneDistance = Math.Abs(GameplayContext.GetInstance().centerLonePositionTransform.position.y - trampPosition.y) / 3;
             leftFeet.position = new Vector3(-feetSeparation, loneDistance, characterPosition.z);
             rightFeet.position = new Vector3(feetSeparation, loneDistance, characterPosition.z);
             

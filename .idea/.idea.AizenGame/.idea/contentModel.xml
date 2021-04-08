@@ -335,6 +335,7 @@
             <e p="SkinInit.cs" t="Include" />
           </e>
           <e p="EventBus.cs" t="Include" />
+          <e p="GameplayContext.cs" t="Include" />
           <e p="GamePlayState.cs" t="Include" />
           <e p="GameSceneManager.cs" t="Include" />
           <e p="Lobby" t="Include">
