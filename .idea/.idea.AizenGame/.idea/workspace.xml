@@ -2,75 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayController.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayController.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameplayContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameplayContext.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Gym.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Gym.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeviceLightingSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeviceLightingSettings.lighting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/ReflectionProbe-0.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayController.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GamePlayState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,10 +95,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStateRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSharedRepository.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VungleScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityAds.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IronSourceAdapter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityAdsAdapter.cs" />
@@ -168,12 +105,14 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlayState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameplayContext.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameplayContext.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" />
       </list>
     </option>
   </component>

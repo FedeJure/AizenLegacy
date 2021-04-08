@@ -31,11 +31,6 @@ namespace Character
         const float maxSeparationOnLona = 0.15f;
         private List<IDisposable> disposer = new List<IDisposable>();
 
-        private void Awake()
-        {
-
-        }
-
         private void OnEnable()
         {
             EventBus.OnPositionStarted()

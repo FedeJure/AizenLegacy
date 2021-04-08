@@ -12,14 +12,12 @@ namespace Trampoline
         [SerializeField] private Transform limit;
         [SerializeField] private Transform startPosition;
         
-        private Transform feet;
-
-        
         private Vector3 leftPosition;
         private Vector3 rigthPosition;
 
         private bool isStable = true;
         private Transform originalFeets;
+        private Transform feetToFollow;
 
         private void Awake()
         {
@@ -32,21 +30,20 @@ namespace Trampoline
 
         private void Start()
         {
-            feet = GameplayContext.GetInstance().leftFeetBoneTransform;
-            originalFeets = feet;
             leftPosition = leftBone.transform.position;
             rigthPosition = rightBone.transform.position;
 
+            EventBus.OnGameplayEnd()
+                .Subscribe(_ => { ResetBonesPosition(); });
+            
+            EventBus.OnGameplayStart()
+                .Subscribe(_ => { ResetBonesPosition(); });
+            
             EventBus.OnLoseStability()
-                .Do(_ =>
-                {
-                    isStable = false;
-                })
-                .Subscribe();
+                .Subscribe(_ => { isStable = false; });
             
             ResetBonesPosition();
             isStable = true;
-            feet = originalFeets;
         }
 
         private void OnTriggerEnter(Collider other)
@@ -64,20 +61,20 @@ namespace Trampoline
         {
             rightBone.transform.position = rigthPosition;
             leftBone.transform.position = leftPosition;
+            feetToFollow = GameplayContext.GetInstance().leftFeetBoneTransform;
         }
 
         private void OnTriggerStay(Collider characterCollider)
         {
             FollowFeets();
             if (characterCollider.gameObject.GetHashCode() != GameplayContext.GetInstance().characterView.gameObject.GetHashCode()) return;
-            var magnitude = transform.position.y - feet.position.y;
             GameplayContext.GetInstance().characterView.AddVerticalImpulse(force); 
         }
 
         private void FollowFeets()
         {
             var actualPosition = leftBone.transform.position;
-            var newY = feet.position.y;
+            var newY = GameplayContext.GetInstance().leftFeetBoneTransform.position.y;
             if (newY > transform.position.y ) return; 
             leftBone.transform.position = new Vector3(actualPosition.x, newY,actualPosition.z);
             actualPosition = rightBone.transform.position;
@@ -86,7 +83,7 @@ namespace Trampoline
 
         public void ChangeFollowTarget(Transform rbodyTransform)
         {
-            feet = rbodyTransform;
+            feetToFollow = rbodyTransform;
         }
     }
 }

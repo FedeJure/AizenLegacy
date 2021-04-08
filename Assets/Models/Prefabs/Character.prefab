@@ -97,7 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17082d9fc62f402fad72539439f64cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trampoline: {fileID: 0}
   animator: {fileID: 8935121804861415303}
   isIKActive: 1
   distance: 10
@@ -105,7 +104,6 @@ MonoBehaviour:
   feetTarget: {fileID: 2488516415757157497}
   leftFeet: {fileID: 7102892075437390349}
   rightFeet: {fileID: 7472777378009362221}
-  loneLeftFeet: {fileID: 0}
   feetIKWeight: 0.3
   feetRotationIKWeight: 1
 --- !u!114 &4139355411172559665
@@ -120,14 +118,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b914585721e9c641bd9b36a92c9e1a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateRepository: {fileID: 0}
   rbody: {fileID: 6393100026603722474}
-  coll: {fileID: 3845109541888215491}
   animator: {fileID: 8935121804861415303}
   pivotModel: {fileID: 7472122789332233040}
-  trampolineLimit: {fileID: 0}
   maxInclinationAlowed: 40
-  startLocation: {fileID: 0}
+  leftFeetBone: {fileID: 7468289091801972094}
 --- !u!95 &8935121804861415303
 Animator:
   serializedVersion: 3

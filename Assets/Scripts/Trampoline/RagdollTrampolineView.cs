@@ -8,7 +8,6 @@ namespace Trampoline
 {
     public class RagdollTrampolineView : MonoBehaviour
     {
-        [SerializeField] private Collider trampCollider;
         [SerializeField] private int maxTimes = 3;
         [SerializeField] private TrampolineView tramp;
         private float force = 1000;

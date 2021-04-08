@@ -23,6 +23,7 @@ public class GameSceneManager : MonoBehaviour
         {
             Destroy(currentGameplay);
             currentGameplay = null;
+            EventBus.EmitOnGameplayEnd();
         }
         lobbyController.SetActive(true);
     }
