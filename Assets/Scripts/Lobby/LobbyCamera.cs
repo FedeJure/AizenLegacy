@@ -12,7 +12,7 @@ namespace Lobby
 
         private void Start()
         {
-            Offset = transform.position - Target.position;
+            Offset = transform.position - Target.position + Offset;
         }
  
         private void LateUpdate()

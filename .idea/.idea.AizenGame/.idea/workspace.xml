@@ -2,82 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Materials/BrownHair.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Materials/BrownHair.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing Equirect.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing Equirect.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_NothingSettings.lighting" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_NothingSettings.lighting.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_0_Front+Z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_0_Front+Z.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_1_Back-Z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_1_Back-Z.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_2_Left+X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_2_Left+X.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_4_Up+Y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_4_Up+Y.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_5_Down-Y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/LiamController.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/LiamController.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/CharacterParts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/CharacterParts/Body1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/CharacterParts/Body1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyCharacter.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyCharacter.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/OldCharacter.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/OldCharacter.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/0043_020_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/0043_020_2.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/APosition.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/APosition.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/BPosition.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/BPosition.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/CPosition.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/CPosition.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Lone.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Lone.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/LoneCenter.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/LoneCenter.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/building.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/building.blend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/storage_building-1_A_LOD0.012.mesh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/storage_building-1_A_LOD0.012.mesh.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/CompleteEnvironment.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/CompleteEnvironment.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/trampoline.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/trampoline.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.work.work-runtime-2.1.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.work.work-runtime-2.1.0.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-19.5.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-19.5.0.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/Controller/LiamController.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/Controller/LiamController.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Angry.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Angry.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Prefabs/Liam_A_noFace.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Prefabs/Liam_A_noFace.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/LobbyCharacters/CharacterSelector.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/LobbyCharacters/CharacterSelector.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/LobbyCharacters/LobbyCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/LobbyCharacters/LobbyCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayController.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/BahichSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/BahichSkin.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/SantiSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/SantiSkin.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/ReflectionProbe-0.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playstore.keystore" beforeDir="false" afterPath="$PROJECT_DIR$/playstore.keystore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +55,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Concat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prueba.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/e3/03576313/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD504953-D81E-4C1F-9A1B-8F7BBFB7FDA8/ed/7b04fb2b/AvatarIKGoal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterSkin.cs" root0="FORCE_HIGHLIGHTING" />

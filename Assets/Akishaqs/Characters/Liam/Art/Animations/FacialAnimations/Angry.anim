@@ -42,7 +42,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: blendShape.Angry
-    path: Liam_Head_B
+    path: Model/Liam_Head
     classID: 137
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -54,7 +54,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2485145132
+      path: 1394804937
       attribute: 16779677
       script: {fileID: 0}
       typeID: 137
@@ -107,7 +107,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: blendShape.Angry
-    path: Liam_Head_B
+    path: Model/Liam_Head
     classID: 137
     script: {fileID: 0}
   m_EulerEditorCurves: []
