@@ -29,6 +29,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/SantiSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/SantiSkin.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +107,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs" />
@@ -131,6 +131,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" />
       </list>
     </option>
   </component>
