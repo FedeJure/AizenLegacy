@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/LiamController.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/LiamController.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/CharacterParts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/CharacterParts/Body1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/CharacterParts/Body1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyCharacter.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyCharacter.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/OldCharacter.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/OldCharacter.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/Controller/LiamController.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/Controller/LiamController.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Angry.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Angry.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Prefabs/Liam_A_noFace.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Prefabs/Liam_A_noFace.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/LobbyCharacters/CharacterSelector.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/LobbyCharacters/CharacterSelector.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/LobbyCharacters/LobbyCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/LobbyCharacters/LobbyCharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Character.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/BahichSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/BahichSkin.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/SantiSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/SantiSkin.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

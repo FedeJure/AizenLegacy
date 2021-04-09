@@ -1341,7 +1341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1692299053822230669}
   - component: {fileID: 814594346420579311}
-  - component: {fileID: 6341440698792429164}
+  - component: {fileID: 2383180278326669442}
   - component: {fileID: 6278496311172287009}
   m_Layer: 0
   m_Name: spine_01
@@ -1381,8 +1381,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6341440698792429164
-BoxCollider:
+--- !u!136 &2383180278326669442
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1391,9 +1391,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.2914668, y: 0.42083544, z: 0.23014757}
-  m_Center: {x: -0.000000074505806, y: 0.21041755, z: 0.02642098}
+  m_Radius: 0.1175603
+  m_Height: 0.5040274
+  m_Direction: 1
+  m_Center: {x: 0.009999994, y: 0.29817194, z: 0.05999999}
 --- !u!144 &6278496311172287009
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -1412,7 +1413,7 @@ CharacterJoint:
     spring: 0
     damper: 0
   m_LowTwistLimit:
-    limit: -20
+    limit: -8.298603
     bounciness: 0
     contactDistance: 0
   m_HighTwistLimit:
