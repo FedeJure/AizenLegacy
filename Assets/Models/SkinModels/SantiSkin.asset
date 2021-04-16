@@ -13,23 +13,27 @@ MonoBehaviour:
   m_Name: SantiSkin
   m_EditorClassIdentifier: 
   skines:
-  - mesh: {fileID: -6469652590152213433, guid: 38967b4f1f67be54581ef6ccd05ff116, type: 3}
+  - mesh: {fileID: -8261066796910302577, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
     bodyPart: 0
-  - mesh: {fileID: -6024879809973719063, guid: 7efff1cdfcc5a254bb57e1f2678be047, type: 3}
+  - mesh: {fileID: -8839368762345780380, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
     bodyPart: 1
-  - mesh: {fileID: -6820869731323764365, guid: 38967b4f1f67be54581ef6ccd05ff116, type: 3}
+  - mesh: {fileID: 7666266049737368757, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
     bodyPart: 2
-  - mesh: {fileID: 8410754065778660278, guid: 7efff1cdfcc5a254bb57e1f2678be047, type: 3}
+  - mesh: {fileID: -278085929633702562, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
     bodyPart: 3
-  - mesh: {fileID: -8746361678063936662, guid: 7efff1cdfcc5a254bb57e1f2678be047, type: 3}
+  - mesh: {fileID: 2959467708922500008, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
-    - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
+    - {fileID: 2100000, guid: 21d0f356efac6024fb1c0d569bbd6a34, type: 2}
     bodyPart: 4
+  - mesh: {fileID: 2346716986137308042, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
+    materials:
+    - {fileID: 2100000, guid: 24bf31acfc3d66b4197448af18e84bdd, type: 2}
+    bodyPart: 5

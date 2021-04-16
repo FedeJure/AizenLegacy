@@ -2,7 +2,137 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Character.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Character/Body.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Character/Body/BodyMaterial.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Character/Torso.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Trampoline.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidIdle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/TrainerController.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/BodyTexture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/GymnastAvatar.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/GymnastAvatar.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Trainer.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Trainer.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/A_Sound.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/A_Sound.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/A_Sound.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/A_Sound.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Angry.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Angry.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Angry.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Angry.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Ashamed.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Ashamed.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Ashamed.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Ashamed.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Blink.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Blink.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Blink.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Blink.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/E_Sound.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/E_Sound.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/E_Sound.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/E_Sound.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/O_Sound.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/O_Sound.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/O_Sound.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/O_Sound.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Sad.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Sad.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Sad.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Sad.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Smile.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Smile.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Smile.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Smile.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Wink_Left.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Wink_Left.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Wink_Left.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Wink_Left.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Wink_Right.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Wink_Right.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/Liam/Art/Animations/FacialAnimations/Wink_Right.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Wink_Right.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidCrouch.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidCrouch.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidCrouch.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidCrouch.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidIdle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidIdle.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidIdle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidIdle.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidIdleJumpUp.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidIdleJumpUp.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidIdleJumpUp.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidIdleJumpUp.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidJumpAndFall.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidJumpAndFall.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidJumpAndFall.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidJumpAndFall.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidMidAir.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidMidAir.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidMidAir.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidMidAir.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidRun.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidRun.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidRun.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidRun.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidRunTurn.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidRunTurn.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidRunTurn.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidRunTurn.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidRunTurnSharp.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidRunTurnSharp.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidRunTurnSharp.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidRunTurnSharp.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidStandTurn.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidStandTurn.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidStandTurn.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidStandTurn.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidWalk.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidWalk.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidWalk.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidWalk.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidWalkTurn.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidWalkTurn.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidWalkTurn.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidWalkTurn.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidWalkTurnSharp.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidWalkTurnSharp.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/Animations/StandardLocomotion/HumanoidWalkTurnSharp.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidWalkTurnSharp.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Cemento.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Cemento.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Character/Body/BodyMaterial.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Chapa 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Chapa 1.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Character/Torso/Withe.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Chapa 2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Chapa 2.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidIdle.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Chapa.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Chapa.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/TrainerController.controller.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/ColchonSolo.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/ColchonSolo.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/ColchonSolo.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/ColchonSolo.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Colchoneta.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/Colchoneta.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Colchoneta.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/Colchoneta.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Character/Torso/Withe.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Green.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Lone.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/Lone.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Lone.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/Lone.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/LoneCenter.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/LoneCenter.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/LoneCenter.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/LoneCenter.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/cemento.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/cemento.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/BodyTexture.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/lone.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/lone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/lone.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/lone.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/lone1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/lone1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/lone1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/lone1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/LiamController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/GymnastController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/LiamController.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/GymnastController.controller.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/OriginalLiamModel.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/OriginalLiamModel.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character.blend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character.blend1.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend1.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/test.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/test.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/LiamAnimations.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/LiamAnimations.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/character-copies.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/character-copies.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/character.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/character.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/BahichSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/BahichSkin.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/SantiSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/SantiSkin.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +192,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Models/SkinModels/BahichSkin.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -81,7 +212,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStateRepository.cs" />
@@ -105,6 +235,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" />
       </list>
     </option>
   </component>

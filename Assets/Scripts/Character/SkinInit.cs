@@ -10,7 +10,8 @@ namespace Character
         Head,
         Pants,
         Shoes,
-        Tank
+        Body,
+        Torso
     }
     public class SkinInit : MonoBehaviour
     {
