@@ -8,6 +8,8 @@ namespace Character
 {
     public class CharacterView : MonoBehaviour
     {
+        [SerializeField] private IKCharacterView ikView;
+        [SerializeField] private CharacterInput input;
         [SerializeField] private Rigidbody rbody;
         [SerializeField] private Animator animator;
         [SerializeField] private GameObject pivotModel;
@@ -41,8 +43,7 @@ namespace Character
         private void Awake()
         {
             GameplayContext.GetInstance().SetupPlayerDependencies(this, leftFeetBone );
-            
-            
+
             positionKeyMap = new Dictionary<Position, int>
             {
                 {Position.APosition, aPosition},
@@ -57,8 +58,21 @@ namespace Character
                 {
                     CharacterSharedRepository.characterState.Value = ScriptableObject.CreateInstance<CharacterState>();
                 });
+        }
 
-            
+        private void Start()
+        {
+            SubscribeToInput();
+        }
+
+        private void SubscribeToInput()
+        {
+            input.a.Subscribe(MakeAPosition).AddTo(disposer);
+            input.b.Subscribe(MakeBPosition).AddTo(disposer);
+            input.c.Subscribe(MakeCPosition).AddTo(disposer);
+            input.forward.Subscribe(MakeFront).AddTo(disposer);
+            input.back.Subscribe(MakeBack).AddTo(disposer);
+            input.twist.Subscribe(MakeHalfTwist).AddTo(disposer);
         }
 
         private void OnEnable()
@@ -70,6 +84,19 @@ namespace Character
             EventBus.OnExitTrampoline()
                 .Do(_ => animator.SetBool(inTrampoline, false))
                 .Subscribe().AddTo(disposer);
+            
+            EventBus.OnLoseStability()
+                .Do(_ =>
+                {
+                    Disable();
+                    Observable.Timer(TimeSpan.FromSeconds(4))
+                        .Last()
+                        .Do(__ => UnityAdsAdapter.GetInstance().ShowInterstitial())
+                        .Do(__ => GameSceneManager.GetInstance().LoadLobbyScene())
+                        .Subscribe();
+                })
+                .Subscribe()
+                .AddTo(disposer);
             
             transform.SetPositionAndRotation(GameplayContext.GetInstance().startLocationTransform.position, Quaternion.identity);
             isStable = true;
@@ -196,24 +223,25 @@ namespace Character
             animator.SetBool(aPosition, false);
         }
 
-        public void MakeFront()
+        public void MakeFront(bool value)
         {
-            if (!selectedPosition.HasValue || (rotatingForward.HasValue && !rotatingForward.Value)) return;
+            if (!value || !selectedPosition.HasValue || (rotatingForward.HasValue && !rotatingForward.Value)) return;
             actions.Add( new FrontAction(transform));
             animator.SetBool(positionKeyMap[selectedPosition.Value], true);
             rotatingForward = true;
         }
 
-        public void MakeBack()
+        public void MakeBack(bool value)
         {
-            if (!selectedPosition.HasValue || (rotatingForward.HasValue && rotatingForward.Value)) return;
+            if (!value || !selectedPosition.HasValue || (rotatingForward.HasValue && rotatingForward.Value)) return;
             actions.Add(new BackAction(transform));
             animator.SetBool(positionKeyMap[selectedPosition.Value], true);
             rotatingForward = false;
         }
 
-        public void MakeHalfTwist()
+        public void MakeHalfTwist(bool value)
         {
+            if (!value) return;
             actions.Add(new HalfTwistAction(pivotModel.transform));
             EventBus.EmitOnSideChange();
             RemovePositions();
@@ -222,6 +250,13 @@ namespace Character
         private void OnDisable()
         {
             disposer.ForEach(d => d.Dispose());
+        }
+
+        private void Disable()
+        {
+            ikView.enabled = false;
+            input.enabled = false;
+            //enabled = false;
         }
     }
 }

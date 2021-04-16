@@ -1,5 +1,7 @@
-﻿using UniRx;
+﻿using Character;
+using UniRx;
 using UnityEngine;
+using Utils;
 
 namespace Trampoline
 {
@@ -18,9 +20,11 @@ namespace Trampoline
         private bool isStable = true;
         private Transform originalFeets;
         private Transform feetToFollow;
+        private ComponentGetter getter;
 
         private void Awake()
         {
+            getter = new ComponentGetter();
             GameplayContext.GetInstance().SetupTrampolineDependencies(
                 transform,
                 loneCenter,
@@ -48,6 +52,10 @@ namespace Trampoline
 
         private void OnTriggerEnter(Collider other)
         {
+            // TODO: Invertir dependencia trampoline - character, y mandarle al character en vez de emitir un evento.
+            // usando el getter cache que hice
+            //getter.TryGetComponent(other.gameObject, out CharacterView component);
+            //Debug.LogWarning(component);
             if (other.gameObject.GetHashCode() != GameplayContext.GetInstance().characterView.gameObject.GetHashCode()) return;
             EventBus.EmitOnEnterTrampoline();
         }

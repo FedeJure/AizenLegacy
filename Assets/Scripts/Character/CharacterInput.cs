@@ -6,22 +6,39 @@ namespace Character
     public class CharacterInput : MonoBehaviour
     {
         public CharacterActions controls;
-        [SerializeField] private CharacterView character;
+
+        public ReactiveProperty<bool> a { get; private set; }
+        public ReactiveProperty<bool> b { get; private set; }
+        public ReactiveProperty<bool> c { get; private set; }
+        public ReactiveProperty<bool> forward { get; private set; }
+        public ReactiveProperty<bool> back { get; private set; }
+        public ReactiveProperty<bool> twist { get; private set; }
 
         private void Awake()
         {
+            a = new ReactiveProperty<bool>();
+            b = new ReactiveProperty<bool>();
+            c = new ReactiveProperty<bool>();
+            forward = new ReactiveProperty<bool>();
+            back = new ReactiveProperty<bool>();
+            twist = new ReactiveProperty<bool>();
+        
             controls = new CharacterActions();
-            controls.Player.CPosition.performed += _ => HandleCPosition(true);
-            controls.Player.VPosition.performed += _ => HandleVPosition(true);
-            controls.Player.APosition.performed += _ => HandleAPosition(true);
+            controls.Player.APosition.performed += _ => a.Value = true;
+            controls.Player.VPosition.performed += _ => b.Value = true;
+            controls.Player.CPosition.performed += _ => c.Value = true;
             
-            controls.Player.CPosition.canceled += _ => HandleCPosition(false);
-            controls.Player.VPosition.canceled += _ => HandleVPosition(false);
-            controls.Player.APosition.canceled += _ => HandleAPosition(false);
+            controls.Player.APosition.canceled += _ => a.Value = false;
+            controls.Player.VPosition.canceled += _ => b.Value = false;
+            controls.Player.CPosition.canceled += _ => c.Value = false;
             
-            controls.Player.MortalAdelante.performed += _ => HandleMortalAdelante();
-            controls.Player.MortalAtras.performed += _ => HandleMortalAtras();
-            controls.Player.MedioGiro.performed += _ => HandleMedioGiro();
+            controls.Player.MortalAdelante.performed += _ => forward.Value = true;
+            controls.Player.MortalAtras.performed += _ => back.Value = true;
+            controls.Player.MedioGiro.performed += _ => twist.Value = true;
+            
+            controls.Player.MortalAdelante.canceled += _ => forward.Value = false;
+            controls.Player.MortalAtras.canceled += _ => back.Value = false;
+            controls.Player.MedioGiro.canceled += _ => twist.Value = false;
             
             EventBus.OnLoseStability()
                 .Do(_ =>
@@ -29,38 +46,6 @@ namespace Character
                     controls.Disable();
                 })
                 .Subscribe();
-        }
-        
-        
-        private void HandleMedioGiro()
-        {
-            character.MakeHalfTwist();
-        }
-
-        private void HandleMortalAtras()
-        {
-            character.MakeBack();
-        }
-
-        private void HandleMortalAdelante()
-        {
-            character.MakeFront();
-        }
-
-        private void HandleCPosition(bool pressed)
-        {
-            character.MakeCPosition(pressed);
-        }
-        
-        private void HandleVPosition(bool pressed)
-        {
-            character.MakeBPosition(pressed);
-
-        }
-        
-        private void HandleAPosition(bool pressed)
-        {
-            character.MakeAPosition(pressed);
         }
 
         private void OnEnable()
