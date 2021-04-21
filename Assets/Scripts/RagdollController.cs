@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class RagdollController : MonoBehaviour
 {
@@ -9,13 +10,15 @@ public class RagdollController : MonoBehaviour
     private Rigidbody[] rbodies;
 
     [SerializeField] private Rigidbody rbody;
+    [SerializeField] private GameObject ragdollContainer;
 
     private List<IDisposable> disposer = new List<IDisposable>();
+
+    private Vector3? direction;
     private void Awake()
     {
-        GameplayContext.GetInstance().SetupRagdollCharacterDependencies(rbody);
-        colliders = GetComponentsInChildren<Collider>();
-        rbodies = GetComponentsInChildren<Rigidbody>();
+        colliders = ragdollContainer.GetComponentsInChildren<Collider>();
+        rbodies = ragdollContainer.GetComponentsInChildren<Rigidbody>();
         
         foreach (var rbody in rbodies)
         {
@@ -27,12 +30,10 @@ public class RagdollController : MonoBehaviour
 
     private void OnEnable()
     {
+        EventBus.OnGameplayStart()
+            .Subscribe(_ => direction = null);
         EventBus.OnLoseStability()
-            .Do(_ =>
-            {
-                SetEnable(true);
-            })
-            .Subscribe()
+            .Subscribe(_ => SetEnable(true))
             .AddTo(disposer);
     }
 
@@ -53,5 +54,11 @@ public class RagdollController : MonoBehaviour
             rbody.isKinematic = !enable;
             rbody.detectCollisions = enable;
         }
+    }
+
+    public void ExpulseWithForce(float force)
+    {
+        if (direction == null) direction = new Vector3(Random.Range(0, force/2), force, Random.Range(-(force / 2), force/2));
+        rbody.AddForce(direction.Value,ForceMode.Impulse);
     }
 }

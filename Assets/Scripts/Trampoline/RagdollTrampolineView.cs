@@ -2,58 +2,75 @@
 using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
-using Random = UnityEngine.Random;
+using Utils;
 
 namespace Trampoline
 {
     public class RagdollTrampolineView : MonoBehaviour
     {
-        [SerializeField] private int maxTimes = 3;
-        [SerializeField] private TrampolineView tramp;
-        private float force = 1000;
+        [SerializeField] private Transform topLimit;
+        private int maxTimes = 10;
+        private readonly float initialForce = 200;
+        private float force;
         private int times = 0;
         private bool enable = false;
+        private bool canExpulse = true;
         
         private List<IDisposable> disposer = new List<IDisposable>();
- 
+        private ComponentGetter getter;
 
-        private void OnEnable()
+        private RagdollController target;
+
+        private void Awake()
         {
-            enable = false;
+            force = initialForce;
+            getter = new ComponentGetter();
+            EventBus.OnGameplayEnd()
+                .Do(_ => ResetState())
+                .Subscribe()
+                .AddTo(disposer);
+            
             EventBus.OnLoseStability()
-                .Do(_ =>
-                {
-                    enable = true;
-                    tramp.ChangeFollowTarget(GameplayContext.GetInstance().ragdollPelvisRbody.transform);
-                })
+                .Do(_ => enable = true)
                 .Subscribe()
                 .AddTo(disposer);
         }
 
         private void OnTriggerStay(Collider other)
         {
-            if (GameplayContext.GetInstance().ragdollPelvisRbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable || other.transform.position.y > transform.position.y -0.5f) return;
-            GameplayContext.GetInstance().ragdollPelvisRbody.AddForce(Random.Range(0, force/2), force, Random.Range(-force/2, force/2), ForceMode.Impulse);
-            GameplayContext.GetInstance().ragdollPelvisRbody.AddForce(0, -GameplayContext.GetInstance().ragdollPelvisRbody.velocity.y, 0, ForceMode.Force);
+            if (!enable || other.transform.position.y >= topLimit.position.y - 0.4f) return;
+            if (times <= maxTimes )
+            {
+                target?.ExpulseWithForce(force);
+                force /= 2;
+                canExpulse = false;
+            }
         }
 
         private void OnTriggerExit(Collider other)
         {
-            if (GameplayContext.GetInstance().ragdollPelvisRbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable) return;
-            if (enable)
-            {
-                force -= 10;
-            }
-            if (times >= maxTimes) force = 0;
+            if (target == null || target.gameObject != other.gameObject || !enable) return;
+            canExpulse = true;
         }    
 
         private void OnTriggerEnter(Collider other)
         {
-            if (GameplayContext.GetInstance().ragdollPelvisRbody.gameObject.GetHashCode() != other.gameObject.GetHashCode() || !enable) return;
+            if (!enable) return;
+            if (target == null) getter.TryGetComponent(other.gameObject, out target);
+            if (target == null) return;
             times++;
         }
 
-        private void OnDisable()
+        private void ResetState()
+        {
+            target = null;
+            enable = false;
+            force = initialForce;
+            canExpulse = true;
+            times = 0;
+        }
+
+        private void OnDestroy()
         {
             disposer.ForEach(d => d.Dispose());
         }

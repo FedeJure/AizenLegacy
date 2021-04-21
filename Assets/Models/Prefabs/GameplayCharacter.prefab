@@ -1095,7 +1095,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8461268315739371977}
-  - component: {fileID: 8344764626818725376}
   m_Layer: 0
   m_Name: Liam
   m_TagString: Untagged
@@ -1118,19 +1117,6 @@ Transform:
   m_Father: {fileID: 6209341551621167547}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8344764626818725376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2763230693863733459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3801350eafa142e09762d64e10e80c27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rbody: {fileID: 1137412541728183161}
 --- !u!1 &2788620915316344981
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,6 +2467,7 @@ GameObject:
   - component: {fileID: 8790956674280959752}
   - component: {fileID: 6438497974588343405}
   - component: {fileID: 7534927386784932575}
+  - component: {fileID: 4077254142026239243}
   m_Layer: 0
   m_Name: GameplayCharacter
   m_TagString: Untagged
@@ -2631,6 +2618,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 346d760d9f397b141af846e9fea8522d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4077254142026239243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6182232657286739375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3801350eafa142e09762d64e10e80c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rbody: {fileID: 1137412541728183161}
+  ragdollContainer: {fileID: 2763230693863733459}
 --- !u!1 &6226208026319773087
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,8 +2689,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6244033956416004276}
   m_LocalRotation: {x: -0.00000008149228, y: 0.98327047, z: 0.18215159, w: -0.0000004213674}
-  m_LocalPosition: {x: 6.4171285e-10, y: 0.82797545, z: -0.036973197}
-  m_LocalScale: {x: 0.99999994, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.82797545, z: -0.036973197}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1692299053822230669}
   - {fileID: 5357801854263947393}

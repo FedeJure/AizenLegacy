@@ -42,8 +42,6 @@ namespace Character
         List<CharacterAction> actions = new List<CharacterAction>();
         private void Awake()
         {
-            GameplayContext.GetInstance().SetupPlayerDependencies(this, leftFeetBone );
-
             positionKeyMap = new Dictionary<Position, int>
             {
                 {Position.APosition, aPosition},

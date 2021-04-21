@@ -14,7 +14,7 @@ namespace Utils
         
         public bool TryGetComponent<T>(GameObject gameObject, out T value)
         {
-            var objectHash = gameObject.GetInstanceID();
+            var objectHash = gameObject.GetInstanceID() + gameObject.GetHashCode();
             if (cache.ContainsKey(objectHash))
             {
                 value = (T)cache[objectHash];

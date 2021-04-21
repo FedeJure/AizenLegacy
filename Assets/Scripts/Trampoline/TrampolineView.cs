@@ -19,8 +19,8 @@ namespace Trampoline
 
         private bool isStable = true;
         private Transform originalFeets;
-        private Transform feetToFollow;
         private ComponentGetter getter;
+        private CharacterView target;
 
         private void Awake()
         {
@@ -52,15 +52,15 @@ namespace Trampoline
 
         private void OnTriggerEnter(Collider other)
         {
-            // TODO: Invertir dependencia trampoline - character, y mandarle al character en vez de emitir un evento.
-            // usando el getter cache que hice
-            //getter.TryGetComponent(other.gameObject, out CharacterView component);
-            //Debug.LogWarning(component);
-            if (other.gameObject.GetHashCode() != GameplayContext.GetInstance().characterView.gameObject.GetHashCode()) return;
+            getter.TryGetComponent(other.gameObject, out target);
+            if (target == null) return;
             EventBus.EmitOnEnterTrampoline();
         }
+        
+        
         private void OnTriggerExit(Collider other)
         {
+            target = null;
             EventBus.EmitOnExitTrampoline();
             ResetBonesPosition();
         }
@@ -69,29 +69,23 @@ namespace Trampoline
         {
             rightBone.transform.position = rigthPosition;
             leftBone.transform.position = leftPosition;
-            feetToFollow = GameplayContext.GetInstance().leftFeetBoneTransform;
         }
 
         private void OnTriggerStay(Collider characterCollider)
         {
-            FollowFeets();
-            if (characterCollider.gameObject.GetHashCode() != GameplayContext.GetInstance().characterView.gameObject.GetHashCode()) return;
-            GameplayContext.GetInstance().characterView.AddVerticalImpulse(force); 
+            FollowFeets(characterCollider.bounds.min.y);
+            if (target == null) return;
+            target.AddVerticalImpulse(force);
         }
 
-        private void FollowFeets()
+        private void FollowFeets(float yContactPosition)
         {
             var actualPosition = leftBone.transform.position;
-            var newY = GameplayContext.GetInstance().leftFeetBoneTransform.position.y;
+            var newY = yContactPosition;
             if (newY > transform.position.y ) return; 
             leftBone.transform.position = new Vector3(actualPosition.x, newY,actualPosition.z);
             actualPosition = rightBone.transform.position;
             rightBone.transform.position = new Vector3(actualPosition.x, newY,actualPosition.z);
-        }
-
-        public void ChangeFollowTarget(Transform rbodyTransform)
-        {
-            feetToFollow = rbodyTransform;
         }
     }
 }
