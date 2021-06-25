@@ -15,7 +15,7 @@ MonoBehaviour:
   skines:
   - mesh: {fileID: -8261066796910302577, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
-    - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
+    - {fileID: 2100000, guid: 6c2518176e2ad4948a87ce4fd506a0d2, type: 2}
     bodyPart: 0
   - mesh: {fileID: -8839368762345780380, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
@@ -35,5 +35,5 @@ MonoBehaviour:
     bodyPart: 4
   - mesh: {fileID: 2346716986137308042, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
-    - {fileID: 2100000, guid: 24bf31acfc3d66b4197448af18e84bdd, type: 2}
+    - {fileID: 2100000, guid: 03bfd1106b6df71408c6650fd7ca7352, type: 2}
     bodyPart: 5

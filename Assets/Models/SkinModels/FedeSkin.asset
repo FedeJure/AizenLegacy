@@ -33,7 +33,7 @@ MonoBehaviour:
     materials:
     - {fileID: 2100000, guid: 21d0f356efac6024fb1c0d569bbd6a34, type: 2}
     bodyPart: 4
-  - mesh: {fileID: 2346716986137308042, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
+  - mesh: {fileID: 2786071614415613382, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
-    - {fileID: 2100000, guid: 24bf31acfc3d66b4197448af18e84bdd, type: 2}
+    - {fileID: 3058174622990785145, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     bodyPart: 5

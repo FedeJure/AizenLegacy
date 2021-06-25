@@ -2,15 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/IdleMixamo.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/IdleMixamo.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/TrainerIdle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/TrainerIdle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/xbot@Standing Idle (1).fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/xbot@Standing Idle (1).fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/umotion_project.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/umotion_project.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UMotionData/AutoBackups/20210624_183041_umotion_project.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UMotionData/Temp/EditorUndoStack.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UMotionData/Temp/EditorUndoTable.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/trampoline.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/trampoline.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameplayContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameplayContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ComponentGetter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ComponentGetter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/TrainerController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/TrainerController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Trainer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Trainer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/SantiSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/SantiSkin.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,14 +82,18 @@
     <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStatePositionView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableScrollTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/0d/edeff525/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F8918D0C-C5FC-41A1-BABA-01B207A4C016/7a/cce931ca/Joint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/Bahich.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/BuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UGUIKit Flat/Content/Scripts/bl_ToggleSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ScenePlaybackDetector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipUntil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Models/SkinModels/BahichSkin.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
@@ -123,6 +142,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/ComponentGetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/IdleMixamo.anim" />
       </list>
     </option>
   </component>
@@ -151,10 +171,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12704">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="12704" />
+      <option name="pid" />
       <method v="2" />
     </configuration>
   </component>
