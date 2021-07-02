@@ -355,6 +355,7 @@
           </e>
           <e p="UnityAdsAdapter.cs" t="Include" />
           <e p="Utils" t="Include">
+            <e p="AnimationRecord.cs" t="Include" />
             <e p="ComponentGetter.cs" t="Include" />
           </e>
         </e>

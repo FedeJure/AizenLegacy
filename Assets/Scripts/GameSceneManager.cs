@@ -31,7 +31,7 @@ public class GameSceneManager : MonoBehaviour
     public void LoadGamePlayScene()
     {
         lobbyController.SetActive(false);
-        currentGameplay = Instantiate(gameplayController);
+        currentGameplay = Instantiate(gameplayController, transform);
     }
 
     private static IObservable<Unit> ShowTransition()

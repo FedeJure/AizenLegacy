@@ -2,30 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/IdleMixamo.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/IdleMixamo.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/TrainerIdle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/TrainerIdle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/xbot@Standing Idle (1).fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/xbot@Standing Idle (1).fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/umotion_project.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/umotion_project.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UMotionData/AutoBackups/20210624_183041_umotion_project.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UMotionData/Temp/EditorUndoStack.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UMotionData/Temp/EditorUndoTable.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fonts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/EndAPosition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/EndAPosition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/EndCPosition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/EndCPosition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/EndVPosition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/EndVPosition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/Falling.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/Falling.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/FlyingIdle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/FlyingIdle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/Risign 1.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/Risign 1.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/Risign.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/Risign.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/StartAPosition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/StartAPosition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/StartCPosition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/StartCPosition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/StartVPosition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/StartVPosition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TutorialAnimator.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TutorialAnimator.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TutorialCharacter.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TutorialCharacter.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TutorialTrampoline.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TutorialTrampoline.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/tutorialScene.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/tutorialScene.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/ButtonCanvas 1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/ButtonCanvas 1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/ButtonCanvas.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/ButtonCanvas.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LevelContent.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LevelContent.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/left1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/left1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/left2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/left2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/left3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/left3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/leftArrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/leftArrow.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/twistArrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/twistArrow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/TrainerController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/TrainerController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/GymnastController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/GymnastController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/EndAPosition.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/EndAPosition.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/EndCPosition.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/EndCPosition.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/EndVPosition.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/EndVPosition.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Falling.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Falling.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/FlyingIdle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/FlyingIdle.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Risign.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Risign.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/StartAPosition.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/StartAPosition.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/StartCPosition.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/StartCPosition.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/StartVPosition.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/StartVPosition.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayController.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Trainer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Trainer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/SkinModels/SantiSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/SantiSkin.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialController.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +87,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityAdsAdapter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/TopLimitTrampoline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/_DemoStuff/Scripts/Customizations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial/TutorialController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,11 +103,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Concat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prueba.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/e3/03576313/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Binding.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Do.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD504953-D81E-4C1F-9A1B-8F7BBFB7FDA8/ed/7b04fb2b/AvatarIKGoal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterSkin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" root0="FORCE_HIGHLIGHTING" />
@@ -128,7 +179,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" />
@@ -143,6 +193,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" />
         <option value="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/IdleMixamo.anim" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs" />
       </list>
     </option>
   </component>
@@ -171,10 +223,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3700">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="3700" />
       <method v="2" />
     </configuration>
   </component>
@@ -219,78 +271,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1260" y="276" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1618888121531" />
-    <state width="1877" height="351" key="GridCell.Tab.0.bottom" timestamp="1618948390436">
+    <state width="1877" height="351" key="GridCell.Tab.0.bottom" timestamp="1625252244557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390436" />
-    <state width="1877" height="351" key="GridCell.Tab.0.center" timestamp="1618948390436">
+    <state width="1877" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625252244557" />
+    <state width="1877" height="351" key="GridCell.Tab.0.center" timestamp="1625252244557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390436" />
-    <state width="1877" height="351" key="GridCell.Tab.0.left" timestamp="1618948390436">
+    <state width="1877" height="351" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625252244557" />
+    <state width="1877" height="351" key="GridCell.Tab.0.left" timestamp="1625252244557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390436" />
-    <state width="1877" height="351" key="GridCell.Tab.0.right" timestamp="1618948390436">
+    <state width="1877" height="351" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625252244557" />
+    <state width="1877" height="351" key="GridCell.Tab.0.right" timestamp="1625252244557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390436" />
-    <state width="1877" height="351" key="GridCell.Tab.1.bottom" timestamp="1618948390332">
+    <state width="1877" height="351" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625252244557" />
+    <state width="1877" height="351" key="GridCell.Tab.1.bottom" timestamp="1625252250384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390332" />
-    <state width="1877" height="351" key="GridCell.Tab.1.center" timestamp="1618948390332">
+    <state width="1877" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625252250384" />
+    <state width="1877" height="351" key="GridCell.Tab.1.center" timestamp="1625252250384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390332" />
-    <state width="1877" height="351" key="GridCell.Tab.1.left" timestamp="1618948390332">
+    <state width="1877" height="351" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625252250384" />
+    <state width="1877" height="351" key="GridCell.Tab.1.left" timestamp="1625252250384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390332" />
-    <state width="1877" height="351" key="GridCell.Tab.1.right" timestamp="1618948390332">
+    <state width="1877" height="351" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625252250384" />
+    <state width="1877" height="351" key="GridCell.Tab.1.right" timestamp="1625252250384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390332" />
-    <state width="1877" height="351" key="GridCell.Tab.2.bottom" timestamp="1618948390332">
+    <state width="1877" height="351" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625252250384" />
+    <state width="1877" height="351" key="GridCell.Tab.2.bottom" timestamp="1625252244406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390332" />
-    <state width="1877" height="351" key="GridCell.Tab.2.center" timestamp="1618948390332">
+    <state width="1877" height="351" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625252244406" />
+    <state width="1877" height="351" key="GridCell.Tab.2.center" timestamp="1625252244406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390332" />
-    <state width="1877" height="351" key="GridCell.Tab.2.left" timestamp="1618948390332">
+    <state width="1877" height="351" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625252244406" />
+    <state width="1877" height="351" key="GridCell.Tab.2.left" timestamp="1625252244405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390332" />
-    <state width="1877" height="351" key="GridCell.Tab.2.right" timestamp="1618948390332">
+    <state width="1877" height="351" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625252244405" />
+    <state width="1877" height="351" key="GridCell.Tab.2.right" timestamp="1625252244406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390332" />
-    <state width="1877" height="351" key="GridCell.Tab.3.bottom" timestamp="1618948390332">
+    <state width="1877" height="351" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625252244406" />
+    <state width="1877" height="351" key="GridCell.Tab.3.bottom" timestamp="1625252244407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390332" />
-    <state width="1877" height="351" key="GridCell.Tab.3.center" timestamp="1618948390332">
+    <state width="1877" height="351" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625252244407" />
+    <state width="1877" height="351" key="GridCell.Tab.3.center" timestamp="1625252244406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390332" />
-    <state width="1877" height="351" key="GridCell.Tab.3.left" timestamp="1618948390332">
+    <state width="1877" height="351" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625252244406" />
+    <state width="1877" height="351" key="GridCell.Tab.3.left" timestamp="1625252244406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390332" />
-    <state width="1877" height="351" key="GridCell.Tab.3.right" timestamp="1618948390332">
+    <state width="1877" height="351" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625252244406" />
+    <state width="1877" height="351" key="GridCell.Tab.3.right" timestamp="1625252244407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="351" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618948390332" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1616451309747">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1616451309747" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1616451338959">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616451338959" />
+    <state width="1877" height="351" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625252244407" />
     <state x="127" y="139" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1618882051772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -299,10 +343,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="621" y="136" width="1120" height="652" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618540135103" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616451361804">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616451361804" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -319,6 +359,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs</url>
+          <line>70</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs" initialLine="70">
+            <startOffsets>
+              <option value="2227" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2258" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
