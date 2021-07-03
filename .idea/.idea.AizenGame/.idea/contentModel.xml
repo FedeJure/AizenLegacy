@@ -351,6 +351,7 @@
             <e p="TrampolineView.cs" t="Include" />
           </e>
           <e p="Tutorial" t="Include">
+            <e p="CharacterTutorialEventDispatcher.cs" t="Include" />
             <e p="TutorialController.cs" t="Include" />
           </e>
           <e p="UnityAdsAdapter.cs" t="Include" />

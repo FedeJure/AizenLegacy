@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Character;
+using TMPro;
 using UniRx;
 using UnityEngine;
 
@@ -14,20 +15,24 @@ namespace Tutorial
         [SerializeField] private CharacterInput input;
 
         [SerializeField] private List<string> stepMessages;
+
+        [SerializeField] private GameObject textContainer;
+        [SerializeField] private TMP_Text text;
         
-        private Stack<string> stackMessages;
+        private Queue<string> stackMessages;
 
         private IDisposable _holdDisposer;
 
 
-        private void Start()
+        private void Awake()
         {
-            stackMessages = new Stack<string>(stepMessages);
+            stackMessages = new Queue<string>(stepMessages);
+            textContainer.SetActive(false);
         }
 
         public void PressCPositionAndHold()
         {
-            Debug.Log("press C and hold");
+            ShowMessage();
             StopAnimations();
             _holdDisposer?.Dispose();
             _holdDisposer = input.c.
@@ -36,13 +41,13 @@ namespace Tutorial
                 .Do(_ => ResumeAnimations())
                 .SelectMany(input.c.Where(value => !value))
                 .First()
-                .DoOnCompleted(Fail)
+                .Do(_ => Fail())
                 .Subscribe();
         }
 
         public void PressRightOnce()
         {
-            Debug.Log("press Right once");
+            ShowMessage();
             StopAnimations();
             input.forward.
                 Where(value => value)
@@ -53,7 +58,7 @@ namespace Tutorial
 
         public void PressRightTwice()
         {
-            Debug.Log("press Right twice");
+            ShowMessage();
             StopAnimations();
             input.forward.
                 Where(value => value)
@@ -64,7 +69,7 @@ namespace Tutorial
 
         public void PressAPositionAndHold()
         {
-            Debug.Log("press A and hold");
+            ShowMessage();
             StopAnimations();
             _holdDisposer?.Dispose();
             _holdDisposer = input.a.
@@ -73,13 +78,13 @@ namespace Tutorial
                 .Do(_ => ResumeAnimations())
                 .SelectMany(input.a.Where(value => !value))
                 .First()
-                .DoOnCompleted(Fail)
+                .Do(_ => Fail())
                 .Subscribe();
         }
 
         public void PressLeftOnce()
         {
-            Debug.Log("press left once");
+            ShowMessage();
             StopAnimations();
             input.back.
                 Where(value => value)
@@ -90,7 +95,7 @@ namespace Tutorial
 
         public void PressTwistTwiceAndRemoveHold()
         {
-            Debug.Log("press twist twice and remove hold");
+            ShowMessage();
             StopAnimations();
             _holdDisposer?.Dispose();
             input.twist.
@@ -105,7 +110,7 @@ namespace Tutorial
 
         public void PressTwistAndRemoveHold()
         {
-            Debug.Log("press twist and remove hold");
+            ShowMessage();
             StopAnimations();
             _holdDisposer?.Dispose();
             input.twist.
@@ -120,7 +125,7 @@ namespace Tutorial
 
         public void RemoveCHold()
         {
-            Debug.Log("removeCHold");
+            ShowMessage();
             StopAnimations();
             _holdDisposer?.Dispose();
             input.c.
@@ -128,6 +133,18 @@ namespace Tutorial
                 .First()
                 .DoOnCompleted(ResumeAnimations)
                 .Subscribe();
+        }
+
+        public void ShowMessage()
+        {
+            if (stackMessages.Count <= 0) return;
+            textContainer.SetActive(true);
+             text.text = stackMessages.Dequeue();
+        }
+
+        public void DismissMessage()
+        {
+            textContainer.SetActive(false);
         }
 
         private void StopAnimations()
@@ -140,6 +157,7 @@ namespace Tutorial
         {
             charAnimator.speed = 1;
             trampAnimator.speed = 1;
+            DismissMessage();
         }
 
         private void Fail()
