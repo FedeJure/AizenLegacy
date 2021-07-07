@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@3.6.1" />
     <content url="file://$MODULE_DIR$/../.." />
+    <content url="file://$MODULE_DIR$/../../../../../../Downloads/com.coffee.ui-effect-4.0.0-preview.9/package" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

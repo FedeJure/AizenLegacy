@@ -360,6 +360,58 @@
             <e p="ComponentGetter.cs" t="Include" />
           </e>
         </e>
+        <e p="Shaders" t="Include">
+          <e p="Resources" t="Include">
+            <e p="UIDissolve.shader" t="Include" />
+            <e p="UIEffect.cginc" t="Include" />
+            <e p="UIEffect.shader" t="Include" />
+            <e p="UIEffectSprite.cginc" t="Include" />
+            <e p="UIHsvModifier.shader" t="Include" />
+            <e p="UIShiny.shader" t="Include" />
+            <e p="UITtransition.shader" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Common" t="Include">
+              <e p="BaseMaterialEffect.cs" t="Include" />
+              <e p="BaseMeshEffect.cs" t="Include" />
+              <e p="EffectPlayer.cs" t="Include" />
+              <e p="GraphicConnector.cs" t="Include" />
+              <e p="MaterialCache.cs" t="Include" />
+              <e p="Matrix2x3.cs" t="Include" />
+              <e p="Packer.cs" t="Include" />
+              <e p="ParameterTexture.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="ImportSampleMenu.cs" t="Include" />
+              <e p="MaterialDirtyScope.cs" t="Include" />
+              <e p="UIDissolveEditor.cs" t="Include" />
+              <e p="UIEffect-Editor.asmdef" t="Include" />
+              <e p="UIEffectEditor.cs" t="Include" />
+              <e p="UIGradientEditor.cs" t="Include" />
+              <e p="UIHsvModifierEditor.cs" t="Include" />
+              <e p="UIShadowEditor.cs" t="Include" />
+              <e p="UIShinyEditor.cs" t="Include" />
+              <e p="UITransitionEffectEditor.cs" t="Include" />
+            </e>
+            <e p="Enums" t="Include">
+              <e p="BlurMode.cs" t="Include" />
+              <e p="ColorMode.cs" t="Include" />
+              <e p="EffectArea.cs" t="Include" />
+              <e p="EffectMode.cs" t="Include" />
+              <e p="ShadowStyle.cs" t="Include" />
+            </e>
+            <e p="UIDissolve.cs" t="Include" />
+            <e p="UIEffect.asmdef" t="Include" />
+            <e p="UIEffect.cs" t="Include" />
+            <e p="UIFlip.cs" t="Include" />
+            <e p="UIGradient.cs" t="Include" />
+            <e p="UIHsvModifier.cs" t="Include" />
+            <e p="UIShadow.cs" t="Include" />
+            <e p="UIShiny.cs" t="Include" />
+            <e p="UISyncEffect.cs" t="Include" />
+            <e p="UITransitionEffect.cs" t="Include" />
+          </e>
+        </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
@@ -404,6 +456,8 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="UIEffect-Editor.csproj" t="IncludeRecursive" />
+      <e p="UIEffect.csproj" t="IncludeRecursive" />
       <e p="UniRx.csproj" t="IncludeRecursive" />
     </e>
   </component>

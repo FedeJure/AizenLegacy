@@ -2,20 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/UIAnimations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/UIAnimations/TutorialTextAnimator.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/UIAnimations/TutorialTextAnimator.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/UIAnimations/tutorialText_show.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/UIAnimations/tutorialText_show.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialCanvas.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialCanvas.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/circle-button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/circle-button.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/Default-Transition.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/Default-Transition.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/Shiny.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/Shiny.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIDissolve.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIDissolve.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIEffect.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIEffect.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIEffect.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIEffect.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIEffectSprite.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIEffectSprite.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIHsvModifier.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIHsvModifier.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIShiny.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIShiny.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UITtransition.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UITtransition.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/BaseMaterialEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/BaseMaterialEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/BaseMeshEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/BaseMeshEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/EffectPlayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/EffectPlayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/GraphicConnector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/GraphicConnector.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/MaterialCache.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/MaterialCache.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/Matrix2x3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/Matrix2x3.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/Packer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/Packer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/ParameterTexture.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/ParameterTexture.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/ImportSampleMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/ImportSampleMenu.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/MaterialDirtyScope.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/MaterialDirtyScope.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIDissolveEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIDissolveEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIEffect-Editor.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIEffect-Editor.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIEffectEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIEffectEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIGradientEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIGradientEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIHsvModifierEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIHsvModifierEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIShadowEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIShadowEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIShinyEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIShinyEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UITransitionEffectEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UITransitionEffectEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/BlurMode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/BlurMode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/ColorMode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/ColorMode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/EffectArea.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/EffectArea.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/EffectMode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/EffectMode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/ShadowStyle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/ShadowStyle.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIDissolve.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIDissolve.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIEffect.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIEffect.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIFlip.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIFlip.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIGradient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIGradient.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIHsvModifier.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIHsvModifier.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIShadow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIShadow.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIShiny.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIShiny.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UISyncEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UISyncEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UITransitionEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UITransitionEffect.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/ButtonCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/ButtonCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
@@ -29,6 +110,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityAdsAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Temp/ParsedCombinations-Hidden-UI-Default (UIShiny).shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/TopLimitTrampoline.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs.meta" root0="FORCE_HIGHLIGHTING" />
@@ -67,6 +149,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Position.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Scripts/UIShiny.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameplayContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelector.cs" root0="FORCE_HIGHLIGHTING" />
@@ -75,6 +158,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Temp/Compiled-Hidden-UI-Default (UIShiny).shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStatePositionView.cs" root0="FORCE_HIGHLIGHTING" />
@@ -88,7 +172,9 @@
     <setting file="file://$PROJECT_DIR$/Library/BuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UGUIKit Flat/Content/Scripts/bl_ToggleSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ScenePlaybackDetector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Temp/Compiled-Hidden-UI-Default (UITransition).shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Resources/UIShiny.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipUntil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs" root0="FORCE_HIGHLIGHTING" />
@@ -143,6 +229,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/GlobalTransform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial/CharacterTutorialEventDispatcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Resources/UIShiny.shader" />
       </list>
     </option>
   </component>

@@ -19,6 +19,7 @@
       <Path>Library/PackageCache/com.unity.timeline@1.2.10</Path>
       <Path>Packages</Path>
       <Path>ProjectSettings</Path>
+      <Path>../../../../Downloads/com.coffee.ui-effect-4.0.0-preview.9/package</Path>
     </explicitIncludes>
     <explicitExcludes>
       <Path>.git</Path>
