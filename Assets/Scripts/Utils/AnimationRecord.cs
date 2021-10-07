@@ -1,11 +1,15 @@
 ﻿using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor.Animations;
+#endif
 using UnityEngine;
 
 namespace Utils
 {
     public class AnimationRecord : MonoBehaviour
     {
+#if UNITY_EDITOR
+
         [SerializeField] private AnimationClip clip;
         [SerializeField] private bool record;
 
@@ -56,6 +60,9 @@ namespace Utils
             } 
 
         }
+#endif
+
     }
+
 }
 

@@ -1,6 +1,13 @@
 ﻿using System;
 using UniRx;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
+enum Scenes
+{
+    Main = 0,
+    Tutorial
+}
 
 public class GameSceneManager : MonoBehaviour
 {
@@ -32,6 +39,11 @@ public class GameSceneManager : MonoBehaviour
     {
         lobbyController.SetActive(false);
         currentGameplay = Instantiate(gameplayController, transform);
+    }
+
+    public void LoadTutorialScene()
+    {
+        SceneManager.LoadScene((int)Scenes.Tutorial);
     }
 
     private static IObservable<Unit> ShowTransition()

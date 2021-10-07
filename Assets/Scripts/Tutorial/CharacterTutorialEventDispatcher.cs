@@ -4,6 +4,7 @@ using Character;
 using TMPro;
 using UniRx;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Tutorial
 {
@@ -18,6 +19,9 @@ namespace Tutorial
 
         [SerializeField] private GameObject textContainer;
         [SerializeField] private TMP_Text text;
+        [SerializeField] private GameObject[] toHideOnFinish = new GameObject[0];
+        [SerializeField] private GameObject successFeedback;
+        [SerializeField] private GameObject failFeedback;
         
         private Queue<string> stackMessages;
 
@@ -28,6 +32,8 @@ namespace Tutorial
         {
             stackMessages = new Queue<string>(stepMessages);
             textContainer.SetActive(false);
+            successFeedback.SetActive(false);
+            failFeedback.SetActive(false);
         }
 
         public void PressCPositionAndHold()
@@ -135,6 +141,17 @@ namespace Tutorial
                 .Subscribe();
         }
 
+        public void SuccessTutorial()
+        {
+            HideUi();
+            successFeedback.SetActive(true);
+        }
+
+        private void HideUi()
+        {
+            foreach (var o in toHideOnFinish) { o.SetActive(false); }
+        }
+
         public void ShowMessage()
         {
             if (stackMessages.Count <= 0) return;
@@ -162,7 +179,13 @@ namespace Tutorial
 
         private void Fail()
         {
-            Debug.Log("FAILED!");
+            HideUi();
+            failFeedback.SetActive(true);
+        }
+
+        public void GoToHome()
+        {
+            SceneManager.LoadSceneAsync((int)Scenes.Main);
         }
     }
 }

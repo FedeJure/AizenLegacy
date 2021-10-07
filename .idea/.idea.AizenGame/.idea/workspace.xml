@@ -2,103 +2,141 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/Default-Transition.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/Default-Transition.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/Shiny.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/Shiny.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIDissolve.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIDissolve.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIEffect.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIEffect.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIEffect.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIEffect.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIEffectSprite.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIEffectSprite.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIHsvModifier.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIHsvModifier.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIShiny.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UIShiny.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UITtransition.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/UITtransition.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/BaseMaterialEffect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/BaseMaterialEffect.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/BaseMeshEffect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/BaseMeshEffect.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/EffectPlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/EffectPlayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/GraphicConnector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/GraphicConnector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/MaterialCache.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/MaterialCache.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/Matrix2x3.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/Matrix2x3.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/Packer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/Packer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/ParameterTexture.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Common/ParameterTexture.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/ImportSampleMenu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/ImportSampleMenu.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/MaterialDirtyScope.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/MaterialDirtyScope.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIDissolveEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIDissolveEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIEffect-Editor.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIEffect-Editor.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIEffectEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIEffectEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIGradientEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIGradientEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIHsvModifierEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIHsvModifierEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIShadowEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIShadowEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIShinyEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UIShinyEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UITransitionEffectEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Editor/UITransitionEffectEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/BlurMode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/BlurMode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/ColorMode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/ColorMode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/EffectArea.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/EffectArea.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/EffectMode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/EffectMode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/ShadowStyle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/Enums/ShadowStyle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIDissolve.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIDissolve.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIEffect.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIEffect.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIEffect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIEffect.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIFlip.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIFlip.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIGradient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIGradient.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIHsvModifier.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIHsvModifier.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIShadow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIShadow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIShiny.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UIShiny.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UISyncEffect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UISyncEffect.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UITransitionEffect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Scripts/UITransitionEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Demo/Scene02.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Demo/Scene02Settings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Demo/Scene03.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Demo/Scene04Settings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Materials/3D Materials/ConfettiBlue.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Materials/3D Materials/ConfettiGreen.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Materials/confettiblurred4x4.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Materials/trail.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D/Directional/ConfettiDirectionalHalloween.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D/Explosion/ConfettiExplosionPurple.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D/Explosion/ConfettiExplosionRainbow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D/Explosion/ConfettiExplosionRomantic.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D/Fountain/ConfettiFountainGreen.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D/Fountain/ConfettiFountainMagic.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D/Fountain/ConfettiFountainRomantic.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D/Fountain/ConfettiFountainRomantic.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/3D/DirectionalExplosion/ConfettiDirectionalWhite.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/3D/Explosion/ConfettiExplosionGreen.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/3D/Explosion/ConfettiExplosionYellow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/3D/Fountain.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/3D/Fountain/ConfettiFountainBlack.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/3D/Fountain/ConfettiFountainBlue.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/3D/Fountain/ConfettiFountainBlue.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Prefabs/3D/Fountain/ConfettiFountainOrange.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Readme.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Confetti FX/Textures/trail.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fonts/MikadoBold.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Transparent.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Transparent.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/FailedFeedback.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/FailedFeedback.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TrainerProtecting.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TrainerProtecting.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TrainerTutorial.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TrainerTutorial.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SuccessFeedback.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/SuccessFeedback.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/tutorialFailedFeedback.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/tutorialFailedFeedback.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/tutorialSuccessFeedback.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animations/tutorialSuccessFeedback.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/FailedFeedback.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/FailedFeedback.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/SuccessFeedback.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/SuccessFeedback.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/LightingData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/LightingData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-0_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-0_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-10_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-10_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-10_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-10_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-11_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-11_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-11_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-11_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-12_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-12_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-12_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-12_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-13_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-13_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-13_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-13_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-14_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-14_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-14_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-14_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-1_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-1_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-1_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-1_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-2_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-2_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-2_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-2_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-3_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-3_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-3_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-3_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-4_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-4_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-4_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-4_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-5_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-5_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-5_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-5_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-6_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-6_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-6_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-6_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-7_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-7_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-7_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-7_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-8_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-8_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-8_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-8_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-9_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-9_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-9_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/Lightmap-9_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/ReflectionProbe-0.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial/FailTutorialWidgetController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial/FailTutorialWidgetController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/HeadBoneFollowTarget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/HeadBoneFollowTarget.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Steam_ArrowLeft 1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TutorialCharacter.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TutorialCharacter.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/TrainerController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animations/TrainerController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/ButtonCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/ButtonCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tutorial/CharacterTutorialEventDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial/CharacterTutorialEventDispatcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UGUIKit Flat/Example/Scene/Examples 5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UGUIKit Flat/Example/Scene/Examples 5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/circle-button 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/circle-button 1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +148,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityAdsAdapter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Temp/ParsedCombinations-Hidden-UI-Default (UIShiny).shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/TopLimitTrampoline.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs.meta" root0="FORCE_HIGHLIGHTING" />
@@ -149,16 +186,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Position.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Models/SkinModels/FedeSkin.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Scripts/UIShiny.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameplayContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/HeadBoneFollowTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial/FailTutorialWidgetController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Temp/Compiled-Hidden-UI-Default (UIShiny).shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStatePositionView.cs" root0="FORCE_HIGHLIGHTING" />
@@ -172,10 +209,9 @@
     <setting file="file://$PROJECT_DIR$/Library/BuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UGUIKit Flat/Content/Scripts/bl_ToggleSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ScenePlaybackDetector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Temp/Compiled-Hidden-UI-Default (UITransition).shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Resources/UIShiny.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipUntil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Models/SkinModels/BahichSkin.asset" root0="FORCE_HIGHLIGHTING" />
@@ -209,7 +245,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStatePositionView.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" />
@@ -225,11 +260,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" />
         <option value="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/IdleMixamo.anim" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/GlobalTransform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Resources/UIShiny.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/HeadBoneFollowTarget.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial/FailTutorialWidgetController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial/CharacterTutorialEventDispatcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs" />
-        <option value="$PROJECT_DIR$/Assets/Shaders/Resources/UIShiny.shader" />
       </list>
     </option>
   </component>
@@ -258,10 +296,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3424">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="3424" />
       <method v="2" />
     </configuration>
   </component>
@@ -302,104 +340,109 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1260" y="276" key="#xdebugger.evaluate" timestamp="1618888121531">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1260" y="276" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1618888121531" />
-    <state width="1877" height="351" key="GridCell.Tab.0.bottom" timestamp="1625262985458">
+    <state width="1877" height="351" key="GridCell.Tab.0.bottom" timestamp="1633573260542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985458" />
-    <state width="1877" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.0.center" timestamp="1625262985458">
+    <state width="1877" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260542" />
+    <state width="1877" height="351" key="GridCell.Tab.0.center" timestamp="1633573260542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985458" />
-    <state width="1877" height="351" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.0.left" timestamp="1625262985458">
+    <state width="1877" height="351" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260542" />
+    <state width="1877" height="351" key="GridCell.Tab.0.left" timestamp="1633573260542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985458" />
-    <state width="1877" height="351" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.0.right" timestamp="1625262985458">
+    <state width="1877" height="351" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260542" />
+    <state width="1877" height="351" key="GridCell.Tab.0.right" timestamp="1633573260542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985458" />
-    <state width="1877" height="351" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.1.bottom" timestamp="1625262985458">
+    <state width="1877" height="351" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260542" />
+    <state width="1877" height="351" key="GridCell.Tab.1.bottom" timestamp="1633573260543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985458" />
-    <state width="1877" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.1.center" timestamp="1625262985458">
+    <state width="1877" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260543" />
+    <state width="1877" height="351" key="GridCell.Tab.1.center" timestamp="1633573260543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985458" />
-    <state width="1877" height="351" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.1.left" timestamp="1625262985458">
+    <state width="1877" height="351" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260543" />
+    <state width="1877" height="351" key="GridCell.Tab.1.left" timestamp="1633573260542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985458" />
-    <state width="1877" height="351" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.1.right" timestamp="1625262985458">
+    <state width="1877" height="351" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260542" />
+    <state width="1877" height="351" key="GridCell.Tab.1.right" timestamp="1633573260543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985458" />
-    <state width="1877" height="351" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.2.bottom" timestamp="1625262985459">
+    <state width="1877" height="351" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260543" />
+    <state width="1877" height="351" key="GridCell.Tab.2.bottom" timestamp="1633573260543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985459" />
-    <state width="1877" height="351" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.2.center" timestamp="1625262985459">
+    <state width="1877" height="351" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260543" />
+    <state width="1877" height="351" key="GridCell.Tab.2.center" timestamp="1633573260543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985459" />
-    <state width="1877" height="351" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.2.left" timestamp="1625262985458">
+    <state width="1877" height="351" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260543" />
+    <state width="1877" height="351" key="GridCell.Tab.2.left" timestamp="1633573260543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985458" />
-    <state width="1877" height="351" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.2.right" timestamp="1625262985459">
+    <state width="1877" height="351" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260543" />
+    <state width="1877" height="351" key="GridCell.Tab.2.right" timestamp="1633573260543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985459" />
-    <state width="1877" height="351" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.3.bottom" timestamp="1625262985459">
+    <state width="1877" height="351" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260543" />
+    <state width="1877" height="351" key="GridCell.Tab.3.bottom" timestamp="1633573260543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985459" />
-    <state width="1877" height="351" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.3.center" timestamp="1625262985459">
+    <state width="1877" height="351" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260543" />
+    <state width="1877" height="351" key="GridCell.Tab.3.center" timestamp="1633573260543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985459" />
-    <state width="1877" height="351" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.3.left" timestamp="1625262985459">
+    <state width="1877" height="351" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260543" />
+    <state width="1877" height="351" key="GridCell.Tab.3.left" timestamp="1633573260543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985459" />
-    <state width="1877" height="351" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state width="1877" height="351" key="GridCell.Tab.3.right" timestamp="1625262985459">
+    <state width="1877" height="351" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260543" />
+    <state width="1877" height="351" key="GridCell.Tab.3.right" timestamp="1633573260543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="351" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.-101.1920.1040@0.0.1920.1040" timestamp="1625262985459" />
-    <state width="1877" height="351" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625258460756" />
-    <state x="127" y="139" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1618882051772">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="127" y="139" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1618882051772" />
-    <state x="621" y="136" width="1120" height="652" key="find.popup" timestamp="1618540135103">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="621" y="136" width="1120" height="652" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618540135103" />
+    <state width="1877" height="351" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633573260543" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1625259479372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1625259479372" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs</url>
+          <line>65</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" initialLine="65">
+            <startOffsets>
+              <option value="1889" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1903" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
         <watch expression="this.enable" />

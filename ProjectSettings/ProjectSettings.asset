@@ -133,9 +133,15 @@ PlayerSettings:
     Others: 1
   bundleVersion: 0.1
   preloadedAssets:
-  - {fileID: 4164988334721628161, guid: 19e4365fec4f2fc439574b5ff4e2b976, type: 3}
+  - {fileID: 0}
   - {fileID: 8888956508810273159, guid: 6d1466e6ead9e44489424bef769d0e55, type: 3}
   - {fileID: 4574128737255795460, guid: 2ccfdd0d8976a1f4e8829f193f99f114, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -185,7 +191,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.aizen.trampoline
   buildNumber: {}
-  AndroidBundleVersionCode: 11
+  AndroidBundleVersionCode: 12
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
