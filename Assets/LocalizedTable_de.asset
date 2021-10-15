@@ -90,5 +90,9 @@ MonoBehaviour:
 '
     m_Metadata:
       m_Items: []
+  - m_Id: 162012252463104
+    m_Localized: Sprache
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

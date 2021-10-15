@@ -74,5 +74,9 @@ MonoBehaviour:
     m_Localized: "\r\u70B9\u51FB <sprite=5> x2 \u5E76\u91CA\u653E <sprite=1>"
     m_Metadata:
       m_Items: []
+  - m_Id: 162012252463104
+    m_Localized: "\u8BED"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

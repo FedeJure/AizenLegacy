@@ -81,5 +81,9 @@ MonoBehaviour:
       \u0914\u0930 <sprite=1> \u0915\u094B \u091B\u094B\u0921\u093C\u0947\u0902\r"
     m_Metadata:
       m_Items: []
+  - m_Id: 162012252463104
+    m_Localized: "\u092D\u093E\u0937\u093E"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

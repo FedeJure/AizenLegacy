@@ -84,5 +84,9 @@ MonoBehaviour:
     m_Localized: "Appuyez sur <sprite=5> x2 et rel\xE2chez <sprite=1>\r\n"
     m_Metadata:
       m_Items: []
+  - m_Id: 162012252463104
+    m_Localized: Langue
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

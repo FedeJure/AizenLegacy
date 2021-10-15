@@ -2632,6 +2632,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2597797, guid: a75c4cc2af90ae34a92b6a037a3338d8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 62.80005
+      objectReference: {fileID: 0}
     - target: {fileID: 2597798, guid: a75c4cc2af90ae34a92b6a037a3338d8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2938,6 +2942,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 649327054675986998, guid: ea7977ebe940ec34287b6aa90ffa1b21,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7955086583496678701, guid: ea7977ebe940ec34287b6aa90ffa1b21,
         type: 3}
       propertyPath: m_RootOrder
@@ -3001,7 +3010,37 @@ PrefabInstance:
     - target: {fileID: 7955086583496678702, guid: ea7977ebe940ec34287b6aa90ffa1b21,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7955086583881977798, guid: ea7977ebe940ec34287b6aa90ffa1b21,
+        type: 3}
+      propertyPath: orthographic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7955086585241326141, guid: ea7977ebe940ec34287b6aa90ffa1b21,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 13.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7955086585241326141, guid: ea7977ebe940ec34287b6aa90ffa1b21,
+        type: 3}
+      propertyPath: m_fontSizeMin
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7955086585241326141, guid: ea7977ebe940ec34287b6aa90ffa1b21,
+        type: 3}
+      propertyPath: m_enableWordWrapping
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7955086585241326142, guid: ea7977ebe940ec34287b6aa90ffa1b21,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7955086585241326142, guid: ea7977ebe940ec34287b6aa90ffa1b21,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea7977ebe940ec34287b6aa90ffa1b21, type: 3}

@@ -83,5 +83,9 @@ MonoBehaviour:
       \u062D\u0631\u0631 <sprite=1>\r"
     m_Metadata:
       m_Items: []
+  - m_Id: 162012252463104
+    m_Localized: "\u0644\u063A\u0629"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
