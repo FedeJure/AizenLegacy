@@ -37578,8 +37578,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7955086585141210590}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.946, z: -2.295}
-  m_LocalScale: {x: 2.7933304, y: 4.0828648, z: 1}
+  m_LocalPosition: {x: 0, y: 3.946, z: -3.239}
+  m_LocalScale: {x: 3.5308614, y: 4.0828648, z: 1}
   m_Children: []
   m_Father: {fileID: 7955086583496678701}
   m_RootOrder: 7
@@ -42361,7 +42361,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -4838704252988090607, guid: ae154be121cf92641a000c8136ef4086, type: 2}
+  - {fileID: 21313559344558168, guid: 4866a2f24903b4950bb1400725eedb16, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42405,10 +42405,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Tutorial
 
-    completed'
+    completed!'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ae154be121cf92641a000c8136ef4086, type: 2}
-  m_sharedMaterial: {fileID: -4838704252988090607, guid: ae154be121cf92641a000c8136ef4086,
+  m_fontAsset: {fileID: 11400000, guid: 4866a2f24903b4950bb1400725eedb16, type: 2}
+  m_sharedMaterial: {fileID: 21313559344558168, guid: 4866a2f24903b4950bb1400725eedb16,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -42433,11 +42433,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 17.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 16
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2

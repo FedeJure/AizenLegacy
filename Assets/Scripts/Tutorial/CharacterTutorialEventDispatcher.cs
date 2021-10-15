@@ -4,6 +4,7 @@ using Character;
 using TMPro;
 using UniRx;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 
 namespace Tutorial
@@ -26,6 +27,8 @@ namespace Tutorial
         private Queue<string> stackMessages;
 
         private IDisposable _holdDisposer;
+
+        private int step = 1;
 
 
         private void Awake()
@@ -155,8 +158,11 @@ namespace Tutorial
         public void ShowMessage()
         {
             if (stackMessages.Count <= 0) return;
+            GetNextString()
+                .Do(newMessage => text.text = newMessage)
+                .Subscribe();
             textContainer.SetActive(true);
-             text.text = stackMessages.Dequeue();
+            //text.text = stackMessages.Dequeue();
         }
 
         public void DismissMessage()
@@ -186,6 +192,12 @@ namespace Tutorial
         public void GoToHome()
         {
             SceneManager.LoadSceneAsync((int)Scenes.Main);
+        }
+
+        private IObservable<string> GetNextString()
+        {
+            var asyncString = LocalizationSettings.StringDatabase.GetLocalizedStringAsync($"tid_tutorial_step_{step++}");
+            return asyncString.ToObservable().Select(_ => asyncString.Result);
         }
     }
 }
