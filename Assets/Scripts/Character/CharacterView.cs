@@ -51,11 +51,6 @@ namespace Character
             
             rbody.maxAngularVelocity = 25;
 
-            CharacterSharedRepository.characterStats.Subscribe(
-                stats =>
-                {
-                    CharacterSharedRepository.characterState.Value = ScriptableObject.CreateInstance<CharacterState>();
-                });
         }
 
         private void Start()

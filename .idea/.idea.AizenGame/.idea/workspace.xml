@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStat.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSharedRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSharedRepository.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStatePositionView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStatePositionView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,13 +30,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityAdsAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveProperty.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/TopLimitTrampoline.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/_DemoStuff/Scripts/Customizations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial/TutorialController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterSharedRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Synchronize.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/AsyncSubject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/50/6d778d3b/Space.cs" root0="SKIP_HIGHLIGHTING" />
@@ -64,10 +80,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial/FailTutorialWidgetController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/ConfigurationPopupController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.0.3/Runtime/Component Localizers/LocalizeStringEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStatePositionView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableScrollTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -83,7 +97,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipUntil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Models/SkinModels/BahichSkin.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
@@ -101,9 +114,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/CharacterInitEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RuntimeReferenceProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStateRepository.cs" />
@@ -118,14 +129,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial/TutorialController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInputScriptable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlayState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameplayContext.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/ComponentGetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" />
@@ -134,13 +143,18 @@
         <option value="$PROJECT_DIR$/Assets/Shaders/Resources/UIShiny.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/HeadBoneFollowTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial/FailTutorialWidgetController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/LocalizedString.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial/CharacterTutorialEventDispatcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/ConfigurationPopupController.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" />
       </list>
     </option>
   </component>

@@ -35,8 +35,6 @@ namespace Lobby
 
         private void Play()
         {
-            CharacterSharedRepository.characterStats.Value = ScriptableObject.CreateInstance<CharacterStats>();
-            CharacterSharedRepository.characterStats.Value.maxEnergy = 100;
             GameSceneManager.GetInstance().LoadGamePlayScene();
         }
 
@@ -67,8 +65,7 @@ namespace Lobby
 
             cameraView.Target = currentPlayer.target;
             nameText.text = currentPlayer.selection.name;
-            SelectedCharacterRepository.Set(new SelectedCharacter(currentPlayer.selection.characterSkin));
-
+            SelectedCharacterRepository.Set(currentPlayer.selection);
         }
     }
 }

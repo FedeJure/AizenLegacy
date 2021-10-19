@@ -28,7 +28,7 @@ namespace Character
             }
 
             if (skin == null)
-                skin = SelectedCharacterRepository.Get()?.skin;
+                skin = SelectedCharacterRepository.Get()?.characterSkin;
         }
 
         private void OnEnable()
