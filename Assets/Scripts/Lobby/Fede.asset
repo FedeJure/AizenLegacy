@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3afad1c57cd46e987228b6b0ddd8df5, type: 3}
   m_Name: Fede
   m_EditorClassIdentifier: 
+  characterStats: {fileID: 11400000, guid: 574f1ccc619111e488c54574e64421d6, type: 2}
   characterSkin: {fileID: 11400000, guid: 337fc0bc0d9954b4ab43d5b8f4b10e8c, type: 2}
   characterName: Fede

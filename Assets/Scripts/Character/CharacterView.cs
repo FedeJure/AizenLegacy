@@ -131,7 +131,9 @@ namespace Character
             ApplyActions();
             var velocity = rbody.velocity;
             var position = rbody.position;
-            if (rbody.worldCenterOfMass.y >= 7) rbody.AddForce(0, -velocity.y, 0, ForceMode.Impulse);
+            //Altura
+            if (rbody.worldCenterOfMass.y >= SelectedCharacterRepository.Get()?.characterStats.height) 
+                rbody.AddForce(0, -velocity.y, 0, ForceMode.Impulse);
             animator.SetFloat(velocityKey, velocity.y);
             if (isFalling && velocity.y > 0)
             {

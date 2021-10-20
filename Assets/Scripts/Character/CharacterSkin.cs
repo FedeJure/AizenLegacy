@@ -13,7 +13,13 @@ namespace Character
     public class SkinMesh
     {
         [SerializeField] public Mesh mesh;
-        [SerializeField] public Material[] materials;
+        [SerializeField] public ColoredMaterial[] materials;
         [SerializeField] public BodyParts bodyPart;
+    }
+    [Serializable]
+    public struct ColoredMaterial
+    {
+        public Material material;
+        public Color color;
     }
 }

@@ -7,7 +7,7 @@ namespace Trampoline
 {
     public class TrampolineView : MonoBehaviour
     {
-        [SerializeField] private float force = 5000;
+        [SerializeField] private float force = 6500;
         [SerializeField] private GameObject leftBone;
         [SerializeField] private GameObject rightBone;
         [SerializeField] private Transform loneCenter;

@@ -40,7 +40,8 @@ namespace Character
                 for (var i = 0; i < s.materials.Length; i++)
                 {
                     var mats = indexed[s.bodyPart].location.materials;
-                    mats[i] = s.materials[i];
+                    mats[i] = Instantiate<Material>(s.materials[i].material);
+                    mats[i].color = s.materials[i].color;
                     indexed[s.bodyPart].location.materials = mats;
                 }
             }

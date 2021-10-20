@@ -15,25 +15,32 @@ MonoBehaviour:
   skines:
   - mesh: {fileID: 3916393650668210404, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
-    - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
+    - material: {fileID: 2100000, guid: 21d0f356efac6024fb1c0d569bbd6a34, type: 2}
+      color: {r: 0.6037736, g: 0.39745957, b: 0.26486292, a: 0}
     bodyPart: 0
   - mesh: {fileID: -8839368762345780380, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
-    - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
+    - material: {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
+      color: {r: 0, g: 0, b: 0, a: 0}
     bodyPart: 1
   - mesh: {fileID: 7666266049737368757, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
-    - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
+    - material: {fileID: 2100000, guid: 21d0f356efac6024fb1c0d569bbd6a34, type: 2}
+      color: {r: 0.1981132, g: 0.18035777, b: 0.18035777, a: 0}
     bodyPart: 2
   - mesh: {fileID: -278085929633702562, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
-    - {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
+    - material: {fileID: 2100000, guid: da3989c96d9b84646b4786c603c90dd9, type: 2}
+      color: {r: 0.764151, g: 0.764151, b: 0.764151, a: 0}
     bodyPart: 3
   - mesh: {fileID: 2959467708922500008, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
-    - {fileID: 2100000, guid: 21d0f356efac6024fb1c0d569bbd6a34, type: 2}
+    - material: {fileID: 2100000, guid: 21d0f356efac6024fb1c0d569bbd6a34, type: 2}
+      color: {r: 0.93725497, g: 0.76470596, b: 0.6666667, a: 0}
     bodyPart: 4
   - mesh: {fileID: 2786071614415613382, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
-    - {fileID: 3058174622990785145, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
+    - material: {fileID: 4023729733575327631, guid: beba892a66e4dd145ba6870db6adfca6,
+        type: 3}
+      color: {r: 0.27861884, g: 0.49019608, b: 0.06274511, a: 0}
     bodyPart: 5
