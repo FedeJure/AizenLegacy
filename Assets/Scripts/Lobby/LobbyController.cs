@@ -30,7 +30,7 @@ namespace Lobby
             tutorialButton.onClick.AddListener(Tutorial);
             cameraView.Target = currentPlayer.target;
             nameText.text = currentPlayer.selection.name;
-            SelectedCharacterRepository.Clear();
+            SelectedCharacterRepository.Set(currentPlayer.selection);
         }
 
         private void Play()

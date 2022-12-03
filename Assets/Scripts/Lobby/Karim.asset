@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3afad1c57cd46e987228b6b0ddd8df5, type: 3}
+  m_Name: Karim
+  m_EditorClassIdentifier: 
+  characterStats: {fileID: 11400000, guid: bf00025707927564989602d0de85995c, type: 2}
+  characterSkin: {fileID: 11400000, guid: 517ceb8218e90b14e84a94c5e891b0f0, type: 2}
+  characterName: Santi

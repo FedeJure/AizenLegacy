@@ -75,6 +75,10 @@ MonoBehaviour:
     m_Key: tid_language
     m_Metadata:
       m_Items: []
+  - m_Id: 4479749502132224
+    m_Key: tid_energy
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

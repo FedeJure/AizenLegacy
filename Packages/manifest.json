@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.coffee.ui-effect": "file:F:/Users/Fede/Downloads/com.coffee.ui-effect-4.0.0-preview.9/package",
     "com.google.external-dependency-manager": "1.2.164",
     "com.unity.animation.rigging": "1.0.3",
     "com.unity.ide.rider": "2.0.7",

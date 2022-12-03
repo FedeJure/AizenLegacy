@@ -94,5 +94,9 @@ MonoBehaviour:
     m_Localized: Sprache
     m_Metadata:
       m_Items: []
+  - m_Id: 4479749502132224
+    m_Localized: "\xC9nergie"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

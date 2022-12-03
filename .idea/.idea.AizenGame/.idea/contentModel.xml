@@ -581,6 +581,7 @@
             <e p="CharacterSkin.cs" t="Include" />
             <e p="CharacterStat.cs" t="Include" />
             <e p="CharacterView.cs" t="Include" />
+            <e p="EnergyController.cs" t="Include" />
             <e p="IKCharacterView.cs" t="Include" />
             <e p="Position.cs" t="Include" />
             <e p="SkinInit.cs" t="Include" />

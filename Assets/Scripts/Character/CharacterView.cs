@@ -81,6 +81,7 @@ namespace Character
             EventBus.OnLoseStability()
                 .Do(_ =>
                 {
+                    animator.StopPlayback();
                     Disable();
                     Observable.Timer(TimeSpan.FromSeconds(4))
                         .Last()
@@ -89,6 +90,13 @@ namespace Character
                         .Subscribe();
                 })
                 .Subscribe()
+                .AddTo(disposer);
+
+            Observable.Interval(TimeSpan.FromMilliseconds(100))
+                .Subscribe(_ =>
+                {
+                    if (selectedPosition != null && isStable) EventBus.EmitConsumeEnergy(1f);
+                })
                 .AddTo(disposer);
             
             transform.SetPositionAndRotation(GameplayContext.GetInstance().startLocationTransform.position, Quaternion.identity);
@@ -185,19 +193,6 @@ namespace Character
             MakePosition(Position.APosition, pressed);
         }
 
-        private void MakePosition(Position position, bool pressed)
-        {
-            if (!selectedPosition.HasValue && pressed && !isFalling) selectedPosition = position;
-            if (selectedPosition.HasValue && selectedPosition.Value.Equals(position) && !pressed)
-            {
-                StabilizateInFly();
-                selectedPosition = null;
-            }
-                
-            EventBus.EmitOnPositionStarted();
-            RemovePositions();
-        }
-
         private void StabilizateInFly()
         {
             var angleToGround = Vector3.SignedAngle(transform.up, Vector3.up, transform.right);
@@ -209,6 +204,19 @@ namespace Character
             var time = (float)Math.Sqrt((transform.position.y - GameplayContext.GetInstance().trampolineLimitTransform.position.y) * 2f / 9.8f);
 
             actions.Add(new StabilizateAction(transform, value, time));
+        }
+        
+        private void MakePosition(Position position, bool pressed)
+        {
+            if (!selectedPosition.HasValue && pressed && !isFalling) selectedPosition = position;
+            if (selectedPosition.HasValue && selectedPosition.Value.Equals(position) && !pressed)
+            {
+                StabilizateInFly();
+                selectedPosition = null;
+            }
+                
+            EventBus.EmitOnPositionStarted();
+            RemovePositions();
         }
 
         private void RemovePositions()
@@ -224,6 +232,7 @@ namespace Character
             actions.Add( new FrontAction(transform));
             animator.SetBool(positionKeyMap[selectedPosition.Value], true);
             rotatingForward = true;
+            EventBus.EmitConsumeEnergy(10);
         }
 
         public void MakeBack(bool value)
@@ -232,6 +241,7 @@ namespace Character
             actions.Add(new BackAction(transform));
             animator.SetBool(positionKeyMap[selectedPosition.Value], true);
             rotatingForward = false;
+            EventBus.EmitConsumeEnergy(10);
         }
 
         public void MakeHalfTwist(bool value)
@@ -240,6 +250,7 @@ namespace Character
             actions.Add(new HalfTwistAction(pivotModel.transform));
             EventBus.EmitOnSideChange();
             RemovePositions();
+            EventBus.EmitConsumeEnergy(5);
         }
 
         private void OnDisable()

@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "com.coffee.ui-effect": {
-      "version": "file:F:/Users/Fede/Downloads/com.coffee.ui-effect-4.0.0-preview.9/package",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.google.external-dependency-manager": {
       "version": "1.2.164",
       "depth": 0,

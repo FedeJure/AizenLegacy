@@ -88,5 +88,9 @@ MonoBehaviour:
     m_Localized: Langue
     m_Metadata:
       m_Items: []
+  - m_Id: 4479749502132224
+    m_Localized: "\xE9nergie"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

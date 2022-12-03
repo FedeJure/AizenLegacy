@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playstoreGameId: 3974677
   surfacingId: banner
-  testMode: 1
+  testMode: 0
 --- !u!1001 &538327387
 PrefabInstance:
   m_ObjectHideFlags: 0

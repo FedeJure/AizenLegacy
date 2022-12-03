@@ -11,6 +11,7 @@ public static class EventBus
         static ISubject<Unit> onLoseStability = new Subject<Unit>();
         static ISubject<Unit> onGameplayEnd = new Subject<Unit>();
         static ISubject<Unit> onGameplayStart = new Subject<Unit>();
+        static ISubject<float> onConsumeEnergy = new Subject<float>();
 
         public static IObservable<Unit> OnPositionStarted()
         {
@@ -52,6 +53,11 @@ public static class EventBus
                 return onLoseStability;
         }
 
+        public static IObservable<float> OnConsumeEnergy()
+        {
+                return onConsumeEnergy;
+        }
+
         public static void EmitOnPositionStarted()
         {
                 onPositionStarted.OnNext(Unit.Default);
@@ -90,5 +96,10 @@ public static class EventBus
         public static void EmitOnGameplayStart()
         {
                 onGameplayStart.OnNext(Unit.Default);
+        }
+
+        public static void EmitConsumeEnergy(float energy)
+        {
+                onConsumeEnergy.OnNext(energy);
         }
 }

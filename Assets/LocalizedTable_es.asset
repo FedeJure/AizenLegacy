@@ -63,7 +63,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1884786122752
-    m_Localized: Presiona <sprite=1 y mantenlo
+    m_Localized: Presiona <sprite=1> y mantenlo
     m_Metadata:
       m_Items: []
   - m_Id: 1915568119808
@@ -76,6 +76,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 162012252463104
     m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4479749502132224
+    m_Localized: "Energ\xEDa"
     m_Metadata:
       m_Items: []
   references:
