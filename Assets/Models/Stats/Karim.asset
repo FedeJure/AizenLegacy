@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0c051c65bcc44b6ba53a532ed4d9e0e, type: 3}
   m_Name: Karim
   m_EditorClassIdentifier: 
-  energy: 100
-  height: 4.5
+  energy: 150
+  height: 4
+  energySpeedCharge: 1

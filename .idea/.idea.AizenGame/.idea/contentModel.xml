@@ -597,6 +597,7 @@
             <e p="LobbyCamera.cs" t="Include" />
             <e p="LobbyController.cs" t="Include" />
           </e>
+          <e p="PLayerInfo.cs" t="Include" />
           <e p="RagdollController.cs" t="Include" />
           <e p="SelectedCharacterRepository.cs" t="Include" />
           <e p="Trampoline" t="Include">

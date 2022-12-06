@@ -7,5 +7,6 @@
     {
         [SerializeField] public float energy;
         [SerializeField] public float height;
+        [SerializeField] public float energySpeedCharge;
     }
 }

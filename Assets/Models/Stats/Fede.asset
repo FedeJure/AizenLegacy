@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energy: 100
   height: 4.5
+  energySpeedCharge: 1
+  maxHeight: 0

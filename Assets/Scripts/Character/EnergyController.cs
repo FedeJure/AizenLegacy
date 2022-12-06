@@ -21,7 +21,7 @@ namespace Character
             EventBus.OnConsumeEnergy()
                 .Subscribe(energy => { ChangeEnergy(-energy); }).AddTo(disposer);
             Observable.Interval(TimeSpan.FromMilliseconds(200))
-                .Subscribe(_ => { ChangeEnergy(1); }).AddTo(disposer);
+                .Subscribe(_ => { ChangeEnergy(selectedChar.characterStats.energySpeedCharge); }).AddTo(disposer);
         }
 
         private void OnDisable()
@@ -33,9 +33,8 @@ namespace Character
         private void ChangeEnergy(float value)
         {
             currentEnergy = Math.Min(maxEnergy, Math.Max(0f, currentEnergy + value));
-            //bar.localScale.Set(currentEnergy / maxEnergy, 1, 1);
             bar.LeanScaleX(currentEnergy / maxEnergy, 0.1f);
-            if (currentEnergy == 0)
+            if (currentEnergy <= 0)
             {
                 EventBus.EmitOnLoseStability();
             }
