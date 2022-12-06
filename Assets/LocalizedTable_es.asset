@@ -82,5 +82,13 @@ MonoBehaviour:
     m_Localized: "Energ\xEDa"
     m_Metadata:
       m_Items: []
+  - m_Id: 151433857949528064
+    m_Localized: Abrir en Play Store
+    m_Metadata:
+      m_Items: []
+  - m_Id: 151437656944570368
+    m_Localized: "\r\xA1Prueba otro de mis juegos!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

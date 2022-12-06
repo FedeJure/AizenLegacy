@@ -79,6 +79,14 @@ MonoBehaviour:
     m_Key: tid_energy
     m_Metadata:
       m_Items: []
+  - m_Id: 151433857949528064
+    m_Key: tid_navigate_to_playstore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 151437656944570368
+    m_Key: tid_try_game
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

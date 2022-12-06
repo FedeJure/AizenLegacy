@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ namespace Character
     public class EnergyController: MonoBehaviour
     {
         [SerializeField] private RectTransform bar;
+        private List<IDisposable> disposer = new List<IDisposable>();
 
         private float maxEnergy;
         private float currentEnergy;
@@ -17,9 +19,15 @@ namespace Character
                 maxEnergy = selectedChar.characterStats.energy;
             currentEnergy = maxEnergy;
             EventBus.OnConsumeEnergy()
-                .Subscribe(energy => { ChangeEnergy(-energy); });
+                .Subscribe(energy => { ChangeEnergy(-energy); }).AddTo(disposer);
             Observable.Interval(TimeSpan.FromMilliseconds(200))
-                .Subscribe(_ => { ChangeEnergy(1); });
+                .Subscribe(_ => { ChangeEnergy(1); }).AddTo(disposer);
+        }
+
+        private void OnDisable()
+        {
+            disposer.ForEach(d => d.Dispose());
+            disposer = new List<IDisposable>();
         }
 
         private void ChangeEnergy(float value)

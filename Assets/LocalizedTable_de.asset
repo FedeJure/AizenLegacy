@@ -98,5 +98,13 @@ MonoBehaviour:
     m_Localized: "\xC9nergie"
     m_Metadata:
       m_Items: []
+  - m_Id: 151433857949528064
+    m_Localized: "Im Player Store \xF6ffnen\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 151437656944570368
+    m_Localized: "Probieren Sie eines meiner Spiele aus!\r"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

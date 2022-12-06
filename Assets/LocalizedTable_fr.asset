@@ -92,5 +92,13 @@ MonoBehaviour:
     m_Localized: "\xE9nergie"
     m_Metadata:
       m_Items: []
+  - m_Id: 151433857949528064
+    m_Localized: "Ouvrir dans la boutique du joueur\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 151437656944570368
+    m_Localized: "Essayez un autre de mes jeux !\r"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
