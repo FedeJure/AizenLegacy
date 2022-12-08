@@ -263,6 +263,7 @@ namespace Character
         {
             ikView.enabled = false;
             input.enabled = false;
+            animator.enabled = false;
             //enabled = false;
         }
     }
