@@ -1086,7 +1086,7 @@ CharacterJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 0
-  m_MassScale: 1
+  m_MassScale: 3
   m_ConnectedMassScale: 1
 --- !u!1 &2763230693863733459
 GameObject:
@@ -1195,29 +1195,29 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0970477, y: 0.43724105, z: 0.1455855}
+  m_ConnectedAnchor: {x: 0.13805823, y: 0.45533264, z: 0.08237703}
   serializedVersion: 2
-  m_SwingAxis: {x: 0, y: 0, z: 1}
+  m_SwingAxis: {x: -12.88, y: 0, z: 1}
   m_TwistLimitSpring:
     spring: 0
     damper: 0
   m_LowTwistLimit:
-    limit: -70
+    limit: -177
     bounciness: 0
     contactDistance: 0
   m_HighTwistLimit:
-    limit: 10
+    limit: -77.5594
     bounciness: 0
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
     damper: 0
   m_Swing1Limit:
-    limit: 50
+    limit: 30.86229
     bounciness: 0
     contactDistance: 0
   m_Swing2Limit:
-    limit: 0
+    limit: 65.12697
     bounciness: 0
     contactDistance: 0
   m_EnableProjection: 0
@@ -1227,7 +1227,7 @@ CharacterJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 0
-  m_MassScale: 1
+  m_MassScale: 2
   m_ConnectedMassScale: 1
 --- !u!1 &3011415034838639007
 GameObject:
@@ -1972,7 +1972,7 @@ CharacterJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -0.139813, y: 0.44999713, z: 0.08101028}
   serializedVersion: 2
-  m_SwingAxis: {x: 0, y: 0, z: 1}
+  m_SwingAxis: {x: 3.45, y: 0, z: 1}
   m_TwistLimitSpring:
     spring: 0
     damper: 0
@@ -2002,7 +2002,7 @@ CharacterJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 0
-  m_MassScale: 1
+  m_MassScale: 2
   m_ConnectedMassScale: 1
 --- !u!1 &4187127215956327169
 GameObject:
@@ -2552,7 +2552,10 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'Pelvis'\n\tTransform 'Clavicle_l'\n\tTransform
+    'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -3434,7 +3437,7 @@ CharacterJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 0
-  m_MassScale: 1
+  m_MassScale: 3
   m_ConnectedMassScale: 1
 --- !u!1 &7420799001645132064
 GameObject:
@@ -3818,12 +3821,12 @@ CharacterJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -0.000000044703494, y: 0.29267985, z: -0.000000014901174}
   serializedVersion: 2
-  m_SwingAxis: {x: -1, y: 0, z: 0}
+  m_SwingAxis: {x: 0.53, y: 0, z: 0}
   m_TwistLimitSpring:
     spring: 0
     damper: 0
   m_LowTwistLimit:
-    limit: -90
+    limit: -29.559338
     bounciness: 0
     contactDistance: 0
   m_HighTwistLimit:
@@ -3838,7 +3841,7 @@ CharacterJoint:
     bounciness: 0
     contactDistance: 0
   m_Swing2Limit:
-    limit: 0
+    limit: 45.886723
     bounciness: 0
     contactDistance: 0
   m_EnableProjection: 0
@@ -4322,31 +4325,31 @@ CharacterJoint:
   m_ConnectedBody: {fileID: 2418313847701751173}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
-  m_Axis: {x: 0, y: 0, z: 1}
+  m_Axis: {x: 0, y: -0.46, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000014901164, y: 0.29268026, z: 0.00000008940701}
+  m_ConnectedAnchor: {x: 0.00000010430816, y: 0.29268026, z: -0.00000011920935}
   serializedVersion: 2
-  m_SwingAxis: {x: 1, y: 0, z: 0}
+  m_SwingAxis: {x: 1, y: 0.87, z: 0}
   m_TwistLimitSpring:
     spring: 0
     damper: 0
   m_LowTwistLimit:
-    limit: -90
+    limit: -42.172077
     bounciness: 0
     contactDistance: 0
   m_HighTwistLimit:
-    limit: 0
+    limit: -10.121137
     bounciness: 0
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
     damper: 0
   m_Swing1Limit:
-    limit: 0
+    limit: 22.548866
     bounciness: 0
     contactDistance: 0
   m_Swing2Limit:
-    limit: 0
+    limit: 32.02525
     bounciness: 0
     contactDistance: 0
   m_EnableProjection: 0
