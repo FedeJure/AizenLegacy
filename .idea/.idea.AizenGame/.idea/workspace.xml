@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/PilarSkin.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/SkinModels/PilarSkin.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/Pilar.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/Pilar.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MikadoBoldSpecial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MikadoBoldSpecial.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character_female.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character_female.blend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character_female.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character_female.blend1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
