@@ -29,7 +29,7 @@ namespace Lobby
             playButton.onClick.AddListener(Play);
             tutorialButton.onClick.AddListener(Tutorial);
             cameraView.Target = currentPlayer.target;
-            nameText.text = currentPlayer.selection.name;
+            nameText.text = currentPlayer.selection.characterName;
             SelectedCharacterRepository.Set(currentPlayer.selection);
         }
 

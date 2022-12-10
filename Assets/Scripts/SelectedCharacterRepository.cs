@@ -1,8 +1,6 @@
 ﻿using System;
-using Character;
 using JetBrains.Annotations;
 using Lobby;
-using UnityEngine;
 
 public static class SelectedCharacterRepository
 {
