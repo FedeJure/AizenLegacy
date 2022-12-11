@@ -2,9 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Skin.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Skin.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/BaseMaterial.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/BaseMaterial.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/BaseMaterial.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/BaseMaterial.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/Bigote.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/Bigote.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/BodyTexture.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/BodyTexture.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/FemaleLegsMaterial.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/FemaleLegsMaterial.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/Material.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/Material.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/Material1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/Material1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/SimpleTorso.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/SimpleTorso.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/Texture_0.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/Texture_0.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/hair.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/Materials/hair.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Meshes/Characters/character 1.blend1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
