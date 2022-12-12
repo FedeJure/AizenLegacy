@@ -2113,6 +2113,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497469543}
   m_CullTransparentMesh: 1
+--- !u!1 &1618898213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1301548896809566460, guid: 3ca9e9b57334d8a4b843d9e7df967b64,
+    type: 3}
+  m_PrefabInstance: {fileID: 3088132184945685243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &1618898215
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618898213}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d4abd95932a795f4fa3b8672ed90a529, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: d4abd95932a795f4fa3b8672ed90a529, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1618898219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618898213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59fe3e902c5defd46b5dbcc6e75c129c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleAnims: []
+  probAnim: []
 --- !u!1 &1665560376
 GameObject:
   m_ObjectHideFlags: 0
@@ -3258,6 +3294,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dd8d94b688848f142ba40291720eea85, type: 2}
+    - target: {fileID: 5774433795621267322, guid: 3ca9e9b57334d8a4b843d9e7df967b64,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5774433795621267322, guid: 3ca9e9b57334d8a4b843d9e7df967b64,
         type: 3}
       propertyPath: m_WarningMessage

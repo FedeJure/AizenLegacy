@@ -2,10 +2,244 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Animations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/A_Sound.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/A_Sound.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Angry.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Angry.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Ashamed.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Ashamed.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Blink.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Blink.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/E_Sound.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/E_Sound.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/O_Sound.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/O_Sound.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Sad.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Sad.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Smile.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Smile.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Wink_Left.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Wink_Left.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Wink_Right.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FacialAnimations/Wink_Right.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FailedFeedback.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/FailedFeedback.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/GymnastController.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/GymnastController.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/JumpDown.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/JumpDown.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/LiamGeneric.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/LiamGeneric.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Idle.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Idle.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/IdleAvatar.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/IdleAvatar.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/EndAPosition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/EndAPosition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/EndCPosition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/EndCPosition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/EndVPosition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/EndVPosition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/Falling.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/Falling.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/FlyingIdle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/FlyingIdle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidCrouch.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidCrouch.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidIdle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidIdle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidIdle.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidIdle.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidIdleJumpUp.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidIdleJumpUp.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidJumpAndFall.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidJumpAndFall.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidMidAir.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidMidAir.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidRun.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidRun.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidRunTurn.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidRunTurn.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidRunTurnSharp.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidRunTurnSharp.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidStandTurn.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidStandTurn.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidWalk.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidWalk.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidWalkTurn.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidWalkTurn.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidWalkTurnSharp.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/HumanoidWalkTurnSharp.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/Risign 1.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/Risign 1.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/Risign.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/Risign.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/StartAPosition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/StartAPosition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/StartCPosition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/StartCPosition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/StartVPosition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/StartVPosition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/TrainerIdle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/MovenetAnimations/TrainerIdle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/CharTutorialAnimator.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/CharTutorialAnimator.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/TrainerProtecting.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/TrainerProtecting.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/TrainerTutorial.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/TrainerTutorial.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/TrampTutorial.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/TrampTutorial.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/TutorialCharacter.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/TutorialCharacter.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/TutorialTrampoline.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/TutorialTrampoline.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/tutorialScene.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SceneAnimations/tutorialScene.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SuccessFeedback.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/SuccessFeedback.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/TrainerController.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/TrainerController.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Trampoline.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Trampoline.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/TutorialTextAnimator.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/TutorialTextAnimator.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/tutorialText_show.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/tutorialText_show.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/idleJumping.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/idleJumping.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/tutorialFailedFeedback.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/tutorialFailedFeedback.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/tutorialSuccessFeedback.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/tutorialSuccessFeedback.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/umotion_project.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/umotion_project.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SimpleAnimations.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SimpleAnimations.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/A_Sound.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/A_Sound.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Angry.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Angry.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Ashamed.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Ashamed.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Blink.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Blink.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/E_Sound.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/E_Sound.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/O_Sound.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/O_Sound.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Sad.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Sad.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Smile.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Smile.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Wink_Left.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Wink_Left.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Wink_Right.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FacialAnimations/Wink_Right.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FailedFeedback.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/FailedFeedback.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/GymnastController.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/GymnastController.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/JumpDown.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/JumpDown.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/LiamGeneric.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/LiamGeneric.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/EndAPosition.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/EndAPosition.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/EndCPosition.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/EndCPosition.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/EndVPosition.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/EndVPosition.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/Falling.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/Falling.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/FlyingIdle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/FlyingIdle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidCrouch.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidCrouch.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidIdle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidIdle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidIdle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidIdle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidIdleJumpUp.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidIdleJumpUp.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidJumpAndFall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidJumpAndFall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidMidAir.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidMidAir.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidRun.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidRun.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidRunTurn.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidRunTurn.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidRunTurnSharp.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidRunTurnSharp.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidStandTurn.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidStandTurn.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidWalk.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidWalk.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidWalkTurn.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidWalkTurn.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidWalkTurnSharp.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/HumanoidWalkTurnSharp.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/Risign 1.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/Risign 1.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/Risign.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/Risign.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/StartAPosition.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/StartAPosition.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/StartCPosition.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/StartCPosition.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/StartVPosition.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/StartVPosition.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/TrainerIdle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/MovenetAnimations/TrainerIdle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/CharTutorialAnimator.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/CharTutorialAnimator.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TrainerProtecting.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TrainerProtecting.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TrainerTutorial.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TrainerTutorial.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TrampTutorial.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TrampTutorial.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TutorialCharacter.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TutorialCharacter.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TutorialTrampoline.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/TutorialTrampoline.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/tutorialScene.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SceneAnimations/tutorialScene.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SuccessFeedback.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/SuccessFeedback.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/TrainerController.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/TrainerController.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/Trampoline.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/Trampoline.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/UIAnimations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/UIAnimations/TutorialTextAnimator.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/UIAnimations/TutorialTextAnimator.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/UIAnimations/tutorialText_show.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/UIAnimations/tutorialText_show.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/idleJumping.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/idleJumping.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/tutorialFailedFeedback.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/tutorialFailedFeedback.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/tutorialSuccessFeedback.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/tutorialSuccessFeedback.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/umotion_project.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animations/umotion_project.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/LobbyCharacters/LobbyAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/LobbyCharacters/LobbyAnimator.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,61 +250,51 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Resources/Shaders/UIMultiply.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/MicroCoroutine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/EnergyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WhereSelect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UGUIKit Flat/Content/Scripts/bl_ToggleSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Awaiter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SelectMany.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prueba.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/578D960B-4120-4F0A-A903-8FAC387556E9/92/29c5a505/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Models/Prefabs/ButtonCanvas.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleAnimations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/ColorPicker/HSVUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Binding.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToArray.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/BuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/Accordion/Tweening/TweenRunner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/Accordion/AccordionElement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Proyectos Unity 3d/BaseProyectUtilities/Assets/GooglePlayServicesManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/_DemoStuff/Scripts/Customizations.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipUntil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/RangeSlider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.0.3/Runtime/Component Localizers/LocalizeStringEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PLayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Effects/ShaderEffects/UISoftAdditiveEffect.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Resources/Shaders/UIMultiply.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WhereSelect.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/UGUIKit Flat/Content/Scripts/bl_ToggleSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SelectMany.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettings.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Do.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Binding.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Concat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableScrollTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToArray.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/TopLimitTrampoline.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/BuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/SkinInit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Select.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterActions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/Accordion/Tweening/TweenRunner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameplayContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Synchronize.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/Accordion/AccordionElement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveProperty.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterAction.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,7 +304,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityAdsAdapter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/300x250.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomInterstitial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Position.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Proyectos Unity 3d/BaseProyectUtilities/Assets/GooglePlayServicesManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/UI_TweenScale.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial/TutorialController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -89,8 +315,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial/CharacterTutorialEventDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/HeadBoneFollowTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Observable.Unity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Characters/Karim.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/AsyncSubject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/320x50.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/_DemoStuff/Scripts/Customizations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/MessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/ScrollRectEx.cs" root0="FORCE_HIGHLIGHTING" />
@@ -103,15 +331,22 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.0.3/Runtime/Settings/Database/LocalizedDatabase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/ConfigurationPopupController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Layout/ScrollSnap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipUntil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/RangeSlider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.0.3/Runtime/Component Localizers/LocalizeStringEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ListObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PLayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LeanTween/Framework/LTSeq.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Effects/ShaderEffects/UISoftAdditiveEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LeanTween/Framework/LeanAudio.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Events/CharacterInitEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RuntimeReferenceProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneManager.cs" />
@@ -162,6 +397,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SimpleAnimations.cs" />
       </list>
     </option>
   </component>
@@ -180,6 +416,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.4" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="do_not_show_Android_plugin_suggestion" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -213,6 +450,14 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="" />
+      <created>1670856674119</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670856674119</updated>
+      <workItem from="1670856713023" duration="3036000" />
+    </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,10 +486,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="624" y="254" width="666" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1670295169703" />
-    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1670633385809">
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1670856280346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1670633385809" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1670856280346" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

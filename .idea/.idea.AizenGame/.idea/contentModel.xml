@@ -600,6 +600,7 @@
           <e p="PLayerInfo.cs" t="Include" />
           <e p="RagdollController.cs" t="Include" />
           <e p="SelectedCharacterRepository.cs" t="Include" />
+          <e p="SimpleAnimations.cs" t="Include" />
           <e p="Trampoline" t="Include">
             <e p="RagdollTrampolineView.cs" t="Include" />
             <e p="TopLimitTrampoline.cs" t="Include" />
