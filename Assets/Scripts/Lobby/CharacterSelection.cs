@@ -11,6 +11,7 @@ namespace Lobby
         [SerializeField] public CharacterStat characterStats;
         [SerializeField] public CharacterSkin characterSkin;
         [SerializeField] public string characterName;
+        [SerializeField] public float scale;
     }
 }
 

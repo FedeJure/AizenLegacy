@@ -15,3 +15,4 @@ MonoBehaviour:
   characterStats: {fileID: 11400000, guid: 574f1ccc619111e488c54574e64421d6, type: 2}
   characterSkin: {fileID: 11400000, guid: 337fc0bc0d9954b4ab43d5b8f4b10e8c, type: 2}
   characterName: Fede
+  scale: 1

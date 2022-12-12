@@ -56,6 +56,11 @@ namespace Character
         private void Start()
         {
             SubscribeToInput();
+            var currentSelection = SelectedCharacterRepository.Get();
+            if (currentSelection != null)
+            {
+                transform.localScale = new Vector3(currentSelection.scale, currentSelection.scale, currentSelection.scale);
+            }
         }
 
         private void SubscribeToInput()

@@ -15,3 +15,4 @@ MonoBehaviour:
   characterStats: {fileID: 11400000, guid: b26057ded74bf1543a2aa9f90e3e717a, type: 2}
   characterSkin: {fileID: 11400000, guid: 8eb4547714c34b14ba4de10640ab09cb, type: 2}
   characterName: Bahich
+  scale: 1

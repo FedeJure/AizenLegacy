@@ -15,3 +15,4 @@ MonoBehaviour:
   characterStats: {fileID: 11400000, guid: 0d5613ecc69661c4f94f8c5a21d5b95c, type: 2}
   characterSkin: {fileID: 11400000, guid: edbf621750a95a949a4e619dfadc3ccd, type: 2}
   characterName: Pilar
+  scale: 0.9
