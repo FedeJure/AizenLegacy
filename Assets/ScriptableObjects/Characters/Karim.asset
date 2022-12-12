@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Karim
   m_EditorClassIdentifier: 
   characterStats: {fileID: 11400000, guid: bf00025707927564989602d0de85995c, type: 2}
-  characterSkin: {fileID: 11400000, guid: 517ceb8218e90b14e84a94c5e891b0f0, type: 2}
+  characterSkin: {fileID: 11400000, guid: 750ebb08dedd3a443b362ffd7d3d4d80, type: 2}
   characterName: Santi
   scale: 0.7
