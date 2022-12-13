@@ -50,10 +50,19 @@ public class AILobbyController : MonoBehaviour
         });
         characters.ForEach(character => { character.ReadyToPerformNewAction += prevLocation =>
         {
-            prevLocation?.RemoveTarget();
-            var locationToUse = availableLocations[Random.Range(0, availableLocations.Count)];
-            locationToUse.AddTarget();
-            character.SetupNewLocation(locationToUse);
+            try
+            {
+                var locationToUse = availableLocations[Random.Range(0, availableLocations.Count)];
+                locationToUse.AddTarget();
+                character.SetupNewLocation(locationToUse);
+                prevLocation?.RemoveTarget();
+
+            }
+            catch (Exception e)
+            {
+                character.SetupNewLocation(prevLocation);
+            }
+
         }; });
     }
 }
