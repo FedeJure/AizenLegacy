@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Stand To Sit.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Stand To Sit.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/stand_to_sit.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/stand_to_sit.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/IdleAvatar.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/IdleAvatar.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AILobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AILobbyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,8 +173,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SimpleAnimations.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FixedTimeClock.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AILobbyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AILobbyController.cs" />
       </list>
     </option>
   </component>
@@ -223,7 +233,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670856674119</updated>
-      <workItem from="1670856713023" duration="17274000" />
+      <workItem from="1670856713023" duration="18220000" />
     </task>
     <servers />
   </component>

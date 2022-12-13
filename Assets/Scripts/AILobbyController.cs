@@ -48,21 +48,29 @@ public class AILobbyController : MonoBehaviour
             location.OnReachCapacity += () => { availableLocations.Remove(location); };
             location.OnFreeCapacity += () => { availableLocations.Add(location); };
         });
-        characters.ForEach(character => { character.ReadyToPerformNewAction += prevLocation =>
-        {
-            try
+        characters.ForEach(character => { 
+            character.ReadyToPerformNewAction += prevLocation =>
             {
-                var locationToUse = availableLocations[Random.Range(0, availableLocations.Count)];
-                locationToUse.AddTarget();
-                character.SetupNewLocation(locationToUse);
-                prevLocation?.RemoveTarget();
-
-            }
-            catch (Exception e)
-            {
-                character.SetupNewLocation(prevLocation);
-            }
-
-        }; });
+                try
+                {
+                    var locationToUse = availableLocations[Random.Range(0, availableLocations.Count)];
+                    locationToUse.AddTarget();
+                    if (prevLocation == null)
+                    {
+                        character.SetupInitialLocation(locationToUse);
+                    }
+                    else
+                    {
+                        character.SetupNewLocation(locationToUse);
+                        prevLocation.RemoveTarget();
+                    }
+                    
+                }
+                catch (Exception e)
+                {
+                    character.SetupNewLocation(prevLocation);
+                }
+            };
+        });
     }
 }
