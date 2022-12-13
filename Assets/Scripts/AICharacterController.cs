@@ -54,6 +54,7 @@ public class AICharacterController : MonoBehaviour
 
     public void SetupNewLocation(AILocation newLocation)
     {
+        if (newLocation == null) return;
         location = newLocation;
         actionInitted = false;
         agent.destination = location.location.position;
