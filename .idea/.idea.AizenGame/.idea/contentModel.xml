@@ -573,6 +573,8 @@
         </e>
         <e p="Prueba.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="AICharacterController.cs" t="Include" />
+          <e p="AILobbyController.cs" t="Include" />
           <e p="Character" t="Include">
             <e p="CharacterAction.cs" t="Include" />
             <e p="CharacterActions.cs" t="Include" />
@@ -588,6 +590,7 @@
           </e>
           <e p="CustomInterstitial.cs" t="Include" />
           <e p="EventBus.cs" t="Include" />
+          <e p="FixedTimeClock.cs" t="Include" />
           <e p="GameplayContext.cs" t="Include" />
           <e p="GameSceneManager.cs" t="Include" />
           <e p="Lobby" t="Include">
