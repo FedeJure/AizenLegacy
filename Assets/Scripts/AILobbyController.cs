@@ -40,7 +40,7 @@ public class AILobbyController : MonoBehaviour
     
     private List<AILocation> availableLocations = new List<AILocation>();
 
-    private void Start()
+    private void Awake()
     {
         locations.ForEach(location =>
         {

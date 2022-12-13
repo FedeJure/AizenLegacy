@@ -1,11 +1,25 @@
 #nullable enable
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
+
+[Serializable]
+public class AICharacterAction
+{
+    public AIAction action;
+    public float minDuration;
+    public float maxDuration;
+    public List<string> animationsTrigger;
+}
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class AICharacterController : MonoBehaviour
 {
+    [SerializeField] private Animator anim;
+    [SerializeField] private List<AICharacterAction> actions;
     public event Action<AILocation?> ReadyToPerformNewAction = prevLocation => { };
     private NavMeshAgent agent;
     private AILocation? location;
@@ -20,17 +34,21 @@ public class AICharacterController : MonoBehaviour
 
     private void Start()
     {
-        ReadyToPerformNewAction(location);
+        ReadyToPerformNewAction(null);
+    }
+
+    private void Update()
+    {
+        anim.SetFloat("velocity", agent.velocity.magnitude);
     }
 
     private void LateUpdate()
     {
         if (!clock.ReachTime()) return;
-        if (!actionInitted && location != null && agent.remainingDistance < 2)
+        if (!actionInitted && location != null && agent.velocity.magnitude == 0)
         {
-            Debug.Log("Do Action");
             actionInitted = true;
-            Invoke("SearchForNewAction", 3);
+            InitAction();
         }
     }
 
@@ -44,5 +62,14 @@ public class AICharacterController : MonoBehaviour
     private void SearchForNewAction()
     {
         ReadyToPerformNewAction(location);
+    }
+
+    private void InitAction()
+    {
+        if (actions.Count == 0) return;
+        var action = actions.Find(a => a.action.Equals(location.action)) ?? actions[0];
+        
+        Invoke("SearchForNewAction", Random.Range(action.minDuration, action.maxDuration));
+        anim.SetTrigger(action.animationsTrigger[Random.Range(0, action.animationsTrigger.Count)]);
     }
 }
