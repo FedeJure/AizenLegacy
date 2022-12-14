@@ -1,8 +1,7 @@
 #nullable enable
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.Mathematics;
+using AIActions;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -14,29 +13,34 @@ public class AICharacterAction
     public float minDuration;
     public float maxDuration;
     public List<string> animationsTrigger;
+    public AIActionBehavior? behavior;
+}
+
+public struct AICurrentAction
+{
+    public AICharacterAction action;
+    public AILocation location;
 }
 
 [RequireComponent(typeof(NavMeshAgent))]
-[RequireComponent(typeof(CharacterController))]
 public class AICharacterController : MonoBehaviour
 {
     [SerializeField] private Animator anim;
     [SerializeField] private List<AICharacterAction> actions;
     [SerializeField] private Transform headBone;
-    private CharacterController controller;
     public event Action<AILocation?> ReadyToPerformNewAction = prevLocation => { };
     private NavMeshAgent agent;
-    private AILocation? location;
+    private AICurrentAction? actionInProgress;
     private FixedTimeClock clock;
-    private bool actionInitted = false;
+    private bool actionInitted;
 
     private Transform? cameraTransform;
+    
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         clock = new FixedTimeClock(0.5f);
-        controller = GetComponent<CharacterController>();
     }
 
     private void Start()
@@ -52,7 +56,7 @@ public class AICharacterController : MonoBehaviour
     private void LateUpdate()
     {
         if (!clock.ReachTime()) return;
-        if (!actionInitted && location != null && agent.velocity.magnitude == 0)
+        if (!actionInitted && actionInProgress != null && agent.velocity.magnitude == 0)
         {
             actionInitted = true;
             InitAction();
@@ -66,9 +70,14 @@ public class AICharacterController : MonoBehaviour
             ReadyToPerformNewAction(null);
             return;
         };
-        location = newLocation;
+        if (actions.Count == 0) throw new Exception("Needs to have at least 1 action");
+        actionInProgress = new AICurrentAction
+        {
+            action = actions.Find(a => a.action.Equals(newLocation.action)) ?? actions[0],
+            location = newLocation
+        };
         actionInitted = false;
-        agent.destination = location.location.position;
+        agent.destination = actionInProgress.Value.location.location.position;
     }
 
     public void SetupInitialLocation(AILocation location)
@@ -79,21 +88,21 @@ public class AICharacterController : MonoBehaviour
 
     private void SearchForNewAction()
     {
-        ReadyToPerformNewAction(location);
+        ReadyToPerformNewAction(actionInProgress.HasValue ? actionInProgress.Value.location : null);
     }
 
     private void InitAction()
     {
-        if (actions.Count == 0) return;
-        var action = actions.Find(a => a.action.Equals(location.action)) ?? actions[0];
-        
+        if (!actionInProgress.HasValue) throw new Exception("There is no action in progress");
+        var action = actionInProgress.Value.action;
+        action.behavior?.Activate();
         Invoke("SearchForNewAction", Random.Range(action.minDuration, action.maxDuration));
         anim.SetTrigger(action.animationsTrigger[Random.Range(0, action.animationsTrigger.Count)]);
     }
 
     private void FixedUpdate()
     {
-        if (cameraTransform == null) return;
+        if (cameraTransform == null || agent.velocity.magnitude > 1) return;
         var lookPos = cameraTransform.transform.position - transform.position;
         lookPos.y = 0;
         var rotation = Quaternion.LookRotation(lookPos);

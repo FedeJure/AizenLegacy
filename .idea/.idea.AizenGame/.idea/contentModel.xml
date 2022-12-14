@@ -573,6 +573,11 @@
         </e>
         <e p="Prueba.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="AIActions" t="Include">
+            <e p="AIActionBehavior.cs" t="Include" />
+            <e p="AIIdleAction.cs" t="Include" />
+            <e p="AISitOnChairAction.cs" t="Include" />
+          </e>
           <e p="AICharacterController.cs" t="Include" />
           <e p="AILobbyController.cs" t="Include" />
           <e p="Character" t="Include">

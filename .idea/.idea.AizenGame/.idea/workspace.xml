@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Left Turn 90.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Left Turn 90.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/left_turn.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/left_turn.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/right_turn.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/right_turn.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/AICharacter.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/AICharacter.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AIActionBehavior.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AIActionBehavior.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AIIdleAction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AIIdleAction.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AIActions/AIMaleAction.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AIMaleAction.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AILobbyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/EnergyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIActions/AIActionBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Awaiter.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,6 +62,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/RangeSlider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.0.3/Runtime/Component Localizers/LocalizeStringEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PLayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.17/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
@@ -68,6 +73,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SelectMany.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIActions/AIIdleAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Do.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Concat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" root0="FORCE_HIGHLIGHTING" />
@@ -124,10 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStateRepository.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSharedRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VungleScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityAds.cs" />
         <option value="$PROJECT_DIR$/build.gradle" />
@@ -174,6 +176,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AILobbyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIActions/IAIAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIActions/AIIdleAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIActions/AIActionBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" />
       </list>
     </option>
@@ -233,7 +239,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670856674119</updated>
-      <workItem from="1670856713023" duration="27101000" />
+      <workItem from="1670856713023" duration="29588000" />
     </task>
     <servers />
   </component>
@@ -327,10 +333,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="624" y="254" width="666" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1670295169703" />
-    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1670856280346">
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1671038944063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1670856280346" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1671038944063" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
