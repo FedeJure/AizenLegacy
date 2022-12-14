@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -16,20 +17,26 @@ public class AICharacterAction
 }
 
 [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(CharacterController))]
 public class AICharacterController : MonoBehaviour
 {
     [SerializeField] private Animator anim;
     [SerializeField] private List<AICharacterAction> actions;
+    [SerializeField] private Transform headBone;
+    private CharacterController controller;
     public event Action<AILocation?> ReadyToPerformNewAction = prevLocation => { };
     private NavMeshAgent agent;
     private AILocation? location;
     private FixedTimeClock clock;
     private bool actionInitted = false;
 
+    private Transform? cameraTransform;
+
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         clock = new FixedTimeClock(0.5f);
+        controller = GetComponent<CharacterController>();
     }
 
     private void Start()
@@ -82,5 +89,29 @@ public class AICharacterController : MonoBehaviour
         
         Invoke("SearchForNewAction", Random.Range(action.minDuration, action.maxDuration));
         anim.SetTrigger(action.animationsTrigger[Random.Range(0, action.animationsTrigger.Count)]);
+    }
+
+    private void FixedUpdate()
+    {
+        if (cameraTransform == null) return;
+        var lookPos = cameraTransform.transform.position - transform.position;
+        lookPos.y = 0;
+        var rotation = Quaternion.LookRotation(lookPos);
+        var newRotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 4);
+        anim.SetFloat("deltaRotation", transform.rotation.eulerAngles.y - newRotation.eulerAngles.y);
+
+        transform.rotation = newRotation;
+        headBone.rotation = newRotation;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!other.CompareTag("MainCamera")) return;
+        cameraTransform = other.transform;
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (!other.CompareTag("MainCamera")) return;
+        cameraTransform = null;
     }
 }
