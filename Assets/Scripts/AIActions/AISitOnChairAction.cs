@@ -1,7 +1,6 @@
-﻿using AIActions;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class AISitOnChairAction: AIActionBehavior
+public class AISitOnChairAction: MonoBehaviour
 {
     private Animator anim;
     public AISitOnChairAction(Animator anim)

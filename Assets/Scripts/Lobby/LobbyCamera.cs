@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Lobby
 {
@@ -9,9 +8,10 @@ namespace Lobby
         private Transform Target;
         public float SmoothTime = 0.3f;
         [SerializeField] private float distance = 1;
+        [SerializeField] private Vector3 offset;
  
         private Vector3 velocity = Vector3.zero;
-        private bool initted = false;
+        private bool initted;
 
 
         public void SetupTarget(Transform target)
@@ -23,9 +23,10 @@ namespace Lobby
         private void LateUpdate()
         {
             if (!initted) return;
-            var targetPosition = Target.position + (pivotePoint.position - Target.position).normalized * distance;
+            var position = Target.position;
+            var targetPosition = offset + position + (pivotePoint.position - position).normalized * distance;
             transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
-            transform.LookAt(Target);
+            transform.LookAt(position + offset);
         }
     }
 }

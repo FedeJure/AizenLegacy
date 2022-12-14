@@ -1,7 +1,6 @@
 #nullable enable
 using System;
 using System.Collections.Generic;
-using AIActions;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -13,7 +12,7 @@ public class AICharacterAction
     public float minDuration;
     public float maxDuration;
     public List<string> animationsTrigger;
-    public AIActionBehavior? behavior;
+    public GameObject? behavior;
 }
 
 public struct AICurrentAction
@@ -34,7 +33,6 @@ public class AICharacterController : MonoBehaviour
     private FixedTimeClock clock;
     private bool actionInitted;
 
-    private Transform? cameraTransform;
     
 
     private void Awake()
@@ -84,43 +82,22 @@ public class AICharacterController : MonoBehaviour
     {
         transform.position = location.location.position;
         SetupNewLocation(location);
+        InitAction();
     }
 
     private void SearchForNewAction()
     {
-        ReadyToPerformNewAction(actionInProgress.HasValue ? actionInProgress.Value.location : null);
+        if (!actionInProgress.HasValue) ReadyToPerformNewAction(null);
+        actionInProgress?.action.behavior?.SetActive(false);
+        ReadyToPerformNewAction(actionInProgress?.location);
     }
 
     private void InitAction()
     {
         if (!actionInProgress.HasValue) throw new Exception("There is no action in progress");
         var action = actionInProgress.Value.action;
-        action.behavior?.Activate();
+        action.behavior?.SetActive(true);
         Invoke("SearchForNewAction", Random.Range(action.minDuration, action.maxDuration));
         anim.SetTrigger(action.animationsTrigger[Random.Range(0, action.animationsTrigger.Count)]);
-    }
-
-    private void FixedUpdate()
-    {
-        if (cameraTransform == null || agent.velocity.magnitude > 1) return;
-        var lookPos = cameraTransform.transform.position - transform.position;
-        lookPos.y = 0;
-        var rotation = Quaternion.LookRotation(lookPos);
-        var newRotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 4);
-        anim.SetFloat("deltaRotation", transform.rotation.eulerAngles.y - newRotation.eulerAngles.y);
-
-        transform.rotation = newRotation;
-        headBone.rotation = newRotation;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!other.CompareTag("MainCamera")) return;
-        cameraTransform = other.transform;
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (!other.CompareTag("MainCamera")) return;
-        cameraTransform = null;
     }
 }
