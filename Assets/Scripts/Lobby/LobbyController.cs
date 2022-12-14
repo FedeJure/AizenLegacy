@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using Character;
 using TMPro;
 using UnityEngine;
@@ -28,7 +29,7 @@ namespace Lobby
             backButton.onClick.AddListener(() => MoveSelector(-1));
             playButton.onClick.AddListener(Play);
             tutorialButton.onClick.AddListener(Tutorial);
-            cameraView.Target = currentPlayer.target;
+            cameraView.SetupTarget(currentPlayer.target);
             nameText.text = currentPlayer.selection.characterName;
             SelectedCharacterRepository.Set(currentPlayer.selection);
         }
@@ -62,8 +63,7 @@ namespace Lobby
                 currentIndex += move;
                 currentPlayer = selectors[currentIndex];
             }
-
-            cameraView.Target = currentPlayer.target;
+            cameraView.SetupTarget(currentPlayer.target);
             nameText.text = currentPlayer.selection.name;
             SelectedCharacterRepository.Set(currentPlayer.selection);
         }

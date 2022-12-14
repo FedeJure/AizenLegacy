@@ -4,20 +4,25 @@ namespace Lobby
 {
     public class LobbyCamera : MonoBehaviour
     {
-        public Transform Target;
-        public Vector3 Offset;
+        [SerializeField] private Transform pivotePoint;
+        private Transform Target;
         public float SmoothTime = 0.3f;
+        [SerializeField] private float distance = 1;
  
         private Vector3 velocity = Vector3.zero;
+        private bool initted = false;
 
-        private void Start()
+
+        public void SetupTarget(Transform target)
         {
-            Offset = transform.position - Target.position + Offset;
+            Target = target;
+            initted = true;
         }
- 
+
         private void LateUpdate()
         {
-            var targetPosition = Target.position + Offset;
+            if (!initted) return;
+            var targetPosition = Target.position + (pivotePoint.position - Target.position).normalized * distance;
             transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
             transform.LookAt(Target);
         }
