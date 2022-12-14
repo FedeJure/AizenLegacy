@@ -2,12 +2,22 @@
 
 public class AISitOnChairAction: MonoBehaviour
 {
-    private Animator anim;
-    public AISitOnChairAction(Animator anim)
+    [SerializeField] private Animator anim;
+    [SerializeField] private Transform rootCharacterTransform;
+
+    private void Awake()
     {
-        this.anim = anim;
+        gameObject.SetActive(false);
     }
-    public void Execute()
+    private void OnTriggerEnter(Collider other)
     {
+        if (!other.CompareTag("Chair")) return;
+        rootCharacterTransform.rotation = other.transform.rotation;
+        anim.SetTrigger("sitOnChair");
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (!other.CompareTag("Chair")) return;
+    }
+    
 }

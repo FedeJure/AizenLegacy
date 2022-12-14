@@ -1,8 +1,11 @@
 ﻿#nullable enable
+using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class AIIdleAction : MonoBehaviour
 {
+    [SerializeField] private List<string> animationTriggers;
     [SerializeField] private Animator anim;
     [SerializeField] private Transform rootCharacterTransform;
     private Transform? cameraTransform;
@@ -11,6 +14,11 @@ public class AIIdleAction : MonoBehaviour
     private void Awake()
     {
         gameObject.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        anim.SetTrigger(animationTriggers[Random.Range(0, animationTriggers.Count)]);
     }
 
     private void FixedUpdate()

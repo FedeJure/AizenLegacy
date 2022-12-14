@@ -11,7 +11,6 @@ public class AICharacterAction
     public AIAction action;
     public float minDuration;
     public float maxDuration;
-    public List<string> animationsTrigger;
     public GameObject? behavior;
 }
 
@@ -98,6 +97,5 @@ public class AICharacterController : MonoBehaviour
         var action = actionInProgress.Value.action;
         action.behavior?.SetActive(true);
         Invoke("SearchForNewAction", Random.Range(action.minDuration, action.maxDuration));
-        anim.SetTrigger(action.animationsTrigger[Random.Range(0, action.animationsTrigger.Count)]);
     }
 }

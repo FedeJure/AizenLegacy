@@ -278,6 +278,82 @@ Transform:
   m_Father: {fileID: 3247110648749844135}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1295488717221436231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 347847597718785908}
+  - component: {fileID: 5590818516064036656}
+  - component: {fileID: 8169099927477464165}
+  - component: {fileID: 7834604765601288833}
+  m_Layer: 0
+  m_Name: SitOnChair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &347847597718785908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295488717221436231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6784997907184691646}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5590818516064036656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295488717221436231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649e2068e91347f487d0d8005d6f3905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 4962250858109206654}
+  rootCharacterTransform: {fileID: 467275578587171657}
+--- !u!65 &8169099927477464165
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295488717221436231}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3978789, y: 0.87591976, z: 0.6045423}
+  m_Center: {x: 0.010732977, y: -0.25768414, z: 0.0032247868}
+--- !u!54 &7834604765601288833
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295488717221436231}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1297957797910584950
 GameObject:
   m_ObjectHideFlags: 0
@@ -1522,6 +1598,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 647e6558c42a4e8dbff80789ea658fa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationTriggers:
+  - idle1
+  - idle2
   anim: {fileID: 4962250858109206654}
   rootCharacterTransform: {fileID: 467275578587171657}
 --- !u!136 &5027641852733449350
@@ -3082,6 +3161,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4455456546140379030}
+  - {fileID: 347847597718785908}
   m_Father: {fileID: 467275578587171657}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3566,12 +3646,13 @@ MonoBehaviour:
   anim: {fileID: 4962250858109206654}
   actions:
   - action: 0
+    minDuration: 10
+    maxDuration: 30
+    behavior: {fileID: 4116619717962144468}
+  - action: 2
     minDuration: 20
     maxDuration: 40
-    animationsTrigger:
-    - idle1
-    - idle2
-    behavior: {fileID: 4116619717962144468}
+    behavior: {fileID: 1295488717221436231}
   headBone: {fileID: 0}
 --- !u!1 &8327716251684136979
 GameObject:

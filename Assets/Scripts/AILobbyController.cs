@@ -7,7 +7,7 @@ public enum AIAction
 {
     Idle,
     Talk,
-    Sit
+    SitOnChair
 }
 
 [Serializable]
