@@ -2,23 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/sitPlace.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/sitPlace.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AIRunning.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AIRunning.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AITraining.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AITraining.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/runningFollowPoint.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/runningFollowPoint.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AIActionBehavior.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AIActionBehavior.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AIRunning.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AIRunning.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AITrainingAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AIActions/AIMaleAction.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AIMaleAction.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/sitting_idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/sitting_idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/stand_to_sit.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/stand_to_sit.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/Left Turn 90.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/Left Turn 90.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/Stand To Sit.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/Stand To Sit.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/idle_female1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/idle_female1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/idle_lookAround.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/idle_lookAround.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/idle_male1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/idle_male1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/left_turn.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/left_turn.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/right_turn.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/right_turn.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/sitting_idle1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/sitting_idle1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/walking.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/walking.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/AICharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/AICharacter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/BotNavigations.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/BotNavigations.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/CompleteEnvironment.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/CompleteEnvironment.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Gym.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Gym.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/NavMesh.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIActions/AIIdleAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AIIdleAction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AILobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AILobbyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +66,17 @@
     <setting file="file://$PROJECT_DIR$/Library/BuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/Accordion/Tweening/TweenRunner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/Accordion/AccordionElement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Proyectos Unity 3d/BaseProyectUtilities/Assets/GooglePlayServicesManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Characters/Karim.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIActions/AIActionBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/_DemoStuff/Scripts/Customizations.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2A5A170A-AFDC-4E62-AE42-6239EAA657AF/20/8a1a2504/NavMeshPath.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipUntil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/RangeSlider.cs" root0="FORCE_HIGHLIGHTING" />
@@ -69,9 +87,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PLayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.17/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Effects/ShaderEffects/UISoftAdditiveEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIActions/AIRunning.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Resources/Shaders/UIMultiply.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WhereSelect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UGUIKit Flat/Content/Scripts/bl_ToggleSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SelectMany.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
@@ -108,6 +128,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial/FailTutorialWidgetController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial/CharacterTutorialEventDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIActions/AITrainingAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/HeadBoneFollowTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Observable.Unity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/AsyncSubject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -122,9 +143,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/UI_MagneticInfiniteScroll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.0.3/Runtime/Settings/Database/LocalizedDatabase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/ConfigurationPopupController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Layout/ScrollSnap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ListObserver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LeanTween/Framework/LTSeq.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LeanTween/Framework/LeanAudio.cs" root0="FORCE_HIGHLIGHTING" />
@@ -132,8 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/VungleScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityAds.cs" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IronSourceAdapter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityAdsAdapter.cs" />
@@ -177,12 +198,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FixedTimeClock.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIActions/IAIAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AIActions/AIActionBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AILobbyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIActions/AIActionBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIActions/AIIdleAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIActions/AITrainingAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIActions/AIRunning.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AILobbyController.cs" />
       </list>
     </option>
   </component>
@@ -212,10 +235,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="90336">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1792">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="90336" />
+      <option name="pid" value="1792" />
       <method v="2" />
     </configuration>
   </component>
@@ -241,7 +264,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670856674119</updated>
-      <workItem from="1670856713023" duration="35061000" />
+      <workItem from="1670856713023" duration="37392000" />
+      <workItem from="1671156457538" duration="15604000" />
     </task>
     <servers />
   </component>
@@ -267,74 +291,82 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1671044092751">
+    <state x="1117" y="272" key="#xdebugger.evaluate" timestamp="1671161877135">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671044092751" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1671044092751">
+    <state x="1117" y="272" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1671161877135" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671044092751" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1671044092751">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671044092751" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1671044092751">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671044092751" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1671044108387">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671044108387" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1671044108387">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671044108387" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1671044108387">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671044108387" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1671044108387">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671044108387" />
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1671044092626">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671044092626" />
-    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1671044092626">
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671044092626" />
-    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1671044092626">
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671044092626" />
-    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1671044092626">
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671044092626" />
-    <state width="1877" height="348" key="GridCell.Tab.3.bottom" timestamp="1671044092626">
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671044092626" />
-    <state width="1877" height="348" key="GridCell.Tab.3.center" timestamp="1671044092626">
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.3.bottom" timestamp="1671330173838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671044092626" />
-    <state width="1877" height="348" key="GridCell.Tab.3.left" timestamp="1671044092626">
+    <state width="1877" height="348" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173838" />
+    <state width="1877" height="348" key="GridCell.Tab.3.center" timestamp="1671330173838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671044092626" />
-    <state width="1877" height="348" key="GridCell.Tab.3.right" timestamp="1671044092626">
+    <state width="1877" height="348" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173838" />
+    <state width="1877" height="348" key="GridCell.Tab.3.left" timestamp="1671330173837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671044092626" />
-    <state x="624" y="254" width="666" height="536" key="find.popup" timestamp="1670295169703">
+    <state width="1877" height="348" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173837" />
+    <state width="1877" height="348" key="GridCell.Tab.3.right" timestamp="1671330173838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="624" y="254" width="666" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1670295169703" />
+    <state width="1877" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671330173838" />
+    <state x="776" y="211" key="RiderGenerateDialog" timestamp="1671194722747">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="211" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1671194722747" />
+    <state x="624" y="254" width="666" height="536" key="find.popup" timestamp="1671157950886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="624" y="254" width="666" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1671157950886" />
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1671044305289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

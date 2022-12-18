@@ -1,14 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Threading.Tasks;
+using AIActions;
+using UnityEngine;
 
-public class AISitOnChairAction: MonoBehaviour
+public class AISitOnChairAction: AIActionBehavior
 {
     [SerializeField] private Animator anim;
     [SerializeField] private Transform rootCharacterTransform;
-
-    private void Awake()
-    {
-        gameObject.SetActive(false);
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Chair")) return;
@@ -19,5 +16,17 @@ public class AISitOnChairAction: MonoBehaviour
     {
         if (!other.CompareTag("Chair")) return;
     }
-    
+
+    public override Task RequestFinish()
+    {
+        gameObject.SetActive(false);
+        return Task.CompletedTask;
+    }
+
+    public override void StartAction()
+    {
+        gameObject.SetActive(true);
+
+       // void
+    }
 }

@@ -7,7 +7,9 @@ public enum AIAction
 {
     Idle,
     Talk,
-    SitOnChair
+    SitOnChair,
+    Training,
+    Running
 }
 
 [Serializable]
@@ -21,6 +23,13 @@ public class AILocation
 
     private int currentTargets;
 
+    public AILocation(Transform location, AIAction action, int capacity)
+    {
+        this.location = location;
+        this.action = action;
+        this.capacity = capacity;
+    }
+
     public void AddTarget()
     {
         if (currentTargets >= capacity) throw new Exception("This AILocation is full of capacity.");
@@ -33,20 +42,33 @@ public class AILocation
         currentTargets--;
     }
 }
+
+[Serializable]
+public class AILocationFather
+{
+    public AIAction action;
+    public GameObject container;
+    public int capacity = 1;
+}
 public class AILobbyController : MonoBehaviour
 {
-    [SerializeField] private List<AILocation> locations;
+    [SerializeField] private List<AILocationFather> configuredLocations;
     [SerializeField] private List<AICharacterController> characters;
-    
     private List<AILocation> availableLocations = new List<AILocation>();
 
     private void OnEnable()
     {
-        locations.ForEach(location =>
+        configuredLocations.ForEach(location =>
         {
-            availableLocations.Add(location);
-            location.OnReachCapacity += HandleOnReachCapacity(location);
-            location.OnFreeCapacity += HandleOnFreeCapacity(location);
+            foreach (var loc in location.container.GetComponentsInChildren<Transform>())
+            {
+                if (loc == location.container.transform) continue;
+                var newLocation = new AILocation(loc, location.action, location.capacity);
+                availableLocations.Add(newLocation);
+                newLocation.OnReachCapacity += HandleOnReachCapacity(newLocation);
+                newLocation.OnFreeCapacity += HandleOnFreeCapacity(newLocation);
+            }
+            
         });
         characters.ForEach(character => { 
             character.ReadyToPerformNewAction += HandlePerformAction(character);
@@ -54,8 +76,7 @@ public class AILobbyController : MonoBehaviour
     }
     private void OnDisable()
     {
-        availableLocations.Clear();
-        locations.ForEach(location =>
+        availableLocations.ForEach(location =>
         {
             location.OnReachCapacity -= HandleOnReachCapacity(location);
             location.OnFreeCapacity -= HandleOnFreeCapacity(location);
@@ -63,6 +84,7 @@ public class AILobbyController : MonoBehaviour
         characters.ForEach(character => { 
             character.ReadyToPerformNewAction -= HandlePerformAction(character);
         });
+        availableLocations.Clear();
     }
 
     private Action HandleOnReachCapacity(AILocation location)

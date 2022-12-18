@@ -1,6 +1,7 @@
 #nullable enable
 using System;
 using System.Collections.Generic;
+using AIActions;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -11,7 +12,7 @@ public class AICharacterAction
     public AIAction action;
     public float minDuration;
     public float maxDuration;
-    public GameObject? behavior;
+    public AIActionBehavior? behavior;
 }
 
 public struct AICurrentAction
@@ -25,14 +26,11 @@ public class AICharacterController : MonoBehaviour
 {
     [SerializeField] private Animator anim;
     [SerializeField] private List<AICharacterAction> actions;
-    [SerializeField] private Transform headBone;
     public event Action<AILocation?> ReadyToPerformNewAction = prevLocation => { };
     private NavMeshAgent agent;
     private AICurrentAction? actionInProgress;
     private FixedTimeClock clock;
     private bool actionInitted;
-
-    
 
     private void Awake()
     {
@@ -62,19 +60,24 @@ public class AICharacterController : MonoBehaviour
 
     public void SetupNewLocation(AILocation newLocation)
     {
-        if (newLocation == null)
+        try
         {
-            ReadyToPerformNewAction(null);
-            return;
-        };
-        if (actions.Count == 0) throw new Exception("Needs to have at least 1 action");
-        actionInProgress = new AICurrentAction
-        {
-            action = actions.Find(a => a.action.Equals(newLocation.action)) ?? actions[0],
-            location = newLocation
-        };
-        actionInitted = false;
-        agent.destination = actionInProgress.Value.location.location.position;
+            if (newLocation == null)
+            {
+                ReadyToPerformNewAction(null);
+                return;
+            };
+            if (actions.Count == 0) throw new Exception("Needs to have at least 1 action");
+            actionInProgress = new AICurrentAction
+            {
+                action = actions.Find(a => a.action.Equals(newLocation.action)) ?? actions[0],
+                location = newLocation
+            };
+            actionInitted = false;
+            agent.destination = actionInProgress.Value.location.location.position;
+        }
+        catch (Exception) { }
+        
     }
 
     public void SetupInitialLocation(AILocation location)
@@ -84,10 +87,10 @@ public class AICharacterController : MonoBehaviour
         InitAction();
     }
 
-    private void SearchForNewAction()
+    private async void  SearchForNewAction()
     {
         if (!actionInProgress.HasValue) ReadyToPerformNewAction(null);
-        actionInProgress?.action.behavior?.SetActive(false);
+        await actionInProgress?.action.behavior?.RequestFinish();
         ReadyToPerformNewAction(actionInProgress?.location);
     }
 
@@ -95,7 +98,12 @@ public class AICharacterController : MonoBehaviour
     {
         if (!actionInProgress.HasValue) throw new Exception("There is no action in progress");
         var action = actionInProgress.Value.action;
-        action.behavior?.SetActive(true);
+        action.behavior?.StartAction();
         Invoke("SearchForNewAction", Random.Range(action.minDuration, action.maxDuration));
+    }
+
+    private void OnDisable()
+    {
+        CancelInvoke("SearchForNewAction");
     }
 }

@@ -1,21 +1,17 @@
 ﻿#nullable enable
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using AIActions;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class AIIdleAction : MonoBehaviour
+public class AIIdleAction : AIActionBehavior
 {
     [SerializeField] private List<string> animationTriggers;
     [SerializeField] private Animator anim;
     [SerializeField] private Transform rootCharacterTransform;
     private Transform? cameraTransform;
-   
-
-    private void Awake()
-    {
-        gameObject.SetActive(false);
-    }
-
+    
     private void OnEnable()
     {
         anim.SetTrigger(animationTriggers[Random.Range(0, animationTriggers.Count)]);
@@ -42,5 +38,16 @@ public class AIIdleAction : MonoBehaviour
     {
         if (!other.CompareTag("MainCamera")) return;
         cameraTransform = null;
+    }
+
+    public override Task RequestFinish()
+    {
+        gameObject.SetActive(false);
+        return Task.CompletedTask;
+    }
+
+    public override void StartAction()
+    {
+        gameObject.SetActive(true);
     }
 }
