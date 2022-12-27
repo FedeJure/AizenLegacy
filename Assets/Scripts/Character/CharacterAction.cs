@@ -5,22 +5,24 @@ namespace Character
 {
     public interface CharacterAction
     {
-        void Execute(bool inPosition);
+        void Execute();
     }
 
     public class FrontAction : CharacterAction
     {
         private readonly Transform _target;
+        private readonly ICharacterState _state;
         private readonly float completeRotation = 360;
         private float _actualAngle;
 
-        public FrontAction(Transform target)
+        public FrontAction(Transform target, ICharacterState _state)
         {
             _target = target;
+            this._state = _state;
         }
-        public void Execute(bool inPosition)
+        public void Execute()
         {
-            if (!inPosition) return;
+            if (!_state.currentPosition.HasValue) return;
             var deltaAngle = completeRotation * Time.deltaTime;
             // if (_actualAngle >= completeRotation) return;
             _target.Rotate(_target.TransformVector(_target.right * deltaAngle), Space.Self);
@@ -33,14 +35,16 @@ namespace Character
         private readonly Transform _target;
         private readonly float completeRotation = 360;
         private float _actualAngle;
+        private readonly ICharacterState _state;
 
-        public BackAction(Transform target)
+        public BackAction(Transform target,  ICharacterState _state)
         {
             _target = target;
+            this._state = _state;
         }
-        public void Execute(bool inPosition)
+        public void Execute()
         {
-            if (!inPosition) return;
+            if (!_state.currentPosition.HasValue) return;
             var deltaAngle = completeRotation * Time.deltaTime;
             // if (_actualAngle >= completeRotation) return;
             _target.Rotate(_target.TransformVector(-_target.right * deltaAngle));
@@ -54,12 +58,14 @@ namespace Character
         private readonly float _completeRotation = 180;
         private float _durationInSeconds = 0.5f; 
         private float _actualAngle;
+        private readonly ICharacterState _state;
 
-        public HalfTwistAction(Transform target)
+        public HalfTwistAction(Transform target,  ICharacterState _state)
         {
             _target = target;
+            this._state = _state;
         }
-        public void Execute(bool inPosition)
+        public void Execute()
         {
             var deltaAngle = _completeRotation * Time.deltaTime * 1/_durationInSeconds;
             if (_actualAngle >= _completeRotation) return;
@@ -72,16 +78,18 @@ namespace Character
         private readonly Transform _rotateTarget;
         private readonly float _rotateAngle;
         private readonly float _time;
+        private readonly ICharacterState _state;
 
         private float _currentRotateAngle;
 
-        public StabilizateAction(Transform rotateTarget, float rotateAngle, float time)
+        public StabilizateAction(Transform rotateTarget,  ICharacterState _state, float rotateAngle, float time)
         {
             _rotateTarget = rotateTarget;
             _rotateAngle = rotateAngle;
             _time = time;
+            this._state = _state;
         }
-        public void Execute(bool inPosition)
+        public void Execute()
         {
             var rotateAngle = _rotateAngle * Time.deltaTime * 1/_time;
             if (Math.Abs(_currentRotateAngle) < Math.Abs(_rotateAngle)) _rotateTarget.Rotate(Vector3.right * rotateAngle, Space.Self);

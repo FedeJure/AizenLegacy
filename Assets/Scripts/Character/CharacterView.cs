@@ -26,17 +26,11 @@ namespace Character
         private int vPosition = Animator.StringToHash("vPosition");
         private int aPosition = Animator.StringToHash("aPosition");
 
-        private bool isFalling;
-        private bool isStable = true;
         private List<IDisposable> disposer = new List<IDisposable>();
         private bool? rotatingForward = null;
 
-        private bool onFront
-        {
-            get { return pivotModel.transform.right.x > 0; }
-        }
+        private CharacterState state;
 
-        private Position? selectedPosition;
         private Dictionary<Position, int> positionKeyMap;
         
         List<CharacterAction> actions = new List<CharacterAction>();
@@ -48,6 +42,7 @@ namespace Character
                 {Position.BPosition, vPosition},
                 {Position.CPosition, cPosition}
             };
+            state = new CharacterState(pivotModel.transform);
             
             rbody.maxAngularVelocity = 25;
 
@@ -76,11 +71,11 @@ namespace Character
         private void OnEnable()
         {
             EventBus.OnEnterTrampoline()
-                .Do(_ => ResetState())
+                .Do(HandleEnterTrampoline)
                 .Subscribe().AddTo(disposer);
             
             EventBus.OnExitTrampoline()
-                .Do(_ => animator.SetBool(inTrampoline, false))
+                .Do(HandleExitTrampoline)
                 .Subscribe().AddTo(disposer);
             
             EventBus.OnLoseStability()
@@ -101,16 +96,26 @@ namespace Character
             Observable.Interval(TimeSpan.FromMilliseconds(100))
                 .Subscribe(_ =>
                 {
-                    if (selectedPosition != null && isStable) EventBus.EmitConsumeEnergy(1f);
+                    if (state.currentPosition != null && state.isStable) EventBus.EmitConsumeEnergy(1f);
                 })
                 .AddTo(disposer);
             
             transform.SetPositionAndRotation(GameplayContext.GetInstance().startLocationTransform.position, Quaternion.identity);
-            isStable = true;
+            state.isStable = true;
             SetEnable(true);
             ResetState();
             pivotModel.transform.rotation = Quaternion.identity;
             
+        }
+
+        private void HandleExitTrampoline(Unit _)
+        {
+            animator.SetBool(inTrampoline, false);
+        }
+
+        private void HandleEnterTrampoline(Unit _)
+        {
+            ResetState();
         }
 
 
@@ -118,17 +123,18 @@ namespace Character
         {
             if (Quaternion.Angle(Quaternion.identity,transform.localRotation) > maxInclinationAlowed)
             {
-                isStable = false;
+                state.isStable = false;
                 SetEnable(false);
                 EventBus.EmitOnLoseStability();
             }
             RemovePositions();
             animator.SetBool(inTrampoline, true);
-            pivotModel.transform.rotation = Quaternion.Euler(0, onFront ? 0 : 180, 0);
+            pivotModel.transform.rotation = Quaternion.Euler(0, state.onFront ? 0 : 180, 0);
             transform.rotation = Quaternion.Euler(Vector3.zero);
             rbody.ResetInertiaTensor();
             rbody.ResetCenterOfMass();
             actions.Clear();
+            state = new CharacterState(pivotModel.transform);
             rotatingForward = null;
         }
 
@@ -149,20 +155,20 @@ namespace Character
             if (rbody.worldCenterOfMass.y >= SelectedCharacterRepository.Get()?.characterStats.height) 
                 rbody.AddForce(0, -velocity.y, 0, ForceMode.Impulse);
             animator.SetFloat(velocityKey, velocity.y);
-            if (isFalling && velocity.y > 0)
+            if (state.isFalling && velocity.y > 0)
             {
-                isFalling = false;
+                state.isFalling = false;
                 animator.SetTrigger(startRaising);
             }
 
-            if (isFalling || !(velocity.y < 0)) return;
-            isFalling = true;
+            if (state.isFalling || !(velocity.y < 0)) return;
+            state.isFalling = true;
             animator.SetFloat(heightFactor, CalculateHeightFactor(position, velocity));
         }
 
         private void ApplyActions()
         {
-            actions.ForEach(action => action.Execute(selectedPosition != null));
+            actions.ForEach(action => action.Execute());
         }
 
         private float CalculateHeightFactor(Vector3 position, Vector3 velocity)
@@ -175,7 +181,7 @@ namespace Character
         public void AddVerticalImpulse(float value)
         {
             if (rbody.velocity.y >= rbody.mass / 7) return;
-            if (!isStable)
+            if (!state.isStable)
             {
                 var localUp = pivotModel.transform.up;
                 var direction = new Vector3(localUp.x, Math.Max(25, localUp.y), localUp.z);
@@ -209,16 +215,16 @@ namespace Character
             
             var time = (float)Math.Sqrt((transform.position.y - GameplayContext.GetInstance().trampolineLimitTransform.position.y) * 2f / 9.8f);
 
-            actions.Add(new StabilizateAction(transform, value, time));
+            actions.Add(new StabilizateAction(transform, state,value, time));
         }
         
         private void MakePosition(Position position, bool pressed)
         {
-            if (!selectedPosition.HasValue && pressed && !isFalling) selectedPosition = position;
-            if (selectedPosition.HasValue && selectedPosition.Value.Equals(position) && !pressed)
+            if (!state.currentPosition.HasValue && pressed && !state.isFalling) state.currentPosition = position;
+            if (state.currentPosition.HasValue && state.currentPosition.Value.Equals(position) && !pressed)
             {
                 StabilizateInFly();
-                selectedPosition = null;
+                state.currentPosition = null;
             }
                 
             EventBus.EmitOnPositionStarted();
@@ -234,18 +240,18 @@ namespace Character
 
         public void MakeFront(bool value)
         {
-            if (!value || !selectedPosition.HasValue || (rotatingForward.HasValue && !rotatingForward.Value)) return;
-            actions.Add( new FrontAction(transform));
-            animator.SetBool(positionKeyMap[selectedPosition.Value], true);
+            if (!value || !state.currentPosition.HasValue || (rotatingForward.HasValue && !rotatingForward.Value)) return;
+            actions.Add( new FrontAction(transform, state));
+            animator.SetBool(positionKeyMap[state.currentPosition.Value], true);
             rotatingForward = true;
             EventBus.EmitConsumeEnergy(10);
         }
 
         public void MakeBack(bool value)
         {
-            if (!value || !selectedPosition.HasValue || (rotatingForward.HasValue && rotatingForward.Value)) return;
-            actions.Add(new BackAction(transform));
-            animator.SetBool(positionKeyMap[selectedPosition.Value], true);
+            if (!value || !state.currentPosition.HasValue || (rotatingForward.HasValue && rotatingForward.Value)) return;
+            actions.Add(new BackAction(transform, state));
+            animator.SetBool(positionKeyMap[state.currentPosition.Value], true);
             rotatingForward = false;
             EventBus.EmitConsumeEnergy(10);
         }
@@ -253,7 +259,7 @@ namespace Character
         public void MakeHalfTwist(bool value)
         {
             if (!value) return;
-            actions.Add(new HalfTwistAction(pivotModel.transform));
+            actions.Add(new HalfTwistAction(pivotModel.transform, state));
             EventBus.EmitOnSideChange();
             RemovePositions();
             EventBus.EmitConsumeEnergy(5);
