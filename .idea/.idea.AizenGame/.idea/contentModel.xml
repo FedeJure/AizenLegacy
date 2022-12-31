@@ -685,6 +685,7 @@
             <e p="CharacterView.cs" t="Include" />
             <e p="EnergyController.cs" t="Include" />
             <e p="IKCharacterView.cs" t="Include" />
+            <e p="JumpTracker.cs" t="Include" />
             <e p="Position.cs" t="Include" />
             <e p="SkinInit.cs" t="Include" />
           </e>

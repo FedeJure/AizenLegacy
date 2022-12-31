@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UniRx;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -40,6 +41,7 @@ namespace Character
         [SerializeField] private TrampolineSounds trampolineSounds;
         [SerializeField] private AudioSource source;
         [SerializeField] private Transform leftFeetBone;
+        [SerializeField] private JumpTracker jumpTracker;
         
         private int velocityKey = Animator.StringToHash("verticalVelocity");
         private int heightFactor = Animator.StringToHash("heightFactor");
@@ -67,7 +69,7 @@ namespace Character
                 {Position.CPosition, cPosition}
             };
             state = new CharacterState(pivotModel.transform);
-            
+            jumpTracker.SetupState(state);
             rbody.maxAngularVelocity = 25;
 
         }
@@ -120,6 +122,7 @@ namespace Character
             Observable.Interval(TimeSpan.FromMilliseconds(100))
                 .Subscribe(_ =>
                 {
+                    
                     if (state.currentPosition != null && state.isStable) EventBus.EmitConsumeEnergy(1f);
                 })
                 .AddTo(disposer);
@@ -143,7 +146,6 @@ namespace Character
             source.PlayOneShot(trampolineSounds.GetNextSound());
         }
 
-
         private void ResetState()
         {
             if (Quaternion.Angle(Quaternion.identity,transform.localRotation) > maxInclinationAlowed)
@@ -161,6 +163,7 @@ namespace Character
             actions.Clear();
             state = new CharacterState(pivotModel.transform);
             rotatingForward = null;
+            jumpTracker.Reset();
         }
 
         private void SetEnable(bool value)
@@ -284,6 +287,7 @@ namespace Character
         public void MakeHalfTwist(bool value)
         {
             if (!value) return;
+            jumpTracker.PerformHalfTwist();
             actions.Add(new HalfTwistAction(pivotModel.transform, state));
             EventBus.EmitOnSideChange();
             RemovePositions();

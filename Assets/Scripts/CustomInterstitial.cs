@@ -6,7 +6,7 @@ public class CustomInterstitial : MonoBehaviour
     [SerializeField] private GameObject content;
     private static CustomInterstitial _instance;
 
-    private double timeOfPeriod = TimeSpan.FromDays(2).TotalMilliseconds;
+    private readonly double timeOfPeriod = TimeSpan.FromDays(2).TotalMilliseconds;
     private int maxShowsPerPeriod = 1;
 
     private string timeKey = "custom_interstitial_time";

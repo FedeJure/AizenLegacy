@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_1.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_1.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_2.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_3.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_3.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_4.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_4.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_5.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_5.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_6.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_6.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_7.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_7.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_inicial.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/t_inicial.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomInterstitial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomInterstitial.cs" afterDir="false" />
@@ -130,6 +113,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/ScrollRectEx.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/ComponentGetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ScenePlaybackDetector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/UI_MagneticInfiniteScroll.cs" root0="FORCE_HIGHLIGHTING" />
@@ -145,8 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial/TutorialController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInputScriptable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GamePlayState.cs" />
@@ -192,10 +174,12 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/gradleTemplate.properties" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle" />
         <option value="$PROJECT_DIR$/Assets/Prueba.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomInterstitial.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/HabilityTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" />
       </list>
     </option>
   </component>
@@ -259,7 +243,7 @@
       <workItem from="1671549004699" duration="2769000" />
       <workItem from="1672014214384" duration="3152000" />
       <workItem from="1672096417352" duration="4870000" />
-      <workItem from="1672436829150" duration="7418000" />
+      <workItem from="1672436829150" duration="15222000" />
     </task>
     <servers />
   </component>

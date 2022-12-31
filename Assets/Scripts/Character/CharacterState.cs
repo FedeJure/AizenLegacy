@@ -28,7 +28,7 @@ namespace Character
             return true;
         }
 
-        public bool onFront => modelTransform.transform.right.x > 0;
+        public bool onFront => modelTransform.right.x > 0;
 
 
         public CharacterState(Transform modelTransform)
