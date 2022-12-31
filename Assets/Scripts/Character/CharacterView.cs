@@ -287,8 +287,7 @@ namespace Character
         public void MakeHalfTwist(bool value)
         {
             if (!value) return;
-            jumpTracker.PerformHalfTwist();
-            actions.Add(new HalfTwistAction(pivotModel.transform, state));
+            actions.Add(new HalfTwistAction(pivotModel.transform, state, jumpTracker));
             EventBus.EmitOnSideChange();
             RemovePositions();
             EventBus.EmitConsumeEnergy(5);

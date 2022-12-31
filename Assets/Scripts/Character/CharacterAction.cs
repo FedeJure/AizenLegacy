@@ -59,15 +59,20 @@ namespace Character
         private float _durationInSeconds = 0.5f; 
         private float _actualAngle;
         private readonly ICharacterState _state;
+        private JumpTracker _jumpTracker;
+        private bool trackedApplied = false;
 
-        public HalfTwistAction(Transform target,  ICharacterState _state)
+        public HalfTwistAction(Transform target,  ICharacterState _state, JumpTracker jumpTracker)
         {
             _target = target;
             this._state = _state;
+            _jumpTracker = jumpTracker;
         }
         public void Execute()
         {
             var deltaAngle = _completeRotation * Time.deltaTime * 1/_durationInSeconds;
+            if (!trackedApplied) _jumpTracker.PerformHalfTwist(_durationInSeconds);
+            trackedApplied = true;
             if (_actualAngle >= _completeRotation) return;
             _target.Rotate(Vector3.up * deltaAngle,Space.Self);
             _actualAngle += deltaAngle;
