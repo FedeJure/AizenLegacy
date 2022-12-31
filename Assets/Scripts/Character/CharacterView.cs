@@ -1,11 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using UniRx;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Character
 {
+
+    [Serializable]
+    class TrampolineSounds
+    {
+        private bool firstUsed;
+
+        public void Reset()
+        {
+            firstUsed = false;
+        }
+        public AudioClip GetNextSound()
+        {
+            if (!firstUsed)
+            {
+                firstUsed = true;
+                return initialJump;
+            }
+
+            return clips[Random.Range(0, clips.Length)];
+        }
+        [SerializeField] private AudioClip initialJump;
+        [SerializeField] private AudioClip[] clips;
+    }
     public class CharacterView : MonoBehaviour
     {
         [SerializeField] private IKCharacterView ikView;
@@ -14,7 +37,8 @@ namespace Character
         [SerializeField] private Animator animator;
         [SerializeField] private GameObject pivotModel;
         [SerializeField] private float maxInclinationAlowed = 40;
-
+        [SerializeField] private TrampolineSounds trampolineSounds;
+        [SerializeField] private AudioSource source;
         [SerializeField] private Transform leftFeetBone;
         
         private int velocityKey = Animator.StringToHash("verticalVelocity");
@@ -105,7 +129,7 @@ namespace Character
             SetEnable(true);
             ResetState();
             pivotModel.transform.rotation = Quaternion.identity;
-            
+            trampolineSounds.Reset();
         }
 
         private void HandleExitTrampoline(Unit _)
@@ -116,6 +140,7 @@ namespace Character
         private void HandleEnterTrampoline(Unit _)
         {
             ResetState();
+            source.PlayOneShot(trampolineSounds.GetNextSound());
         }
 
 

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CustomInterstitial : MonoBehaviour
@@ -5,9 +6,11 @@ public class CustomInterstitial : MonoBehaviour
     [SerializeField] private GameObject content;
     private static CustomInterstitial _instance;
 
-    private float lastTimeShow = 0;
-    private const float timeToShow = 60;
-    private int allowedTimesToShow = 3;
+    private double timeOfPeriod = TimeSpan.FromDays(2).TotalMilliseconds;
+    private int maxShowsPerPeriod = 1;
+
+    private string timeKey = "custom_interstitial_time";
+    private string countKey = "custom_interstitial_count";
     private void Awake()
     {
         _instance = this;
@@ -16,10 +19,22 @@ public class CustomInterstitial : MonoBehaviour
 
     private void _OpenCustomInterstitial()
     {
-        if (allowedTimesToShow <= 0 || lastTimeShow + timeToShow >= Time.time) return;
-        lastTimeShow = Time.time;
-        _instance.content.SetActive(true);
-        allowedTimesToShow--;
+        if (!PlayerPrefs.HasKey(timeKey)) PlayerPrefs.SetInt(timeKey, DateTime.Now.Millisecond);
+        if (!PlayerPrefs.HasKey(countKey)) PlayerPrefs.SetInt(countKey, maxShowsPerPeriod);
+        var currentCount = PlayerPrefs.GetInt(countKey);
+        if (currentCount > 0)
+        {
+            PlayerPrefs.SetInt(countKey, PlayerPrefs.GetInt(countKey) - 1);
+            _instance.content.SetActive(true);
+            return;
+        }
+
+        double lastTimeRefresh = PlayerPrefs.GetInt(timeKey);
+
+
+        if (lastTimeRefresh + timeOfPeriod >= DateTime.Now.Millisecond) return;
+        PlayerPrefs.SetInt(timeKey, DateTime.Now.Millisecond);
+        PlayerPrefs.SetInt(timeKey, maxShowsPerPeriod);
     }
     public static void TryOpenCustomInterstitial()
     {

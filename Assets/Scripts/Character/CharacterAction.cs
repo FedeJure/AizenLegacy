@@ -96,4 +96,20 @@ namespace Character
             _currentRotateAngle += Math.Abs(rotateAngle);
         }
     }
+
+    public class ThreeQuarter : CharacterAction
+    {
+        private ICharacterState _state;
+        public ThreeQuarter(ICharacterState state)
+        {
+            _state = state;
+        }
+        public void Execute()
+        {
+            if (_state.RequestPerformUniqueAction())
+            {
+                
+            }
+        }
+    }
 }
