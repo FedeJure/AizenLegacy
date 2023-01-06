@@ -386,6 +386,12 @@
           </e>
           <e p="link.xml" t="Include" />
         </e>
+        <e p="GUI PRO Kit - Simple Casual" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="PanelControlSimpleCasual.cs" t="Include" />
+            <e p="PanelSimpleCasual.cs" t="Include" />
+          </e>
+        </e>
         <e p="LeanTween" t="Include">
           <e p="Framework" t="Include">
             <e p="LeanAudio.cs" t="Include" />
@@ -399,6 +405,11 @@
           </e>
         </e>
         <e p="LICENSE.txt" t="Include" />
+        <e p="Material" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="MetalicShader.shader" t="Include" />
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="UniRx" t="Include">
             <e p="Scripts" t="Include">
@@ -687,6 +698,7 @@
             <e p="IKCharacterView.cs" t="Include" />
             <e p="JumpsConfig.cs" t="Include" />
             <e p="JumpTracker.cs" t="Include" />
+            <e p="PointsManager.cs" t="Include" />
             <e p="Position.cs" t="Include" />
             <e p="SkinInit.cs" t="Include" />
           </e>

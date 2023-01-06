@@ -37,7 +37,7 @@ namespace Character
         [SerializeField] private Rigidbody rbody;
         [SerializeField] private Animator animator;
         [SerializeField] private GameObject pivotModel;
-        [SerializeField] private float maxInclinationAlowed = 40;
+        [SerializeField] private float maxInclinationAlowed = 25;
         [SerializeField] private TrampolineSounds trampolineSounds;
         [SerializeField] private AudioSource source;
         [SerializeField] private Transform leftFeetBone;
