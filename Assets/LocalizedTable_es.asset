@@ -90,5 +90,37 @@ MonoBehaviour:
     m_Localized: "\r\xA1Prueba otro de mis juegos!"
     m_Metadata:
       m_Items: []
+  - m_Id: 163398481942966272
+    m_Localized: Entrenamiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399088825200640
+    m_Localized: "Competici\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399169536192512
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399212456505344
+    m_Localized: Modos de juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399243204947968
+    m_Localized: "Altura m\xE1xima"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399365619904512
+    m_Localized: "Recuperaci\xF3n de energ\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399450990768128
+    m_Localized: "Pr\xF3ximamente"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163404712229236736
+    m_Localized: "Estad\xEDsticas"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

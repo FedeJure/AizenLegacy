@@ -112,5 +112,37 @@ MonoBehaviour:
     m_Localized: "Prova un altro dei miei giochi!\r"
     m_Metadata:
       m_Items: []
+  - m_Id: 163398481942966272
+    m_Localized: Formazione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399088825200640
+    m_Localized: concorrenza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399169536192512
+    m_Localized: Esercitazione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399212456505344
+    m_Localized: "modalit\xE0 di gioco\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399243204947968
+    m_Localized: "altezza massima\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399365619904512
+    m_Localized: "Recupero di energia\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399450990768128
+    m_Localized: Prossimamente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163404712229236736
+    m_Localized: Statistiche
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

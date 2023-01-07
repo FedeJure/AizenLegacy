@@ -100,5 +100,37 @@ MonoBehaviour:
     m_Localized: "Essayez un autre de mes jeux !\r"
     m_Metadata:
       m_Items: []
+  - m_Id: 163398481942966272
+    m_Localized: Formation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399088825200640
+    m_Localized: "Comp\xE9tition"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399169536192512
+    m_Localized: Didacticiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399212456505344
+    m_Localized: "Modes de jeu\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399243204947968
+    m_Localized: "hauteur maximum\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399365619904512
+    m_Localized: "R\xE9cup\xE9ration d'\xE9nergie\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399450990768128
+    m_Localized: "Bient\xF4t disponible\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163404712229236736
+    m_Localized: Statistiques
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

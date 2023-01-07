@@ -87,6 +87,38 @@ MonoBehaviour:
     m_Key: tid_try_game
     m_Metadata:
       m_Items: []
+  - m_Id: 163398481942966272
+    m_Key: tid_training
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399088825200640
+    m_Key: tid_competition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399169536192512
+    m_Key: tid_tutoria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399212456505344
+    m_Key: tid_game_modes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399243204947968
+    m_Key: tid_max_height
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399365619904512
+    m_Key: tid_energy_recovery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163399450990768128
+    m_Key: tid_comming_soon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 163404712229236736
+    m_Key: tid_stats
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
