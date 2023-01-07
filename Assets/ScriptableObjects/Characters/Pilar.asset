@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3afad1c57cd46e987228b6b0ddd8df5, type: 3}
   m_Name: Pilar
   m_EditorClassIdentifier: 
-  characterStats: {fileID: 11400000, guid: 0d5613ecc69661c4f94f8c5a21d5b95c, type: 2}
+  characterStats: {fileID: 11400000, guid: 616311496eea8f44fb1d48670fa57004, type: 2}
   characterSkin: {fileID: 11400000, guid: edbf621750a95a949a4e619dfadc3ccd, type: 2}
   characterName: Pilar
   scale: 0.9

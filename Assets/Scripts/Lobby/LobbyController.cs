@@ -1,16 +1,15 @@
 ﻿using System;
-using System.Collections.Concurrent;
-using Character;
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Lobby
 {
     public class LobbyController : MonoBehaviour
     {
-        [SerializeField] private CharacterSelector[] selectors;
+        private List<CharacterSelector> selectors;
         [SerializeField] private Button nextButton;
         [SerializeField] private Button backButton;
         [SerializeField] private Button playButton;
@@ -23,7 +22,8 @@ namespace Lobby
 
         private void Awake()
         {
-            if (selectors.Length == 0) throw new Exception("Need characters selectors");
+            selectors = GetComponentsInChildren<LobbyCharacter>().Select(c => c.CharacterLobbySelector).ToList();
+            if (selectors.Count == 0) throw new Exception("Need characters selectors");
             currentPlayer = selectors[currentIndex];
             nextButton.onClick.AddListener(() => MoveSelector(1));
             backButton.onClick.AddListener(() => MoveSelector(-1));
@@ -46,7 +46,7 @@ namespace Lobby
 
         private void MoveSelector(int move)
         {
-            if (currentIndex + move >= selectors.Length)
+            if (currentIndex + move >= selectors.Count)
             {
                 currentPlayer = selectors[0];
                 currentIndex = 0;
@@ -54,8 +54,8 @@ namespace Lobby
             
             else if (currentIndex + move < 0)
             {
-                currentPlayer = selectors[selectors.Length - 1];
-                currentIndex = selectors.Length - 1;
+                currentPlayer = selectors[selectors.Count - 1];
+                currentIndex = selectors.Count - 1;
             }
 
             else
