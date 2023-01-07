@@ -365,6 +365,7 @@
         <e p="Confetti FX" t="Include">
           <e p="ReadMe.txt" t="Include" />
         </e>
+        <e p="CutOutMaskUI.cs" t="Include" />
         <e p="ExternalDependencyManager" t="Include">
           <e p="Editor" t="Include">
             <e p="external-dependency-manager_version-1.2.162_manifest.txt" t="Include" />
@@ -375,6 +376,7 @@
             <e p="OFL.txt" t="Include" />
           </e>
         </e>
+        <e p="GameSection.cs" t="Include" />
         <e p="GoogleMobileAds" t="Include">
           <e p="Editor" t="Include">
             <e p="GoogleMobileAdsDependencies.xml" t="Include" />
