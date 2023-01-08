@@ -376,6 +376,7 @@
             <e p="OFL.txt" t="Include" />
           </e>
         </e>
+        <e p="GameplayController.cs" t="Include" />
         <e p="GameSection.cs" t="Include" />
         <e p="GoogleMobileAds" t="Include">
           <e p="Editor" t="Include">
