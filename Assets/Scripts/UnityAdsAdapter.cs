@@ -23,10 +23,17 @@ public class UnityAdsAdapter : MonoBehaviour
         instance = this;
     }
 
-    void Start () {
-        MobileAds.Initialize(initStatus => { });
-        RequestBanner();
-        LoadInstertitial();
+    void OnEnable () {
+        try
+        {
+            MobileAds.Initialize(initStatus => { });
+            RequestBanner();
+            LoadInstertitial();
+        }
+        catch (Exception)
+        {
+        }
+        
     }
     
     public void RequestBanner()
