@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0c051c65bcc44b6ba53a532ed4d9e0e, type: 3}
   m_Name: Fede
   m_EditorClassIdentifier: 
-  energy: 100
+  energy: 90
   height: 4.5
-  energySpeedCharge: 3
+  energySpeedCharge: 2

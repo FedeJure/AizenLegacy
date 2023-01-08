@@ -175,6 +175,7 @@ namespace Character
 
         private void FixedUpdate()
         {
+            state.ResetRotationSpeed();
             ApplyActions();
             var velocity = rbody.velocity;
             var position = rbody.position;

@@ -10,6 +10,7 @@ namespace Character
 
     public class FrontAction : CharacterAction
     {
+        private static float maxRotatioSpeed = 1;
         private readonly Transform _target;
         private readonly ICharacterState _state;
         private readonly float completeRotation = 360;
@@ -25,6 +26,8 @@ namespace Character
             if (!_state.currentPosition.HasValue) return;
             var deltaAngle = completeRotation * Time.deltaTime;
             // if (_actualAngle >= completeRotation) return;
+            if (_state.rotationSpeed >= 20) return;
+            _state.AddRotation(deltaAngle);
             _target.Rotate(_target.TransformVector(_target.right * deltaAngle), Space.Self);
             _actualAngle += deltaAngle;
         }
@@ -46,6 +49,8 @@ namespace Character
         {
             if (!_state.currentPosition.HasValue) return;
             var deltaAngle = completeRotation * Time.deltaTime;
+            if (_state.rotationSpeed >= 20) return;
+            _state.AddRotation(deltaAngle);
             // if (_actualAngle >= completeRotation) return;
             _target.Rotate(_target.TransformVector(-_target.right * deltaAngle));
             _actualAngle += deltaAngle;

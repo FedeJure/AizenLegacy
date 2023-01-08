@@ -10,6 +10,8 @@ namespace Character
         bool isFalling { get; }
         Position? currentPosition { get; }
         bool canPerformAction { get; }
+        float rotationSpeed { get; }
+        void AddRotation(float deltaSpeed);
 
         bool RequestPerformUniqueAction();
     }
@@ -21,6 +23,17 @@ namespace Character
         public bool isStable { get; set; }
         public bool isFalling { get; set; }
         public bool canPerformAction { get; set; }
+        public float rotationSpeed { get; private set; }
+
+        public void AddRotation(float deltaSpeed)
+        {
+            rotationSpeed += deltaSpeed;
+        }
+
+        public void ResetRotationSpeed()
+        {
+            rotationSpeed = 0;
+        }
         public bool RequestPerformUniqueAction()
         {
             if (!canPerformAction) return false;
