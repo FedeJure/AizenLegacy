@@ -2181,6 +2181,28 @@ MonoBehaviour:
         m_CallState: 2
   references:
     version: 1
+--- !u!1 &1184151384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2889753970294188249, guid: 3ca9e9b57334d8a4b843d9e7df967b64,
+    type: 3}
+  m_PrefabInstance: {fileID: 3088132184945685243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &1184151385
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184151384}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d4abd95932a795f4fa3b8672ed90a529, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: d4abd95932a795f4fa3b8672ed90a529, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1197509951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3072,7 +3094,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5546510047702580884, guid: 3ca9e9b57334d8a4b843d9e7df967b64, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ca9e9b57334d8a4b843d9e7df967b64, type: 3}
 --- !u!1 &3088132184945685244 stripped
 GameObject:
