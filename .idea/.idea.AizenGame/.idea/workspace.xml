@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Login.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Login.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Google_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/Google_icon.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/AIActions/AIMaleAction.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AIMaleAction.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/00_Component_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/00_Component_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Caht.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Caht.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Character_Detail_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Character_Detail_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Character_List.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Character_List.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Character_Skin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Character_Skin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Clan.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Clan.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Daily_Bonus_28day.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Daily_Bonus_28day.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Equipment.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Prefabs/Prefabs_DemoScene_Panels/Light/Equipment.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,6 +215,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -275,7 +294,7 @@
       <workItem from="1672948305988" duration="7225000" />
       <workItem from="1673103313393" duration="4727000" />
       <workItem from="1673134205515" duration="6631000" />
-      <workItem from="1678310428208" duration="315000" />
+      <workItem from="1678310428208" duration="920000" />
     </task>
     <servers />
   </component>
