@@ -16,23 +16,43 @@ public class GameSceneManager : MonoBehaviour
 
     [SerializeField] private GameObject gameplayController;
     [SerializeField] private GameObject lobbyController;
+    [SerializeField] private GameObject loginController;
 
     private GameObject currentGameplay;
     private void Awake()
     {
         instance = this;
-        LoadLobbyScene();
+        LoadLoginScene();
+    }
+
+    private void LoadLoginScene()
+    {
+        DestroyOngoingGame();
+        EventBus.OnLogged()
+            .Do(_ =>
+            {
+                loginController.SetActive(false);
+                // var newLobbyController = Instantiate(lobbyController);
+                // Destroy(lobbyController);
+                // lobbyController = newLobbyController;
+                LoadLobbyScene();
+            }).Subscribe();
+        loginController.SetActive(true);
+        // lobbyController.SetActive(false);
     }
 
     public void LoadLobbyScene()
     {
-        if (currentGameplay != null)
-        {
-            Destroy(currentGameplay);
-            currentGameplay = null;
-            EventBus.EmitOnGameplayEnd();
-        }
-        lobbyController.SetActive(true);
+        DestroyOngoingGame();
+        // lobbyController.SetActive(true);
+    }
+
+    private void DestroyOngoingGame()
+    {
+        if (currentGameplay == null) return;
+        Destroy(currentGameplay);
+        currentGameplay = null;
+        EventBus.EmitOnGameplayEnd();
     }
     
     public void LoadGamePlayScene()

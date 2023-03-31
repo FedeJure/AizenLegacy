@@ -1,0 +1,313 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+extern const RuntimeMethod* IOSPushNotifications_NotificationReceived_m1EDC8FAD0EFD5F3DF20F0C0E257B0DABED4E594F_RuntimeMethod_var;
+extern const RuntimeMethod* IOSPushNotifications_NotificationRegistrationTokenReceived_m59857393797FA94225C34E6A9E39030E2AD9BFB0_RuntimeMethod_var;
+
+
+
+// 0x00000001 System.Void Unity.Services.PushNotifications.IPushNotificationEventsWrapper::RecordCustomEvent(System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>,System.Int32)
+// 0x00000002 System.Void Unity.Services.PushNotifications.EventsWrapper::RecordCustomEvent(System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>,System.Int32)
+extern void EventsWrapper_RecordCustomEvent_m40DC2EB269E0E3F741680E83E22D0707BB348151 (void);
+// 0x00000003 System.Void Unity.Services.PushNotifications.EventsWrapper::.ctor()
+extern void EventsWrapper__ctor_mB95AC99E37A3911AA74166D7A9E811E20E47FC86 (void);
+// 0x00000004 System.Void Unity.Services.PushNotifications.IPushNotificationsAnalytics::RecordPushTokenUpdated(System.String)
+// 0x00000005 System.Void Unity.Services.PushNotifications.IPushNotificationsAnalytics::RecordNotificationOpened(System.Collections.Generic.Dictionary`2<System.String,System.Object>,System.Boolean)
+// 0x00000006 System.Void Unity.Services.PushNotifications.SdkVersion::.cctor()
+extern void SdkVersion__cctor_mD93B80F8AECDDBEB56EB5089F3547041DD230EB2 (void);
+// 0x00000007 System.Void Unity.Services.PushNotifications.PushNotificationAnalytics::.ctor(Unity.Services.PushNotifications.IPushNotificationEventsWrapper,Unity.Services.PushNotifications.IPushNotificationAnalyticsPlatformWrapper)
+extern void PushNotificationAnalytics__ctor_m49FBC30B44C5A82E8038F55C39B185128DD04922 (void);
+// 0x00000008 System.Void Unity.Services.PushNotifications.PushNotificationAnalytics::RecordPushTokenUpdated(System.String)
+extern void PushNotificationAnalytics_RecordPushTokenUpdated_mB5D5066604319E0BA9FDEC7841A355E2C16B141B (void);
+// 0x00000009 System.Void Unity.Services.PushNotifications.PushNotificationAnalytics::RecordNotificationOpened(System.Collections.Generic.Dictionary`2<System.String,System.Object>,System.Boolean)
+extern void PushNotificationAnalytics_RecordNotificationOpened_mFB5E550EC394000A658DC9EA6DEFE3BF4D41F4EA (void);
+// 0x0000000A System.String Unity.Services.PushNotifications.IPushNotificationAnalyticsPlatformWrapper::ApplicationVersion()
+// 0x0000000B UnityEngine.RuntimePlatform Unity.Services.PushNotifications.IPushNotificationAnalyticsPlatformWrapper::RuntimePlatform()
+// 0x0000000C System.Boolean Unity.Services.PushNotifications.IPushNotificationAnalyticsPlatformWrapper::IsApplicationFocused()
+// 0x0000000D System.String Unity.Services.PushNotifications.IPushNotificationAnalyticsPlatformWrapper::AnalyticsPlatform()
+// 0x0000000E System.String Unity.Services.PushNotifications.PushNotificationsAnalyticsPlatformWrapper::ApplicationVersion()
+extern void PushNotificationsAnalyticsPlatformWrapper_ApplicationVersion_mA482CB81A11E47AB2B0F25B6DF81723947976D3A (void);
+// 0x0000000F UnityEngine.RuntimePlatform Unity.Services.PushNotifications.PushNotificationsAnalyticsPlatformWrapper::RuntimePlatform()
+extern void PushNotificationsAnalyticsPlatformWrapper_RuntimePlatform_m2EAAAE8D173FD9CDB32141BE7D2757D1129523F0 (void);
+// 0x00000010 System.Boolean Unity.Services.PushNotifications.PushNotificationsAnalyticsPlatformWrapper::IsApplicationFocused()
+extern void PushNotificationsAnalyticsPlatformWrapper_IsApplicationFocused_mD37FE77CAD4450DE87324B8BD3C10BCD03CA299A (void);
+// 0x00000011 System.String Unity.Services.PushNotifications.PushNotificationsAnalyticsPlatformWrapper::AnalyticsPlatform()
+extern void PushNotificationsAnalyticsPlatformWrapper_AnalyticsPlatform_m37B6F09772EF310EBA3CC8A06BB7C003B9D41C8E (void);
+// 0x00000012 System.Void Unity.Services.PushNotifications.PushNotificationsAnalyticsPlatformWrapper::.ctor()
+extern void PushNotificationsAnalyticsPlatformWrapper__ctor_mD5FEFFC5689DC468EA63874AA6FE35190D03F443 (void);
+// 0x00000013 System.Void Unity.Services.PushNotifications.AndroidPushNotifications::.ctor(Unity.Services.PushNotifications.PushNotificationReceivedHandler,Unity.Services.PushNotifications.PushNotificationAnalytics)
+extern void AndroidPushNotifications__ctor_m5698C2A48B793FE9C0B3BAE4A3080A1CC380600B (void);
+// 0x00000014 System.Void Unity.Services.PushNotifications.AndroidPushNotifications::add_InternalNotificationWasReceived(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void AndroidPushNotifications_add_InternalNotificationWasReceived_m75D9BC1E0A1C6714094E7B449CD1FE22F2014202 (void);
+// 0x00000015 System.Void Unity.Services.PushNotifications.AndroidPushNotifications::remove_InternalNotificationWasReceived(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void AndroidPushNotifications_remove_InternalNotificationWasReceived_mE98CCEE5A830A5C0911541E340A6223330BCDEC8 (void);
+// 0x00000016 System.Threading.Tasks.Task`1<System.String> Unity.Services.PushNotifications.AndroidPushNotifications::RegisterForPushNotificationsAsync(System.String,System.String,System.String,System.String)
+extern void AndroidPushNotifications_RegisterForPushNotificationsAsync_mAA8605438B140D6B3D6A34AD577808811F104645 (void);
+// 0x00000017 UnityEngine.AndroidJavaObject Unity.Services.PushNotifications.AndroidPushNotifications::GetPluginInstance()
+extern void AndroidPushNotifications_GetPluginInstance_m283BF109C5362326C99E8EDF2D0ABABF44523506 (void);
+// 0x00000018 UnityEngine.AndroidJavaObject Unity.Services.PushNotifications.AndroidPushNotifications::GetCurrentActivity()
+extern void AndroidPushNotifications_GetCurrentActivity_mB3B27D2A19755B471569FBF3A83DC3BE3652AB03 (void);
+// 0x00000019 System.Void Unity.Services.PushNotifications.AndroidPushNotifications::OnTokenReceived(System.String)
+extern void AndroidPushNotifications_OnTokenReceived_mF6046C9C81849BA09786CFB4247624334E7C2092 (void);
+// 0x0000001A System.Void Unity.Services.PushNotifications.AndroidPushNotifications::OnNotificationReceived(System.String)
+extern void AndroidPushNotifications_OnNotificationReceived_mF4ECEF74A118B693AE336FDA8D4E848777E5485A (void);
+// 0x0000001B System.Void Unity.Services.PushNotifications.AndroidPushNotifications::.cctor()
+extern void AndroidPushNotifications__cctor_m713310F44C73E6BB028515176FC1E3F7F1E47025 (void);
+// 0x0000001C System.Void Unity.Services.PushNotifications.AndroidPushNotifications/<>c__DisplayClass13_0::.ctor()
+extern void U3CU3Ec__DisplayClass13_0__ctor_m68BC247747EBFB5A680D9BA3BEAEA0AF37876592 (void);
+// 0x0000001D System.Void Unity.Services.PushNotifications.AndroidPushNotifications/<>c__DisplayClass13_0::<OnTokenReceived>b__0()
+extern void U3CU3Ec__DisplayClass13_0_U3COnTokenReceivedU3Eb__0_m568CAF2D4C2C9FFF7F4A502EE7C79E9DE0D48820 (void);
+// 0x0000001E System.Void Unity.Services.PushNotifications.AndroidPushNotifications/<>c__DisplayClass14_0::.ctor()
+extern void U3CU3Ec__DisplayClass14_0__ctor_mD3B7FCD31E8B34140F63CAAD8B12A776F746B1E6 (void);
+// 0x0000001F System.Void Unity.Services.PushNotifications.AndroidPushNotifications/<>c__DisplayClass14_0::<OnNotificationReceived>b__0()
+extern void U3CU3Ec__DisplayClass14_0_U3COnNotificationReceivedU3Eb__0_m88354A02D4C4CAED03096251605E626B1C3CFA8E (void);
+// 0x00000020 System.Void Unity.Services.PushNotifications.IOSPushNotifications::add_InternalNotificationWasReceived(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void IOSPushNotifications_add_InternalNotificationWasReceived_m008D723CF3B1003872FCB89771A7EB992D12720C (void);
+// 0x00000021 System.Void Unity.Services.PushNotifications.IOSPushNotifications::remove_InternalNotificationWasReceived(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void IOSPushNotifications_remove_InternalNotificationWasReceived_m4C30F3C04BAB50D8D48EC03E2645D061DCFADE2C (void);
+// 0x00000022 System.Void Unity.Services.PushNotifications.IOSPushNotifications::.ctor(Unity.Services.PushNotifications.PushNotificationReceivedHandler,Unity.Services.PushNotifications.PushNotificationAnalytics)
+extern void IOSPushNotifications__ctor_m2AA0B77C7819386B338326FFECEA1AF6E983554C (void);
+// 0x00000023 System.Threading.Tasks.Task`1<System.String> Unity.Services.PushNotifications.IOSPushNotifications::RegisterForPushNotificationsAsync()
+extern void IOSPushNotifications_RegisterForPushNotificationsAsync_m8C4C414424FD2B4521E0F1306E60CA1BD44AA84D (void);
+// 0x00000024 System.Void Unity.Services.PushNotifications.IOSPushNotifications::NotificationRegistrationTokenReceived(System.String)
+extern void IOSPushNotifications_NotificationRegistrationTokenReceived_m59857393797FA94225C34E6A9E39030E2AD9BFB0 (void);
+// 0x00000025 System.Void Unity.Services.PushNotifications.IOSPushNotifications::NotificationReceived(System.String)
+extern void IOSPushNotifications_NotificationReceived_m1EDC8FAD0EFD5F3DF20F0C0E257B0DABED4E594F (void);
+// 0x00000026 System.Void Unity.Services.PushNotifications.IOSPushNotifications::.cctor()
+extern void IOSPushNotifications__cctor_m449B7D7F9999E7D6274FBE5DEEEFB3C6CFDEE485 (void);
+// 0x00000027 System.Void Unity.Services.PushNotifications.IOSPushNotifications/NotificationRegistrationCallback::.ctor(System.Object,System.IntPtr)
+extern void NotificationRegistrationCallback__ctor_m0FAEA8B73BADDF8E166CFB89EED78BA836B075F2 (void);
+// 0x00000028 System.Void Unity.Services.PushNotifications.IOSPushNotifications/NotificationRegistrationCallback::Invoke(System.String)
+extern void NotificationRegistrationCallback_Invoke_m3A213EB8F7489BADC4760B4F4E61BE99A5D895BD (void);
+// 0x00000029 System.IAsyncResult Unity.Services.PushNotifications.IOSPushNotifications/NotificationRegistrationCallback::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+extern void NotificationRegistrationCallback_BeginInvoke_mAAD20F824669FCF2727AFE405E3458324F29D3D3 (void);
+// 0x0000002A System.Void Unity.Services.PushNotifications.IOSPushNotifications/NotificationRegistrationCallback::EndInvoke(System.IAsyncResult)
+extern void NotificationRegistrationCallback_EndInvoke_m09339224EEBF19694C934F9A6B4A0EFCBA538B8C (void);
+// 0x0000002B System.Void Unity.Services.PushNotifications.IOSPushNotifications/NotificationReceivedCallback::.ctor(System.Object,System.IntPtr)
+extern void NotificationReceivedCallback__ctor_mEC37D54D71ED8C8221BF9F4BACDECA3A8D5B41C0 (void);
+// 0x0000002C System.Void Unity.Services.PushNotifications.IOSPushNotifications/NotificationReceivedCallback::Invoke(System.String)
+extern void NotificationReceivedCallback_Invoke_m034C3D2101563714C8BC49030E6ABFE9B469B35A (void);
+// 0x0000002D System.IAsyncResult Unity.Services.PushNotifications.IOSPushNotifications/NotificationReceivedCallback::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+extern void NotificationReceivedCallback_BeginInvoke_mB312F32C013B6230FFA04CB39B32791A0D2FC1A1 (void);
+// 0x0000002E System.Void Unity.Services.PushNotifications.IOSPushNotifications/NotificationReceivedCallback::EndInvoke(System.IAsyncResult)
+extern void NotificationReceivedCallback_EndInvoke_mA0CFAB069111137DD83105D8E0528A23D1A83DD3 (void);
+// 0x0000002F System.Void Unity.Services.PushNotifications.IPushNotificationsService::add_OnNotificationReceived(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+// 0x00000030 System.Void Unity.Services.PushNotifications.IPushNotificationsService::remove_OnNotificationReceived(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+// 0x00000031 Unity.Services.PushNotifications.IPushNotificationsAnalytics Unity.Services.PushNotifications.IPushNotificationsService::get_Analytics()
+// 0x00000032 System.Threading.Tasks.Task`1<System.String> Unity.Services.PushNotifications.IPushNotificationsService::RegisterForPushNotificationsAsync()
+// 0x00000033 System.Void Unity.Services.PushNotifications.MainThreadHelper::Init()
+extern void MainThreadHelper_Init_m68D3FF8B57344CDEC6DCBE3711DBEE3401C5706C (void);
+// 0x00000034 System.Void Unity.Services.PushNotifications.MainThreadHelper::RunOnMainThread(System.Action)
+extern void MainThreadHelper_RunOnMainThread_m269CC2CC3DC7B7E73DB9C94CD614ACEA9B477541 (void);
+// 0x00000035 System.Void Unity.Services.PushNotifications.MainThreadHelper/<RunOnMainThread>d__4::.ctor()
+extern void U3CRunOnMainThreadU3Ed__4__ctor_m1DC3C115EB7FF97616A2117B1AAE35D3BC670A10 (void);
+// 0x00000036 System.Void Unity.Services.PushNotifications.MainThreadHelper/<RunOnMainThread>d__4::MoveNext()
+extern void U3CRunOnMainThreadU3Ed__4_MoveNext_m69EB0C88C1C633F5AB22DF688E21352B8AA8472B (void);
+// 0x00000037 System.Void Unity.Services.PushNotifications.MainThreadHelper/<RunOnMainThread>d__4::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRunOnMainThreadU3Ed__4_SetStateMachine_m197A9328C3EE628D1ED5B3E0CC273C17719DE48F (void);
+// 0x00000038 System.Void Unity.Services.PushNotifications.PushNotificationCoreInitialization::Register()
+extern void PushNotificationCoreInitialization_Register_m4DCFB2BCDC94699A6F2C03BC15133DDC06632F64 (void);
+// 0x00000039 System.Threading.Tasks.Task Unity.Services.PushNotifications.PushNotificationCoreInitialization::Initialize(Unity.Services.Core.Internal.CoreRegistry)
+extern void PushNotificationCoreInitialization_Initialize_m421ED66CF7CA3E4AC75C742853A60FCA7D6F6E1D (void);
+// 0x0000003A System.Void Unity.Services.PushNotifications.PushNotificationCoreInitialization::.ctor()
+extern void PushNotificationCoreInitialization__ctor_m3774889E0C6B01AB95B98E0354FA22DE6BECABD4 (void);
+// 0x0000003B System.Void Unity.Services.PushNotifications.PushNotificationReceivedHandler::.ctor(Unity.Services.PushNotifications.IPushNotificationsAnalytics,Unity.Services.PushNotifications.IPushNotificationAnalyticsPlatformWrapper)
+extern void PushNotificationReceivedHandler__ctor_m4A941E377273EC1F51E61F7808983DFE9B53B145 (void);
+// 0x0000003C System.Collections.Generic.Dictionary`2<System.String,System.Object> Unity.Services.PushNotifications.PushNotificationReceivedHandler::HandleReceivedNotification(System.String)
+extern void PushNotificationReceivedHandler_HandleReceivedNotification_m9CA29B8683AE528CC0FA57215F2F3EE142F25B4C (void);
+// 0x0000003D Unity.Services.PushNotifications.PushNotificationSettings Unity.Services.PushNotifications.PushNotificationSettings::GetAssetInstance()
+extern void PushNotificationSettings_GetAssetInstance_mFCF438B5C0F44DC2807B4E80391F82090BC4B1CC (void);
+// 0x0000003E System.Void Unity.Services.PushNotifications.PushNotificationSettings::.ctor()
+extern void PushNotificationSettings__ctor_mB907934B11E93B760E799F4C89CA86B5D954EE94 (void);
+// 0x0000003F Unity.Services.PushNotifications.IPushNotificationsService Unity.Services.PushNotifications.PushNotificationsService::get_Instance()
+extern void PushNotificationsService_get_Instance_m00D578A14C07F3DA1C7D2215841BAE86F81A0A59 (void);
+// 0x00000040 System.Void Unity.Services.PushNotifications.PushNotificationsServiceInstance::.ctor()
+extern void PushNotificationsServiceInstance__ctor_m0B633AE4175BFE7E80B93AB7A096535029D959BD (void);
+// 0x00000041 System.Void Unity.Services.PushNotifications.PushNotificationsServiceInstance::add_OnNotificationReceived(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void PushNotificationsServiceInstance_add_OnNotificationReceived_m46DA270DD8AD965A5A0603C8081CF83D3830E8B0 (void);
+// 0x00000042 System.Void Unity.Services.PushNotifications.PushNotificationsServiceInstance::remove_OnNotificationReceived(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void PushNotificationsServiceInstance_remove_OnNotificationReceived_m2763766512C3B4114B3F00A08CA5055984AED40A (void);
+// 0x00000043 Unity.Services.PushNotifications.IPushNotificationsAnalytics Unity.Services.PushNotifications.PushNotificationsServiceInstance::get_Analytics()
+extern void PushNotificationsServiceInstance_get_Analytics_m369B53BDD1F4911BDD9E565E72C6EA125E7DBCD9 (void);
+// 0x00000044 System.Threading.Tasks.Task`1<System.String> Unity.Services.PushNotifications.PushNotificationsServiceInstance::RegisterForPushNotificationsAsync()
+extern void PushNotificationsServiceInstance_RegisterForPushNotificationsAsync_m3A1074BCC7917C7C74ABA2A16BD3D3CDB216D9AD (void);
+// 0x00000045 System.Threading.Tasks.Task`1<System.String> Unity.Services.PushNotifications.PushNotificationsServiceInstance::RegisterForPushNotificationsInternal(Unity.Services.PushNotifications.PushNotificationSettings)
+extern void PushNotificationsServiceInstance_RegisterForPushNotificationsInternal_m09C82679C72BD610A889EFA32ACA5C638B447325 (void);
+static Il2CppMethodPointer s_methodPointers[69] = 
+{
+	NULL,
+	EventsWrapper_RecordCustomEvent_m40DC2EB269E0E3F741680E83E22D0707BB348151,
+	EventsWrapper__ctor_mB95AC99E37A3911AA74166D7A9E811E20E47FC86,
+	NULL,
+	NULL,
+	SdkVersion__cctor_mD93B80F8AECDDBEB56EB5089F3547041DD230EB2,
+	PushNotificationAnalytics__ctor_m49FBC30B44C5A82E8038F55C39B185128DD04922,
+	PushNotificationAnalytics_RecordPushTokenUpdated_mB5D5066604319E0BA9FDEC7841A355E2C16B141B,
+	PushNotificationAnalytics_RecordNotificationOpened_mFB5E550EC394000A658DC9EA6DEFE3BF4D41F4EA,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	PushNotificationsAnalyticsPlatformWrapper_ApplicationVersion_mA482CB81A11E47AB2B0F25B6DF81723947976D3A,
+	PushNotificationsAnalyticsPlatformWrapper_RuntimePlatform_m2EAAAE8D173FD9CDB32141BE7D2757D1129523F0,
+	PushNotificationsAnalyticsPlatformWrapper_IsApplicationFocused_mD37FE77CAD4450DE87324B8BD3C10BCD03CA299A,
+	PushNotificationsAnalyticsPlatformWrapper_AnalyticsPlatform_m37B6F09772EF310EBA3CC8A06BB7C003B9D41C8E,
+	PushNotificationsAnalyticsPlatformWrapper__ctor_mD5FEFFC5689DC468EA63874AA6FE35190D03F443,
+	AndroidPushNotifications__ctor_m5698C2A48B793FE9C0B3BAE4A3080A1CC380600B,
+	AndroidPushNotifications_add_InternalNotificationWasReceived_m75D9BC1E0A1C6714094E7B449CD1FE22F2014202,
+	AndroidPushNotifications_remove_InternalNotificationWasReceived_mE98CCEE5A830A5C0911541E340A6223330BCDEC8,
+	AndroidPushNotifications_RegisterForPushNotificationsAsync_mAA8605438B140D6B3D6A34AD577808811F104645,
+	AndroidPushNotifications_GetPluginInstance_m283BF109C5362326C99E8EDF2D0ABABF44523506,
+	AndroidPushNotifications_GetCurrentActivity_mB3B27D2A19755B471569FBF3A83DC3BE3652AB03,
+	AndroidPushNotifications_OnTokenReceived_mF6046C9C81849BA09786CFB4247624334E7C2092,
+	AndroidPushNotifications_OnNotificationReceived_mF4ECEF74A118B693AE336FDA8D4E848777E5485A,
+	AndroidPushNotifications__cctor_m713310F44C73E6BB028515176FC1E3F7F1E47025,
+	U3CU3Ec__DisplayClass13_0__ctor_m68BC247747EBFB5A680D9BA3BEAEA0AF37876592,
+	U3CU3Ec__DisplayClass13_0_U3COnTokenReceivedU3Eb__0_m568CAF2D4C2C9FFF7F4A502EE7C79E9DE0D48820,
+	U3CU3Ec__DisplayClass14_0__ctor_mD3B7FCD31E8B34140F63CAAD8B12A776F746B1E6,
+	U3CU3Ec__DisplayClass14_0_U3COnNotificationReceivedU3Eb__0_m88354A02D4C4CAED03096251605E626B1C3CFA8E,
+	IOSPushNotifications_add_InternalNotificationWasReceived_m008D723CF3B1003872FCB89771A7EB992D12720C,
+	IOSPushNotifications_remove_InternalNotificationWasReceived_m4C30F3C04BAB50D8D48EC03E2645D061DCFADE2C,
+	IOSPushNotifications__ctor_m2AA0B77C7819386B338326FFECEA1AF6E983554C,
+	IOSPushNotifications_RegisterForPushNotificationsAsync_m8C4C414424FD2B4521E0F1306E60CA1BD44AA84D,
+	IOSPushNotifications_NotificationRegistrationTokenReceived_m59857393797FA94225C34E6A9E39030E2AD9BFB0,
+	IOSPushNotifications_NotificationReceived_m1EDC8FAD0EFD5F3DF20F0C0E257B0DABED4E594F,
+	IOSPushNotifications__cctor_m449B7D7F9999E7D6274FBE5DEEEFB3C6CFDEE485,
+	NotificationRegistrationCallback__ctor_m0FAEA8B73BADDF8E166CFB89EED78BA836B075F2,
+	NotificationRegistrationCallback_Invoke_m3A213EB8F7489BADC4760B4F4E61BE99A5D895BD,
+	NotificationRegistrationCallback_BeginInvoke_mAAD20F824669FCF2727AFE405E3458324F29D3D3,
+	NotificationRegistrationCallback_EndInvoke_m09339224EEBF19694C934F9A6B4A0EFCBA538B8C,
+	NotificationReceivedCallback__ctor_mEC37D54D71ED8C8221BF9F4BACDECA3A8D5B41C0,
+	NotificationReceivedCallback_Invoke_m034C3D2101563714C8BC49030E6ABFE9B469B35A,
+	NotificationReceivedCallback_BeginInvoke_mB312F32C013B6230FFA04CB39B32791A0D2FC1A1,
+	NotificationReceivedCallback_EndInvoke_mA0CFAB069111137DD83105D8E0528A23D1A83DD3,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	MainThreadHelper_Init_m68D3FF8B57344CDEC6DCBE3711DBEE3401C5706C,
+	MainThreadHelper_RunOnMainThread_m269CC2CC3DC7B7E73DB9C94CD614ACEA9B477541,
+	U3CRunOnMainThreadU3Ed__4__ctor_m1DC3C115EB7FF97616A2117B1AAE35D3BC670A10,
+	U3CRunOnMainThreadU3Ed__4_MoveNext_m69EB0C88C1C633F5AB22DF688E21352B8AA8472B,
+	U3CRunOnMainThreadU3Ed__4_SetStateMachine_m197A9328C3EE628D1ED5B3E0CC273C17719DE48F,
+	PushNotificationCoreInitialization_Register_m4DCFB2BCDC94699A6F2C03BC15133DDC06632F64,
+	PushNotificationCoreInitialization_Initialize_m421ED66CF7CA3E4AC75C742853A60FCA7D6F6E1D,
+	PushNotificationCoreInitialization__ctor_m3774889E0C6B01AB95B98E0354FA22DE6BECABD4,
+	PushNotificationReceivedHandler__ctor_m4A941E377273EC1F51E61F7808983DFE9B53B145,
+	PushNotificationReceivedHandler_HandleReceivedNotification_m9CA29B8683AE528CC0FA57215F2F3EE142F25B4C,
+	PushNotificationSettings_GetAssetInstance_mFCF438B5C0F44DC2807B4E80391F82090BC4B1CC,
+	PushNotificationSettings__ctor_mB907934B11E93B760E799F4C89CA86B5D954EE94,
+	PushNotificationsService_get_Instance_m00D578A14C07F3DA1C7D2215841BAE86F81A0A59,
+	PushNotificationsServiceInstance__ctor_m0B633AE4175BFE7E80B93AB7A096535029D959BD,
+	PushNotificationsServiceInstance_add_OnNotificationReceived_m46DA270DD8AD965A5A0603C8081CF83D3830E8B0,
+	PushNotificationsServiceInstance_remove_OnNotificationReceived_m2763766512C3B4114B3F00A08CA5055984AED40A,
+	PushNotificationsServiceInstance_get_Analytics_m369B53BDD1F4911BDD9E565E72C6EA125E7DBCD9,
+	PushNotificationsServiceInstance_RegisterForPushNotificationsAsync_m3A1074BCC7917C7C74ABA2A16BD3D3CDB216D9AD,
+	PushNotificationsServiceInstance_RegisterForPushNotificationsInternal_m09C82679C72BD610A889EFA32ACA5C638B447325,
+};
+static const int32_t s_InvokerIndices[69] = 
+{
+	0,
+	1235,
+	3026,
+	0,
+	0,
+	5916,
+	1821,
+	2648,
+	1805,
+	0,
+	0,
+	0,
+	0,
+	2945,
+	2930,
+	2879,
+	2945,
+	3026,
+	1821,
+	2648,
+	2648,
+	641,
+	2945,
+	2945,
+	2648,
+	2648,
+	5916,
+	3026,
+	3026,
+	3026,
+	3026,
+	5753,
+	5753,
+	1821,
+	2945,
+	5753,
+	5753,
+	5916,
+	1817,
+	2648,
+	1048,
+	2648,
+	1817,
+	2648,
+	1048,
+	2648,
+	0,
+	0,
+	0,
+	0,
+	5916,
+	5753,
+	3026,
+	3026,
+	2648,
+	5916,
+	2381,
+	3026,
+	1821,
+	2381,
+	5874,
+	3026,
+	5874,
+	3026,
+	2648,
+	2648,
+	2945,
+	2945,
+	2381,
+};
+static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[2] = 
+{
+	{ 0x06000024, 8,  (void**)&IOSPushNotifications_NotificationRegistrationTokenReceived_m59857393797FA94225C34E6A9E39030E2AD9BFB0_RuntimeMethod_var, 0 },
+	{ 0x06000025, 7,  (void**)&IOSPushNotifications_NotificationReceived_m1EDC8FAD0EFD5F3DF20F0C0E257B0DABED4E594F_RuntimeMethod_var, 0 },
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_Services_PushNotifications_CodeGenModule;
+const Il2CppCodeGenModule g_Unity_Services_PushNotifications_CodeGenModule = 
+{
+	"Unity.Services.PushNotifications.dll",
+	69,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	2,
+	s_reversePInvokeIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

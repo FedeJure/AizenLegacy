@@ -56,7 +56,7 @@ public class AIRunning : AIActionBehavior
     private void ChangeDirection()
     {
         
-        agent.destination =transform.position + transform.TransformDirection(Vector3.RotateTowards(Vector3.forward, Vector3.right, 0.78f, 0.80f)) * 5 ;
+        agent.destination =transform.position + transform.TransformDirection(Vector3.RotateTowards(Vector3.forward, Vector3.right, 0.78f, 0.80f)) * 4 ;
     }
 
     // private async void RunInCircles()

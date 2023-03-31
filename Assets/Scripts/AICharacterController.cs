@@ -38,14 +38,14 @@ public class AICharacterController : MonoBehaviour
         clock = new FixedTimeClock(0.5f);
     }
 
-    private void Start()
+    private void OnEnable()
     {
         ReadyToPerformNewAction(null);
     }
 
     private void Update()
     {
-        anim.SetFloat("velocity", agent.velocity.magnitude);
+        anim.SetFloat(Animator.StringToHash("velocity"), agent.velocity.magnitude);
     }
 
     private void LateUpdate()
@@ -58,7 +58,7 @@ public class AICharacterController : MonoBehaviour
         }
     }
 
-    public void SetupNewLocation(AILocation newLocation)
+    public void SetupNewLocation(AILocation? newLocation)
     {
         try
         {
@@ -83,8 +83,9 @@ public class AICharacterController : MonoBehaviour
     public void SetupInitialLocation(AILocation location)
     {
         transform.position = location.location.position;
+        transform.rotation = location.location.rotation;
         SetupNewLocation(location);
-        InitAction();
+        // InitAction();
     }
 
     private async void  SearchForNewAction()
@@ -96,9 +97,9 @@ public class AICharacterController : MonoBehaviour
 
     private void InitAction()
     {
-        if (!actionInProgress.HasValue) throw new Exception("There is no action in progress");
+        if (!actionInProgress.HasValue || actionInProgress.Value.action.behavior == null) throw new Exception("There is no action in progress");
         var action = actionInProgress.Value.action;
-        action.behavior?.StartAction();
+        action.behavior.StartAction();
         Invoke("SearchForNewAction", Random.Range(action.minDuration, action.maxDuration));
     }
 

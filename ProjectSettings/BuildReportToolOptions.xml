@@ -60,7 +60,7 @@
   <ShowMeshColumnTriangleCount>true</ShowMeshColumnTriangleCount>
   <ShowMeshColumnAnimationType>false</ShowMeshColumnAnimationType>
   <ShowMeshColumnAnimationClipCount>true</ShowMeshColumnAnimationClipCount>
-  <ShowColumnAssetPath>true</ShowColumnAssetPath>
+  <ShowColumnAssetPath>false</ShowColumnAssetPath>
   <ShowColumnSizeBeforeBuild>true</ShowColumnSizeBeforeBuild>
   <ShowColumnSizeInBuild>true</ShowColumnSizeInBuild>
   <ShowColumnUnusedRawSize>true</ShowColumnUnusedRawSize>

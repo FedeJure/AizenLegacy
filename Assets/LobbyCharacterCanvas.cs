@@ -1,3 +1,4 @@
+using System;
 using Lobby;
 using TMPro;
 using UnityEngine;
@@ -22,11 +23,22 @@ public class LobbyCharacterCanvas : MonoBehaviour
 
     void Update()
     {
-        var cameraPos = camera.transform.position;
-        if (!canvas.cull && Vector3.Distance(cameraPos, transform.position) <=  10) canvas.cull = true;
+        try
+        {
+            var cameraPos = camera.transform.position;
+            if (!canvas.cull && Vector3.Distance(cameraPos, transform.position) <=  10) canvas.cull = true;
         
-        var lookPos = transform.position - cameraPos;
-        lookPos.y = 0;
-        transform.rotation = Quaternion.LookRotation(lookPos);
+            var lookPos = transform.position - cameraPos;
+            lookPos.y = 0;
+            transform.rotation = Quaternion.LookRotation(lookPos);
+        }
+        catch (Exception e)
+        {
+            if (camera == null)
+            {
+                camera = Camera.main;
+            }
+        }
+
     }
 }

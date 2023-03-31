@@ -1,0 +1,576 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+extern const RuntimeMethod* FirebaseAuth_IdTokenChangedFunction_mAA679E88457386BCDC9EAF2045CCE3CDA56C10DA_RuntimeMethod_var;
+extern const RuntimeMethod* FirebaseAuth_StateChangedFunction_m00EA0FD26C6875CD5AE555412B07B2590F621561_RuntimeMethod_var;
+extern const RuntimeMethod* Future_User_SWIG_CompletionDispatcher_m4D8780428EE377272E731A6E9988328C64CFC82E_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingApplicationException_mD3D5DF4565F2D8B785CECDDE06C94EB1AF3B7ACD_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingArgumentException_m21B2170535EECF45751C6F48948BC1322346A5F0_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingArgumentNullException_m09944997FE4F760BD1423A7DC3082736F605535C_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingArgumentOutOfRangeException_m7111A0768AC3707D3151755C7456E30482F974DF_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingArithmeticException_m6D48FAE1D40F739EBE2EB7B7A2D35A4C38E273D2_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingDivideByZeroException_m5E4DFAD8B4B70C66EA34EC78307E69F6B0D8F7E7_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingIOException_m097E27E1B950DDEDBE75ECAA525FBA1F9CCC55FC_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingIndexOutOfRangeException_m05738E7A913471982107EC9DAFF8E575AD16D09D_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingInvalidCastException_m7CEBADF8ADECB392731AD0215CA9D2162344E3EB_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingInvalidOperationException_m946F88971C00DC640C4A7FEFB4D820E03AFCBA8A_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingNullReferenceException_m7103FEC1AD9831462CD640AF2BD4BD51B457BE24_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingOutOfMemoryException_m477DE4F591DB31AFA8DFACEBACA2CCA81CD28367_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingOverflowException_m5E2F92E1488F0943C4B43806F9F6EF812073D384_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGExceptionHelper_SetPendingSystemException_m988E84E7A45B7FCE1EC1597585471AFA78B06887_RuntimeMethod_var;
+extern const RuntimeMethod* SWIGStringHelper_CreateString_m973E9F1971668A0D3BEA767B3479889D49CC39E3_RuntimeMethod_var;
+
+
+
+// 0x00000001 System.Void Firebase.Auth.Future_User::.ctor(System.IntPtr,System.Boolean)
+extern void Future_User__ctor_m4921804BE72053DD67804F59F83DBDC31CC33B59 (void);
+// 0x00000002 System.Void Firebase.Auth.Future_User::Dispose(System.Boolean)
+extern void Future_User_Dispose_m11787F5815D6E96F1210F52467F4E15D22E5D914 (void);
+// 0x00000003 System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> Firebase.Auth.Future_User::GetTask(Firebase.Auth.Future_User)
+extern void Future_User_GetTask_m6F04A551DD05AC7F83B046814B211FD1F94BE732 (void);
+// 0x00000004 System.Void Firebase.Auth.Future_User::ThrowIfDisposed()
+extern void Future_User_ThrowIfDisposed_m63693BBFEEC103A351DEBA56ADE6E028547A46E6 (void);
+// 0x00000005 System.Void Firebase.Auth.Future_User::SetOnCompletionCallback(Firebase.Auth.Future_User/Action)
+extern void Future_User_SetOnCompletionCallback_mE74D483740D50328FEED02B74BC8C4D36B072844 (void);
+// 0x00000006 System.Void Firebase.Auth.Future_User::SetCompletionData(System.IntPtr)
+extern void Future_User_SetCompletionData_m9B0F0C6E70D2635D44B671021F34588C0E995491 (void);
+// 0x00000007 System.Void Firebase.Auth.Future_User::SWIG_CompletionDispatcher(System.Int32)
+extern void Future_User_SWIG_CompletionDispatcher_m4D8780428EE377272E731A6E9988328C64CFC82E (void);
+// 0x00000008 System.IntPtr Firebase.Auth.Future_User::SWIG_OnCompletion(Firebase.Auth.Future_User/SWIG_CompletionDelegate,System.Int32)
+extern void Future_User_SWIG_OnCompletion_m4423B04C2D94704B96D6F9658E3A595B32281BE6 (void);
+// 0x00000009 System.Void Firebase.Auth.Future_User::SWIG_FreeCompletionData(System.IntPtr)
+extern void Future_User_SWIG_FreeCompletionData_m8F3A20ADF11FB34B93D0E2A10E9E6DDB6C3574D5 (void);
+// 0x0000000A Firebase.Auth.FirebaseUser Firebase.Auth.Future_User::GetResult()
+extern void Future_User_GetResult_mCC89E0C0C618E82468F3ECAC3EB96894290B5A2B (void);
+// 0x0000000B System.Void Firebase.Auth.Future_User::.cctor()
+extern void Future_User__cctor_m272E15A5111BCD75464C3C58B28A736273E51D2E (void);
+// 0x0000000C System.Void Firebase.Auth.Future_User/Action::.ctor(System.Object,System.IntPtr)
+extern void Action__ctor_m36EB2EEF5DEC591F7A825B3DDEBE00060E132492 (void);
+// 0x0000000D System.Void Firebase.Auth.Future_User/Action::Invoke()
+extern void Action_Invoke_mD0A5243978A9C45E0F19C49CF290539F912DEECA (void);
+// 0x0000000E System.Void Firebase.Auth.Future_User/SWIG_CompletionDelegate::.ctor(System.Object,System.IntPtr)
+extern void SWIG_CompletionDelegate__ctor_m230CBDCDB23532B178FCCEEFF97D4CB2B9402FD3 (void);
+// 0x0000000F System.Void Firebase.Auth.Future_User/SWIG_CompletionDelegate::Invoke(System.Int32)
+extern void SWIG_CompletionDelegate_Invoke_m2B9306AF3FF81D93F90BB7460F660398C0BC0EFF (void);
+// 0x00000010 System.Void Firebase.Auth.Future_User/<>c__DisplayClass5_0::.ctor()
+extern void U3CU3Ec__DisplayClass5_0__ctor_m249348EDFCD5F2A76A0C282F5F94481231B9D57A (void);
+// 0x00000011 System.Void Firebase.Auth.Future_User/<>c__DisplayClass5_0::<GetTask>b__0()
+extern void U3CU3Ec__DisplayClass5_0_U3CGetTaskU3Eb__0_mC46419BB62CE470D6A5EF5177D88980F148CE5AB (void);
+// 0x00000012 System.Void Firebase.Auth.Credential::.ctor(System.IntPtr,System.Boolean)
+extern void Credential__ctor_m4A17C65E57E8B4CAA8F25248AA8E645B71F32B02 (void);
+// 0x00000013 System.Runtime.InteropServices.HandleRef Firebase.Auth.Credential::getCPtr(Firebase.Auth.Credential)
+extern void Credential_getCPtr_m8E7872F98919E36F7A67DF50D27AE2B890D38CC1 (void);
+// 0x00000014 System.Void Firebase.Auth.Credential::Finalize()
+extern void Credential_Finalize_mF29D83866FC90FBD5CF9D6932E5497A8AD475F69 (void);
+// 0x00000015 System.Void Firebase.Auth.Credential::Dispose()
+extern void Credential_Dispose_m442C8D4C0921BAB54013A17D1BBC9D4A340398BC (void);
+// 0x00000016 System.Void Firebase.Auth.Credential::Dispose(System.Boolean)
+extern void Credential_Dispose_m45A76A45D0F3A85A3DBC050A08FB0055DD38C7B3 (void);
+// 0x00000017 System.Void Firebase.Auth.GoogleAuthProvider::.cctor()
+extern void GoogleAuthProvider__cctor_mADD148E7CEA017F1ABEDCC47DB0D4459DC707338 (void);
+// 0x00000018 Firebase.Auth.Credential Firebase.Auth.GoogleAuthProvider::GetCredential(System.String,System.String)
+extern void GoogleAuthProvider_GetCredential_m908C6090ED39CA7687DF6DC7878728729D137827 (void);
+// 0x00000019 System.Void Firebase.Auth.UserInfoInterface::.ctor(System.IntPtr,System.Boolean)
+extern void UserInfoInterface__ctor_mBC0F4C86070AE545C35D518F3CAD3860D9BB73BC (void);
+// 0x0000001A System.Void Firebase.Auth.UserInfoInterface::Finalize()
+extern void UserInfoInterface_Finalize_m06B83086DFE672E40B822A8056292229C09A4721 (void);
+// 0x0000001B System.Void Firebase.Auth.UserInfoInterface::Dispose()
+extern void UserInfoInterface_Dispose_m10151E5E08983ADB015CF780456F34722AC3E998 (void);
+// 0x0000001C System.Void Firebase.Auth.UserInfoInterface::Dispose(System.Boolean)
+extern void UserInfoInterface_Dispose_m5FB1ACA215115E1BFC233C59D2C1B91B7848F3B0 (void);
+// 0x0000001D System.Void Firebase.Auth.FirebaseUser::.ctor(System.IntPtr,System.Boolean)
+extern void FirebaseUser__ctor_mD6A2E9077DE9A427BA26ACE7091EE8C4936EE809 (void);
+// 0x0000001E System.Runtime.InteropServices.HandleRef Firebase.Auth.FirebaseUser::getCPtr(Firebase.Auth.FirebaseUser)
+extern void FirebaseUser_getCPtr_m7E40369A31F1A725E399F01966A02CAABF32A869 (void);
+// 0x0000001F System.Void Firebase.Auth.FirebaseUser::Dispose(System.Boolean)
+extern void FirebaseUser_Dispose_m3C1EFF971DD161419D47F0961320F5C2D22EED4A (void);
+// 0x00000020 System.Void Firebase.Auth.FirebaseAuth::.ctor(System.IntPtr,System.Boolean)
+extern void FirebaseAuth__ctor_mEC6DE61B81F05CB9FDE8A906A83F0E5F1399613C (void);
+// 0x00000021 System.Runtime.InteropServices.HandleRef Firebase.Auth.FirebaseAuth::getCPtr(Firebase.Auth.FirebaseAuth)
+extern void FirebaseAuth_getCPtr_mF3D3A8469B4C252267CB1EBAC51D24A9DD11B6B8 (void);
+// 0x00000022 System.Void Firebase.Auth.FirebaseAuth::Finalize()
+extern void FirebaseAuth_Finalize_m014CBC2FDA405956BD72DEAE698953B3DC2C4F92 (void);
+// 0x00000023 System.Void Firebase.Auth.FirebaseAuth::Dispose()
+extern void FirebaseAuth_Dispose_mB18CAF1EFC8848B2E9372C18B7E3A322E28B6E2B (void);
+// 0x00000024 System.Void Firebase.Auth.FirebaseAuth::Dispose(System.Boolean)
+extern void FirebaseAuth_Dispose_m39057F702EDFCD2736F1930BEC6AE16C2383A32F (void);
+// 0x00000025 Firebase.Auth.FirebaseAuth Firebase.Auth.FirebaseAuth::ProxyFromAppCPtr(System.IntPtr)
+extern void FirebaseAuth_ProxyFromAppCPtr_mD5C867BF65F336BCB8A7F513BD9D476DA2821961 (void);
+// 0x00000026 System.Void Firebase.Auth.FirebaseAuth::ThrowIfNull()
+extern void FirebaseAuth_ThrowIfNull_m75B5ACDD65C62406B8D55EBDD062B6A48795C065 (void);
+// 0x00000027 Firebase.Auth.FirebaseAuth Firebase.Auth.FirebaseAuth::GetAuth(Firebase.FirebaseApp)
+extern void FirebaseAuth_GetAuth_m87E0F1B3A6841C85AEDF8ED9C916360BA063C081 (void);
+// 0x00000028 System.Void Firebase.Auth.FirebaseAuth::OnAppDisposed(System.Object,System.EventArgs)
+extern void FirebaseAuth_OnAppDisposed_m2E2A8B66F4B39F27E3CEE795B182F2D50EDC4E48 (void);
+// 0x00000029 System.Void Firebase.Auth.FirebaseAuth::DisposeInternal()
+extern void FirebaseAuth_DisposeInternal_m91A20FEFCF1EF71AC451CDF5E24AF3296C3CC4AA (void);
+// 0x0000002A System.Void Firebase.Auth.FirebaseAuth::ForwardStateChange(System.IntPtr,System.Action`1<Firebase.Auth.FirebaseAuth>)
+extern void FirebaseAuth_ForwardStateChange_m9898EE4EC1826FA343E715A8C4EA25281C6D7759 (void);
+// 0x0000002B System.Void Firebase.Auth.FirebaseAuth::StateChangedFunction(System.IntPtr)
+extern void FirebaseAuth_StateChangedFunction_m00EA0FD26C6875CD5AE555412B07B2590F621561 (void);
+// 0x0000002C System.Void Firebase.Auth.FirebaseAuth::IdTokenChangedFunction(System.IntPtr)
+extern void FirebaseAuth_IdTokenChangedFunction_mAA679E88457386BCDC9EAF2045CCE3CDA56C10DA (void);
+// 0x0000002D Firebase.Auth.FirebaseUser Firebase.Auth.FirebaseAuth::UpdateCurrentUser(Firebase.Auth.FirebaseUser)
+extern void FirebaseAuth_UpdateCurrentUser_m8C0906D45788F454E7E19A8C929FEBA42792A06B (void);
+// 0x0000002E Firebase.Auth.FirebaseUser Firebase.Auth.FirebaseAuth::get_CurrentUser()
+extern void FirebaseAuth_get_CurrentUser_m99426341853624A9A11F81CFE5BEBCC293501ABF (void);
+// 0x0000002F System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> Firebase.Auth.FirebaseAuth::SignInWithCredentialAsync(Firebase.Auth.Credential)
+extern void FirebaseAuth_SignInWithCredentialAsync_m113AA2F02FEE5A28A9D49492AC5F33AA54A55D74 (void);
+// 0x00000030 System.Void Firebase.Auth.FirebaseAuth::CompleteFirebaseUserTask(System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser>,System.Threading.Tasks.TaskCompletionSource`1<Firebase.Auth.FirebaseUser>)
+extern void FirebaseAuth_CompleteFirebaseUserTask_m8B737EC46AD5F532A0DE7E90341A5FBC3E28DFC8 (void);
+// 0x00000031 System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> Firebase.Auth.FirebaseAuth::SignInWithCredentialInternalAsync(Firebase.Auth.Credential)
+extern void FirebaseAuth_SignInWithCredentialInternalAsync_mAA7A7978B4084AF60EBA28BEA1A50FA1EBE16FC6 (void);
+// 0x00000032 Firebase.Auth.FirebaseAuth Firebase.Auth.FirebaseAuth::GetAuthInternal(Firebase.FirebaseApp,Firebase.InitResult&)
+extern void FirebaseAuth_GetAuthInternal_m55709A4143C7E2EC3108ACF3706A971567ECF5E4 (void);
+// 0x00000033 System.Void Firebase.Auth.FirebaseAuth::LogHeartbeatInternal(Firebase.FirebaseApp)
+extern void FirebaseAuth_LogHeartbeatInternal_mB2A72926FD90F462F8B3399150BC51B9ACA27F0A (void);
+// 0x00000034 System.Void Firebase.Auth.FirebaseAuth::ReleaseReferenceInternal(Firebase.Auth.FirebaseAuth)
+extern void FirebaseAuth_ReleaseReferenceInternal_mC40BBDB8654D089090D0CD2FE6944B4C8CB07B4E (void);
+// 0x00000035 Firebase.Auth.FirebaseUser Firebase.Auth.FirebaseAuth::get_CurrentUserInternal()
+extern void FirebaseAuth_get_CurrentUserInternal_m056E7E027AFCF6EB9C63FBCF9001DD6503E545AC (void);
+// 0x00000036 System.Void Firebase.Auth.FirebaseAuth::.cctor()
+extern void FirebaseAuth__cctor_m82DDB910A74B0E1DCC58CAA46E60639DDC622BB6 (void);
+// 0x00000037 System.Void Firebase.Auth.FirebaseAuth/StateChangedDelegate::.ctor(System.Object,System.IntPtr)
+extern void StateChangedDelegate__ctor_m971B96650420F9DD96060A076F8D39527962C42F (void);
+// 0x00000038 System.Void Firebase.Auth.FirebaseAuth/StateChangedDelegate::Invoke(System.IntPtr)
+extern void StateChangedDelegate_Invoke_m1202665B970B49F5254C58F9B74D527796F8FEF4 (void);
+// 0x00000039 System.Void Firebase.Auth.FirebaseAuth/<>c__DisplayClass20_0::.ctor()
+extern void U3CU3Ec__DisplayClass20_0__ctor_m5BA94BEA2582743E481859C1F4376480C97E43C0 (void);
+// 0x0000003A System.Void Firebase.Auth.FirebaseAuth/<>c__DisplayClass20_1::.ctor()
+extern void U3CU3Ec__DisplayClass20_1__ctor_mF8D8387CF1928604864B73AD3B866729F15CEC7C (void);
+// 0x0000003B System.Void Firebase.Auth.FirebaseAuth/<>c__DisplayClass20_1::<GetAuth>b__0()
+extern void U3CU3Ec__DisplayClass20_1_U3CGetAuthU3Eb__0_mB1A8F1DF269278FF25902E6A86AE0F9797ABA8EF (void);
+// 0x0000003C System.Void Firebase.Auth.FirebaseAuth/<>c__DisplayClass23_0::.ctor()
+extern void U3CU3Ec__DisplayClass23_0__ctor_m9976BF776BAC98193D01D29B902FB24CFE64AEC2 (void);
+// 0x0000003D System.Void Firebase.Auth.FirebaseAuth/<>c__DisplayClass23_1::.ctor()
+extern void U3CU3Ec__DisplayClass23_1__ctor_mF48D1CFC3A407C0177EA4DD27B47C71EE7B9122E (void);
+// 0x0000003E System.Void Firebase.Auth.FirebaseAuth/<>c__DisplayClass23_1::<ForwardStateChange>b__0()
+extern void U3CU3Ec__DisplayClass23_1_U3CForwardStateChangeU3Eb__0_m95B57ED08D8D92E50775CFEDB0AE034745CC1E9D (void);
+// 0x0000003F System.Void Firebase.Auth.FirebaseAuth/<>c::.cctor()
+extern void U3CU3Ec__cctor_m2679267971D705E9EC045B2D7F18588CA504DCF5 (void);
+// 0x00000040 System.Void Firebase.Auth.FirebaseAuth/<>c::.ctor()
+extern void U3CU3Ec__ctor_mFD414BD20F66C697B495DF5E566C07B0F4B7804D (void);
+// 0x00000041 System.Void Firebase.Auth.FirebaseAuth/<>c::<StateChangedFunction>b__24_0(Firebase.Auth.FirebaseAuth)
+extern void U3CU3Ec_U3CStateChangedFunctionU3Eb__24_0_m25FE5EF7275A4E54EEAD23507A99E08D71CC9297 (void);
+// 0x00000042 System.Void Firebase.Auth.FirebaseAuth/<>c::<IdTokenChangedFunction>b__25_0(Firebase.Auth.FirebaseAuth)
+extern void U3CU3Ec_U3CIdTokenChangedFunctionU3Eb__25_0_mD56E4FFCA8F83F4DA4DFAB740C7EDCB29DCA06D3 (void);
+// 0x00000043 System.Void Firebase.Auth.FirebaseAuth/<>c__DisplayClass49_0::.ctor()
+extern void U3CU3Ec__DisplayClass49_0__ctor_m41D9546731C9E5DBA791D6B2355E5363C7FBF20A (void);
+// 0x00000044 System.Void Firebase.Auth.FirebaseAuth/<>c__DisplayClass49_0::<SignInWithCredentialAsync>b__0(System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser>)
+extern void U3CU3Ec__DisplayClass49_0_U3CSignInWithCredentialAsyncU3Eb__0_mC153688E2D25613BA3B1DE9ACF7FAAC19D11A782 (void);
+// 0x00000045 System.Void Firebase.Auth.AuthUtilPINVOKE::.cctor()
+extern void AuthUtilPINVOKE__cctor_m1630D95EAAE6E61E8A8E565239682157B7385C38 (void);
+// 0x00000046 System.IntPtr Firebase.Auth.AuthUtilPINVOKE::Future_User_SWIG_OnCompletion(System.Runtime.InteropServices.HandleRef,Firebase.Auth.Future_User/SWIG_CompletionDelegate,System.Int32)
+extern void AuthUtilPINVOKE_Future_User_SWIG_OnCompletion_m296C5844E099430387E2F721F1D6A24FD54AF941 (void);
+// 0x00000047 System.Void Firebase.Auth.AuthUtilPINVOKE::Future_User_SWIG_FreeCompletionData(System.Runtime.InteropServices.HandleRef,System.IntPtr)
+extern void AuthUtilPINVOKE_Future_User_SWIG_FreeCompletionData_mCC85615B9EA0C81F14B6931EFEE22EE54688779A (void);
+// 0x00000048 System.IntPtr Firebase.Auth.AuthUtilPINVOKE::Future_User_GetResult(System.Runtime.InteropServices.HandleRef)
+extern void AuthUtilPINVOKE_Future_User_GetResult_m0C533833AEE8C39D03639B1C4E7118AF22C643F4 (void);
+// 0x00000049 System.Void Firebase.Auth.AuthUtilPINVOKE::delete_Future_User(System.Runtime.InteropServices.HandleRef)
+extern void AuthUtilPINVOKE_delete_Future_User_mDE5DCFBB612138DDA4A71F05AE25A3FC55385D53 (void);
+// 0x0000004A System.Void Firebase.Auth.AuthUtilPINVOKE::delete_Credential(System.Runtime.InteropServices.HandleRef)
+extern void AuthUtilPINVOKE_delete_Credential_m9BBFD0335963236DDC1ACD3F4F34C50A395083E7 (void);
+// 0x0000004B System.IntPtr Firebase.Auth.AuthUtilPINVOKE::GoogleAuthProvider_GetCredential(System.String,System.String)
+extern void AuthUtilPINVOKE_GoogleAuthProvider_GetCredential_m98D471DEBF8A1C50200D407F52FF1C73AA74CA95 (void);
+// 0x0000004C System.Void Firebase.Auth.AuthUtilPINVOKE::delete_UserInfoInterface(System.Runtime.InteropServices.HandleRef)
+extern void AuthUtilPINVOKE_delete_UserInfoInterface_m8D0C46DE47E822CA27457B7AFA84FA550F6EE486 (void);
+// 0x0000004D System.Void Firebase.Auth.AuthUtilPINVOKE::delete_FirebaseUser(System.Runtime.InteropServices.HandleRef)
+extern void AuthUtilPINVOKE_delete_FirebaseUser_m49FDDF59500F3E43F730B2043E1C95332F6F81DD (void);
+// 0x0000004E System.IntPtr Firebase.Auth.AuthUtilPINVOKE::FirebaseAuth_SignInWithCredentialInternal(System.Runtime.InteropServices.HandleRef,System.Runtime.InteropServices.HandleRef)
+extern void AuthUtilPINVOKE_FirebaseAuth_SignInWithCredentialInternal_m3BA64866D0A1958123C6A0FEC1B77BEE1A2D6358 (void);
+// 0x0000004F System.IntPtr Firebase.Auth.AuthUtilPINVOKE::FirebaseAuth_GetAuthInternal(System.Runtime.InteropServices.HandleRef,System.Int32&)
+extern void AuthUtilPINVOKE_FirebaseAuth_GetAuthInternal_m3E83970E2674AEC5DDD01FD9818845156FE134AB (void);
+// 0x00000050 System.Void Firebase.Auth.AuthUtilPINVOKE::FirebaseAuth_LogHeartbeatInternal(System.Runtime.InteropServices.HandleRef)
+extern void AuthUtilPINVOKE_FirebaseAuth_LogHeartbeatInternal_m66F0D6932BA24BBFF5FB02522D1F901C1AA87D1D (void);
+// 0x00000051 System.Void Firebase.Auth.AuthUtilPINVOKE::FirebaseAuth_ReleaseReferenceInternal(System.Runtime.InteropServices.HandleRef)
+extern void AuthUtilPINVOKE_FirebaseAuth_ReleaseReferenceInternal_mFED7F33D46743757B5DE19BF3D91C701F5671876 (void);
+// 0x00000052 System.IntPtr Firebase.Auth.AuthUtilPINVOKE::FirebaseAuth_CurrentUserInternal_get(System.Runtime.InteropServices.HandleRef)
+extern void AuthUtilPINVOKE_FirebaseAuth_CurrentUserInternal_get_mB1ED6160407E8C4982746296099A9B1DE21D5DAC (void);
+// 0x00000053 System.IntPtr Firebase.Auth.AuthUtilPINVOKE::CreateAuthStateListener(System.Runtime.InteropServices.HandleRef,Firebase.Auth.FirebaseAuth/StateChangedDelegate)
+extern void AuthUtilPINVOKE_CreateAuthStateListener_m0A51BCF7288AC201F2774CB5506D5F5DEFFD2682 (void);
+// 0x00000054 System.Void Firebase.Auth.AuthUtilPINVOKE::DestroyAuthStateListener(System.Runtime.InteropServices.HandleRef,System.IntPtr)
+extern void AuthUtilPINVOKE_DestroyAuthStateListener_m79297782C9683325F91FB03C0577B3B02664EC31 (void);
+// 0x00000055 System.IntPtr Firebase.Auth.AuthUtilPINVOKE::CreateIdTokenListener(System.Runtime.InteropServices.HandleRef,Firebase.Auth.FirebaseAuth/StateChangedDelegate)
+extern void AuthUtilPINVOKE_CreateIdTokenListener_m38F412B973371F0CFF8D891D71C97CE99022FDC5 (void);
+// 0x00000056 System.Void Firebase.Auth.AuthUtilPINVOKE::DestroyIdTokenListener(System.Runtime.InteropServices.HandleRef,System.IntPtr)
+extern void AuthUtilPINVOKE_DestroyIdTokenListener_mACBDFF676A4BC45B7951C31647CFBDCED08D1B4D (void);
+// 0x00000057 System.IntPtr Firebase.Auth.AuthUtilPINVOKE::Future_User_SWIGUpcast(System.IntPtr)
+extern void AuthUtilPINVOKE_Future_User_SWIGUpcast_m8351BB3FFF59BBB0E79A615DE27479EE2D490B27 (void);
+// 0x00000058 System.IntPtr Firebase.Auth.AuthUtilPINVOKE::FirebaseUser_SWIGUpcast(System.IntPtr)
+extern void AuthUtilPINVOKE_FirebaseUser_SWIGUpcast_m7CAB9D14AEA69B1F0AEBC88EBC4CA0BA90CABB46 (void);
+// 0x00000059 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SWIGRegisterExceptionCallbacks_AuthUtil(Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate,Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate,Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate,Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate,Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate,Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate,Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate,Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate,Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate,Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate,Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate)
+extern void SWIGExceptionHelper_SWIGRegisterExceptionCallbacks_AuthUtil_m5A0AC467CB894DA14A8D5FC72E1C4C0923C12E61 (void);
+// 0x0000005A System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SWIGRegisterExceptionCallbacksArgument_AuthUtil(Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionArgumentDelegate,Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionArgumentDelegate,Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionArgumentDelegate)
+extern void SWIGExceptionHelper_SWIGRegisterExceptionCallbacksArgument_AuthUtil_mAD9B1407D55B00A38D10D3CE2B615942F9BDDF0B (void);
+// 0x0000005B System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingApplicationException(System.String)
+extern void SWIGExceptionHelper_SetPendingApplicationException_mD3D5DF4565F2D8B785CECDDE06C94EB1AF3B7ACD (void);
+// 0x0000005C System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingArithmeticException(System.String)
+extern void SWIGExceptionHelper_SetPendingArithmeticException_m6D48FAE1D40F739EBE2EB7B7A2D35A4C38E273D2 (void);
+// 0x0000005D System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingDivideByZeroException(System.String)
+extern void SWIGExceptionHelper_SetPendingDivideByZeroException_m5E4DFAD8B4B70C66EA34EC78307E69F6B0D8F7E7 (void);
+// 0x0000005E System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingIndexOutOfRangeException(System.String)
+extern void SWIGExceptionHelper_SetPendingIndexOutOfRangeException_m05738E7A913471982107EC9DAFF8E575AD16D09D (void);
+// 0x0000005F System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingInvalidCastException(System.String)
+extern void SWIGExceptionHelper_SetPendingInvalidCastException_m7CEBADF8ADECB392731AD0215CA9D2162344E3EB (void);
+// 0x00000060 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingInvalidOperationException(System.String)
+extern void SWIGExceptionHelper_SetPendingInvalidOperationException_m946F88971C00DC640C4A7FEFB4D820E03AFCBA8A (void);
+// 0x00000061 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingIOException(System.String)
+extern void SWIGExceptionHelper_SetPendingIOException_m097E27E1B950DDEDBE75ECAA525FBA1F9CCC55FC (void);
+// 0x00000062 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingNullReferenceException(System.String)
+extern void SWIGExceptionHelper_SetPendingNullReferenceException_m7103FEC1AD9831462CD640AF2BD4BD51B457BE24 (void);
+// 0x00000063 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingOutOfMemoryException(System.String)
+extern void SWIGExceptionHelper_SetPendingOutOfMemoryException_m477DE4F591DB31AFA8DFACEBACA2CCA81CD28367 (void);
+// 0x00000064 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingOverflowException(System.String)
+extern void SWIGExceptionHelper_SetPendingOverflowException_m5E2F92E1488F0943C4B43806F9F6EF812073D384 (void);
+// 0x00000065 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingSystemException(System.String)
+extern void SWIGExceptionHelper_SetPendingSystemException_m988E84E7A45B7FCE1EC1597585471AFA78B06887 (void);
+// 0x00000066 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingArgumentException(System.String,System.String)
+extern void SWIGExceptionHelper_SetPendingArgumentException_m21B2170535EECF45751C6F48948BC1322346A5F0 (void);
+// 0x00000067 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingArgumentNullException(System.String,System.String)
+extern void SWIGExceptionHelper_SetPendingArgumentNullException_m09944997FE4F760BD1423A7DC3082736F605535C (void);
+// 0x00000068 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::SetPendingArgumentOutOfRangeException(System.String,System.String)
+extern void SWIGExceptionHelper_SetPendingArgumentOutOfRangeException_m7111A0768AC3707D3151755C7456E30482F974DF (void);
+// 0x00000069 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::.cctor()
+extern void SWIGExceptionHelper__cctor_m082E44E87C697836CECA0760676EF7FC0FFCC789 (void);
+// 0x0000006A System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper::.ctor()
+extern void SWIGExceptionHelper__ctor_m6709B95358A2A3B65272194E10E6AFD106926A1C (void);
+// 0x0000006B System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate::.ctor(System.Object,System.IntPtr)
+extern void ExceptionDelegate__ctor_m499CCC99321ACEAB5A59666F10B707010802EFE5 (void);
+// 0x0000006C System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate::Invoke(System.String)
+extern void ExceptionDelegate_Invoke_m46C9C9C3E1F3AE938DC4A5F07B91AE94FED25E0C (void);
+// 0x0000006D System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionArgumentDelegate::.ctor(System.Object,System.IntPtr)
+extern void ExceptionArgumentDelegate__ctor_m3F2FB66273FFCF78BE237864E1209316F6FC195A (void);
+// 0x0000006E System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionArgumentDelegate::Invoke(System.String,System.String)
+extern void ExceptionArgumentDelegate_Invoke_m62CBEE541DBAA197B82571A6D8125143F4469C0D (void);
+// 0x0000006F System.Boolean Firebase.Auth.AuthUtilPINVOKE/SWIGPendingException::get_Pending()
+extern void SWIGPendingException_get_Pending_m882B63921C8EAF5A22A08AFD6851BE6F4400A48C (void);
+// 0x00000070 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGPendingException::Set(System.Exception)
+extern void SWIGPendingException_Set_m7DB36E92553934D1116607493BD5D44F78710D9B (void);
+// 0x00000071 System.Exception Firebase.Auth.AuthUtilPINVOKE/SWIGPendingException::Retrieve()
+extern void SWIGPendingException_Retrieve_mAC5AB6C8BD341602F66565E1E8B2DAB5B03E172E (void);
+// 0x00000072 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGPendingException::.cctor()
+extern void SWIGPendingException__cctor_mE0D00CBC7AAB9C703CD919329322A196DB282FA9 (void);
+// 0x00000073 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGStringHelper::SWIGRegisterStringCallback_AuthUtil(Firebase.Auth.AuthUtilPINVOKE/SWIGStringHelper/SWIGStringDelegate)
+extern void SWIGStringHelper_SWIGRegisterStringCallback_AuthUtil_mF1E51D0E5816C991DC9BD57E0668EEDCF81CA902 (void);
+// 0x00000074 System.String Firebase.Auth.AuthUtilPINVOKE/SWIGStringHelper::CreateString(System.String)
+extern void SWIGStringHelper_CreateString_m973E9F1971668A0D3BEA767B3479889D49CC39E3 (void);
+// 0x00000075 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGStringHelper::.cctor()
+extern void SWIGStringHelper__cctor_m4233D189A57454B02357CBCC668E53E2B93F71D1 (void);
+// 0x00000076 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGStringHelper::.ctor()
+extern void SWIGStringHelper__ctor_mC8327633A09D4DD655AA5FEA5A2A7BF7C841430E (void);
+// 0x00000077 System.Void Firebase.Auth.AuthUtilPINVOKE/SWIGStringHelper/SWIGStringDelegate::.ctor(System.Object,System.IntPtr)
+extern void SWIGStringDelegate__ctor_m39AE1969D572DCB5A0266DC4EAE96243DFFEDE6D (void);
+// 0x00000078 System.String Firebase.Auth.AuthUtilPINVOKE/SWIGStringHelper/SWIGStringDelegate::Invoke(System.String)
+extern void SWIGStringDelegate_Invoke_m2D64F3CEBF8E1B722FE1679E830742A423261D1E (void);
+// 0x00000079 System.IntPtr Firebase.Auth.AuthUtil::CreateAuthStateListener(Firebase.Auth.FirebaseAuth,Firebase.Auth.FirebaseAuth/StateChangedDelegate)
+extern void AuthUtil_CreateAuthStateListener_mD22744C56BD1CE6B28D72EF8C0C4E6EAD33419D6 (void);
+// 0x0000007A System.Void Firebase.Auth.AuthUtil::DestroyAuthStateListener(Firebase.Auth.FirebaseAuth,System.IntPtr)
+extern void AuthUtil_DestroyAuthStateListener_m6F9EC8163EEEEEF16C95440A873991C3E90E2D83 (void);
+// 0x0000007B System.IntPtr Firebase.Auth.AuthUtil::CreateIdTokenListener(Firebase.Auth.FirebaseAuth,Firebase.Auth.FirebaseAuth/StateChangedDelegate)
+extern void AuthUtil_CreateIdTokenListener_m8C6F2E7117ACC51D7CF40F116E11CD28609EE616 (void);
+// 0x0000007C System.Void Firebase.Auth.AuthUtil::DestroyIdTokenListener(Firebase.Auth.FirebaseAuth,System.IntPtr)
+extern void AuthUtil_DestroyIdTokenListener_m087ED37EF1A7E0FCBDC0EFD4D4AD649C5046A504 (void);
+static Il2CppMethodPointer s_methodPointers[124] = 
+{
+	Future_User__ctor_m4921804BE72053DD67804F59F83DBDC31CC33B59,
+	Future_User_Dispose_m11787F5815D6E96F1210F52467F4E15D22E5D914,
+	Future_User_GetTask_m6F04A551DD05AC7F83B046814B211FD1F94BE732,
+	Future_User_ThrowIfDisposed_m63693BBFEEC103A351DEBA56ADE6E028547A46E6,
+	Future_User_SetOnCompletionCallback_mE74D483740D50328FEED02B74BC8C4D36B072844,
+	Future_User_SetCompletionData_m9B0F0C6E70D2635D44B671021F34588C0E995491,
+	Future_User_SWIG_CompletionDispatcher_m4D8780428EE377272E731A6E9988328C64CFC82E,
+	Future_User_SWIG_OnCompletion_m4423B04C2D94704B96D6F9658E3A595B32281BE6,
+	Future_User_SWIG_FreeCompletionData_m8F3A20ADF11FB34B93D0E2A10E9E6DDB6C3574D5,
+	Future_User_GetResult_mCC89E0C0C618E82468F3ECAC3EB96894290B5A2B,
+	Future_User__cctor_m272E15A5111BCD75464C3C58B28A736273E51D2E,
+	Action__ctor_m36EB2EEF5DEC591F7A825B3DDEBE00060E132492,
+	Action_Invoke_mD0A5243978A9C45E0F19C49CF290539F912DEECA,
+	SWIG_CompletionDelegate__ctor_m230CBDCDB23532B178FCCEEFF97D4CB2B9402FD3,
+	SWIG_CompletionDelegate_Invoke_m2B9306AF3FF81D93F90BB7460F660398C0BC0EFF,
+	U3CU3Ec__DisplayClass5_0__ctor_m249348EDFCD5F2A76A0C282F5F94481231B9D57A,
+	U3CU3Ec__DisplayClass5_0_U3CGetTaskU3Eb__0_mC46419BB62CE470D6A5EF5177D88980F148CE5AB,
+	Credential__ctor_m4A17C65E57E8B4CAA8F25248AA8E645B71F32B02,
+	Credential_getCPtr_m8E7872F98919E36F7A67DF50D27AE2B890D38CC1,
+	Credential_Finalize_mF29D83866FC90FBD5CF9D6932E5497A8AD475F69,
+	Credential_Dispose_m442C8D4C0921BAB54013A17D1BBC9D4A340398BC,
+	Credential_Dispose_m45A76A45D0F3A85A3DBC050A08FB0055DD38C7B3,
+	GoogleAuthProvider__cctor_mADD148E7CEA017F1ABEDCC47DB0D4459DC707338,
+	GoogleAuthProvider_GetCredential_m908C6090ED39CA7687DF6DC7878728729D137827,
+	UserInfoInterface__ctor_mBC0F4C86070AE545C35D518F3CAD3860D9BB73BC,
+	UserInfoInterface_Finalize_m06B83086DFE672E40B822A8056292229C09A4721,
+	UserInfoInterface_Dispose_m10151E5E08983ADB015CF780456F34722AC3E998,
+	UserInfoInterface_Dispose_m5FB1ACA215115E1BFC233C59D2C1B91B7848F3B0,
+	FirebaseUser__ctor_mD6A2E9077DE9A427BA26ACE7091EE8C4936EE809,
+	FirebaseUser_getCPtr_m7E40369A31F1A725E399F01966A02CAABF32A869,
+	FirebaseUser_Dispose_m3C1EFF971DD161419D47F0961320F5C2D22EED4A,
+	FirebaseAuth__ctor_mEC6DE61B81F05CB9FDE8A906A83F0E5F1399613C,
+	FirebaseAuth_getCPtr_mF3D3A8469B4C252267CB1EBAC51D24A9DD11B6B8,
+	FirebaseAuth_Finalize_m014CBC2FDA405956BD72DEAE698953B3DC2C4F92,
+	FirebaseAuth_Dispose_mB18CAF1EFC8848B2E9372C18B7E3A322E28B6E2B,
+	FirebaseAuth_Dispose_m39057F702EDFCD2736F1930BEC6AE16C2383A32F,
+	FirebaseAuth_ProxyFromAppCPtr_mD5C867BF65F336BCB8A7F513BD9D476DA2821961,
+	FirebaseAuth_ThrowIfNull_m75B5ACDD65C62406B8D55EBDD062B6A48795C065,
+	FirebaseAuth_GetAuth_m87E0F1B3A6841C85AEDF8ED9C916360BA063C081,
+	FirebaseAuth_OnAppDisposed_m2E2A8B66F4B39F27E3CEE795B182F2D50EDC4E48,
+	FirebaseAuth_DisposeInternal_m91A20FEFCF1EF71AC451CDF5E24AF3296C3CC4AA,
+	FirebaseAuth_ForwardStateChange_m9898EE4EC1826FA343E715A8C4EA25281C6D7759,
+	FirebaseAuth_StateChangedFunction_m00EA0FD26C6875CD5AE555412B07B2590F621561,
+	FirebaseAuth_IdTokenChangedFunction_mAA679E88457386BCDC9EAF2045CCE3CDA56C10DA,
+	FirebaseAuth_UpdateCurrentUser_m8C0906D45788F454E7E19A8C929FEBA42792A06B,
+	FirebaseAuth_get_CurrentUser_m99426341853624A9A11F81CFE5BEBCC293501ABF,
+	FirebaseAuth_SignInWithCredentialAsync_m113AA2F02FEE5A28A9D49492AC5F33AA54A55D74,
+	FirebaseAuth_CompleteFirebaseUserTask_m8B737EC46AD5F532A0DE7E90341A5FBC3E28DFC8,
+	FirebaseAuth_SignInWithCredentialInternalAsync_mAA7A7978B4084AF60EBA28BEA1A50FA1EBE16FC6,
+	FirebaseAuth_GetAuthInternal_m55709A4143C7E2EC3108ACF3706A971567ECF5E4,
+	FirebaseAuth_LogHeartbeatInternal_mB2A72926FD90F462F8B3399150BC51B9ACA27F0A,
+	FirebaseAuth_ReleaseReferenceInternal_mC40BBDB8654D089090D0CD2FE6944B4C8CB07B4E,
+	FirebaseAuth_get_CurrentUserInternal_m056E7E027AFCF6EB9C63FBCF9001DD6503E545AC,
+	FirebaseAuth__cctor_m82DDB910A74B0E1DCC58CAA46E60639DDC622BB6,
+	StateChangedDelegate__ctor_m971B96650420F9DD96060A076F8D39527962C42F,
+	StateChangedDelegate_Invoke_m1202665B970B49F5254C58F9B74D527796F8FEF4,
+	U3CU3Ec__DisplayClass20_0__ctor_m5BA94BEA2582743E481859C1F4376480C97E43C0,
+	U3CU3Ec__DisplayClass20_1__ctor_mF8D8387CF1928604864B73AD3B866729F15CEC7C,
+	U3CU3Ec__DisplayClass20_1_U3CGetAuthU3Eb__0_mB1A8F1DF269278FF25902E6A86AE0F9797ABA8EF,
+	U3CU3Ec__DisplayClass23_0__ctor_m9976BF776BAC98193D01D29B902FB24CFE64AEC2,
+	U3CU3Ec__DisplayClass23_1__ctor_mF48D1CFC3A407C0177EA4DD27B47C71EE7B9122E,
+	U3CU3Ec__DisplayClass23_1_U3CForwardStateChangeU3Eb__0_m95B57ED08D8D92E50775CFEDB0AE034745CC1E9D,
+	U3CU3Ec__cctor_m2679267971D705E9EC045B2D7F18588CA504DCF5,
+	U3CU3Ec__ctor_mFD414BD20F66C697B495DF5E566C07B0F4B7804D,
+	U3CU3Ec_U3CStateChangedFunctionU3Eb__24_0_m25FE5EF7275A4E54EEAD23507A99E08D71CC9297,
+	U3CU3Ec_U3CIdTokenChangedFunctionU3Eb__25_0_mD56E4FFCA8F83F4DA4DFAB740C7EDCB29DCA06D3,
+	U3CU3Ec__DisplayClass49_0__ctor_m41D9546731C9E5DBA791D6B2355E5363C7FBF20A,
+	U3CU3Ec__DisplayClass49_0_U3CSignInWithCredentialAsyncU3Eb__0_mC153688E2D25613BA3B1DE9ACF7FAAC19D11A782,
+	AuthUtilPINVOKE__cctor_m1630D95EAAE6E61E8A8E565239682157B7385C38,
+	AuthUtilPINVOKE_Future_User_SWIG_OnCompletion_m296C5844E099430387E2F721F1D6A24FD54AF941,
+	AuthUtilPINVOKE_Future_User_SWIG_FreeCompletionData_mCC85615B9EA0C81F14B6931EFEE22EE54688779A,
+	AuthUtilPINVOKE_Future_User_GetResult_m0C533833AEE8C39D03639B1C4E7118AF22C643F4,
+	AuthUtilPINVOKE_delete_Future_User_mDE5DCFBB612138DDA4A71F05AE25A3FC55385D53,
+	AuthUtilPINVOKE_delete_Credential_m9BBFD0335963236DDC1ACD3F4F34C50A395083E7,
+	AuthUtilPINVOKE_GoogleAuthProvider_GetCredential_m98D471DEBF8A1C50200D407F52FF1C73AA74CA95,
+	AuthUtilPINVOKE_delete_UserInfoInterface_m8D0C46DE47E822CA27457B7AFA84FA550F6EE486,
+	AuthUtilPINVOKE_delete_FirebaseUser_m49FDDF59500F3E43F730B2043E1C95332F6F81DD,
+	AuthUtilPINVOKE_FirebaseAuth_SignInWithCredentialInternal_m3BA64866D0A1958123C6A0FEC1B77BEE1A2D6358,
+	AuthUtilPINVOKE_FirebaseAuth_GetAuthInternal_m3E83970E2674AEC5DDD01FD9818845156FE134AB,
+	AuthUtilPINVOKE_FirebaseAuth_LogHeartbeatInternal_m66F0D6932BA24BBFF5FB02522D1F901C1AA87D1D,
+	AuthUtilPINVOKE_FirebaseAuth_ReleaseReferenceInternal_mFED7F33D46743757B5DE19BF3D91C701F5671876,
+	AuthUtilPINVOKE_FirebaseAuth_CurrentUserInternal_get_mB1ED6160407E8C4982746296099A9B1DE21D5DAC,
+	AuthUtilPINVOKE_CreateAuthStateListener_m0A51BCF7288AC201F2774CB5506D5F5DEFFD2682,
+	AuthUtilPINVOKE_DestroyAuthStateListener_m79297782C9683325F91FB03C0577B3B02664EC31,
+	AuthUtilPINVOKE_CreateIdTokenListener_m38F412B973371F0CFF8D891D71C97CE99022FDC5,
+	AuthUtilPINVOKE_DestroyIdTokenListener_mACBDFF676A4BC45B7951C31647CFBDCED08D1B4D,
+	AuthUtilPINVOKE_Future_User_SWIGUpcast_m8351BB3FFF59BBB0E79A615DE27479EE2D490B27,
+	AuthUtilPINVOKE_FirebaseUser_SWIGUpcast_m7CAB9D14AEA69B1F0AEBC88EBC4CA0BA90CABB46,
+	SWIGExceptionHelper_SWIGRegisterExceptionCallbacks_AuthUtil_m5A0AC467CB894DA14A8D5FC72E1C4C0923C12E61,
+	SWIGExceptionHelper_SWIGRegisterExceptionCallbacksArgument_AuthUtil_mAD9B1407D55B00A38D10D3CE2B615942F9BDDF0B,
+	SWIGExceptionHelper_SetPendingApplicationException_mD3D5DF4565F2D8B785CECDDE06C94EB1AF3B7ACD,
+	SWIGExceptionHelper_SetPendingArithmeticException_m6D48FAE1D40F739EBE2EB7B7A2D35A4C38E273D2,
+	SWIGExceptionHelper_SetPendingDivideByZeroException_m5E4DFAD8B4B70C66EA34EC78307E69F6B0D8F7E7,
+	SWIGExceptionHelper_SetPendingIndexOutOfRangeException_m05738E7A913471982107EC9DAFF8E575AD16D09D,
+	SWIGExceptionHelper_SetPendingInvalidCastException_m7CEBADF8ADECB392731AD0215CA9D2162344E3EB,
+	SWIGExceptionHelper_SetPendingInvalidOperationException_m946F88971C00DC640C4A7FEFB4D820E03AFCBA8A,
+	SWIGExceptionHelper_SetPendingIOException_m097E27E1B950DDEDBE75ECAA525FBA1F9CCC55FC,
+	SWIGExceptionHelper_SetPendingNullReferenceException_m7103FEC1AD9831462CD640AF2BD4BD51B457BE24,
+	SWIGExceptionHelper_SetPendingOutOfMemoryException_m477DE4F591DB31AFA8DFACEBACA2CCA81CD28367,
+	SWIGExceptionHelper_SetPendingOverflowException_m5E2F92E1488F0943C4B43806F9F6EF812073D384,
+	SWIGExceptionHelper_SetPendingSystemException_m988E84E7A45B7FCE1EC1597585471AFA78B06887,
+	SWIGExceptionHelper_SetPendingArgumentException_m21B2170535EECF45751C6F48948BC1322346A5F0,
+	SWIGExceptionHelper_SetPendingArgumentNullException_m09944997FE4F760BD1423A7DC3082736F605535C,
+	SWIGExceptionHelper_SetPendingArgumentOutOfRangeException_m7111A0768AC3707D3151755C7456E30482F974DF,
+	SWIGExceptionHelper__cctor_m082E44E87C697836CECA0760676EF7FC0FFCC789,
+	SWIGExceptionHelper__ctor_m6709B95358A2A3B65272194E10E6AFD106926A1C,
+	ExceptionDelegate__ctor_m499CCC99321ACEAB5A59666F10B707010802EFE5,
+	ExceptionDelegate_Invoke_m46C9C9C3E1F3AE938DC4A5F07B91AE94FED25E0C,
+	ExceptionArgumentDelegate__ctor_m3F2FB66273FFCF78BE237864E1209316F6FC195A,
+	ExceptionArgumentDelegate_Invoke_m62CBEE541DBAA197B82571A6D8125143F4469C0D,
+	SWIGPendingException_get_Pending_m882B63921C8EAF5A22A08AFD6851BE6F4400A48C,
+	SWIGPendingException_Set_m7DB36E92553934D1116607493BD5D44F78710D9B,
+	SWIGPendingException_Retrieve_mAC5AB6C8BD341602F66565E1E8B2DAB5B03E172E,
+	SWIGPendingException__cctor_mE0D00CBC7AAB9C703CD919329322A196DB282FA9,
+	SWIGStringHelper_SWIGRegisterStringCallback_AuthUtil_mF1E51D0E5816C991DC9BD57E0668EEDCF81CA902,
+	SWIGStringHelper_CreateString_m973E9F1971668A0D3BEA767B3479889D49CC39E3,
+	SWIGStringHelper__cctor_m4233D189A57454B02357CBCC668E53E2B93F71D1,
+	SWIGStringHelper__ctor_mC8327633A09D4DD655AA5FEA5A2A7BF7C841430E,
+	SWIGStringDelegate__ctor_m39AE1969D572DCB5A0266DC4EAE96243DFFEDE6D,
+	SWIGStringDelegate_Invoke_m2D64F3CEBF8E1B722FE1679E830742A423261D1E,
+	AuthUtil_CreateAuthStateListener_mD22744C56BD1CE6B28D72EF8C0C4E6EAD33419D6,
+	AuthUtil_DestroyAuthStateListener_m6F9EC8163EEEEEF16C95440A873991C3E90E2D83,
+	AuthUtil_CreateIdTokenListener_m8C6F2E7117ACC51D7CF40F116E11CD28609EE616,
+	AuthUtil_DestroyIdTokenListener_m087ED37EF1A7E0FCBDC0EFD4D4AD649C5046A504,
+};
+static const int32_t s_InvokerIndices[124] = 
+{
+	1788,
+	2589,
+	5466,
+	3026,
+	2648,
+	2634,
+	5749,
+	1548,
+	2634,
+	2945,
+	5916,
+	1817,
+	3026,
+	1817,
+	2632,
+	3026,
+	3026,
+	1788,
+	5350,
+	3026,
+	3026,
+	2589,
+	5916,
+	4850,
+	1788,
+	3026,
+	3026,
+	2589,
+	1788,
+	5350,
+	2589,
+	1788,
+	5350,
+	3026,
+	3026,
+	2589,
+	5463,
+	3026,
+	5466,
+	1821,
+	3026,
+	5079,
+	5751,
+	5751,
+	2381,
+	2945,
+	2381,
+	1821,
+	2381,
+	4834,
+	5753,
+	5753,
+	2945,
+	5916,
+	1817,
+	2634,
+	3026,
+	3026,
+	3026,
+	3026,
+	3026,
+	3026,
+	5916,
+	3026,
+	2648,
+	2648,
+	3026,
+	2648,
+	5916,
+	4126,
+	5058,
+	5418,
+	5745,
+	5745,
+	4798,
+	5745,
+	5745,
+	4791,
+	4790,
+	5745,
+	5745,
+	5418,
+	4792,
+	5058,
+	4792,
+	5058,
+	5421,
+	5421,
+	3087,
+	4415,
+	5753,
+	5753,
+	5753,
+	5753,
+	5753,
+	5753,
+	5753,
+	5753,
+	5753,
+	5753,
+	5753,
+	5098,
+	5098,
+	5098,
+	5916,
+	3026,
+	1817,
+	2648,
+	1817,
+	1821,
+	5841,
+	5753,
+	5874,
+	5916,
+	5753,
+	5466,
+	5916,
+	3026,
+	1817,
+	2381,
+	4798,
+	5094,
+	4798,
+	5094,
+};
+static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[18] = 
+{
+	{ 0x06000007, 6,  (void**)&Future_User_SWIG_CompletionDispatcher_m4D8780428EE377272E731A6E9988328C64CFC82E_RuntimeMethod_var, 0 },
+	{ 0x0600002B, 4,  (void**)&FirebaseAuth_StateChangedFunction_m00EA0FD26C6875CD5AE555412B07B2590F621561_RuntimeMethod_var, 0 },
+	{ 0x0600002C, 3,  (void**)&FirebaseAuth_IdTokenChangedFunction_mAA679E88457386BCDC9EAF2045CCE3CDA56C10DA_RuntimeMethod_var, 0 },
+	{ 0x0600005B, 31,  (void**)&SWIGExceptionHelper_SetPendingApplicationException_mD3D5DF4565F2D8B785CECDDE06C94EB1AF3B7ACD_RuntimeMethod_var, 0 },
+	{ 0x0600005C, 35,  (void**)&SWIGExceptionHelper_SetPendingArithmeticException_m6D48FAE1D40F739EBE2EB7B7A2D35A4C38E273D2_RuntimeMethod_var, 0 },
+	{ 0x0600005D, 36,  (void**)&SWIGExceptionHelper_SetPendingDivideByZeroException_m5E4DFAD8B4B70C66EA34EC78307E69F6B0D8F7E7_RuntimeMethod_var, 0 },
+	{ 0x0600005E, 38,  (void**)&SWIGExceptionHelper_SetPendingIndexOutOfRangeException_m05738E7A913471982107EC9DAFF8E575AD16D09D_RuntimeMethod_var, 0 },
+	{ 0x0600005F, 39,  (void**)&SWIGExceptionHelper_SetPendingInvalidCastException_m7CEBADF8ADECB392731AD0215CA9D2162344E3EB_RuntimeMethod_var, 0 },
+	{ 0x06000060, 40,  (void**)&SWIGExceptionHelper_SetPendingInvalidOperationException_m946F88971C00DC640C4A7FEFB4D820E03AFCBA8A_RuntimeMethod_var, 0 },
+	{ 0x06000061, 37,  (void**)&SWIGExceptionHelper_SetPendingIOException_m097E27E1B950DDEDBE75ECAA525FBA1F9CCC55FC_RuntimeMethod_var, 0 },
+	{ 0x06000062, 41,  (void**)&SWIGExceptionHelper_SetPendingNullReferenceException_m7103FEC1AD9831462CD640AF2BD4BD51B457BE24_RuntimeMethod_var, 0 },
+	{ 0x06000063, 42,  (void**)&SWIGExceptionHelper_SetPendingOutOfMemoryException_m477DE4F591DB31AFA8DFACEBACA2CCA81CD28367_RuntimeMethod_var, 0 },
+	{ 0x06000064, 43,  (void**)&SWIGExceptionHelper_SetPendingOverflowException_m5E2F92E1488F0943C4B43806F9F6EF812073D384_RuntimeMethod_var, 0 },
+	{ 0x06000065, 44,  (void**)&SWIGExceptionHelper_SetPendingSystemException_m988E84E7A45B7FCE1EC1597585471AFA78B06887_RuntimeMethod_var, 0 },
+	{ 0x06000066, 32,  (void**)&SWIGExceptionHelper_SetPendingArgumentException_m21B2170535EECF45751C6F48948BC1322346A5F0_RuntimeMethod_var, 0 },
+	{ 0x06000067, 33,  (void**)&SWIGExceptionHelper_SetPendingArgumentNullException_m09944997FE4F760BD1423A7DC3082736F605535C_RuntimeMethod_var, 0 },
+	{ 0x06000068, 34,  (void**)&SWIGExceptionHelper_SetPendingArgumentOutOfRangeException_m7111A0768AC3707D3151755C7456E30482F974DF_RuntimeMethod_var, 0 },
+	{ 0x06000074, 45,  (void**)&SWIGStringHelper_CreateString_m973E9F1971668A0D3BEA767B3479889D49CC39E3_RuntimeMethod_var, 0 },
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Firebase_Auth_CodeGenModule;
+const Il2CppCodeGenModule g_Firebase_Auth_CodeGenModule = 
+{
+	"Firebase.Auth.dll",
+	124,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	18,
+	s_reversePInvokeIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

@@ -1,32 +1,34 @@
 ﻿using System.Threading.Tasks;
-using AIActions;
 using UnityEngine;
 
-public class AISitOnChairAction: AIActionBehavior
+namespace AIActions
 {
-    [SerializeField] private Animator anim;
-    [SerializeField] private Transform rootCharacterTransform;
-    private void OnTriggerEnter(Collider other)
+    public class AISitOnChairAction: AIActionBehavior
     {
-        if (!other.CompareTag("Chair")) return;
-        rootCharacterTransform.rotation = other.transform.rotation;
-        anim.SetTrigger("sitOnChair");
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (!other.CompareTag("Chair")) return;
-    }
+        [SerializeField] private Animator anim;
+        [SerializeField] private Transform rootCharacterTransform;
+        private void OnTriggerEnter(Collider other)
+        {
+            if (!other.CompareTag("Chair")) return;
+            rootCharacterTransform.rotation = other.transform.rotation;
+            anim.SetTrigger(Animator.StringToHash("sitOnChair"));
+        }
+        private void OnTriggerExit(Collider other)
+        {
+            if (!other.CompareTag("Chair")) return;
+        }
 
-    public override Task RequestFinish()
-    {
-        gameObject.SetActive(false);
-        return Task.CompletedTask;
-    }
+        public override Task RequestFinish()
+        {
+            gameObject.SetActive(false);
+            return Task.CompletedTask;
+        }
 
-    public override void StartAction()
-    {
-        gameObject.SetActive(true);
+        public override void StartAction()
+        {
+            gameObject.SetActive(true);
 
-       // void
+            // void
+        }
     }
 }

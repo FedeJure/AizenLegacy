@@ -69,6 +69,7 @@ namespace Character
         private void FixedUpdate()
         {
             if (!isStable) return;
+
             var trampPosition = GameplayContext.GetInstance().trampolineTransform.position;
             var distanceFromTrampoline = Vector3.Distance(new Vector3(0, trampPosition.y, 0), new Vector3(0, feetTarget.position.y, 0));
             if (distanceFromTrampoline > distance)
