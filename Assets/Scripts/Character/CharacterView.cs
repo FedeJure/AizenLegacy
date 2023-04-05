@@ -113,7 +113,8 @@ namespace Character
                         .Do(__ => UnityAdsAdapter.GetInstance().ShowInterstitial())
                         .Do(__ => GameSceneManager.GetInstance().LoadLobbyScene())
                         .Do(__ => CustomInterstitial.TryOpenCustomInterstitial())
-                        .Subscribe();
+                        .Subscribe()
+                        .AddTo(disposer);
                 })
                 .Subscribe()
                 .AddTo(disposer);

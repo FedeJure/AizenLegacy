@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using JetBrains.Annotations;
 using UniRx;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,49 +17,94 @@ public class GameSceneManager : MonoBehaviour
     private static GameSceneManager instance;
 
     [SerializeField] private GameObject gameplayController;
-    [SerializeField] private GameObject lobbyController;
-    [SerializeField] private GameObject loginController;
+    [CanBeNull] private GameObject lobbyController = null;
+    [SerializeField] private GameObject lobbyControllerModel;
+    [CanBeNull] private GameObject loginController = null;
+    [SerializeField] private GameObject loginControllerModel;
+    private List<IDisposable> disposer = new List<IDisposable>();
 
     private GameObject currentGameplay;
     private void Awake()
     {
         instance = this;
         LoadLoginScene();
+        InitSubscriptions();
+    }
+
+    private void InitSubscriptions()
+    {
+        EventBus.OnLogged()
+            .Do(_ =>
+            {
+                if (lobbyController != null)
+                {
+                    Destroy(lobbyController);
+                    lobbyController = null;
+                }
+                lobbyController = Instantiate(lobbyControllerModel);
+                UnloadLoginScene();
+                LoadLobbyScene();
+            }).Subscribe().AddTo(disposer);
+        
+        EventBus.OnLogout()
+            .Do(_ =>
+            {
+                UnloadLobbyScene();
+                LoadLoginScene();
+            }).Subscribe().AddTo(disposer);
+    }
+
+    private void OnEnable()
+    {
+        disposer.ForEach(d => d.Dispose());
+        disposer = new List<IDisposable>();
+        InitSubscriptions();
+    }
+
+    private void OnDisable()
+    {
+        disposer.ForEach(d => d.Dispose());
+        disposer = new List<IDisposable>();
+    }
+
+
+    private void UnloadLobbyScene()
+    {
+        if (lobbyController != null) Destroy(lobbyController);
+        lobbyController = null;
     }
 
     private void LoadLoginScene()
     {
-        DestroyOngoingGame();
-        EventBus.OnLogged()
-            .Do(_ =>
-            {
-                loginController.SetActive(false);
-                // var newLobbyController = Instantiate(lobbyController);
-                // Destroy(lobbyController);
-                // lobbyController = newLobbyController;
-                LoadLobbyScene();
-            }).Subscribe();
-        loginController.SetActive(true);
-        // lobbyController.SetActive(false);
+        UnloadLoginScene();
+        loginController = Instantiate(loginControllerModel);
+    }
+
+    private void UnloadLoginScene()
+    {
+        if (loginController == null) return;
+        Destroy(loginController);
+        loginController = null;
     }
 
     public void LoadLobbyScene()
     {
         DestroyOngoingGame();
-        // lobbyController.SetActive(true);
+        if (lobbyController == null) return;
+        lobbyController.SetActive(true);
     }
 
     private void DestroyOngoingGame()
     {
+        EventBus.EmitOnGameplayEnd();
         if (currentGameplay == null) return;
         Destroy(currentGameplay);
         currentGameplay = null;
-        EventBus.EmitOnGameplayEnd();
     }
     
     public void LoadGamePlayScene()
     {
-        lobbyController.SetActive(false);
+        if (lobbyController != null) lobbyController.SetActive(false);
         currentGameplay = Instantiate(gameplayController, transform);
     }
 

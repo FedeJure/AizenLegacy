@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LoginController.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LoginController.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/New Animation 1.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/New Animation 1.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/New Animation.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/New Animation.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.App.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.App.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/BotNavigations.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/BotNavigations.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AILobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AILobbyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LoginController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LoginController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/UserHeaderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/UserHeaderController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/DatabaseManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/DatabaseManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +32,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1f66344f2f89470293d8b67d71308c0746a800/30/13ab96f5/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2807ff4663ce407885c855e32b7f007813800/1b/b2b8685d/FirebaseUser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2807ff4663ce407885c855e32b7f007813800/7a/87a13087/FirebaseAuth.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2807ff4663ce407885c855e32b7f007813800/cb/64e5c5b7/IUserInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2807ff4663ce407885c855e32b7f007813800/d6/22177fb8/UserInfoInterface.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42a64fd733d9417da1ea3a757ad9a96d81d600/34/62de91d1/BuildPipelineInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/519de06d23d841f4b44f9cb058f6b31715c00/7a/adfaec12/FirebaseApp.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dc02e039b5ca4833b0d87f7a9d73d70012ba00/4d/0b035f9d/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/_DemoStuff/Scripts/Customizations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CutOutMaskUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -121,7 +142,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/UI_MagneticInfiniteScroll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/UI_TweenScale.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/BuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.6.6/Editor/BurstDisassembler.Core.x86.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.0/InputSystem/Devices/Remote/InputRemoting.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
@@ -242,10 +265,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7768">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="7768" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -294,7 +317,8 @@
       <workItem from="1679755530541" duration="9938000" />
       <workItem from="1679952530991" duration="2146000" />
       <workItem from="1680050502467" duration="10046000" />
-      <workItem from="1680274601740" duration="966000" />
+      <workItem from="1680274601740" duration="6301000" />
+      <workItem from="1680559102652" duration="6503000" />
     </task>
     <servers />
   </component>
@@ -319,6 +343,49 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs</url>
+          <line>36</line>
+          <properties documentPath="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame\Assets\Scripts\AICharacterController.cs" initialLine="36" containingFunctionPresentation="method 'Awake'">
+            <startOffsets>
+              <option value="910" />
+            </startOffsets>
+            <endOffsets>
+              <option value="947" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs</url>
+          <line>42</line>
+          <properties documentPath="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame\Assets\Scripts\AICharacterController.cs" initialLine="42" containingFunctionPresentation="method 'OnEnable'">
+            <startOffsets>
+              <option value="1039" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1069" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs</url>
+          <line>47</line>
+          <properties documentPath="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame\Assets\Scripts\AICharacterController.cs" initialLine="47" containingFunctionPresentation="method 'Init'">
+            <startOffsets>
+              <option value="1114" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1144" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
         <watch expression="this.enable" />

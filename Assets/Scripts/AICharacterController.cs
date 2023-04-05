@@ -43,6 +43,11 @@ public class AICharacterController : MonoBehaviour
         ReadyToPerformNewAction(null);
     }
 
+    public void Init()
+    {
+        ReadyToPerformNewAction(null);
+    }
+
     private void Update()
     {
         anim.SetFloat(Animator.StringToHash("velocity"), agent.velocity.magnitude);
@@ -106,5 +111,6 @@ public class AICharacterController : MonoBehaviour
     private void OnDisable()
     {
         CancelInvoke("SearchForNewAction");
+        actionInProgress = null;
     }
 }

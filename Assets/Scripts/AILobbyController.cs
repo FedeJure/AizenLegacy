@@ -56,7 +56,7 @@ public class AILobbyController : MonoBehaviour
     [SerializeField] private List<AICharacterController> characters;
     private List<AILocation> availableLocations = new List<AILocation>();
 
-    private void OnEnable()
+    private void Start()
     {
         configuredLocations.ForEach(location =>
         {
@@ -73,8 +73,12 @@ public class AILobbyController : MonoBehaviour
         characters.ForEach(character => { 
             character.ReadyToPerformNewAction += HandlePerformAction(character);
         });
+        characters.ForEach((character =>
+        {
+            character.Init();
+        })); 
     }
-    private void OnDisable()
+    private void OnDestroy()
     {
         availableLocations.ForEach(location =>
         {

@@ -1,6 +1,5 @@
 using System;
 using System.Threading.Tasks;
-using Models;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,22 +20,18 @@ namespace Lobby
         private void Awake()
         {
             gameObject.SetActive(true);
-            EventBus.OnLogout().Do(_ =>
-            {
-                login.interactable = true;
-                gameObject.SetActive(true);
-            }).Subscribe();
         }
 
         private void Start()
         {
-            Login();
+            // Login();
         }
 
         public async void Login()
         {
             login.interactable = false;
             await PerformLogin();
+            login.interactable = true;
             spinner.SetActive(false);
             EventBus.EmitOnLogged();
         }
