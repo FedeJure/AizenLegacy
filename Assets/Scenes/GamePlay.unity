@@ -666,10 +666,25 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 4226980458756208750, guid: fd2dc82c91148124bacab650d1570880,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.679
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226980458756208750, guid: fd2dc82c91148124bacab650d1570880,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.132
+      objectReference: {fileID: 0}
     - target: {fileID: 4648825596011782797, guid: fd2dc82c91148124bacab650d1570880,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5116801104918329062, guid: fd2dc82c91148124bacab650d1570880,
+        type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5547746824257220413, guid: fd2dc82c91148124bacab650d1570880,
         type: 3}
@@ -686,6 +701,16 @@ PrefabInstance:
       propertyPath: m_ReceiveGI
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6355433228470359660, guid: fd2dc82c91148124bacab650d1570880,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.9615339
+      objectReference: {fileID: 0}
+    - target: {fileID: 6355433228470359660, guid: fd2dc82c91148124bacab650d1570880,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.132002
+      objectReference: {fileID: 0}
     - target: {fileID: 6588942195040842373, guid: fd2dc82c91148124bacab650d1570880,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -694,7 +719,7 @@ PrefabInstance:
     - target: {fileID: 6629996903689099059, guid: fd2dc82c91148124bacab650d1570880,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 6629996903794415568, guid: fd2dc82c91148124bacab650d1570880,
         type: 3}
@@ -1811,6 +1836,8 @@ MonoBehaviour:
   lobbyControllerModel: {fileID: 3088132184111314959, guid: 3ca9e9b57334d8a4b843d9e7df967b64,
     type: 3}
   loginControllerModel: {fileID: 2804881668414371923, guid: d93385f2b54afd941b80f8783ef17fe2,
+    type: 3}
+  rankedsControllerModel: {fileID: 7915237201415197960, guid: 5d9e7688b39f5c44880bfb5dfd38829d,
     type: 3}
 --- !u!4 &2114521602
 Transform:

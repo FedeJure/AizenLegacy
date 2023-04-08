@@ -1,4 +1,5 @@
 ﻿using System;
+using Character;
 using UniRx;
 public static class EventBus
 {
@@ -11,6 +12,7 @@ public static class EventBus
         static ISubject<Unit> onGameplayEnd = new Subject<Unit>();
         static ISubject<Unit> onGameplayStart = new Subject<Unit>();
         static ISubject<float> onConsumeEnergy = new Subject<float>();
+        private static ISubject<JumpConfig> onJumpData = new Subject<JumpConfig>();
         private static ISubject<Unit> onLogged = new Subject<Unit>();
         private static ISubject<Unit> onLogout = new Subject<Unit>();
 
@@ -67,6 +69,16 @@ public static class EventBus
         public static IObservable<Unit> OnLogout()
         {
                 return onLogout;
+        }
+
+        public static IObservable<JumpConfig> OnJumpData()
+        {
+                return onJumpData;
+        }
+
+        public static void EmitOnJumpData(JumpConfig jumpData)
+        {
+                onJumpData.OnNext(jumpData);
         }
 
         public static void EmitOnPositionStarted()

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Character
@@ -16,10 +17,14 @@ namespace Character
         private string salto = "";
         private float completeAngles = 0;
 
+
         
         private int  quarterSomersault = 0;
         private List<int> halfTwists = new List<int>();
         public event Action<JumpConfig> OnJumpReached = (_) => { }; 
+        
+        //Nuevas variables
+        private string prefix = "";
 
         public void SetupState(CharacterState state)
         {
@@ -30,16 +35,29 @@ namespace Character
         {
             CancelInvoke("ApplyHalfTwist");
             quarterSomersault = (int)Math.Round(completeAngles / 0.5f);
+            
+            var key = $"{prefix},{GetSomersaultAndTwists()}";
+            if (JumpsConfig.configs.TryGetValue(key, out var jump))
+                EventBus.EmitOnJumpData(jump);
             halfTwists = new List<int>{0};
-            JumpConfig jump;
-            if (JumpsConfig.configs.TryGetValue(salto, out jump))
-                OnJumpReached(jump);
             sideChangeLocked = false;
             lastAngle = 0;
             cummulativeAngle = 0;
             quarterSomersault = 0;
             completeAngles = 0;
             salto = "";
+            prefix = "";
+        }
+
+        private string GetSomersaultAndTwists()
+        {
+            var result = "";
+            result += quarterSomersault;   
+            halfTwists.ForEach(h =>
+            {
+                result += h;
+            });
+            return result;
         }
 
         public void PerformHalfTwist(float duration)
@@ -69,6 +87,7 @@ namespace Character
             {
                 toFront = (deltaRotation < 0 && state.onFront) || (deltaRotation > 0 && !state.onFront);
                 Append(toFront ?"ad": "at");
+                prefix = toFront ? "ad" : "at";
                 sideChangeLocked = true;
             }
             cummulativeAngle += Math.Abs(deltaRotation);

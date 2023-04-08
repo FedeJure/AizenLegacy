@@ -61,6 +61,8 @@ struct List_1_t67B3D28B0E4028C2969210070F688B2018395DDC;
 struct List_1_t475B1C8B2B72498C30DC2F066C77DF1D0C2C16BF;
 // System.Collections.Generic.List`1<UnityEngine.CanvasGroup>
 struct List_1_t2CDCA768E7F493F5EDEBC75AEB200FD621354E35;
+// System.Collections.Generic.List`1<System.IDisposable>
+struct List_1_tDCC8AB6F4CE453A93C71B81D73916DC53DF6CE05;
 // System.Collections.Generic.List`1<UnityEngine.UI.Image>
 struct List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19;
 // System.Collections.Generic.List`1<LTDescr>
@@ -1894,8 +1896,16 @@ struct GameSceneManager_tEBA6A0650ADF11AECE36C64A689A2376E62730AA  : public Mono
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameplayController_6;
 	// UnityEngine.GameObject GameSceneManager::lobbyController
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___lobbyController_7;
+	// UnityEngine.GameObject GameSceneManager::lobbyControllerModel
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___lobbyControllerModel_8;
+	// UnityEngine.GameObject GameSceneManager::loginController
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___loginController_9;
+	// UnityEngine.GameObject GameSceneManager::loginControllerModel
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___loginControllerModel_10;
+	// System.Collections.Generic.List`1<System.IDisposable> GameSceneManager::disposer
+	List_1_tDCC8AB6F4CE453A93C71B81D73916DC53DF6CE05* ___disposer_11;
 	// UnityEngine.GameObject GameSceneManager::currentGameplay
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___currentGameplay_8;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___currentGameplay_12;
 };
 
 // GameSection

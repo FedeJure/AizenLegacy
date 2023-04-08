@@ -63,6 +63,13 @@ namespace Character
                 }
             },
             {
+                "ad,801", new JumpConfig
+                {
+                    name = "Flifis",
+                    points = 35
+                }
+            },
+            {
                 "at,12000", new JumpConfig
                 {
                     name = "Triple Back",

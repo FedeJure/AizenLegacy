@@ -173,6 +173,8 @@ struct ValueCollection_t9CB0ACF9154F201291AA613E4FFC3DE25BA69B24;
 struct EntryU5BU5D_t7885DEDA3A261DE989C321910CBD3A316B99A798;
 // System.Collections.Generic.Dictionary`2/Entry<System.IntPtr,Firebase.Auth.FirebaseAuth>[]
 struct EntryU5BU5D_t7E823F775D4CCF50F69687D5BAA1B80E4E2E5511;
+// System.Char[]
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 // System.Delegate[]
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 // System.Int32[]
@@ -259,6 +261,10 @@ struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572;
 struct TaskFactory_tF781BD37BE23917412AD83424D1497C7C1509DF0;
 // System.Threading.Tasks.TaskScheduler
 struct TaskScheduler_t3F0550EBEF7C41F74EC8C08FF4BED0D8CE66006E;
+// System.Uri
+struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E;
+// System.UriParser
+struct UriParser_t920B0868286118827C08B08A15A9456AF6C19D81;
 // Firebase.Auth.UserInfoInterface
 struct UserInfoInterface_t3FA671C36EBB6479D7F8BE1C1040D99E7E5D4062;
 // System.Void
@@ -289,6 +295,8 @@ struct Action_tD73236A0B99956CAA0E15FAAFA848B02E8C8541C;
 struct SWIG_CompletionDelegate_tB4CF397F15014F9BEA59F667A633E7F832DB7C78;
 // System.Threading.Tasks.Task/ContingentProperties
 struct ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540;
+// System.Uri/UriInfo
+struct UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09;
 // Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionArgumentDelegate
 struct ExceptionArgumentDelegate_t2CB92E157C904122629802F9D5EBAC4BBF5981A1;
 // Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper/ExceptionDelegate
@@ -373,6 +381,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* FirebaseAuth_LogHeartbeatInternal_mB2A72926
 IL2CPP_EXTERN_C const RuntimeMethod* FirebaseAuth_OnAppDisposed_m2E2A8B66F4B39F27E3CEE795B182F2D50EDC4E48_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FirebaseAuth_ReleaseReferenceInternal_mC40BBDB8654D089090D0CD2FE6944B4C8CB07B4E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FirebaseAuth_SignInWithCredentialInternalAsync_mAA7A7978B4084AF60EBA28BEA1A50FA1EBE16FC6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* FirebaseAuth_SignOut_m6334FED9987E29CCB5AAAF8AC50A894BFF8AF5C8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FirebaseAuth_StateChangedFunction_m00EA0FD26C6875CD5AE555412B07B2590F621561_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FirebaseAuth_ThrowIfNull_m75B5ACDD65C62406B8D55EBDD062B6A48795C065_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FirebaseAuth_get_CurrentUserInternal_m056E7E027AFCF6EB9C63FBCF9001DD6503E545AC_RuntimeMethod_var;
@@ -412,6 +421,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass20_1_U3CGetAuthU3Eb__0
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass23_1_U3CForwardStateChangeU3Eb__0_m95B57ED08D8D92E50775CFEDB0AE034745CC1E9D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass49_0_U3CSignInWithCredentialAsyncU3Eb__0_mC153688E2D25613BA3B1DE9ACF7FAAC19D11A782_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass5_0_U3CGetTaskU3Eb__0_mC46419BB62CE470D6A5EF5177D88980F148CE5AB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UserInfoInterface_get_DisplayName_m7AC6606E65DF9883078C26DD521A83C4056475A8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UserInfoInterface_get_Email_m9AF15B59421B9A64E87AF6DEA14800F197F6E584_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UserInfoInterface_get_PhotoUrlInternal_m45B1F726CA9206F5731F137FD05A6F8D47C3EDD1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UserInfoInterface_get_UserId_m789311856DFE3585EB321D6CE4BFE55FBB222D6E_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -545,6 +558,25 @@ struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572  : public RuntimeObject
 	RuntimeObject* ___m_continuationObject_23;
 	// System.Threading.Tasks.Task/ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_contingentProperties
 	ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540* ___m_contingentProperties_26;
+};
+
+// System.Uri
+struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E  : public RuntimeObject
+{
+	// System.String System.Uri::m_String
+	String_t* ___m_String_16;
+	// System.String System.Uri::m_originalUnicodeString
+	String_t* ___m_originalUnicodeString_17;
+	// System.UriParser System.Uri::m_Syntax
+	UriParser_t920B0868286118827C08B08A15A9456AF6C19D81* ___m_Syntax_18;
+	// System.String System.Uri::m_DnsSafeHost
+	String_t* ___m_DnsSafeHost_19;
+	// System.Uri/Flags System.Uri::m_Flags
+	uint64_t ___m_Flags_20;
+	// System.Uri/UriInfo System.Uri::m_Info
+	UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09* ___m_Info_21;
+	// System.Boolean System.Uri::m_iriParsing
+	bool ___m_iriParsing_22;
 };
 
 // System.ValueType
@@ -1175,6 +1207,57 @@ struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_ThreadStaticFields
 	StackGuard_tACE063A1B7374BDF4AD472DE4585D05AD8745352* ___t_stackGuard_29;
 };
 
+// System.Uri
+struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
+{
+	// System.String System.Uri::UriSchemeFile
+	String_t* ___UriSchemeFile_0;
+	// System.String System.Uri::UriSchemeFtp
+	String_t* ___UriSchemeFtp_1;
+	// System.String System.Uri::UriSchemeGopher
+	String_t* ___UriSchemeGopher_2;
+	// System.String System.Uri::UriSchemeHttp
+	String_t* ___UriSchemeHttp_3;
+	// System.String System.Uri::UriSchemeHttps
+	String_t* ___UriSchemeHttps_4;
+	// System.String System.Uri::UriSchemeWs
+	String_t* ___UriSchemeWs_5;
+	// System.String System.Uri::UriSchemeWss
+	String_t* ___UriSchemeWss_6;
+	// System.String System.Uri::UriSchemeMailto
+	String_t* ___UriSchemeMailto_7;
+	// System.String System.Uri::UriSchemeNews
+	String_t* ___UriSchemeNews_8;
+	// System.String System.Uri::UriSchemeNntp
+	String_t* ___UriSchemeNntp_9;
+	// System.String System.Uri::UriSchemeNetTcp
+	String_t* ___UriSchemeNetTcp_10;
+	// System.String System.Uri::UriSchemeNetPipe
+	String_t* ___UriSchemeNetPipe_11;
+	// System.String System.Uri::SchemeDelimiter
+	String_t* ___SchemeDelimiter_12;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitialized
+	bool ___s_ConfigInitialized_23;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitializing
+	bool ___s_ConfigInitializing_24;
+	// System.UriIdnScope modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IdnScope
+	int32_t ___s_IdnScope_25;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IriParsing
+	bool ___s_IriParsing_26;
+	// System.Boolean System.Uri::useDotNetRelativeOrAbsolute
+	bool ___useDotNetRelativeOrAbsolute_27;
+	// System.Boolean System.Uri::IsWindowsFileSystem
+	bool ___IsWindowsFileSystem_29;
+	// System.Object System.Uri::s_initLock
+	RuntimeObject* ___s_initLock_30;
+	// System.Char[] System.Uri::HexLowerChars
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___HexLowerChars_34;
+	// System.Char[] System.Uri::_WSchars
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____WSchars_35;
+};
+
+// System.Uri
+
 // Firebase.Auth.AuthUtilPINVOKE/SWIGExceptionHelper
 struct SWIGExceptionHelper_t05DAD01A90446484A21E9CC1112DA02202C77270_StaticFields
 {
@@ -1718,6 +1801,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t AuthUtilPINVOKE_GoogleAuthProvider_G
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Credential__ctor_m4A17C65E57E8B4CAA8F25248AA8E645B71F32B02 (Credential_t32FB2E0F8AAA0B6895D10531CE82C9FBD27E27D1* __this, intptr_t ___0_cPtr, bool ___1_cMemoryOwn, const RuntimeMethod* method) ;
 // System.Void Firebase.Auth.AuthUtilPINVOKE::delete_UserInfoInterface(System.Runtime.InteropServices.HandleRef)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthUtilPINVOKE_delete_UserInfoInterface_m8D0C46DE47E822CA27457B7AFA84FA550F6EE486 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) ;
+// System.String Firebase.Auth.UserInfoInterface::get_PhotoUrlInternal()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UserInfoInterface_get_PhotoUrlInternal_m45B1F726CA9206F5731F137FD05A6F8D47C3EDD1 (UserInfoInterface_t3FA671C36EBB6479D7F8BE1C1040D99E7E5D4062* __this, const RuntimeMethod* method) ;
+// System.Uri Firebase.FirebaseApp::UrlStringToUri(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* FirebaseApp_UrlStringToUri_mD212E37D37B2F0DE5EE30CDAAB0E95E5E87B4F79 (String_t* ___0_urlString, const RuntimeMethod* method) ;
+// System.String Firebase.Auth.AuthUtilPINVOKE::UserInfoInterface_UserId_get(System.Runtime.InteropServices.HandleRef)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthUtilPINVOKE_UserInfoInterface_UserId_get_m3428D7A0C57C6481EF6FB0491DA97F045CEE7C75 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) ;
+// System.String Firebase.Auth.AuthUtilPINVOKE::UserInfoInterface_Email_get(System.Runtime.InteropServices.HandleRef)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthUtilPINVOKE_UserInfoInterface_Email_get_mD6EBAEDF0B1F5DC104D5781431ABF89C648A9219 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) ;
+// System.String Firebase.Auth.AuthUtilPINVOKE::UserInfoInterface_DisplayName_get(System.Runtime.InteropServices.HandleRef)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthUtilPINVOKE_UserInfoInterface_DisplayName_get_m41D43B4B54197A1A095B371CD9B9F19F873A689E (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) ;
+// System.String Firebase.Auth.AuthUtilPINVOKE::UserInfoInterface_PhotoUrlInternal_get(System.Runtime.InteropServices.HandleRef)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthUtilPINVOKE_UserInfoInterface_PhotoUrlInternal_get_mB065ADB3EA4D4B1EFC997C0C1BFB5F6096A49407 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) ;
 // System.IntPtr Firebase.Auth.AuthUtilPINVOKE::FirebaseUser_SWIGUpcast(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t AuthUtilPINVOKE_FirebaseUser_SWIGUpcast_m7CAB9D14AEA69B1F0AEBC88EBC4CA0BA90CABB46 (intptr_t ___0_jarg1, const RuntimeMethod* method) ;
 // System.Void Firebase.Auth.UserInfoInterface::.ctor(System.IntPtr,System.Boolean)
@@ -1848,6 +1943,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t AuthUtilPINVOKE_FirebaseAuth_SignInW
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Future_User__ctor_m4921804BE72053DD67804F59F83DBDC31CC33B59 (Future_User_t9D023CB6F4028F3276681CA0126A8206A5A9F236* __this, intptr_t ___0_cPtr, bool ___1_cMemoryOwn, const RuntimeMethod* method) ;
 // System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> Firebase.Auth.Future_User::GetTask(Firebase.Auth.Future_User)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tE57E3A2330CE37367B7296D598E85906D967FF5B* Future_User_GetTask_m6F04A551DD05AC7F83B046814B211FD1F94BE732 (Future_User_t9D023CB6F4028F3276681CA0126A8206A5A9F236* ___0_fu, const RuntimeMethod* method) ;
+// System.Void Firebase.Auth.AuthUtilPINVOKE::FirebaseAuth_SignOut(System.Runtime.InteropServices.HandleRef)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthUtilPINVOKE_FirebaseAuth_SignOut_m2A10F7589BABECFD819E06E4DD8BADD83D8512E0 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) ;
 // System.IntPtr Firebase.Auth.AuthUtilPINVOKE::FirebaseAuth_GetAuthInternal(System.Runtime.InteropServices.HandleRef,System.Int32&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t AuthUtilPINVOKE_FirebaseAuth_GetAuthInternal_m3E83970E2674AEC5DDD01FD9818845156FE134AB (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t* ___1_jarg2, const RuntimeMethod* method) ;
 // System.Void Firebase.Auth.FirebaseAuth::.ctor(System.IntPtr,System.Boolean)
@@ -1988,10 +2085,25 @@ IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Auth_CSharp_GoogleAuthProvider_Ge
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Auth_CSharp_delete_UserInfoInterface(void*);
 #endif
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+IL2CPP_EXTERN_C char* DEFAULT_CALL Firebase_Auth_CSharp_UserInfoInterface_UserId_get(void*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+IL2CPP_EXTERN_C char* DEFAULT_CALL Firebase_Auth_CSharp_UserInfoInterface_Email_get(void*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+IL2CPP_EXTERN_C char* DEFAULT_CALL Firebase_Auth_CSharp_UserInfoInterface_DisplayName_get(void*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+IL2CPP_EXTERN_C char* DEFAULT_CALL Firebase_Auth_CSharp_UserInfoInterface_PhotoUrlInternal_get(void*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Auth_CSharp_delete_FirebaseUser(void*);
 #endif
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Auth_CSharp_FirebaseAuth_SignInWithCredentialInternal(void*, void*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Auth_CSharp_FirebaseAuth_SignOut(void*);
 #endif
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Auth_CSharp_FirebaseAuth_GetAuthInternal(void*, int32_t*);
@@ -3465,7 +3577,7 @@ FINALLY_000c:
 		});
 		try
 		{// begin try (depth: 1)
-			VirtualActionInvoker1< bool >::Invoke(5 /* System.Void Firebase.Auth.UserInfoInterface::Dispose(System.Boolean) */, __this, (bool)0);
+			VirtualActionInvoker1< bool >::Invoke(9 /* System.Void Firebase.Auth.UserInfoInterface::Dispose(System.Boolean) */, __this, (bool)0);
 			goto IL_0014;
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -3489,7 +3601,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserInfoInterface_Dispose_m10151E5E08983
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		VirtualActionInvoker1< bool >::Invoke(5 /* System.Void Firebase.Auth.UserInfoInterface::Dispose(System.Boolean) */, __this, (bool)1);
+		VirtualActionInvoker1< bool >::Invoke(9 /* System.Void Firebase.Auth.UserInfoInterface::Dispose(System.Boolean) */, __this, (bool)1);
 		il2cpp_codegen_runtime_class_init_inline(GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
 		GC_SuppressFinalize_m71815DBD5A0CD2EA1BE43317B08B7A14949EDC65(__this, NULL);
 		return;
@@ -3601,6 +3713,228 @@ IL_005e_1:
 IL_0073:
 	{
 		return;
+	}
+}
+// System.Uri Firebase.Auth.UserInfoInterface::get_PhotoUrl()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* UserInfoInterface_get_PhotoUrl_mCE42C8EEF130C3C91C8E54E62FF42295D838A0EE (UserInfoInterface_t3FA671C36EBB6479D7F8BE1C1040D99E7E5D4062* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FirebaseApp_tD23C437863A3502177988D1382B58820B0571A25_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* V_0 = NULL;
+	{
+		String_t* L_0;
+		L_0 = UserInfoInterface_get_PhotoUrlInternal_m45B1F726CA9206F5731F137FD05A6F8D47C3EDD1(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(FirebaseApp_tD23C437863A3502177988D1382B58820B0571A25_il2cpp_TypeInfo_var);
+		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_1;
+		L_1 = FirebaseApp_UrlStringToUri_mD212E37D37B2F0DE5EE30CDAAB0E95E5E87B4F79(L_0, NULL);
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_2 = V_0;
+		return L_2;
+	}
+}
+// System.String Firebase.Auth.UserInfoInterface::get_UserId()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UserInfoInterface_get_UserId_m789311856DFE3585EB321D6CE4BFE55FBB222D6E (UserInfoInterface_t3FA671C36EBB6479D7F8BE1C1040D99E7E5D4062* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthUtilPINVOKE_t1F2E0415FF5D0F19282D5F618361E28FC401F7A6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	bool V_1 = false;
+	String_t* V_2 = NULL;
+	{
+		HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F L_0 = __this->___swigCPtr_0;
+		il2cpp_codegen_runtime_class_init_inline(AuthUtilPINVOKE_t1F2E0415FF5D0F19282D5F618361E28FC401F7A6_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = AuthUtilPINVOKE_UserInfoInterface_UserId_get_m3428D7A0C57C6481EF6FB0491DA97F045CEE7C75(L_0, NULL);
+		V_0 = L_1;
+		il2cpp_codegen_runtime_class_init_inline(SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = SWIGPendingException_get_Pending_mFF0B94BEAD2C48E3CD3BB7EFB5EB23A0B6CF55EE(NULL);
+		V_1 = L_2;
+		bool L_3 = V_1;
+		if (!L_3)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var)));
+		Exception_t* L_4;
+		L_4 = SWIGPendingException_Retrieve_m5AF2B72B0C255B87F0044137B357F55F50101D51(NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UserInfoInterface_get_UserId_m789311856DFE3585EB321D6CE4BFE55FBB222D6E_RuntimeMethod_var)));
+	}
+
+IL_001c:
+	{
+		String_t* L_5 = V_0;
+		V_2 = L_5;
+		goto IL_0020;
+	}
+
+IL_0020:
+	{
+		String_t* L_6 = V_2;
+		return L_6;
+	}
+}
+// System.String Firebase.Auth.UserInfoInterface::get_Email()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UserInfoInterface_get_Email_m9AF15B59421B9A64E87AF6DEA14800F197F6E584 (UserInfoInterface_t3FA671C36EBB6479D7F8BE1C1040D99E7E5D4062* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthUtilPINVOKE_t1F2E0415FF5D0F19282D5F618361E28FC401F7A6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	bool V_1 = false;
+	String_t* V_2 = NULL;
+	{
+		HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F L_0 = __this->___swigCPtr_0;
+		il2cpp_codegen_runtime_class_init_inline(AuthUtilPINVOKE_t1F2E0415FF5D0F19282D5F618361E28FC401F7A6_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = AuthUtilPINVOKE_UserInfoInterface_Email_get_mD6EBAEDF0B1F5DC104D5781431ABF89C648A9219(L_0, NULL);
+		V_0 = L_1;
+		il2cpp_codegen_runtime_class_init_inline(SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = SWIGPendingException_get_Pending_mFF0B94BEAD2C48E3CD3BB7EFB5EB23A0B6CF55EE(NULL);
+		V_1 = L_2;
+		bool L_3 = V_1;
+		if (!L_3)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var)));
+		Exception_t* L_4;
+		L_4 = SWIGPendingException_Retrieve_m5AF2B72B0C255B87F0044137B357F55F50101D51(NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UserInfoInterface_get_Email_m9AF15B59421B9A64E87AF6DEA14800F197F6E584_RuntimeMethod_var)));
+	}
+
+IL_001c:
+	{
+		String_t* L_5 = V_0;
+		V_2 = L_5;
+		goto IL_0020;
+	}
+
+IL_0020:
+	{
+		String_t* L_6 = V_2;
+		return L_6;
+	}
+}
+// System.String Firebase.Auth.UserInfoInterface::get_DisplayName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UserInfoInterface_get_DisplayName_m7AC6606E65DF9883078C26DD521A83C4056475A8 (UserInfoInterface_t3FA671C36EBB6479D7F8BE1C1040D99E7E5D4062* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthUtilPINVOKE_t1F2E0415FF5D0F19282D5F618361E28FC401F7A6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	bool V_1 = false;
+	String_t* V_2 = NULL;
+	{
+		HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F L_0 = __this->___swigCPtr_0;
+		il2cpp_codegen_runtime_class_init_inline(AuthUtilPINVOKE_t1F2E0415FF5D0F19282D5F618361E28FC401F7A6_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = AuthUtilPINVOKE_UserInfoInterface_DisplayName_get_m41D43B4B54197A1A095B371CD9B9F19F873A689E(L_0, NULL);
+		V_0 = L_1;
+		il2cpp_codegen_runtime_class_init_inline(SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = SWIGPendingException_get_Pending_mFF0B94BEAD2C48E3CD3BB7EFB5EB23A0B6CF55EE(NULL);
+		V_1 = L_2;
+		bool L_3 = V_1;
+		if (!L_3)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var)));
+		Exception_t* L_4;
+		L_4 = SWIGPendingException_Retrieve_m5AF2B72B0C255B87F0044137B357F55F50101D51(NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UserInfoInterface_get_DisplayName_m7AC6606E65DF9883078C26DD521A83C4056475A8_RuntimeMethod_var)));
+	}
+
+IL_001c:
+	{
+		String_t* L_5 = V_0;
+		V_2 = L_5;
+		goto IL_0020;
+	}
+
+IL_0020:
+	{
+		String_t* L_6 = V_2;
+		return L_6;
+	}
+}
+// System.String Firebase.Auth.UserInfoInterface::get_PhotoUrlInternal()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UserInfoInterface_get_PhotoUrlInternal_m45B1F726CA9206F5731F137FD05A6F8D47C3EDD1 (UserInfoInterface_t3FA671C36EBB6479D7F8BE1C1040D99E7E5D4062* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthUtilPINVOKE_t1F2E0415FF5D0F19282D5F618361E28FC401F7A6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	bool V_1 = false;
+	String_t* V_2 = NULL;
+	{
+		HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F L_0 = __this->___swigCPtr_0;
+		il2cpp_codegen_runtime_class_init_inline(AuthUtilPINVOKE_t1F2E0415FF5D0F19282D5F618361E28FC401F7A6_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = AuthUtilPINVOKE_UserInfoInterface_PhotoUrlInternal_get_mB065ADB3EA4D4B1EFC997C0C1BFB5F6096A49407(L_0, NULL);
+		V_0 = L_1;
+		il2cpp_codegen_runtime_class_init_inline(SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = SWIGPendingException_get_Pending_mFF0B94BEAD2C48E3CD3BB7EFB5EB23A0B6CF55EE(NULL);
+		V_1 = L_2;
+		bool L_3 = V_1;
+		if (!L_3)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var)));
+		Exception_t* L_4;
+		L_4 = SWIGPendingException_Retrieve_m5AF2B72B0C255B87F0044137B357F55F50101D51(NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UserInfoInterface_get_PhotoUrlInternal_m45B1F726CA9206F5731F137FD05A6F8D47C3EDD1_RuntimeMethod_var)));
+	}
+
+IL_001c:
+	{
+		String_t* L_5 = V_0;
+		V_2 = L_5;
+		goto IL_0020;
+	}
+
+IL_0020:
+	{
+		String_t* L_6 = V_2;
+		return L_6;
 	}
 }
 #ifdef __clang__
@@ -5168,6 +5502,43 @@ IL_0031:
 		return L_10;
 	}
 }
+// System.Void Firebase.Auth.FirebaseAuth::SignOut()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FirebaseAuth_SignOut_m6334FED9987E29CCB5AAAF8AC50A894BFF8AF5C8 (FirebaseAuth_tD2FC1EC1E5B6EF920276AFABA103B8B7E2AE2DAF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthUtilPINVOKE_t1F2E0415FF5D0F19282D5F618361E28FC401F7A6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F L_0 = __this->___swigCPtr_0;
+		il2cpp_codegen_runtime_class_init_inline(AuthUtilPINVOKE_t1F2E0415FF5D0F19282D5F618361E28FC401F7A6_il2cpp_TypeInfo_var);
+		AuthUtilPINVOKE_FirebaseAuth_SignOut_m2A10F7589BABECFD819E06E4DD8BADD83D8512E0(L_0, NULL);
+		il2cpp_codegen_runtime_class_init_inline(SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = SWIGPendingException_get_Pending_mFF0B94BEAD2C48E3CD3BB7EFB5EB23A0B6CF55EE(NULL);
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var)));
+		Exception_t* L_3;
+		L_3 = SWIGPendingException_Retrieve_m5AF2B72B0C255B87F0044137B357F55F50101D51(NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&FirebaseAuth_SignOut_m6334FED9987E29CCB5AAAF8AC50A894BFF8AF5C8_RuntimeMethod_var)));
+	}
+
+IL_001c:
+	{
+		return;
+	}
+}
 // Firebase.Auth.FirebaseAuth Firebase.Auth.FirebaseAuth::GetAuthInternal(Firebase.FirebaseApp,Firebase.InitResult&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FirebaseAuth_tD2FC1EC1E5B6EF920276AFABA103B8B7E2AE2DAF* FirebaseAuth_GetAuthInternal_m55709A4143C7E2EC3108ACF3706A971567ECF5E4 (FirebaseApp_tD23C437863A3502177988D1382B58820B0571A25* ___0_app, int32_t* ___1_init_result_out, const RuntimeMethod* method) 
 {
@@ -6091,6 +6462,146 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthUtilPINVOKE_delete_UserInfoInterface
 	#endif
 
 }
+// System.String Firebase.Auth.AuthUtilPINVOKE::UserInfoInterface_UserId_get(System.Runtime.InteropServices.HandleRef)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthUtilPINVOKE_UserInfoInterface_UserId_get_m3428D7A0C57C6481EF6FB0491DA97F045CEE7C75 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
+{
+	typedef char* (DEFAULT_CALL *PInvokeFunc) (void*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(void*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-10_6_0"), "Firebase_Auth_CSharp_UserInfoInterface_UserId_get", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_jarg1' to native representation
+	void* ____0_jarg1_marshaled = NULL;
+	____0_jarg1_marshaled = (void*)___0_jarg1.____handle_1;
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+	char* returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Auth_CSharp_UserInfoInterface_UserId_get)(____0_jarg1_marshaled);
+	#else
+	char* returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
+	#endif
+
+	// Marshaling of return value back from native representation
+	String_t* _returnValue_unmarshaled = NULL;
+	_returnValue_unmarshaled = il2cpp_codegen_marshal_string_result(returnValue);
+
+	// Marshaling cleanup of return value native representation
+	il2cpp_codegen_marshal_free(returnValue);
+	returnValue = NULL;
+
+	return _returnValue_unmarshaled;
+}
+// System.String Firebase.Auth.AuthUtilPINVOKE::UserInfoInterface_Email_get(System.Runtime.InteropServices.HandleRef)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthUtilPINVOKE_UserInfoInterface_Email_get_mD6EBAEDF0B1F5DC104D5781431ABF89C648A9219 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
+{
+	typedef char* (DEFAULT_CALL *PInvokeFunc) (void*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(void*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-10_6_0"), "Firebase_Auth_CSharp_UserInfoInterface_Email_get", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_jarg1' to native representation
+	void* ____0_jarg1_marshaled = NULL;
+	____0_jarg1_marshaled = (void*)___0_jarg1.____handle_1;
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+	char* returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Auth_CSharp_UserInfoInterface_Email_get)(____0_jarg1_marshaled);
+	#else
+	char* returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
+	#endif
+
+	// Marshaling of return value back from native representation
+	String_t* _returnValue_unmarshaled = NULL;
+	_returnValue_unmarshaled = il2cpp_codegen_marshal_string_result(returnValue);
+
+	// Marshaling cleanup of return value native representation
+	il2cpp_codegen_marshal_free(returnValue);
+	returnValue = NULL;
+
+	return _returnValue_unmarshaled;
+}
+// System.String Firebase.Auth.AuthUtilPINVOKE::UserInfoInterface_DisplayName_get(System.Runtime.InteropServices.HandleRef)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthUtilPINVOKE_UserInfoInterface_DisplayName_get_m41D43B4B54197A1A095B371CD9B9F19F873A689E (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
+{
+	typedef char* (DEFAULT_CALL *PInvokeFunc) (void*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(void*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-10_6_0"), "Firebase_Auth_CSharp_UserInfoInterface_DisplayName_get", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_jarg1' to native representation
+	void* ____0_jarg1_marshaled = NULL;
+	____0_jarg1_marshaled = (void*)___0_jarg1.____handle_1;
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+	char* returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Auth_CSharp_UserInfoInterface_DisplayName_get)(____0_jarg1_marshaled);
+	#else
+	char* returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
+	#endif
+
+	// Marshaling of return value back from native representation
+	String_t* _returnValue_unmarshaled = NULL;
+	_returnValue_unmarshaled = il2cpp_codegen_marshal_string_result(returnValue);
+
+	// Marshaling cleanup of return value native representation
+	il2cpp_codegen_marshal_free(returnValue);
+	returnValue = NULL;
+
+	return _returnValue_unmarshaled;
+}
+// System.String Firebase.Auth.AuthUtilPINVOKE::UserInfoInterface_PhotoUrlInternal_get(System.Runtime.InteropServices.HandleRef)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthUtilPINVOKE_UserInfoInterface_PhotoUrlInternal_get_mB065ADB3EA4D4B1EFC997C0C1BFB5F6096A49407 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
+{
+	typedef char* (DEFAULT_CALL *PInvokeFunc) (void*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(void*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-10_6_0"), "Firebase_Auth_CSharp_UserInfoInterface_PhotoUrlInternal_get", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_jarg1' to native representation
+	void* ____0_jarg1_marshaled = NULL;
+	____0_jarg1_marshaled = (void*)___0_jarg1.____handle_1;
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+	char* returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Auth_CSharp_UserInfoInterface_PhotoUrlInternal_get)(____0_jarg1_marshaled);
+	#else
+	char* returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
+	#endif
+
+	// Marshaling of return value back from native representation
+	String_t* _returnValue_unmarshaled = NULL;
+	_returnValue_unmarshaled = il2cpp_codegen_marshal_string_result(returnValue);
+
+	// Marshaling cleanup of return value native representation
+	il2cpp_codegen_marshal_free(returnValue);
+	returnValue = NULL;
+
+	return _returnValue_unmarshaled;
+}
 // System.Void Firebase.Auth.AuthUtilPINVOKE::delete_FirebaseUser(System.Runtime.InteropServices.HandleRef)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthUtilPINVOKE_delete_FirebaseUser_m49FDDF59500F3E43F730B2043E1C95332F6F81DD (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
@@ -6147,6 +6658,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t AuthUtilPINVOKE_FirebaseAuth_SignInW
 	#endif
 
 	return returnValue;
+}
+// System.Void Firebase.Auth.AuthUtilPINVOKE::FirebaseAuth_SignOut(System.Runtime.InteropServices.HandleRef)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthUtilPINVOKE_FirebaseAuth_SignOut_m2A10F7589BABECFD819E06E4DD8BADD83D8512E0 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(void*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-10_6_0"), "Firebase_Auth_CSharp_FirebaseAuth_SignOut", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_jarg1' to native representation
+	void* ____0_jarg1_marshaled = NULL;
+	____0_jarg1_marshaled = (void*)___0_jarg1.____handle_1;
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_10_6_0_INTERNAL
+	reinterpret_cast<PInvokeFunc>(Firebase_Auth_CSharp_FirebaseAuth_SignOut)(____0_jarg1_marshaled);
+	#else
+	il2cppPInvokeFunc(____0_jarg1_marshaled);
+	#endif
+
 }
 // System.IntPtr Firebase.Auth.AuthUtilPINVOKE::FirebaseAuth_GetAuthInternal(System.Runtime.InteropServices.HandleRef,System.Int32&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t AuthUtilPINVOKE_FirebaseAuth_GetAuthInternal_m3E83970E2674AEC5DDD01FD9818845156FE134AB (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t* ___1_jarg2, const RuntimeMethod* method) 

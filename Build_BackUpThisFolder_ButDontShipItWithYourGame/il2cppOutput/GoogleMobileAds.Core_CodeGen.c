@@ -134,74 +134,82 @@ extern void AdValue_set_CurrencyCode_mA493466D946C6484F0F20604EF0B013EA0571F71 (
 extern void AdValueEventArgs__ctor_m2786F476E77E35470958434534FA8976541ED4E0 (void);
 // 0x0000003D System.Void GoogleMobileAds.Api.AdValueEventArgs::set_AdValue(GoogleMobileAds.Api.AdValue)
 extern void AdValueEventArgs_set_AdValue_mFDB2656F4BDBCC3CE719341385666747D72F357E (void);
-// 0x0000003E System.Void GoogleMobileAds.Api.MaxAdContentRating::.ctor(System.String)
+// 0x0000003E System.Void GoogleMobileAds.Api.AdapterStatus::.ctor(GoogleMobileAds.Api.AdapterState,System.String,System.Int32)
+extern void AdapterStatus__ctor_mB1D229249120A477D0E82FF4CEC24CFEC3860087 (void);
+// 0x0000003F System.Void GoogleMobileAds.Api.AdapterStatus::set_InitializationState(GoogleMobileAds.Api.AdapterState)
+extern void AdapterStatus_set_InitializationState_mCAC923590AEBF2A82B50D11A840782E926D489FA (void);
+// 0x00000040 System.Void GoogleMobileAds.Api.AdapterStatus::set_Description(System.String)
+extern void AdapterStatus_set_Description_m8987A66E81FAAC057BEE46A30CB522BA72788F32 (void);
+// 0x00000041 System.Void GoogleMobileAds.Api.AdapterStatus::set_Latency(System.Int32)
+extern void AdapterStatus_set_Latency_m6AAFC26BBD8DB832E092CA129D496B023B4D2710 (void);
+// 0x00000042 System.Void GoogleMobileAds.Api.MaxAdContentRating::.ctor(System.String)
 extern void MaxAdContentRating__ctor_mB941F1C15423BA11C1D70F68B0FF19A3C8673856 (void);
-// 0x0000003F System.String GoogleMobileAds.Api.MaxAdContentRating::get_Value()
+// 0x00000043 System.String GoogleMobileAds.Api.MaxAdContentRating::get_Value()
 extern void MaxAdContentRating_get_Value_m41F2B893E27FDCE7C4FFF245BD24F1692F0F297E (void);
-// 0x00000040 System.Void GoogleMobileAds.Api.MaxAdContentRating::set_Value(System.String)
+// 0x00000044 System.Void GoogleMobileAds.Api.MaxAdContentRating::set_Value(System.String)
 extern void MaxAdContentRating_set_Value_mED6650BB4FC02D217E2A8A57D6C57634881BD64E (void);
-// 0x00000041 GoogleMobileAds.Api.MaxAdContentRating GoogleMobileAds.Api.MaxAdContentRating::ToMaxAdContentRating(System.String)
+// 0x00000045 GoogleMobileAds.Api.MaxAdContentRating GoogleMobileAds.Api.MaxAdContentRating::ToMaxAdContentRating(System.String)
 extern void MaxAdContentRating_ToMaxAdContentRating_m9A29CB33E337A74C411FDA07208CB75305880BE5 (void);
-// 0x00000042 System.Void GoogleMobileAds.Api.RequestConfiguration::.ctor(GoogleMobileAds.Api.RequestConfiguration/Builder)
+// 0x00000046 System.Void GoogleMobileAds.Api.RequestConfiguration::.ctor(GoogleMobileAds.Api.RequestConfiguration/Builder)
 extern void RequestConfiguration__ctor_mCF78EE36863A8268C55C4FB0AE9DFA58D0D18406 (void);
-// 0x00000043 GoogleMobileAds.Api.MaxAdContentRating GoogleMobileAds.Api.RequestConfiguration::get_MaxAdContentRating()
+// 0x00000047 GoogleMobileAds.Api.MaxAdContentRating GoogleMobileAds.Api.RequestConfiguration::get_MaxAdContentRating()
 extern void RequestConfiguration_get_MaxAdContentRating_mEDD9B954F58445193A387548E49A263091758E9A (void);
-// 0x00000044 System.Void GoogleMobileAds.Api.RequestConfiguration::set_MaxAdContentRating(GoogleMobileAds.Api.MaxAdContentRating)
+// 0x00000048 System.Void GoogleMobileAds.Api.RequestConfiguration::set_MaxAdContentRating(GoogleMobileAds.Api.MaxAdContentRating)
 extern void RequestConfiguration_set_MaxAdContentRating_m2B6ACA58719B2A0A075BA0A11FCEB2893CC14508 (void);
-// 0x00000045 System.Nullable`1<GoogleMobileAds.Api.TagForChildDirectedTreatment> GoogleMobileAds.Api.RequestConfiguration::get_TagForChildDirectedTreatment()
+// 0x00000049 System.Nullable`1<GoogleMobileAds.Api.TagForChildDirectedTreatment> GoogleMobileAds.Api.RequestConfiguration::get_TagForChildDirectedTreatment()
 extern void RequestConfiguration_get_TagForChildDirectedTreatment_m0E52AF1CB09D1DF82E6AC9715D9FC863D3803489 (void);
-// 0x00000046 System.Void GoogleMobileAds.Api.RequestConfiguration::set_TagForChildDirectedTreatment(System.Nullable`1<GoogleMobileAds.Api.TagForChildDirectedTreatment>)
+// 0x0000004A System.Void GoogleMobileAds.Api.RequestConfiguration::set_TagForChildDirectedTreatment(System.Nullable`1<GoogleMobileAds.Api.TagForChildDirectedTreatment>)
 extern void RequestConfiguration_set_TagForChildDirectedTreatment_m22F5F366495C21DAC85D7EEFF8B9BFBA9E3ECAD0 (void);
-// 0x00000047 System.Nullable`1<GoogleMobileAds.Api.TagForUnderAgeOfConsent> GoogleMobileAds.Api.RequestConfiguration::get_TagForUnderAgeOfConsent()
+// 0x0000004B System.Nullable`1<GoogleMobileAds.Api.TagForUnderAgeOfConsent> GoogleMobileAds.Api.RequestConfiguration::get_TagForUnderAgeOfConsent()
 extern void RequestConfiguration_get_TagForUnderAgeOfConsent_m28E8E0762DCBC4C235557B4A569F13093B3E1EA8 (void);
-// 0x00000048 System.Void GoogleMobileAds.Api.RequestConfiguration::set_TagForUnderAgeOfConsent(System.Nullable`1<GoogleMobileAds.Api.TagForUnderAgeOfConsent>)
+// 0x0000004C System.Void GoogleMobileAds.Api.RequestConfiguration::set_TagForUnderAgeOfConsent(System.Nullable`1<GoogleMobileAds.Api.TagForUnderAgeOfConsent>)
 extern void RequestConfiguration_set_TagForUnderAgeOfConsent_m7FDFAB70987A84DBA69CE2C75B6160DB38161DE2 (void);
-// 0x00000049 System.Collections.Generic.List`1<System.String> GoogleMobileAds.Api.RequestConfiguration::get_TestDeviceIds()
+// 0x0000004D System.Collections.Generic.List`1<System.String> GoogleMobileAds.Api.RequestConfiguration::get_TestDeviceIds()
 extern void RequestConfiguration_get_TestDeviceIds_m38BA8AC6D9B47F1BA8C5C17C707456B1E8B75A62 (void);
-// 0x0000004A System.Void GoogleMobileAds.Api.RequestConfiguration::set_TestDeviceIds(System.Collections.Generic.List`1<System.String>)
+// 0x0000004E System.Void GoogleMobileAds.Api.RequestConfiguration::set_TestDeviceIds(System.Collections.Generic.List`1<System.String>)
 extern void RequestConfiguration_set_TestDeviceIds_m9727A2011EAFC6546F7A4EAC890D91FBFB24CEAA (void);
-// 0x0000004B System.Void GoogleMobileAds.Api.RequestConfiguration/Builder::.ctor()
+// 0x0000004F System.Void GoogleMobileAds.Api.RequestConfiguration/Builder::.ctor()
 extern void Builder__ctor_m0C1631E6835CC874EFBD2DE2CEA91F7556BC385D (void);
-// 0x0000004C GoogleMobileAds.Api.MaxAdContentRating GoogleMobileAds.Api.RequestConfiguration/Builder::get_MaxAdContentRating()
+// 0x00000050 GoogleMobileAds.Api.MaxAdContentRating GoogleMobileAds.Api.RequestConfiguration/Builder::get_MaxAdContentRating()
 extern void Builder_get_MaxAdContentRating_m4BEF4AD0EDC27107CF5837B902A078A4F547C208 (void);
-// 0x0000004D System.Void GoogleMobileAds.Api.RequestConfiguration/Builder::set_MaxAdContentRating(GoogleMobileAds.Api.MaxAdContentRating)
+// 0x00000051 System.Void GoogleMobileAds.Api.RequestConfiguration/Builder::set_MaxAdContentRating(GoogleMobileAds.Api.MaxAdContentRating)
 extern void Builder_set_MaxAdContentRating_m53B90A8C17637AB6E1475C63175DD7856A4FF954 (void);
-// 0x0000004E System.Nullable`1<GoogleMobileAds.Api.TagForChildDirectedTreatment> GoogleMobileAds.Api.RequestConfiguration/Builder::get_TagForChildDirectedTreatment()
+// 0x00000052 System.Nullable`1<GoogleMobileAds.Api.TagForChildDirectedTreatment> GoogleMobileAds.Api.RequestConfiguration/Builder::get_TagForChildDirectedTreatment()
 extern void Builder_get_TagForChildDirectedTreatment_mC2A6C7BAE948C7B22E99105A524A5846217D8A78 (void);
-// 0x0000004F System.Void GoogleMobileAds.Api.RequestConfiguration/Builder::set_TagForChildDirectedTreatment(System.Nullable`1<GoogleMobileAds.Api.TagForChildDirectedTreatment>)
+// 0x00000053 System.Void GoogleMobileAds.Api.RequestConfiguration/Builder::set_TagForChildDirectedTreatment(System.Nullable`1<GoogleMobileAds.Api.TagForChildDirectedTreatment>)
 extern void Builder_set_TagForChildDirectedTreatment_mC75F3BF3D11C9FD6FCE769C28B2185792432AC76 (void);
-// 0x00000050 System.Nullable`1<GoogleMobileAds.Api.TagForUnderAgeOfConsent> GoogleMobileAds.Api.RequestConfiguration/Builder::get_TagForUnderAgeOfConsent()
+// 0x00000054 System.Nullable`1<GoogleMobileAds.Api.TagForUnderAgeOfConsent> GoogleMobileAds.Api.RequestConfiguration/Builder::get_TagForUnderAgeOfConsent()
 extern void Builder_get_TagForUnderAgeOfConsent_mF4BDB4F7648CF1DAD58F7174002C3A3762B560C3 (void);
-// 0x00000051 System.Void GoogleMobileAds.Api.RequestConfiguration/Builder::set_TagForUnderAgeOfConsent(System.Nullable`1<GoogleMobileAds.Api.TagForUnderAgeOfConsent>)
+// 0x00000055 System.Void GoogleMobileAds.Api.RequestConfiguration/Builder::set_TagForUnderAgeOfConsent(System.Nullable`1<GoogleMobileAds.Api.TagForUnderAgeOfConsent>)
 extern void Builder_set_TagForUnderAgeOfConsent_m550A8D87154CA8361C0A7CCE062791F909C53E0E (void);
-// 0x00000052 System.Collections.Generic.List`1<System.String> GoogleMobileAds.Api.RequestConfiguration/Builder::get_TestDeviceIds()
+// 0x00000056 System.Collections.Generic.List`1<System.String> GoogleMobileAds.Api.RequestConfiguration/Builder::get_TestDeviceIds()
 extern void Builder_get_TestDeviceIds_m3AE37E300BB67D456D0A46C6BC4D6D74BE88AF36 (void);
-// 0x00000053 System.Void GoogleMobileAds.Api.RequestConfiguration/Builder::set_TestDeviceIds(System.Collections.Generic.List`1<System.String>)
+// 0x00000057 System.Void GoogleMobileAds.Api.RequestConfiguration/Builder::set_TestDeviceIds(System.Collections.Generic.List`1<System.String>)
 extern void Builder_set_TestDeviceIds_m6A711A2A3A5E8A50E5307B860ABE6B45E6C43FD0 (void);
-// 0x00000054 GoogleMobileAds.Api.RequestConfiguration/Builder GoogleMobileAds.Api.RequestConfiguration/Builder::SetMaxAdContentRating(GoogleMobileAds.Api.MaxAdContentRating)
+// 0x00000058 GoogleMobileAds.Api.RequestConfiguration/Builder GoogleMobileAds.Api.RequestConfiguration/Builder::SetMaxAdContentRating(GoogleMobileAds.Api.MaxAdContentRating)
 extern void Builder_SetMaxAdContentRating_m2F7CC5E659E63A297CAE2307A71778A1B6B2107E (void);
-// 0x00000055 GoogleMobileAds.Api.RequestConfiguration/Builder GoogleMobileAds.Api.RequestConfiguration/Builder::SetTagForChildDirectedTreatment(System.Nullable`1<GoogleMobileAds.Api.TagForChildDirectedTreatment>)
+// 0x00000059 GoogleMobileAds.Api.RequestConfiguration/Builder GoogleMobileAds.Api.RequestConfiguration/Builder::SetTagForChildDirectedTreatment(System.Nullable`1<GoogleMobileAds.Api.TagForChildDirectedTreatment>)
 extern void Builder_SetTagForChildDirectedTreatment_m276B46CB4D38C8036CDA4322A94D3F3248779258 (void);
-// 0x00000056 GoogleMobileAds.Api.RequestConfiguration/Builder GoogleMobileAds.Api.RequestConfiguration/Builder::SetTagForUnderAgeOfConsent(System.Nullable`1<GoogleMobileAds.Api.TagForUnderAgeOfConsent>)
+// 0x0000005A GoogleMobileAds.Api.RequestConfiguration/Builder GoogleMobileAds.Api.RequestConfiguration/Builder::SetTagForUnderAgeOfConsent(System.Nullable`1<GoogleMobileAds.Api.TagForUnderAgeOfConsent>)
 extern void Builder_SetTagForUnderAgeOfConsent_mC97C8EDB8DB9C256C279FD528C2E655597ED11C1 (void);
-// 0x00000057 GoogleMobileAds.Api.RequestConfiguration/Builder GoogleMobileAds.Api.RequestConfiguration/Builder::SetTestDeviceIds(System.Collections.Generic.List`1<System.String>)
+// 0x0000005B GoogleMobileAds.Api.RequestConfiguration/Builder GoogleMobileAds.Api.RequestConfiguration/Builder::SetTestDeviceIds(System.Collections.Generic.List`1<System.String>)
 extern void Builder_SetTestDeviceIds_m23097E49B7356B95143DEC3A07F7A62825DAF4DA (void);
-// 0x00000058 GoogleMobileAds.Api.RequestConfiguration GoogleMobileAds.Api.RequestConfiguration/Builder::build()
+// 0x0000005C GoogleMobileAds.Api.RequestConfiguration GoogleMobileAds.Api.RequestConfiguration/Builder::build()
 extern void Builder_build_m3D063A3B45CE4C9BF32647A023681414A28C51B1 (void);
-// 0x00000059 System.Void GoogleMobileAds.Api.Reward::.ctor()
+// 0x0000005D System.Void GoogleMobileAds.Api.Reward::.ctor()
 extern void Reward__ctor_mABD74A86D38CEBCB2C7D2DE193102D39E6BF8800 (void);
-// 0x0000005A System.Void GoogleMobileAds.Api.Reward::set_Type(System.String)
+// 0x0000005E System.Void GoogleMobileAds.Api.Reward::set_Type(System.String)
 extern void Reward_set_Type_mE73B56720F80976BD60F0A0D6D03F726147437DA (void);
-// 0x0000005B System.Void GoogleMobileAds.Api.Reward::set_Amount(System.Double)
+// 0x0000005F System.Void GoogleMobileAds.Api.Reward::set_Amount(System.Double)
 extern void Reward_set_Amount_mB5C08019F6553C5F5C0CE6181B67B1172B96988E (void);
-// 0x0000005C System.String GoogleMobileAds.Api.ServerSideVerificationOptions::get_UserId()
+// 0x00000060 System.String GoogleMobileAds.Api.ServerSideVerificationOptions::get_UserId()
 extern void ServerSideVerificationOptions_get_UserId_m2FCDD6D1E02CCA117DF77BA18BE34197F29EB9C9 (void);
-// 0x0000005D System.String GoogleMobileAds.Api.ServerSideVerificationOptions::get_CustomData()
+// 0x00000061 System.String GoogleMobileAds.Api.ServerSideVerificationOptions::get_CustomData()
 extern void ServerSideVerificationOptions_get_CustomData_m1E16F80C63C3A077E7FC657EA2046964679050BE (void);
-// 0x0000005E System.Collections.Generic.Dictionary`2<System.String,System.String> GoogleMobileAds.Api.Mediation.MediationExtras::get_Extras()
+// 0x00000062 System.Collections.Generic.Dictionary`2<System.String,System.String> GoogleMobileAds.Api.Mediation.MediationExtras::get_Extras()
 extern void MediationExtras_get_Extras_m301316E0049B5580869A85F9414C82445BADEB81 (void);
-// 0x0000005F System.String GoogleMobileAds.Api.Mediation.MediationExtras::get_AndroidMediationExtraBuilderClassName()
-static Il2CppMethodPointer s_methodPointers[95] = 
+// 0x00000063 System.String GoogleMobileAds.Api.Mediation.MediationExtras::get_AndroidMediationExtraBuilderClassName()
+static Il2CppMethodPointer s_methodPointers[99] = 
 {
 	AdErrorEventArgs__ctor_m66E3B4135B05037B964227B02A090265D9E67EBE,
 	AdErrorEventArgs_get_Message_mE3000032FE8D5A768826CE5A04AC9597AFE84390,
@@ -264,6 +272,10 @@ static Il2CppMethodPointer s_methodPointers[95] =
 	AdValue_set_CurrencyCode_mA493466D946C6484F0F20604EF0B013EA0571F71,
 	AdValueEventArgs__ctor_m2786F476E77E35470958434534FA8976541ED4E0,
 	AdValueEventArgs_set_AdValue_mFDB2656F4BDBCC3CE719341385666747D72F357E,
+	AdapterStatus__ctor_mB1D229249120A477D0E82FF4CEC24CFEC3860087,
+	AdapterStatus_set_InitializationState_mCAC923590AEBF2A82B50D11A840782E926D489FA,
+	AdapterStatus_set_Description_m8987A66E81FAAC057BEE46A30CB522BA72788F32,
+	AdapterStatus_set_Latency_m6AAFC26BBD8DB832E092CA129D496B023B4D2710,
 	MaxAdContentRating__ctor_mB941F1C15423BA11C1D70F68B0FF19A3C8673856,
 	MaxAdContentRating_get_Value_m41F2B893E27FDCE7C4FFF245BD24F1692F0F297E,
 	MaxAdContentRating_set_Value_mED6650BB4FC02D217E2A8A57D6C57634881BD64E,
@@ -299,109 +311,113 @@ static Il2CppMethodPointer s_methodPointers[95] =
 	MediationExtras_get_Extras_m301316E0049B5580869A85F9414C82445BADEB81,
 	NULL,
 };
-static const int32_t s_InvokerIndices[95] = 
+static const int32_t s_InvokerIndices[99] = 
 {
-	3026,
-	2945,
-	2648,
-	3026,
-	2945,
-	2648,
-	2648,
-	2945,
-	2648,
-	2945,
-	2648,
-	2817,
-	2531,
-	2822,
+	3032,
+	2951,
+	2653,
+	3032,
+	2951,
+	2653,
+	2653,
+	2951,
+	2653,
+	2951,
+	2653,
+	2823,
 	2536,
-	2816,
-	2528,
-	2945,
-	2648,
-	2945,
-	2648,
-	3026,
-	2945,
-	2648,
-	2945,
-	2648,
-	2817,
-	2531,
+	2828,
+	2541,
 	2822,
+	2533,
+	2951,
+	2653,
+	2951,
+	2653,
+	3032,
+	2951,
+	2653,
+	2951,
+	2653,
+	2823,
 	2536,
-	2816,
-	2528,
-	2945,
-	2648,
-	2945,
-	2648,
-	2381,
-	2381,
-	2945,
-	2361,
-	1594,
-	1765,
-	1158,
-	4824,
-	5461,
-	5461,
-	5461,
-	2930,
-	2930,
-	2930,
-	2930,
-	2130,
-	4603,
-	2930,
-	5916,
-	3026,
-	2632,
-	2633,
-	2648,
-	3026,
-	2648,
-	2648,
-	2945,
-	2648,
-	5466,
-	2648,
-	2945,
-	2648,
-	2834,
-	2550,
-	2835,
-	2551,
-	2945,
-	2648,
-	3026,
-	2945,
-	2648,
-	2834,
-	2550,
-	2835,
-	2551,
-	2945,
-	2648,
-	2381,
-	2354,
-	2355,
-	2381,
-	2945,
-	3026,
-	2648,
-	2607,
-	2945,
-	2945,
-	2945,
+	2828,
+	2541,
+	2822,
+	2533,
+	2951,
+	2653,
+	2951,
+	2653,
+	2385,
+	2385,
+	2951,
+	2365,
+	1595,
+	1767,
+	1159,
+	4837,
+	5480,
+	5480,
+	5480,
+	2936,
+	2936,
+	2936,
+	2936,
+	2134,
+	4613,
+	2936,
+	5935,
+	3032,
+	2637,
+	2638,
+	2653,
+	3032,
+	2653,
+	1167,
+	2637,
+	2653,
+	2637,
+	2653,
+	2951,
+	2653,
+	5485,
+	2653,
+	2951,
+	2653,
+	2840,
+	2555,
+	2841,
+	2556,
+	2951,
+	2653,
+	3032,
+	2951,
+	2653,
+	2840,
+	2555,
+	2841,
+	2556,
+	2951,
+	2653,
+	2385,
+	2358,
+	2359,
+	2385,
+	2951,
+	3032,
+	2653,
+	2612,
+	2951,
+	2951,
+	2951,
 	0,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_GoogleMobileAds_Core_CodeGenModule;
 const Il2CppCodeGenModule g_GoogleMobileAds_Core_CodeGenModule = 
 {
 	"GoogleMobileAds.Core.dll",
-	95,
+	99,
 	s_methodPointers,
 	0,
 	NULL,

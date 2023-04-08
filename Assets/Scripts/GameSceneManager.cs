@@ -21,6 +21,8 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField] private GameObject lobbyControllerModel;
     [CanBeNull] private GameObject loginController = null;
     [SerializeField] private GameObject loginControllerModel;
+    [CanBeNull] private GameObject rankedsController = null;
+    [SerializeField] private GameObject rankedsControllerModel;
     private List<IDisposable> disposer = new List<IDisposable>();
 
     private GameObject currentGameplay;
@@ -97,7 +99,7 @@ public class GameSceneManager : MonoBehaviour
     private void DestroyOngoingGame()
     {
         EventBus.EmitOnGameplayEnd();
-        if (currentGameplay == null) return;
+        if (currentGameplay != null) return;
         Destroy(currentGameplay);
         currentGameplay = null;
     }
@@ -106,6 +108,12 @@ public class GameSceneManager : MonoBehaviour
     {
         if (lobbyController != null) lobbyController.SetActive(false);
         currentGameplay = Instantiate(gameplayController, transform);
+    }
+
+    public void LoadRankedGameplayScene()
+    {
+        if (lobbyController != null) lobbyController.SetActive(false);
+        currentGameplay = Instantiate(rankedsControllerModel, transform); 
     }
 
     public void LoadTutorialScene()

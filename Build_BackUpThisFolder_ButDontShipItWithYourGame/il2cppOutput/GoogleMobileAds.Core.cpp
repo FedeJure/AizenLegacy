@@ -87,6 +87,8 @@ struct AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158;
 struct AdValue_t3D87DDD4D06FAAA212BD2119CA464B4F0FEBBCFD;
 // GoogleMobileAds.Api.AdValueEventArgs
 struct AdValueEventArgs_tFE4F97B850E2D4EF184678E9861479BA39B1299D;
+// GoogleMobileAds.Api.AdapterStatus
+struct AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0;
 // System.Reflection.Binder
 struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235;
 // System.EventArgs
@@ -260,6 +262,17 @@ struct AdValue_t3D87DDD4D06FAAA212BD2119CA464B4F0FEBBCFD  : public RuntimeObject
 	int64_t ___U3CValueU3Ek__BackingField_1;
 	// System.String GoogleMobileAds.Api.AdValue::<CurrencyCode>k__BackingField
 	String_t* ___U3CCurrencyCodeU3Ek__BackingField_2;
+};
+
+// GoogleMobileAds.Api.AdapterStatus
+struct AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0  : public RuntimeObject
+{
+	// GoogleMobileAds.Api.AdapterState GoogleMobileAds.Api.AdapterStatus::<InitializationState>k__BackingField
+	int32_t ___U3CInitializationStateU3Ek__BackingField_0;
+	// System.String GoogleMobileAds.Api.AdapterStatus::<Description>k__BackingField
+	String_t* ___U3CDescriptionU3Ek__BackingField_1;
+	// System.Int32 GoogleMobileAds.Api.AdapterStatus::<Latency>k__BackingField
+	int32_t ___U3CLatencyU3Ek__BackingField_2;
 };
 
 // System.EventArgs
@@ -589,6 +602,10 @@ struct AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158_StaticFields
 
 // GoogleMobileAds.Api.AdValue
 
+// GoogleMobileAds.Api.AdapterStatus
+
+// GoogleMobileAds.Api.AdapterStatus
+
 // System.EventArgs
 struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_StaticFields
 {
@@ -876,6 +893,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Int32 System.Int32::GetHashCode()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Int32_GetHashCode_m253D60FF7527A483E91004B7A2366F13E225E295 (int32_t* __this, const RuntimeMethod* method) ;
+// System.Void GoogleMobileAds.Api.AdapterStatus::set_InitializationState(GoogleMobileAds.Api.AdapterState)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AdapterStatus_set_InitializationState_mCAC923590AEBF2A82B50D11A840782E926D489FA_inline (AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// System.Void GoogleMobileAds.Api.AdapterStatus::set_Description(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AdapterStatus_set_Description_m8987A66E81FAAC057BEE46A30CB522BA72788F32_inline (AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0* __this, String_t* ___0_value, const RuntimeMethod* method) ;
+// System.Void GoogleMobileAds.Api.AdapterStatus::set_Latency(System.Int32)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AdapterStatus_set_Latency_m6AAFC26BBD8DB832E092CA129D496B023B4D2710_inline (AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void GoogleMobileAds.Api.MaxAdContentRating::set_Value(System.String)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MaxAdContentRating_set_Value_mED6650BB4FC02D217E2A8A57D6C57634881BD64E_inline (MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* __this, String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Void GoogleMobileAds.Api.MaxAdContentRating::.ctor(System.String)
@@ -1877,6 +1900,56 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdValueEventArgs_set_AdValue_mFDB2656F4B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void GoogleMobileAds.Api.AdapterStatus::.ctor(GoogleMobileAds.Api.AdapterState,System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdapterStatus__ctor_mB1D229249120A477D0E82FF4CEC24CFEC3860087 (AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0* __this, int32_t ___0_state, String_t* ___1_description, int32_t ___2_latency, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_state;
+		AdapterStatus_set_InitializationState_mCAC923590AEBF2A82B50D11A840782E926D489FA_inline(__this, L_0, NULL);
+		String_t* L_1 = ___1_description;
+		AdapterStatus_set_Description_m8987A66E81FAAC057BEE46A30CB522BA72788F32_inline(__this, L_1, NULL);
+		int32_t L_2 = ___2_latency;
+		AdapterStatus_set_Latency_m6AAFC26BBD8DB832E092CA129D496B023B4D2710_inline(__this, L_2, NULL);
+		return;
+	}
+}
+// System.Void GoogleMobileAds.Api.AdapterStatus::set_InitializationState(GoogleMobileAds.Api.AdapterState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdapterStatus_set_InitializationState_mCAC923590AEBF2A82B50D11A840782E926D489FA (AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_value;
+		__this->___U3CInitializationStateU3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+// System.Void GoogleMobileAds.Api.AdapterStatus::set_Description(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdapterStatus_set_Description_m8987A66E81FAAC057BEE46A30CB522BA72788F32 (AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___0_value;
+		__this->___U3CDescriptionU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CDescriptionU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// System.Void GoogleMobileAds.Api.AdapterStatus::set_Latency(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdapterStatus_set_Latency_m6AAFC26BBD8DB832E092CA129D496B023B4D2710 (AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_value;
+		__this->___U3CLatencyU3Ek__BackingField_2 = L_0;
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void GoogleMobileAds.Api.MaxAdContentRating::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaxAdContentRating__ctor_mB941F1C15423BA11C1D70F68B0FF19A3C8673856 (MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
@@ -2439,6 +2512,31 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Builder_set_MediationExtras_
 		List_1_t5E2EB19AA6B9CFA733A67F57AF74DCBE981C3376* L_0 = ___0_value;
 		__this->___U3CMediationExtrasU3Ek__BackingField_6 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CMediationExtrasU3Ek__BackingField_6), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AdapterStatus_set_InitializationState_mCAC923590AEBF2A82B50D11A840782E926D489FA_inline (AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_value;
+		__this->___U3CInitializationStateU3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AdapterStatus_set_Description_m8987A66E81FAAC057BEE46A30CB522BA72788F32_inline (AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___0_value;
+		__this->___U3CDescriptionU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CDescriptionU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AdapterStatus_set_Latency_m6AAFC26BBD8DB832E092CA129D496B023B4D2710_inline (AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_value;
+		__this->___U3CLatencyU3Ek__BackingField_2 = L_0;
 		return;
 	}
 }

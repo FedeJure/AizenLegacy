@@ -27,19 +27,21 @@ namespace Lobby
             currentPlayer = selectors[currentIndex];
             nextButton.onClick.AddListener(() => MoveSelector(1));
             backButton.onClick.AddListener(() => MoveSelector(-1));
-            playButton.onClick.AddListener(Play);
-            tutorialButton.onClick.AddListener(Tutorial);
             cameraView.SetupTarget(currentPlayer.target);
             nameText.text = currentPlayer.selection.characterName;
             SelectedCharacterRepository.Set(currentPlayer.selection);
         }
 
-        private void Play()
+        public void Play()
         {
             GameSceneManager.GetInstance().LoadGamePlayScene();
         }
+        public void PlayRenked()
+        {
+            GameSceneManager.GetInstance().LoadRankedGameplayScene();
+        }
 
-        private void Tutorial()
+        public void Tutorial()
         {
             GameSceneManager.GetInstance().LoadTutorialScene();
         }
