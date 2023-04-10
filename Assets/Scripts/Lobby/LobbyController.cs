@@ -12,8 +12,6 @@ namespace Lobby
         private List<CharacterSelector> selectors;
         [SerializeField] private Button nextButton;
         [SerializeField] private Button backButton;
-        [SerializeField] private Button playButton;
-        [SerializeField] private Button tutorialButton;
         [SerializeField] private TextMeshProUGUI nameText;
         [SerializeField] private LobbyCamera cameraView;
 

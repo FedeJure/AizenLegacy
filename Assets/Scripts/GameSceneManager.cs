@@ -98,8 +98,8 @@ public class GameSceneManager : MonoBehaviour
 
     private void DestroyOngoingGame()
     {
+        if (currentGameplay == null) return;
         EventBus.EmitOnGameplayEnd();
-        if (currentGameplay != null) return;
         Destroy(currentGameplay);
         currentGameplay = null;
     }

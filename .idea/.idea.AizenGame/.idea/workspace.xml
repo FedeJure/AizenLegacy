@@ -3,171 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Hind/Hind-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Hind/Hind-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MikadoBold.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MikadoBold.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MikadoBoldSpecial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MikadoBoldSpecial.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular SDF-Special.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular SDF-Special.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Noto_Sans_JP/NotoSansJP-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Noto_Sans_JP/NotoSansJP-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Noto_Sans_KR/NotoSansKR-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Noto_Sans_KR/NotoSansKR-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Trampoline/lone.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/lone.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Trampoline/lone1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Trampoline/lone1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_1.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_1.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_1_1.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_1_1.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_2_1.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_2_1.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_1.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_1.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_1_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_1_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_1_3.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_1_3.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_2_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_2_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_2_3.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_2_3.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_3.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_3.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_3_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_3_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_4.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_4.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_4_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_4_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_4_3.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_4_3.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_5.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_5.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_5_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_5_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_6.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_6.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_6_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_6_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/JumpsConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/JumpsConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PointsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PointsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Firebase.App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Firebase.App.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Firebase.Auth.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Firebase.Auth.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/GoogleMobileAds.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/GoogleMobileAds.Common.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/GoogleMobileAds.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/GoogleMobileAds.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/GoogleMobileAds.Platforms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/GoogleMobileAds.Platforms.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UnityWebRequestWWWModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UnityWebRequestWWWModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityLinkerToEditorData.json" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityLinkerToEditorData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/analytics.json" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/analytics.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/icallsummary.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/mscorlib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/Managed/mscorlib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Assembly-CSharp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Assembly-CSharp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Assembly-CSharp2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Assembly-CSharp2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Assembly-CSharp3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Assembly-CSharp3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Assembly-CSharp_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Assembly-CSharp_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Cinemachine_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Cinemachine_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Firebase.App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Firebase.App.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Firebase.App_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Firebase.App_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Firebase.Auth.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Firebase.Auth.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Firebase.Auth_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Firebase.Auth_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Firebase.Platform_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Firebase.Platform_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GenericMethods1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GenericMethods1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GenericMethods2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GenericMethods2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GenericMethods3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GenericMethods3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Generics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Generics.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Google.MiniJson_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Google.MiniJson_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Common.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Common.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Common1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Common1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Common_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Common_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Core.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Core.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Core_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Core_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Placement_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Placement_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Platforms.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Platforms.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Platforms1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Platforms1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Platforms_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.Platforms_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/GoogleMobileAds_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCFieldValuesTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCFieldValuesTable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCTypeValuesTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCTypeValuesTable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCalculateFieldValues1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCalculateFieldValues1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCalculateFieldValues2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCalculateFieldValues2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCalculateFieldValues3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCalculateFieldValues3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCalculateTypeValues.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCalculateTypeValues.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCalculateTypeValues1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCCalculateTypeValues1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCodeRegistration.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppCodeRegistration.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppGenericClassTable.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppGenericClassTable.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppGenericInstDefinitions.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppGenericInstDefinitions.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppGenericMethodDefinitions.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppGenericMethodDefinitions.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppGenericMethodPointerTable.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppGenericMethodPointerTable.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppGenericMethodTable.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppGenericMethodTable.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppInteropDataTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppInteropDataTable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppInvokerTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppInvokerTable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppMetadataRegistration.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppMetadataRegistration.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppMetadataUsage.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppMetadataUsage.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppReversePInvokeWrapperTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppReversePInvokeWrapperTable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppRgctxTable.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppRgctxTable.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppTypeDefinitions.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppTypeDefinitions.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Mono.Security_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Mono.Security_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Newtonsoft.Json_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Newtonsoft.Json_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Configuration_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Configuration_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Core_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Core_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Data_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Data_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Numerics_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Numerics_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Runtime.Serialization_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Runtime.Serialization_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Xml.Linq_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Xml.Linq_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Xml_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System.Xml_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/System_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UniRx_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UniRx_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Addressables_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Addressables_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Animation.Rigging_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Animation.Rigging_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Burst_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Burst_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.InputSystem_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.InputSystem_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Localization_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Localization_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.ResourceManager_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.ResourceManager_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Analytics_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Analytics_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Configuration_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Configuration_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Device_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Device_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Environments.Internal_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Environments.Internal_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Internal_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Internal_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Registration_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Registration_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Scheduler_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Scheduler_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Telemetry_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Telemetry_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Threading_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core.Threading_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.Core_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.PushNotifications_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Services.PushNotifications_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.TextMeshPro_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.TextMeshPro_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Timeline_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Unity.Timeline_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.AIModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.AIModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.AndroidJNIModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.AndroidJNIModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.AnimationModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.AnimationModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.AssetBundleModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.AssetBundleModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.AudioModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.AudioModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.CoreModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.CoreModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.DirectorModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.DirectorModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.IMGUIModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.IMGUIModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.InputLegacyModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.InputLegacyModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.InputModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.InputModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.JSONSerializeModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.JSONSerializeModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.ParticleSystemModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.ParticleSystemModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.Physics2DModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.Physics2DModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.PhysicsModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.PhysicsModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.ScreenCaptureModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.ScreenCaptureModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.SharedInternalsModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.SharedInternalsModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.SubsystemsModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.SubsystemsModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.TerrainModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.TerrainModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.TextCoreFontEngineModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.TextCoreFontEngineModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.TextCoreTextEngineModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.TextCoreTextEngineModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.TextRenderingModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.TextRenderingModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UIElementsModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UIElementsModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UIElementsNativeModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UIElementsNativeModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UIModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UIModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UI_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UI_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UnityWebRequestAssetBundleModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UnityWebRequestAssetBundleModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UnityWebRequestModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UnityWebRequestModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UnityWebRequestWWWModule.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UnityWebRequestWWWModule.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UnityWebRequestWWWModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.UnityWebRequestWWWModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.VRModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.VRModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.XRModule_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnityEngine.XRModule_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnresolvedVirtualCallStubs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/UnresolvedVirtualCallStubs.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/__Generated_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/__Generated_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/mscorlib1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/mscorlib1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/mscorlib9.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/mscorlib9.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/mscorlib_CodeGen.c" beforeDir="false" afterPath="$PROJECT_DIR$/Build_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/mscorlib_CodeGen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -374,6 +211,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.49618322&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -412,10 +250,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19888">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9776">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="19888" />
+      <option name="pid" value="9776" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -466,7 +304,8 @@
       <workItem from="1680050502467" duration="10046000" />
       <workItem from="1680274601740" duration="6301000" />
       <workItem from="1680559102652" duration="6870000" />
-      <workItem from="1680877676176" duration="9721000" />
+      <workItem from="1680877676176" duration="12774000" />
+      <workItem from="1681138175586" duration="377000" />
     </task>
     <servers />
   </component>
@@ -494,17 +333,43 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Character/PointsManager.cs</url>
-          <line>26</line>
-          <properties documentPath="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame\Assets\Scripts\Character\PointsManager.cs" initialLine="26" containingFunctionPresentation="lambda expression inside method 'Start'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs</url>
+          <line>38</line>
+          <properties documentPath="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame\Assets\Scripts\Lobby\LobbyController.cs" initialLine="40" containingFunctionPresentation="method 'PlayRenked'">
             <startOffsets>
-              <option value="741" />
+              <option value="1356" />
             </startOffsets>
             <endOffsets>
-              <option value="782" />
+              <option value="1413" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs</url>
+          <line>34</line>
+          <properties documentPath="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame\Assets\Scripts\Lobby\LobbyController.cs" initialLine="36" containingFunctionPresentation="method 'Play'">
+            <startOffsets>
+              <option value="1239" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1290" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs</url>
+          <line>100</line>
+          <properties documentPath="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame\Assets\Scripts\GameSceneManager.cs" initialLine="100" containingFunctionPresentation="method 'DestroyOngoingGame'">
+            <startOffsets>
+              <option value="2583" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2612" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
