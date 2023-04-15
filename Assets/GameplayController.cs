@@ -1,4 +1,5 @@
-
+using System;
+using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,15 @@ public class GameplayController : MonoBehaviour
     private void Awake()
     {
         exitButton.onClick.AddListener(HandleExit);
+        EventBus.OnLoseStability()
+            .Do(_ =>
+            {
+                Observable.Timer(TimeSpan.FromSeconds(4))
+                    .Last()
+                    .Do(__ => HandleExit())
+                    .Subscribe();
+            })
+            .Subscribe();
     }
 
     private void HandleExit()

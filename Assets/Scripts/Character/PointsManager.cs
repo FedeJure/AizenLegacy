@@ -25,7 +25,7 @@ namespace Character
             EventBus.OnJumpData()
                 .Do(j =>
                 {
-                    floatingPoint.text = $"{j.name}";
+                    floatingPoint.text = $"+{j.points}";
                     lastConfig = j;
                     floatingPoint.transform.parent.gameObject.SetActive(true);
                     anim.SetTrigger(AddPointHash);

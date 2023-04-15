@@ -108,13 +108,6 @@ namespace Character
                 {
                     animator.StopPlayback();
                     Disable();
-                    Observable.Timer(TimeSpan.FromSeconds(4))
-                        .Last()
-                        .Do(__ => UnityAdsAdapter.GetInstance().ShowInterstitial())
-                        .Do(__ => GameSceneManager.GetInstance().LoadLobbyScene())
-                        .Do(__ => CustomInterstitial.TryOpenCustomInterstitial())
-                        .Subscribe()
-                        .AddTo(disposer);
                 })
                 .Subscribe()
                 .AddTo(disposer);
