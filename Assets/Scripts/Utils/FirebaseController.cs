@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using Firebase;
 using Firebase.Auth;
-using Firebase.Database;
 using Firebase.Extensions;
 using Google;
 using UnityEngine;
@@ -32,12 +31,13 @@ namespace Utils
         private static FirebaseController instance;
         public static FirebaseController Instance => instance ??= new FirebaseController();
         private FirebaseAuth auth;
+        public string Token;
         public IUserInfo User {  get; private set; }
         private static string googleWebApi = "757986856191-0cm7jt7hgbhjicmkreg9ird68vtbqaba.apps.googleusercontent.com";
         private GoogleSignInConfiguration config = new()
         {
             WebClientId = googleWebApi,
-            RequestIdToken = true
+            RequestIdToken = true,
         };
 
         private FirebaseController()
@@ -127,6 +127,7 @@ namespace Utils
                         }
 
                         User = auth.CurrentUser;
+                        Token = task.Result.IdToken;
                     });
                 }
                 catch (Exception e)
