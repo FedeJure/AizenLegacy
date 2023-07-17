@@ -5,7 +5,7 @@
   <string name="project_id" translatable="false">aizengame</string>
   <string name="google_api_key" translatable="false">AIzaSyCU3hTKDlyb_73B04SRNt97pcQPz71NJv0</string>
   <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCU3hTKDlyb_73B04SRNt97pcQPz71NJv0</string>
-  <string name="google_app_id" translatable="false">1:757986856191:android:7d47c3cdc09f4e534390ca</string>
-  <string name="default_android_client_id" translatable="false">757986856191-as5rdqb0p6tbt9r4b7md9ra94pe6beav.apps.googleusercontent.com</string>
+  <string name="google_app_id" translatable="false">1:757986856191:android:977ba1f7539a7f074390ca</string>
+  <string name="default_android_client_id" translatable="false">757986856191-ndfuoh0reeq8l9hreskpq2tvghqptr3f.apps.googleusercontent.com</string>
   <string name="default_web_client_id" translatable="false">757986856191-0cm7jt7hgbhjicmkreg9ird68vtbqaba.apps.googleusercontent.com</string>
 </resources>

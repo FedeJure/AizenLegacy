@@ -34,14 +34,13 @@ namespace Utils
         public string Token;
         public IUserInfo User {  get; private set; }
         private static string googleWebApi = "757986856191-0cm7jt7hgbhjicmkreg9ird68vtbqaba.apps.googleusercontent.com";
-        private GoogleSignInConfiguration config = new()
-        {
-            WebClientId = googleWebApi,
-            RequestIdToken = true,
-        };
+        private GoogleSignInConfiguration config = new GoogleSignInConfiguration();
+        
 
         private FirebaseController()
         {
+            config.WebClientId = googleWebApi;
+            config.RequestIdToken = true;
         }
 
         public async Task InitFirebase()
