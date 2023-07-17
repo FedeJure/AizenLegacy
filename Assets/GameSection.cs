@@ -15,8 +15,8 @@ public class GameSection : MonoBehaviour
     private void OnEnable()
     {
         anim.enabled = false;
-        // if (PlayerPrefs.HasKey(key)) return;
-        // PlayerPrefs.SetInt(key, 1);
+        if (PlayerPrefs.HasKey(key)) return;
+        PlayerPrefs.SetInt(key, 1);
         anim.enabled = true;
     }
 }
