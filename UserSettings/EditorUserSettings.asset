@@ -5,52 +5,7 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
-    RecentlyUsedSceneGuid-0:
-      value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
-      flags: 0
-    RecentlyUsedSceneGuid-1:
-      value: 0052020350050d090f56097b41715d44444f4a78757c7160742b4d60bab26468
-      flags: 0
-    RecentlyUsedSceneGuid-2:
-      value: 5b540d5350070d0d595d0826157b5e4413161b7b2a2d75357c281e32b3e56368
-      flags: 0
-    RecentlyUsedSceneGuid-3:
-      value: 5b05570006535a5955080d23497b0a44454f4a732d707e6478784a6ae6e46769
-      flags: 0
-    RecentlyUsedSceneGuid-4:
-      value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
-      flags: 0
-    RecentlyUsedSceneGuid-5:
-      value: 54090305560c0d5e5b0f0d2616260e4410164e7a2e70766679794430b6b4673a
-      flags: 0
-    RecentlyUsedSceneGuid-6:
-      value: 5152005353515c5a5c565e72477a5a44414e4f7e7d7e75687d704b36b4e26d61
-      flags: 0
-    RecentlyUsedSceneGuid-7:
-      value: 02080c030102510a0f5e0f2740740644464e1e7c757c20362e7c4b67b6e4323e
-      flags: 0
-    RecentlyUsedSceneGuid-8:
-      value: 065756510357080f555b0e72127a5e44134e1b2f7c7f7135792d1966e1b46c3c
-      flags: 0
     RecentlyUsedScenePath-0:
-      value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d
-      flags: 0
-    RecentlyUsedScenePath-1:
-      value: 22424703114646680e0b0227036c72111f19563f22213229
-      flags: 0
-    RecentlyUsedScenePath-2:
-      value: 22424703114646680e0b0227036c7d1f0204362b3a2121313920123dd6e53928eee622eca92f31352d1b
-      flags: 0
-    RecentlyUsedScenePath-3:
-      value: 224247031146467c38274c12220c1f3b1f0358676c1b2f3d3d251873c1e1272de3eb79dae43f31397626ea310b0d023afc0f471ef8021e12
-      flags: 0
-    RecentlyUsedScenePath-4:
-      value: 22424703114646680e0b0227036c731f1415016439262f2434
-      flags: 0
-    RecentlyUsedScenePath-5:
-      value: 22424703114646680e0b0227036c6b0502180a232d2468252320092a
-      flags: 0
-    RecentlyUsedScenePath-6:
       value: 22424703114646680e0b0227036c78111b1228262d3168252320092a
       flags: 0
     vcSharedLogLevel:
@@ -61,13 +16,9 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
-  m_DesiredImportWorkerCount: 3
-  m_StandbyImportWorkerCount: 2
-  m_IdleImportWorkerShutdownDelay: 60000
   m_VCShowFailedCheckout: 1
   m_VCOverwriteFailedCheckoutAssets: 1
   m_VCProjectOverlayIcons: 1
   m_VCHierarchyOverlayIcons: 1
   m_VCOtherOverlayIcons: 1
-  m_VCAllowAsyncUpdate: 0
-  m_ArtifactGarbageCollection: 1
+  m_VCAllowAsyncUpdate: 1

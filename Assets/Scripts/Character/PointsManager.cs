@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UniRx;
 using UnityEngine;
@@ -17,8 +16,8 @@ namespace Character
         
         private int AddPointHash = Animator.StringToHash("addPoint");
 
-        private JumpConfig? lastConfig;
-        private int totalPoints = 0;
+        private JumpConfigWithCalculatedPoints? lastConfig;
+        private float totalPoints = 0;
 
         private void Start()
         {

@@ -31,14 +31,59 @@ namespace Character
             this.state = state;
         }
 
+        private float GetJumpPoints()
+        {
+            var completeSomersaults = quarterSomersault / 4;
+            var somersaultPoints = quarterSomersault * 0.1f;
+            var somersaultBonus = 0f;
+            var position = state.currentPosition ?? Position.CPosition;
+            var isBorAPosition = position != Position.CPosition;
+            var extraBonus = isBorAPosition ? completeSomersaults * 0.1f : 0;
+            switch (Math.Min(completeSomersaults, 4))
+            {
+                case 1:
+                    somersaultBonus = 0.1f + (isBorAPosition && quarterSomersault > 4 ? 0.1f : 0);
+                    break;
+                case 2:
+                    somersaultBonus = 0.2f + extraBonus;
+                    break;
+                case 3:
+                    somersaultBonus = 0.4f + extraBonus;
+                    break;
+                case 4:
+                    somersaultBonus = 0.6f + extraBonus;
+                    break;
+                case 5:
+                    somersaultBonus = 0.6f + extraBonus;
+                    break;
+                case 6:
+                    somersaultBonus = 0.6f + extraBonus;
+                    break;
+                case 7:
+                    somersaultBonus = 0.6f + extraBonus;
+                    break;
+            }
+
+            var finalSomersaultPoints = somersaultPoints + somersaultBonus;
+
+            var halfTwistsCount = halfTwists.Aggregate(0, (a, b) => a + b);
+        return finalSomersaultPoints + halfTwistsCount;
+    }
+
         public void Reset()
         {
             CancelInvoke("ApplyHalfTwist");
             quarterSomersault = (int)Math.Round(completeAngles / 0.5f);
-            
+            var points = GetJumpPoints();
             var key = $"{prefix},{GetSomersaultAndTwists()}";
             if (JumpsConfig.configs.TryGetValue(key, out var jump))
-                EventBus.EmitOnJumpData(jump);
+            {
+                EventBus.EmitOnJumpData(new JumpConfigWithCalculatedPoints()
+                {
+                    name = jump.name,
+                    points = points
+                });
+            }
             halfTwists = new List<int>{0};
             sideChangeLocked = false;
             lastAngle = 0;

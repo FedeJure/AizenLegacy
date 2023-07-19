@@ -9,106 +9,91 @@ namespace Character
             {
                 "ad,1", new JumpConfig
                 {
-                    name = "Half twist",
-                    points = 5
+                    name = "Half twist"
                 }
             },
             {
                 "ad,40", new JumpConfig
                 {
-                    name = "Front",
-                    points = 10
+                    name = "Front"
                 }
             },
             {
                 "at,40", new JumpConfig
                 {
-                    name = "Back",
-                    points = 10
+                    name = "Back"
                 }
             },
             {
                 "ad,41", new JumpConfig
                 {
-                    name = "Front and twist",
-                    points = 20
+                    name = "Front and twist"
                 }
             },
             {
                 "at,42", new JumpConfig
                 {
-                    name = "Back Twist",
-                    points = 25
+                    name = "Back Twist"
                 }
             },
             {
                 "ad,43", new JumpConfig
                 {
-                    name = "Rudy",
-                    points = 35
+                    name = "Rudy"
                 }
             },
             {
                 "at,44", new JumpConfig
                 {
-                    name = "Back Double Twist",
-                    points = 40
+                    name = "Back Double Twist"
                 }
             },
             {
                 "at,800", new JumpConfig
                 {
-                    name = "Double Back",
-                    points = 35
+                    name = "Double Back"
                 }
             },
             {
                 "ad,801", new JumpConfig
                 {
-                    name = "Flifis",
-                    points = 35
+                    name = "Flifis"
                 }
             },
             {
                 "at,12000", new JumpConfig
                 {
-                    name = "Triple Back",
-                    points = 45
+                    name = "Triple Back"
                 }
             },
             {
                 "at,160000", new JumpConfig
                 {
-                    name = "Quadruple Back",
-                    points = 55
+                    name = "Quadruple Back"
                 }
             },
             {
                 "ad,800", new JumpConfig
                 {
-                    name = "Double Front",
-                    points = 35
+                    name = "Double Front"
                 }
             },
             {
                 "ad,12000", new JumpConfig
                 {
-                    name = "Triple Front",
-                    points = 45
+                    name = "Triple Front"
                 }
             },
             {
                 "ad,160000", new JumpConfig
                 {
-                    name = "Quadruple Front",
-                    points = 55
+                    name = "Quadruple Front"
                 }
             },
             {
                 "at,822", new JumpConfig
                 {
-                    name = "Full in full out",
-                    points = 70
+                    name = "Full in full out"
                 }
             },
         };
@@ -118,5 +103,10 @@ namespace Character
 public struct JumpConfig
 {
     public string name;
-    public int points;
+}
+
+public struct JumpConfigWithCalculatedPoints
+{
+    public string name;
+    public float points;
 }
