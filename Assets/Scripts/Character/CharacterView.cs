@@ -154,7 +154,6 @@ namespace Character
             rbody.ResetInertiaTensor();
             rbody.ResetCenterOfMass();
             actions.Clear();
-            state = new CharacterState(pivotModel.transform);
             rotatingForward = null;
             jumpTracker.Reset();
         }
@@ -242,7 +241,11 @@ namespace Character
         
         private void MakePosition(Position position, bool pressed)
         {
-            if (!state.currentPosition.HasValue && pressed && !state.isFalling) state.currentPosition = position;
+            if (!state.currentPosition.HasValue && pressed && !state.isFalling)
+            {
+                state.currentPosition = position;
+                state.lastPosition = position;
+            }
             if (state.currentPosition.HasValue && state.currentPosition.Value.Equals(position) && !pressed)
             {
                 StabilizateInFly();

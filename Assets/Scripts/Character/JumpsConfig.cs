@@ -105,8 +105,9 @@ public struct JumpConfig
     public string name;
 }
 
-public struct JumpConfigWithCalculatedPoints
+public struct ProcessedJumpConfig
 {
     public string name;
     public float points;
+    public string position;
 }

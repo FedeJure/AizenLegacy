@@ -12,7 +12,7 @@ public static class EventBus
         static ISubject<Unit> onGameplayEnd = new Subject<Unit>();
         static ISubject<Unit> onGameplayStart = new Subject<Unit>();
         static ISubject<float> onConsumeEnergy = new Subject<float>();
-        private static ISubject<JumpConfigWithCalculatedPoints> onJumpData = new Subject<JumpConfigWithCalculatedPoints>();
+        private static ISubject<ProcessedJumpConfig> onJumpData = new Subject<ProcessedJumpConfig>();
         private static ISubject<Unit> onLogged = new Subject<Unit>();
         private static ISubject<Unit> onLogout = new Subject<Unit>();
 
@@ -71,14 +71,14 @@ public static class EventBus
                 return onLogout;
         }
 
-        public static IObservable<JumpConfigWithCalculatedPoints> OnJumpData()
+        public static IObservable<ProcessedJumpConfig> OnJumpData()
         {
                 return onJumpData;
         }
 
-        public static void EmitOnJumpData(JumpConfigWithCalculatedPoints jumpData)
+        public static void EmitOnJumpData(ProcessedJumpConfig processedJumpData)
         {
-                onJumpData.OnNext(jumpData);
+                onJumpData.OnNext(processedJumpData);
         }
 
         public static void EmitOnPositionStarted()

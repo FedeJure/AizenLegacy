@@ -19,6 +19,7 @@ namespace Character
     {
         public bool isOnTrampoline { get; set; }
         public Position? currentPosition { get; set; }
+        public Position lastPosition { get; set; }
         private Transform modelTransform;
         public bool isStable { get; set; }
         public bool isFalling { get; set; }
@@ -40,7 +41,7 @@ namespace Character
             canPerformAction = false;
             return true;
         }
-
+        
         public bool onFront => modelTransform.right.x > 0;
 
 

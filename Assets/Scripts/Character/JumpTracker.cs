@@ -35,34 +35,20 @@ namespace Character
         {
             var completeSomersaults = quarterSomersault / 4;
             var somersaultPoints = quarterSomersault * 0.1f;
-            var somersaultBonus = 0f;
-            var position = state.currentPosition ?? Position.CPosition;
+            var position = state.lastPosition;
             var isBorAPosition = position != Position.CPosition;
             var extraBonus = isBorAPosition ? completeSomersaults * 0.1f : 0;
-            switch (Math.Min(completeSomersaults, 4))
+            var somersaultBonus = Math.Min(completeSomersaults, 4) switch
             {
-                case 1:
-                    somersaultBonus = 0.1f + (isBorAPosition && quarterSomersault > 4 ? 0.1f : 0);
-                    break;
-                case 2:
-                    somersaultBonus = 0.2f + extraBonus;
-                    break;
-                case 3:
-                    somersaultBonus = 0.4f + extraBonus;
-                    break;
-                case 4:
-                    somersaultBonus = 0.6f + extraBonus;
-                    break;
-                case 5:
-                    somersaultBonus = 0.6f + extraBonus;
-                    break;
-                case 6:
-                    somersaultBonus = 0.6f + extraBonus;
-                    break;
-                case 7:
-                    somersaultBonus = 0.6f + extraBonus;
-                    break;
-            }
+                1 => 0.1f + (isBorAPosition && quarterSomersault > 4 ? 0.1f : 0),
+                2 => 0.2f + extraBonus,
+                3 => 0.4f + extraBonus,
+                4 => 0.6f + extraBonus,
+                5 => 0.6f + extraBonus,
+                6 => 0.6f + extraBonus,
+                7 => 0.6f + extraBonus,
+                _ => 0
+            };
 
             var finalSomersaultPoints = somersaultPoints + somersaultBonus;
 
@@ -74,16 +60,30 @@ namespace Character
         {
             CancelInvoke("ApplyHalfTwist");
             quarterSomersault = (int)Math.Round(completeAngles / 0.5f);
-            var points = GetJumpPoints();
-            var key = $"{prefix},{GetSomersaultAndTwists()}";
-            if (JumpsConfig.configs.TryGetValue(key, out var jump))
+            var twistsCount = halfTwists.Aggregate(0, (a, b) => a + b);
+            if (quarterSomersault > 0 || twistsCount > 0 && state.isStable)
             {
-                EventBus.EmitOnJumpData(new JumpConfigWithCalculatedPoints()
+                var points = GetJumpPoints();
+                var key = $"{prefix},{GetSomersaultAndTwists()}";
+
+                var jumpName = JumpsConfig.configs.TryGetValue(key, out var jump) 
+                    ? jump.name 
+                    : $"{quarterSomersault} Quarters and {twistsCount} Twists";
+                
+                EventBus.EmitOnJumpData(new ProcessedJumpConfig()
                 {
-                    name = jump.name,
-                    points = points
+                    name = jumpName,
+                    points = points,
+                    position = state.lastPosition switch
+                    {
+                        Position.CPosition => "Tuck",
+                        Position.BPosition => "Pike",
+                        _ => "Straight"
+                    }
                 });
+                Debug.Log(state.lastPosition);
             }
+            
             halfTwists = new List<int>{0};
             sideChangeLocked = false;
             lastAngle = 0;
