@@ -38,7 +38,7 @@ namespace Character
             if (lastConfig == null) return;
             floatingPoint.transform.parent.gameObject.SetActive(false);
             var points = Instantiate(pointTextTemplate, pointsContainer.transform);
-            points.text = $"{lastConfig.Value.position} {lastConfig.Value.name} || {lastConfig.Value.points}".ToString();
+            points.text = $"{lastConfig.Value.name} || {lastConfig.Value.points}".ToString();
             totalPoints += lastConfig.Value.points;
             totalPointsText.text = totalPoints.ToString();
         }

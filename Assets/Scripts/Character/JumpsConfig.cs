@@ -109,5 +109,4 @@ public struct ProcessedJumpConfig
 {
     public string name;
     public float points;
-    public string position;
 }

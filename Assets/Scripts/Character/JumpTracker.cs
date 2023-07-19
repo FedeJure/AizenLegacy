@@ -69,19 +69,17 @@ namespace Character
                 var jumpName = JumpsConfig.configs.TryGetValue(key, out var jump) 
                     ? jump.name 
                     : $"{quarterSomersault} Quarters and {twistsCount} Twists";
-                
+                var position = state.lastPosition switch
+                {
+                    Position.CPosition => "Tuck",
+                    Position.BPosition => "Pike",
+                    _ => "Straight"
+                };
                 EventBus.EmitOnJumpData(new ProcessedJumpConfig()
                 {
-                    name = jumpName,
+                    name = $"{position} {jumpName}",
                     points = points,
-                    position = state.lastPosition switch
-                    {
-                        Position.CPosition => "Tuck",
-                        Position.BPosition => "Pike",
-                        _ => "Straight"
-                    }
                 });
-                Debug.Log(state.lastPosition);
             }
             
             halfTwists = new List<int>{0};
