@@ -14,19 +14,21 @@ namespace Character
         [SerializeField] private TMP_Text name;
         [SerializeField] private TMP_Text totalPoints;
         [SerializeField] private LeagueInfo leagueInfo;
-        [SerializeField] private Color localPlayerColor;
         [SerializeField] private Image backgroundColor;
+        [SerializeField] private GameObject localPlayerFrame;
         public void Setup(PlayerPoints playerPoints)
         {
             position.SetText($"#{playerPoints.leaguePosition.ToString()}");
             name.SetText(playerPoints.name);
             totalPoints.SetText(playerPoints.points.ToString());
-            var sprite = leagueInfo.leagues.FirstOrDefault(l => l.id == playerPoints.league);
-            if (sprite.image != null)
-                icon.sprite = sprite.image;
+            var league = leagueInfo.leagues.FirstOrDefault(l => l.id == playerPoints.league);
+            if (league.image != null)
+                icon.sprite = league.image;
+            backgroundColor.color = league.color;
             if (FirebaseController.Instance.User.Email == playerPoints.email)
             {
-                backgroundColor.color = localPlayerColor;
+                localPlayerFrame.SetActive(true);
+                
             }
             
         }

@@ -15,6 +15,7 @@ namespace Character
         [SerializeField] private LeaderboardDivider dividerTemplate;
         [SerializeField] private RectTransform container;
         [SerializeField] private RectTransform viewport;
+        [SerializeField] private LeagueInfo leaguesInfo;
         private AsyncGameObject asyncBehavior;
         private List<PlayerLeaderboard> created = new List<PlayerLeaderboard>();
 
@@ -31,7 +32,8 @@ namespace Character
                 if (lastLeague != "" && lastLeague != ld.league)
                 {
                     var divider = Instantiate(dividerTemplate, container.transform);
-                    divider.SetupLeague(ld.league);
+                    var league = leaguesInfo.leagues.FirstOrDefault(l => l.id == ld.league).text;
+                    divider.SetupLeague(league);
                 }
                 lastLeague = ld.league;
                 var playerData = Instantiate(playerLeaderboardTemplate, container.transform);

@@ -2,19 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/LeaderboardDivider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LeaderboardDivider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Frame.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Frame.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Icon.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Icon.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/chip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/chip.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/coin.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/coin.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/playerLeagueFrameAnimation.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/playerLeagueFrameAnimation.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/League/LeagueConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/League/LeagueConfig.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MikadoBold.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MikadoBold.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MikadoBoldSpecial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MikadoBoldSpecial.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameSummary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameSummary.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/PlayerLeaderboard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/PlayerLeaderboard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/RankedGameplayController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/RankedGameplayController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/GameSummaryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/GameSummaryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/League/LeageConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/League/LeageConfig.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/LeaderboardView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/LeaderboardView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/LeagueInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/LeagueInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerLeaderboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerLeaderboard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/RankingInfoView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/RankingInfoView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerPoints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/AsyncGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/AsyncGameObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,10 +266,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13092">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="13092" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -316,7 +327,8 @@
       <workItem from="1687024562914" duration="597000" />
       <workItem from="1689278224215" duration="7910000" />
       <workItem from="1689624162471" duration="15122000" />
-      <workItem from="1689810555203" duration="12571000" />
+      <workItem from="1689810555203" duration="12593000" />
+      <workItem from="1689890548922" duration="1174000" />
     </task>
     <servers />
   </component>
