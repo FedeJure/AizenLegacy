@@ -8,6 +8,9 @@ namespace Models
     {
         public string email;
         public int points;
+        public string name;
+        public string league;
+        public string leaguePosition;
     }
 
     [Serializable]

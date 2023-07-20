@@ -2,13 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/PlayerLeaderboard.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/PlayerLeaderboard.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Spinner.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Spinner.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/League.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/League/LeageConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/League/LeageConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/LeaderboardView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/LeaderboardView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/LeagueInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/LeagueInfo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerLeaderboard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PlayerLeaderboard.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/RankingInfoView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/RankingInfoView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/AsyncGameObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/AsyncGameObject.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameSummary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameSummary.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/RankedGameplayController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/RankedGameplayController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RankedGameplayController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RankedGameplayController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/GameSummaryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/GameSummaryController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/JumpsConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/JumpsConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PointsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PointsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +140,7 @@
     <setting file="file://$PROJECT_DIR$/Library/BuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.8/Runtime/AddressablesImpl.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@2.0.7/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Window/ViewModel/ScriptableObjectViewPrefs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
@@ -305,7 +322,8 @@
       <workItem from="1681523392705" duration="2686000" />
       <workItem from="1687024562914" duration="597000" />
       <workItem from="1689278224215" duration="7910000" />
-      <workItem from="1689624162471" duration="15053000" />
+      <workItem from="1689624162471" duration="15122000" />
+      <workItem from="1689810555203" duration="5519000" />
     </task>
     <servers />
   </component>

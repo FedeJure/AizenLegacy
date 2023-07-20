@@ -39,7 +39,7 @@ namespace Utils
             return await tcs.Task;
         }
         
-        public static async Task<List<PlayerPoints>> UpdatePlayerPoints(int points)
+        public static async Task<List<PlayerPoints>> UpdatePlayerPoints(float points)
         {
             using var www = UnityWebRequest.Post(ApiConfig.ApiUrl + "/player/update", new Dictionary<string, string>(){
                 { "points", points.ToString() }});

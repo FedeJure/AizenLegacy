@@ -19,6 +19,7 @@ namespace Character
         [SerializeField] private Button okButton;
         [SerializeField] private TMP_Text coinsEarned;
         [SerializeField] private TMP_Text pointTextTemplate;
+        [SerializeField] private RankingInfoView rankingInfo;
 
 
         private void Awake()
@@ -33,19 +34,10 @@ namespace Character
                 var points = Instantiate(pointTextTemplate, pointsContainer.transform);
                 points.text = $"{jump.name} || {jump.points}".ToString();
             });
+            var points = jumps.Select(j => j.points).Aggregate(0f, (a, b) => a + b);
+            totalPointText.SetText($"{points}");
             
-            totalPointText.SetText(
-                $"{jumps.Select(j => j.points).Aggregate(0f, (a,b) => a+b)}"
-            );
-        }
-
-        public void Setup(List<TMP_Text> points, int totalPoints)
-        {
-            points.ForEach(p =>
-            {
-                p.transform.SetParent(content.transform);
-            });
-            totalPointText.SetText($"{totalPoints}");
+            rankingInfo.SetupPoints(points);
         }
 
         private void HandleOk()
