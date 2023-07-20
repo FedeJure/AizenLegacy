@@ -18,7 +18,7 @@ namespace Character
         [SerializeField] private Image backgroundColor;
         public void Setup(PlayerPoints playerPoints)
         {
-            position.SetText(playerPoints.leaguePosition);
+            position.SetText($"#{playerPoints.leaguePosition.ToString()}");
             name.SetText(playerPoints.name);
             totalPoints.SetText(playerPoints.points.ToString());
             var sprite = leagueInfo.leagues.FirstOrDefault(l => l.id == playerPoints.league);

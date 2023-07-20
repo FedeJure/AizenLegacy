@@ -7,10 +7,10 @@ namespace Models
     public class PlayerPoints
     {
         public string email;
-        public int points;
+        public float points;
         public string name;
         public string league;
-        public string leaguePosition;
+        public int leaguePosition;
     }
 
     [Serializable]

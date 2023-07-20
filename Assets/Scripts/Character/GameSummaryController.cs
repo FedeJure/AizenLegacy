@@ -14,8 +14,7 @@ namespace Character
         [SerializeField] private GameObject content;
         [SerializeField] private GameObject pointsContainer;
         [SerializeField] private TMP_Text totalPointText;
-        [SerializeField] private Image medal;
-        [SerializeField] private TMP_Text currentRankedPosition;
+
         [SerializeField] private Button okButton;
         [SerializeField] private TMP_Text coinsEarned;
         [SerializeField] private TMP_Text pointTextTemplate;

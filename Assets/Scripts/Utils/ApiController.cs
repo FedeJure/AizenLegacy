@@ -41,6 +41,67 @@ namespace Utils
         
         public static async Task<List<PlayerPoints>> UpdatePlayerPoints(float points)
         {
+            await Task.Delay(2000);
+
+            return new List<PlayerPoints>()
+            {
+                new PlayerPoints()
+                {
+                    email = "pepito@gmail.com",
+                    points = 312,
+                    league = "gold",
+                    leaguePosition = 20,
+                    name = "Federico Jure"
+                },
+                new PlayerPoints()
+                {
+                    email = "pepito5@gmail.com",
+                    points = 310,
+                    league = "gold",
+                    leaguePosition = 21,
+                    name = "Pedro Pepito"
+                },
+                new PlayerPoints()
+                {
+                    email = "pepito1@gmail.com",
+                    points = 310,
+                    league = "gold",
+                    leaguePosition = 22,
+                    name = "Pepito Uno"
+                },
+                new PlayerPoints()
+                {
+                    email = "mock@user.com",
+                    points = 290,
+                    league = "silver",
+                    leaguePosition = 1,
+                    name = "Federico Jure"
+                },
+                new PlayerPoints()
+                {
+                    email = "pepito6@gmail.com",
+                    points = 280,
+                    league = "silver",
+                    leaguePosition = 2,
+                    name = "Pepito Seis"
+                },
+                new PlayerPoints()
+                {
+                    email = "pepito7@gmail.com",
+                    points = 277,
+                    league = "wood",
+                    leaguePosition = 3,
+                    name = "Pepito Siete"
+                },
+                new PlayerPoints()
+                {
+                    email = "pepito2@gmail.com",
+                    points = 250,
+                    league = "wood",
+                    leaguePosition = 4,
+                    name = "Pepito Dos"
+                }
+            };
             using var www = UnityWebRequest.Post(ApiConfig.ApiUrl + "/player/update", new Dictionary<string, string>(){
                 { "points", points.ToString() }});
             AddHeaders(www);

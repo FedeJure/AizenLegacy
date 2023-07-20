@@ -17,7 +17,7 @@ namespace Utils
                 ob.SetActive(false);
             }
 
-            Instantiate(SpinnerTemplate, transform);
+            createdSpinner = Instantiate(SpinnerTemplate, transform);
         }
 
         public void Load()
