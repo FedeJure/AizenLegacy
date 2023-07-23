@@ -30,7 +30,7 @@ namespace Trampoline
                 .Subscribe()
                 .AddTo(disposer);
             
-            EventBus.OnLoseStability()
+            EventBus.OnGameEnds()
                 .Do(_ => enable = true)
                 .Subscribe()
                 .AddTo(disposer);

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Character;
 
 namespace Models
 {
@@ -15,8 +16,23 @@ namespace Models
     }
 
     [Serializable]
-    public class PlayerPointsList
+    public class PlayerPointsUpdateResponse
     {
-        public List<PlayerPoints> response;
+        public List<PlayerPoints> leaderboard;
+        public int pointVariation;
+    }
+    
+    [Serializable]
+    public class PlayerPointsGetResponse
+    {
+        public List<PlayerPoints> leaderboard;
+    }
+    
+    [Serializable]
+    public class PlayerPointsUpdateRequest
+    {
+        public int quarterSomersault;
+        public int[] halfTwists;
+        public Position position;
     }
 }

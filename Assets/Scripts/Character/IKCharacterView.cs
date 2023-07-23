@@ -43,7 +43,7 @@ namespace Character
                 .Subscribe()
                 .AddTo(disposer);
 
-            EventBus.OnLoseStability()
+            EventBus.OnGameEnds()
                 .Do(_ =>
                 {
                     isStable = false;

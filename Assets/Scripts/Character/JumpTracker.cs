@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Models;
 using UnityEngine;
 
 namespace Character
@@ -31,6 +32,16 @@ namespace Character
             this.state = state;
         }
 
+        public PlayerPointsUpdateRequest GetGameData()
+        {
+            return new PlayerPointsUpdateRequest()
+            {
+                quarterSomersault = quarterSomersault,
+                halfTwists = halfTwists.ToArray(),
+                position = state.lastPosition
+            };
+        }
+
         private float GetJumpPoints()
         {
             var completeSomersaults = quarterSomersault / 4;
@@ -53,8 +64,8 @@ namespace Character
             var finalSomersaultPoints = somersaultPoints + somersaultBonus;
 
             var halfTwistsCount = halfTwists.Aggregate(0, (a, b) => a + b);
-        return finalSomersaultPoints + halfTwistsCount;
-    }
+            return finalSomersaultPoints + halfTwistsCount;
+        }
 
         public void Reset()
         {

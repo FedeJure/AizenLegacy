@@ -1,5 +1,6 @@
 ﻿using System;
 using Character;
+using Models;
 using UniRx;
 public static class EventBus
 {
@@ -8,7 +9,7 @@ public static class EventBus
         static ISubject<Unit> onEnterTrampoline = new Subject<Unit>();
         static ISubject<Unit> onExitTrampoline = new Subject<Unit>();
         static ISubject<Unit> onSideChange = new Subject<Unit>();
-        static ISubject<Unit> onLoseStability = new Subject<Unit>();
+        static ISubject<PlayerPointsUpdateRequest> onGameEnd = new Subject<PlayerPointsUpdateRequest>();
         static ISubject<Unit> onGameplayEnd = new Subject<Unit>();
         static ISubject<Unit> onGameplayStart = new Subject<Unit>();
         static ISubject<float> onConsumeEnergy = new Subject<float>();
@@ -51,11 +52,11 @@ public static class EventBus
                 return onGameplayStart;
         }
 
-        public static IObservable<Unit> OnLoseStability()
+        public static IObservable<PlayerPointsUpdateRequest> OnGameEnds()
         {
-                return onLoseStability;
+                return onGameEnd;
         }
-
+        
         public static IObservable<float> OnConsumeEnergy()
         {
                 return onConsumeEnergy;
@@ -106,9 +107,9 @@ public static class EventBus
                 onSideChange.OnNext(Unit.Default);
         }
 
-        public static void EmitOnLoseStability()
+        public static void EmitOnGameEnd(PlayerPointsUpdateRequest gameData)
         {
-                onLoseStability.OnNext(Unit.Default);
+                onGameEnd.OnNext(gameData);
         }
 
         public static void EmitOnGameplayEnd()
@@ -135,4 +136,5 @@ public static class EventBus
         {
                 onLogout.OnNext(Unit.Default);
         }
+        
 }

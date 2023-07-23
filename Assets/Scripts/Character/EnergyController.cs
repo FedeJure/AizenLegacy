@@ -8,6 +8,7 @@ namespace Character
     public class EnergyController: MonoBehaviour
     {
         [SerializeField] private RectTransform bar;
+        [SerializeField] private JumpTracker jumpTracker;
         private List<IDisposable> disposer = new List<IDisposable>();
 
         private float maxEnergy;
@@ -36,7 +37,7 @@ namespace Character
             bar.LeanScaleX(currentEnergy / maxEnergy, 0.1f);
             if (currentEnergy <= 0)
             {
-                EventBus.EmitOnLoseStability();
+                EventBus.EmitOnGameEnd(jumpTracker.GetGameData());
             }
         }
         

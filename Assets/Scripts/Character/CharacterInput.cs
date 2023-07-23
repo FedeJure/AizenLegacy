@@ -40,7 +40,7 @@ namespace Character
             controls.Player.MortalAtras.canceled += _ => back.Value = false;
             controls.Player.MedioGiro.canceled += _ => twist.Value = false;
             
-            EventBus.OnLoseStability()
+            EventBus.OnGameEnds()
                 .Do(_ =>
                 {
                     controls.Disable();

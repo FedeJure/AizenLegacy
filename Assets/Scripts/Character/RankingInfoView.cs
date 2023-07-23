@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Models;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,14 +22,13 @@ namespace Character
             asyncBehavior = GetComponent<AsyncGameObject>();
         }
 
-        public async void  SetupPoints(float points)
+        public void SetupPoints(PlayerPointsUpdateResponse data)
         {
-            var leaderboardData = await ApiController.UpdatePlayerPoints(points);
-            var myData = leaderboardData.Find(p => p.email == FirebaseController.Instance.User.Email);
+            var myData = data.leaderboard.Find(p => p.email == FirebaseController.Instance.User.Email);
             medal.sprite = leaguesInfo.leagues.FirstOrDefault(l => l.id == myData.league).image;
             currentRankedPosition.SetText($"#{myData.leaguePosition}");
             asyncBehavior.Load();
-            leaderboard.Load(leaderboardData);
+            leaderboard.Load(data.leaderboard);
         }
     }
 }

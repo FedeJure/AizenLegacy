@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Models;
 using UniRx;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -103,7 +104,7 @@ namespace Character
                 .Do(HandleExitTrampoline)
                 .Subscribe().AddTo(disposer);
             
-            EventBus.OnLoseStability()
+            EventBus.OnGameEnds()
                 .Do(_ =>
                 {
                     animator.StopPlayback();
@@ -145,7 +146,7 @@ namespace Character
             {
                 state.isStable = false;
                 SetEnable(false);
-                EventBus.EmitOnLoseStability();
+                EventBus.EmitOnGameEnd(jumpTracker.GetGameData());
             }
             RemovePositions();
             animator.SetBool(inTrampoline, true);

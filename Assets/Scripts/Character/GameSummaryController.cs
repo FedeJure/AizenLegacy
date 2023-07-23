@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Models;
 using TMPro;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
+using Utils;
 
 namespace Character
 {
@@ -26,17 +28,17 @@ namespace Character
             okButton.onClick.AddListener(HandleOk);
         }
 
-        public void Setup(List<ProcessedJumpConfig> jumps)
+        public async void Setup(List<ProcessedJumpConfig> jumps, PlayerPointsUpdateResponse playerPoints)
         {
             jumps.ForEach(jump =>
             {
                 var points = Instantiate(pointTextTemplate, pointsContainer.transform);
                 points.text = $"{jump.name} || {jump.points}".ToString();
             });
-            var points = jumps.Select(j => j.points).Aggregate(0f, (a, b) => a + b);
-            totalPointText.SetText($"{points}");
             
-            rankingInfo.SetupPoints(points);
+            totalPointText.SetText($"{playerPoints.pointVariation}");
+            
+            rankingInfo.SetupPoints(playerPoints);
         }
 
         private void HandleOk()

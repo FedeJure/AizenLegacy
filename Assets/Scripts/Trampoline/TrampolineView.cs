@@ -43,7 +43,7 @@ namespace Trampoline
             EventBus.OnGameplayStart()
                 .Subscribe(_ => { ResetBonesPosition(); });
             
-            EventBus.OnLoseStability()
+            EventBus.OnGameEnds()
                 .Subscribe(_ => { isStable = false; });
             
             ResetBonesPosition();

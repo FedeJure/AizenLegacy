@@ -10,7 +10,7 @@ public class GameplayController : MonoBehaviour
     private void Awake()
     {
         exitButton.onClick.AddListener(HandleExit);
-        EventBus.OnLoseStability()
+        EventBus.OnGameEnds()
             .Do(_ =>
             {
                 Observable.Timer(TimeSpan.FromSeconds(4))
