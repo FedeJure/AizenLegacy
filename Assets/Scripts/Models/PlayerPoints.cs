@@ -11,6 +11,7 @@ namespace Models
         public string name;
         public string league;
         public int leaguePosition;
+        public string photoUrl;
     }
 
     [Serializable]

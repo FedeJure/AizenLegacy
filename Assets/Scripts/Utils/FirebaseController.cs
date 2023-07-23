@@ -100,7 +100,7 @@ namespace Utils
         {
             if (task.IsFaulted)
             {
-                Debug.Log("Failed Auth");
+                Debug.Log($"Failed Auth: {task.Exception?.Message}");
             }
             else if (task.IsCanceled)
             {
@@ -111,7 +111,7 @@ namespace Utils
                 try
                 {
                     Credential credential = GoogleAuthProvider.GetCredential(task.Result.IdToken, null);
-                    auth.SignInWithCredentialAsync(credential).ContinueWithOnMainThread(response =>
+                    auth.SignInWithCredentialAsync(credential).ContinueWithOnMainThread(async response =>
                     {
                         if (response.IsCanceled)
                         {
@@ -126,7 +126,8 @@ namespace Utils
                         }
 
                         User = auth.CurrentUser;
-                        Token = task.Result.IdToken;
+                        Token = await auth.CurrentUser.TokenAsync(false);
+                        Debug.Log($"Successfully connected to firebase with token: {Token}");
                     });
                 }
                 catch (Exception e)

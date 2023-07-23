@@ -4,6 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: 2c456d5a182079e479741638096e6b99
   m_configObjects:
     com.unity.localization.settings: {fileID: 11400000, guid: df386e4a7a8ac3946b45b286a84f8053, type: 2}

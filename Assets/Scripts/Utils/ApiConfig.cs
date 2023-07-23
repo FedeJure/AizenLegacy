@@ -18,6 +18,6 @@ namespace Utils
                 return hashedToken;
             }
         }
-        public static string ApiUrl = "http://localhost:3000";
+        public static string ApiUrl = "https://api.aizengame.tech";
     }
 }

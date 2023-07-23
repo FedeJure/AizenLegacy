@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Models;
 using UnityEngine;
@@ -7,6 +6,14 @@ using UnityEngine.Networking;
 
 namespace Utils
 {
+
+    internal class VoidCertValidation : CertificateHandler
+    {
+        protected override bool ValidateCertificate(byte[] certificateData)
+        {
+            return true;
+        }
+    }
     public class ApiController
     {
       
@@ -14,8 +21,8 @@ namespace Utils
         {
             using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/leaderboard");
             AddHeaders(www);
+            AvoidHttpsCert(www);
             var tcs = new TaskCompletionSource<List<PlayerPoints>>();
-
             www.SendWebRequest();
 
             while (!www.isDone)
@@ -38,10 +45,15 @@ namespace Utils
 
             return await tcs.Task;
         }
-        
+
+        private static void AvoidHttpsCert(UnityWebRequest www)
+        {
+            www.certificateHandler = new VoidCertValidation();
+        }
+
         public static async Task<List<PlayerPoints>> UpdatePlayerPoints(float points)
         {
-            await Task.Delay(2000);
+            await Task.Delay(1000);
 
             return new List<PlayerPoints>()
             {
@@ -51,7 +63,8 @@ namespace Utils
                     points = 312,
                     league = "gold",
                     leaguePosition = 20,
-                    name = "Federico Jure"
+                    name = "Federico Jure",
+                    photoUrl = ""
                 },
                 new PlayerPoints()
                 {
@@ -59,7 +72,8 @@ namespace Utils
                     points = 310,
                     league = "gold",
                     leaguePosition = 21,
-                    name = "Pedro Pepito"
+                    name = "Pedro Pepito",
+                    photoUrl = ""
                 },
                 new PlayerPoints()
                 {
@@ -67,7 +81,8 @@ namespace Utils
                     points = 310,
                     league = "gold",
                     leaguePosition = 22,
-                    name = "Pepito Uno"
+                    name = "Pepito Uno",
+                    photoUrl = ""
                 },
                 new PlayerPoints()
                 {
@@ -75,7 +90,8 @@ namespace Utils
                     points = 290,
                     league = "silver",
                     leaguePosition = 1,
-                    name = "Federico Jure"
+                    name = "Federico Jure",
+                    photoUrl = ""
                 },
                 new PlayerPoints()
                 {
@@ -83,7 +99,8 @@ namespace Utils
                     points = 280,
                     league = "silver",
                     leaguePosition = 2,
-                    name = "Pepito Seis"
+                    name = "Pepito Seis",
+                    photoUrl = ""
                 },
                 new PlayerPoints()
                 {
@@ -91,7 +108,8 @@ namespace Utils
                     points = 277,
                     league = "wood",
                     leaguePosition = 3,
-                    name = "Pepito Siete"
+                    name = "Pepito Siete",
+                    photoUrl = ""
                 },
                 new PlayerPoints()
                 {
@@ -99,7 +117,8 @@ namespace Utils
                     points = 250,
                     league = "wood",
                     leaguePosition = 4,
-                    name = "Pepito Dos"
+                    name = "Pepito Dos",
+                    photoUrl = ""
                 }
             };
             using var www = UnityWebRequest.Post(ApiConfig.ApiUrl + "/player/update", new Dictionary<string, string>(){
@@ -136,5 +155,4 @@ namespace Utils
             request.SetRequestHeader("authorization", $"Bearer {FirebaseController.Instance.Token}");
         }
     }
-    
 }
