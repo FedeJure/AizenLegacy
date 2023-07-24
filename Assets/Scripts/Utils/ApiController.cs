@@ -154,7 +154,6 @@ namespace Utils
             }
             else
             {
-                Debug.Log($"Response:{www.downloadHandler.text} ");
                 var response = www.downloadHandler.text;
                 var playerPointsList = JsonUtility.FromJson<PlayerPointsUpdateResponse>(response);
                 tcs.SetResult(playerPointsList);

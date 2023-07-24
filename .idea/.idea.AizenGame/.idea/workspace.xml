@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RankedGameplayController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RankedGameplayController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/GameSummaryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/GameSummaryController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/RankingInfoView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/RankingInfoView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerPoints.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -329,7 +325,7 @@
       <workItem from="1689890548922" duration="1316000" />
       <workItem from="1689965787402" duration="9554000" />
       <workItem from="1690065478872" duration="18913000" />
-      <workItem from="1690153650241" duration="7962000" />
+      <workItem from="1690153650241" duration="11576000" />
     </task>
     <servers />
   </component>

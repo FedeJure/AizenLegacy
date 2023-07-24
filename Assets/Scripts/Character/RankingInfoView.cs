@@ -25,10 +25,13 @@ namespace Character
         public void SetupPoints(PlayerPointsUpdateResponse data)
         {
             var myData = data.leaderBoard.ToList().Find(p => p.email == FirebaseController.Instance.User.Email);
+            Debug.Log($"Data: {JsonUtility.ToJson(data)}");
             medal.sprite = leaguesInfo.leagues.FirstOrDefault(l => l.id == myData.league).image;
             currentRankedPosition.SetText($"#{myData.leaguePosition}");
             asyncBehavior.Load();
-            leaderboard.Load(data.leaderBoard.ToList());
+            var leaderboardPoints = data.leaderBoard.ToList();
+            leaderboardPoints.Reverse();
+            leaderboard.Load(leaderboardPoints);
         }
     }
 }
