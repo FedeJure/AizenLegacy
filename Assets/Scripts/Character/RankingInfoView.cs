@@ -24,11 +24,11 @@ namespace Character
 
         public void SetupPoints(PlayerPointsUpdateResponse data)
         {
-            var myData = data.leaderboard.Find(p => p.email == FirebaseController.Instance.User.Email);
+            var myData = data.leaderBoard.ToList().Find(p => p.email == FirebaseController.Instance.User.Email);
             medal.sprite = leaguesInfo.leagues.FirstOrDefault(l => l.id == myData.league).image;
             currentRankedPosition.SetText($"#{myData.leaguePosition}");
             asyncBehavior.Load();
-            leaderboard.Load(data.leaderboard);
+            leaderboard.Load(data.leaderBoard.ToList());
         }
     }
 }

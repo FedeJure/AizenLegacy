@@ -21,8 +21,9 @@ public class RankedGameplayController : MonoBehaviour
             .Do(gameData =>
             {
                 PlayerPointsUpdateResponse response = null;
-                float startTime = Time.time;
+                var startTime = Time.time;
                 const int maxtime = 4000;
+
                 Observable.Create<PlayerPointsUpdateResponse>(o => UpdatePoints(o, gameData))
                     .SelectMany(r =>
                     {
@@ -31,10 +32,18 @@ public class RankedGameplayController : MonoBehaviour
                     })
                     .Do(_ =>
                     {
-                        if (response == null) return;
-                        _gameSummaryController.onAccept += Exit;
-                        _gameSummaryController.gameObject.SetActive(true);
-                        _gameSummaryController.Setup(_jumps, response);
+                        try
+                        {
+                            if (response == null) return;
+                            _gameSummaryController.onAccept += Exit;
+                            _gameSummaryController.gameObject.SetActive(true);
+                            _gameSummaryController.Setup(_jumps, response);
+                        }
+                        catch (Exception e)
+                        {
+                            Debug.LogError(e);
+                        }
+                        
                     })
                     .Subscribe();
 
@@ -56,8 +65,7 @@ public class RankedGameplayController : MonoBehaviour
 
     private async Task<PlayerPointsUpdateResponse> UpdatePoints(IObserver<PlayerPointsUpdateResponse> o, PlayerPointsUpdateRequest gameData)
     {
-        var points = await ApiController.UpdatePlayerPoints(gameData.quarterSomersault,
-            gameData.halfTwists, gameData.position);
+        var points = await ApiController.UpdatePlayerPoints(gameData);
         o.OnNext(points);
         o.OnCompleted();
         return points;

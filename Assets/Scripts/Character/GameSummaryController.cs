@@ -28,7 +28,7 @@ namespace Character
             okButton.onClick.AddListener(HandleOk);
         }
 
-        public async void Setup(List<ProcessedJumpConfig> jumps, PlayerPointsUpdateResponse playerPoints)
+        public void Setup(List<ProcessedJumpConfig> jumps, PlayerPointsUpdateResponse playerPoints)
         {
             jumps.ForEach(jump =>
             {
