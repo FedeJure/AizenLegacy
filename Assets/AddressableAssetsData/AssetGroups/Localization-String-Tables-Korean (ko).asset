@@ -22,11 +22,13 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: be054e301f0e5af4fbf76f148e43b888
     m_Address: StringLocalizations_ko
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 0d2797a89082ca045a1c861c29bf2691, type: 2}
   m_SchemaSet:

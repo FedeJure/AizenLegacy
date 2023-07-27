@@ -19,11 +19,16 @@ MonoBehaviour:
     m_Key: font
     m_Metadata:
       m_Items: []
+  - m_Id: 235878816732999680
+    m_Key: GamePlay/PostProcessing
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - id: 0
+    - id: 1
   m_KeyGenerator:
-    id: 1
+    id: 2
   references:
     version: 1
     00000000:
@@ -45,7 +50,15 @@ MonoBehaviour:
         m_TypeString: TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
           PublicKeyToken=null
     00000001:
-      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
-        asm: Unity.Localization}
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 235878816732999680
+          m_TableCodes:
+          - es
+        m_TypeString: UnityEngine.Rendering.PostProcessing.PostProcessProfile, Unity.Postprocessing.Runtime,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    00000002:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
         m_CustomEpoch: 1634163759233
