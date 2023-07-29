@@ -23,5 +23,6 @@ namespace Utils
 #else
         public static string ApiUrl = "https://api.aizengame.tech";
 #endif
+        public static bool MockApi = false;
     }
 }

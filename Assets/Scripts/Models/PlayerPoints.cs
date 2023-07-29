@@ -30,13 +30,20 @@ namespace Models
         public List<PlayerPoints> leaderboard;
         public PlayerPointsGetResponse() {}
     }
-    
+
+    [Serializable]
+    public class JumpData
+    {
+       public int quarterSomersault;
+       public int[] halfTwists;
+       public Position position;
+       public Direction direction;
+    }
+
     [Serializable]
     public class PlayerPointsUpdateRequest
     {
-        public int quarterSomersault;
-        public int[] halfTwists;
-        public Position position;
+        public JumpData[] jumps;
         public PlayerPointsUpdateRequest() {}
     }
 }

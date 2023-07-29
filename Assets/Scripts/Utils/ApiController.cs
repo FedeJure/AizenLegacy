@@ -15,9 +15,8 @@ namespace Utils
             return true;
         }
     }
-    public class ApiController
+    public static class ApiController
     {
-      
         public static async Task<List<PlayerPoints>> GetPlayerPointsAsync()
         {
             using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/leaderboard");
@@ -54,82 +53,82 @@ namespace Utils
 
         public static async Task<PlayerPointsUpdateResponse> UpdatePlayerPoints(PlayerPointsUpdateRequest data)
         {
-            #if UNITY_EDITOR
-            
-            await Task.Delay(1000);
-            var mockLeaderBoard = new List<PlayerPoints>()
+            if (ApiConfig.MockApi)
             {
-                new PlayerPoints()
+                await Task.Delay(1000);
+                var mockLeaderBoard = new List<PlayerPoints>()
                 {
-                    email = "pepito@gmail.com",
-                    points = 312,
-                    league = "gold",
-                    leaguePosition = 20,
-                    name = "Federico Jure",
-                    photoUrl = ""
-                },
-                new PlayerPoints()
+                    new PlayerPoints()
+                    {
+                        email = "pepito@gmail.com",
+                        points = 312,
+                        league = "gold",
+                        leaguePosition = 20,
+                        name = "Federico Jure",
+                        photoUrl = ""
+                    },
+                    new PlayerPoints()
+                    {
+                        email = "pepito5@gmail.com",
+                        points = 310,
+                        league = "gold",
+                        leaguePosition = 21,
+                        name = "Pedro Pepito",
+                        photoUrl = ""
+                    },
+                    new PlayerPoints()
+                    {
+                        email = "pepito1@gmail.com",
+                        points = 310,
+                        league = "gold",
+                        leaguePosition = 22,
+                        name = "Pepito Uno",
+                        photoUrl = ""
+                    },
+                    new PlayerPoints()
+                    {
+                        email = "mock@user.com",
+                        points = 290,
+                        league = "silver",
+                        leaguePosition = 1,
+                        name = "Federico Jure",
+                        photoUrl = ""
+                    },
+                    new PlayerPoints()
+                    {
+                        email = "pepito6@gmail.com",
+                        points = 280,
+                        league = "silver",
+                        leaguePosition = 2,
+                        name = "Pepito Seis",
+                        photoUrl = ""
+                    },
+                    new PlayerPoints()
+                    {
+                        email = "pepito7@gmail.com",
+                        points = 277,
+                        league = "wood",
+                        leaguePosition = 3,
+                        name = "Pepito Siete",
+                        photoUrl = ""
+                    },
+                    new PlayerPoints()
+                    {
+                        email = "pepito2@gmail.com",
+                        points = 250,
+                        league = "wood",
+                        leaguePosition = 4,
+                        name = "Pepito Dos",
+                        photoUrl = ""
+                    }
+                };
+                mockLeaderBoard.Reverse();
+                return new PlayerPointsUpdateResponse()
                 {
-                    email = "pepito5@gmail.com",
-                    points = 310,
-                    league = "gold",
-                    leaguePosition = 21,
-                    name = "Pedro Pepito",
-                    photoUrl = ""
-                },
-                new PlayerPoints()
-                {
-                    email = "pepito1@gmail.com",
-                    points = 310,
-                    league = "gold",
-                    leaguePosition = 22,
-                    name = "Pepito Uno",
-                    photoUrl = ""
-                },
-                new PlayerPoints()
-                {
-                    email = "mock@user.com",
-                    points = 290,
-                    league = "silver",
-                    leaguePosition = 1,
-                    name = "Federico Jure",
-                    photoUrl = ""
-                },
-                new PlayerPoints()
-                {
-                    email = "pepito6@gmail.com",
-                    points = 280,
-                    league = "silver",
-                    leaguePosition = 2,
-                    name = "Pepito Seis",
-                    photoUrl = ""
-                },
-                new PlayerPoints()
-                {
-                    email = "pepito7@gmail.com",
-                    points = 277,
-                    league = "wood",
-                    leaguePosition = 3,
-                    name = "Pepito Siete",
-                    photoUrl = ""
-                },
-                new PlayerPoints()
-                {
-                    email = "pepito2@gmail.com",
-                    points = 250,
-                    league = "wood",
-                    leaguePosition = 4,
-                    name = "Pepito Dos",
-                    photoUrl = ""
-                }
-            };
-            mockLeaderBoard.Reverse();
-            return new PlayerPointsUpdateResponse()
-            {
-                pointVariation = 5f,
-                leaderBoard = mockLeaderBoard.ToArray(),
-            };
-            #endif
+                    pointVariation = 5f,
+                    leaderBoard = mockLeaderBoard.ToArray(),
+                };
+            }
             var www = new UnityWebRequest();
             www.url = ApiConfig.ApiUrl + "/player/update";
             www.method = "POST";

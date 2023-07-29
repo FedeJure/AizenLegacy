@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 53
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 22e79b2203d276746a4d3933801a7740, type: 3}
+    - {fileID: 2800000, guid: 17442ee2a3831994b8ed7028a046f125, type: 3}
+    - {fileID: 2800000, guid: 67944153aee54a94f8be38a6f94e468a, type: 3}
+    - {fileID: 2800000, guid: cd6e54394e9e36c40af965c4aad86849, type: 3}
+    - {fileID: 2800000, guid: b45190335f498d24bb7a9c27717ac943, type: 3}
+    - {fileID: 2800000, guid: 4ad9090514e3d9c42be0db4d10b07ee5, type: 3}
+    - {fileID: 2800000, guid: 15a112ff45ba05648af234985013d6ac, type: 3}
+    - {fileID: 2800000, guid: 605fb124dee609345bbe08f49cf8a37e, type: 3}
+    - {fileID: 2800000, guid: 539be5b57c87f5b43a1c7f7eaf0b79bd, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 22e79b2203d276746a4d3933801a7740, type: 3}
+  - {fileID: 21300000, guid: 17442ee2a3831994b8ed7028a046f125, type: 3}
+  - {fileID: 21300000, guid: b45190335f498d24bb7a9c27717ac943, type: 3}
+  - {fileID: 21300000, guid: 67944153aee54a94f8be38a6f94e468a, type: 3}
+  - {fileID: 21300000, guid: 605fb124dee609345bbe08f49cf8a37e, type: 3}
+  - {fileID: 21300000, guid: cd6e54394e9e36c40af965c4aad86849, type: 3}
+  - {fileID: 21300000, guid: 15a112ff45ba05648af234985013d6ac, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Background
+  - PS4_Circle 1
+  - Google_icon
+  - PS4_Cross 1
+  - trampGym
+  - PS4_Triangle 1
+  - Steam_ArrowLeft 1
+  m_RenderDataMap: {}
+  m_Tag: UI Atlas
+  m_IsVariant: 0

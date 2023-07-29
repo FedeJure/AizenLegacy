@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: vehicles_spriteatlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 53
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: de93470c47727b84b9fd737279e7058d, type: 3}
+    - {fileID: 2800000, guid: 07658416507390242a7e41116767e521, type: 3}
+    - {fileID: 2800000, guid: 7d094f0ad3ece8e43a414df9ee05635a, type: 3}
+    - {fileID: 2800000, guid: d7b2381ad1abe8d44bd78263adcf9b01, type: 3}
+    - {fileID: 2800000, guid: 5e69878161a98704e8ac3d48f0109bdc, type: 3}
+    - {fileID: 2800000, guid: 6d01b1f1647ad8e4581ac4a5c622062b, type: 3}
+    - {fileID: 2800000, guid: 398214c1f5f8d9a4f9ac47a9f569eac8, type: 3}
+    - {fileID: 2800000, guid: 39e0ea44108d00647b53ec36f0465f30, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites: []
+  m_PackedSpriteNamesToIndex: []
+  m_RenderDataMap: {}
+  m_Tag: vehicles_spriteatlas
+  m_IsVariant: 0

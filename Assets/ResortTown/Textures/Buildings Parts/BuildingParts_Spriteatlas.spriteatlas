@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BuildingParts_Spriteatlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 53
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: fedb068a8ddfb6c4ca947dba4b13ff75, type: 3}
+    - {fileID: 2800000, guid: fc263755cf64d7b4b9ebee24c2ce82cd, type: 3}
+    - {fileID: 2800000, guid: 5712ddb80251bb64399c939b2de1345e, type: 3}
+    - {fileID: 2800000, guid: 53f5a9d952ae32841852fc7f33006356, type: 3}
+    - {fileID: 2800000, guid: 7f5a6b378bd669943906336e2fb85bf8, type: 3}
+    - {fileID: 2800000, guid: b2da210f7bc74114ca3749856d74a1ee, type: 3}
+    - {fileID: 2800000, guid: 2009644e0a0688547934bb0b12ee943c, type: 3}
+    - {fileID: 2800000, guid: f12bd436183b26d4c8cc445445587e0a, type: 3}
+    - {fileID: 2800000, guid: 761366dc51361ff49888dd828a15f5d6, type: 3}
+    - {fileID: 2800000, guid: 03095f5dbcece694dbd773483a36cb98, type: 3}
+    - {fileID: 2800000, guid: 5eccc4a2df047a6419dcb126ce7823fe, type: 3}
+    - {fileID: 2800000, guid: ded3dc7cd5a700e4cabf3b930ae318de, type: 3}
+    - {fileID: 2800000, guid: 056bf7a7bc71b394498dbae9fd262060, type: 3}
+    - {fileID: 2800000, guid: 39d5e879a478e8b48a0e2b320fff17b8, type: 3}
+    - {fileID: 2800000, guid: f4258083ecf15df41ad28569f30d8849, type: 3}
+    - {fileID: 2800000, guid: b264fc88808fa0542904039e42db0810, type: 3}
+    - {fileID: 2800000, guid: 8abd4ac4c64814846a62315de493981f, type: 3}
+    - {fileID: 2800000, guid: 025b244b941417146a6ca1a1034ed0af, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites: []
+  m_PackedSpriteNamesToIndex: []
+  m_RenderDataMap: {}
+  m_Tag: BuildingParts_Spriteatlas
+  m_IsVariant: 0

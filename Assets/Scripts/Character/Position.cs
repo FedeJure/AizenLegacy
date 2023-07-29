@@ -6,4 +6,10 @@
         BPosition,
         APosition
     }
+
+    public enum Direction
+    {
+        Forward,
+        Back
+    }
 }

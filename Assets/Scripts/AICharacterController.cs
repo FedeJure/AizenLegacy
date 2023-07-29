@@ -40,7 +40,7 @@ public class AICharacterController : MonoBehaviour
 
     private void OnEnable()
     {
-        ReadyToPerformNewAction(null);
+        // ReadyToPerformNewAction(null);
     }
 
     public void Init()

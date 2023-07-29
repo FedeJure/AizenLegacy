@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 4480872411094663191}
-  jumpTracker: {fileID: 0}
+  jumpTracker: {fileID: 8286640285068653190}
 --- !u!1 &5226825379386463657
 GameObject:
   m_ObjectHideFlags: 0

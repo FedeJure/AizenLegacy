@@ -22,7 +22,9 @@ namespace Character
         
         private int  quarterSomersault = 0;
         private List<int> halfTwists = new List<int>();
-        public event Action<JumpConfig> OnJumpReached = (_) => { }; 
+        public event Action<JumpConfig> OnJumpReached = (_) => { };
+
+        private List<JumpData> serie = new List<JumpData>();
         
         //Nuevas variables
         private string prefix = "";
@@ -36,9 +38,7 @@ namespace Character
         {
             return new PlayerPointsUpdateRequest()
             {
-                quarterSomersault = quarterSomersault,
-                halfTwists = halfTwists.ToArray(),
-                position = state.lastPosition
+                jumps = serie.ToArray()
             };
         }
 
@@ -72,7 +72,7 @@ namespace Character
             CancelInvoke("ApplyHalfTwist");
             quarterSomersault = (int)Math.Round(completeAngles / 0.5f);
             var twistsCount = halfTwists.Aggregate(0, (a, b) => a + b);
-            if (quarterSomersault > 0 || twistsCount > 0 && state.isStable)
+            if ((quarterSomersault > 0 || twistsCount > 0) && state.isStable)
             {
                 var points = GetJumpPoints();
                 var key = $"{prefix},{GetSomersaultAndTwists()}";
@@ -90,6 +90,14 @@ namespace Character
                 {
                     name = $"{position} {jumpName}",
                     points = points,
+                });
+                
+                serie.Add(new JumpData()
+                {
+                    quarterSomersault = quarterSomersault,
+                    halfTwists = halfTwists.ToArray(),
+                    position = state.lastPosition,
+                    direction = prefix == "at"? Direction.Back : Direction.Forward 
                 });
             }
             
