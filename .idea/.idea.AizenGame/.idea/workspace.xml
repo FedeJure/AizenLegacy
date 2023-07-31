@@ -2,290 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/New Lighting Settings.lighting" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/New Lighting Settings.lighting.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/OcclusionCullingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/OcclusionCullingData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UI Atlas.spriteatlas" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UI Atlas.spriteatlas.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.175/Google.JarResolver.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.175/Google.JarResolver.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.175/Google.PackageManagerResolver.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.175/Google.PackageManagerResolver.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.175/Google.VersionHandlerImpl.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.175/Google.VersionHandlerImpl.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/Firebase.Editor.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Editor/Firebase.Editor.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.iOS.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.iOS.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Placement.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Placement.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Platforms.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Platforms.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LobbyCharacterCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LobbyCharacterCanvas.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/AICharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/AICharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/CompleteEnvironment.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/CompleteEnvironment.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameplayCharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/Gym.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Gym.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyCharacter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialCharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_1.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_1.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_1_1.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_1_1.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_2_1.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Brick_walls_2_1.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_1.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_1.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_1_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_1_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_1_3.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_1_3.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_2_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_2_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_2_3.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_2_3.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_3.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_3.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_3_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_3_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_4.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_4.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_4_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_4_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_4_3.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_4_3.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_5.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_5.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_5_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_5_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_6.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_6.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_6_2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_6_2.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DeviceLightingSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DeviceLightingSettings.lighting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-100_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-100_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-100_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-100_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-101_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-101_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-101_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-101_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-102_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-102_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-102_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-102_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-103_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-103_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-103_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-103_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-104_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-104_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-104_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-104_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-105_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-105_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-105_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-105_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-106_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-106_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-106_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-106_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-107_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-107_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-107_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-107_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-108_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-108_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-108_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-108_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-109_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-109_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-109_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-109_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-10_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-110_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-110_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-110_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-110_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-111_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-111_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-111_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-111_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-112_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-112_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-112_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-112_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-113_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-113_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-113_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-113_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-114_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-114_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-114_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-114_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-11_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-12_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-12_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-12_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-12_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-13_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-13_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-13_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-13_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-14_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-14_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-14_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-14_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-15_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-15_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-15_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-15_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-16_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-16_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-16_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-16_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-17_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-17_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-17_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-17_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-18_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-18_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-18_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-18_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-19_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-19_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-19_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-19_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-1_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-20_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-20_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-20_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-20_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-21_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-21_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-21_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-21_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-22_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-22_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-22_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-22_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-23_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-23_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-23_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-23_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-24_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-24_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-24_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-24_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-25_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-25_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-25_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-25_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-26_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-26_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-26_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-26_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-27_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-27_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-27_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-27_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-28_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-28_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-28_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-28_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-29_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-29_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-29_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-29_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-2_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-30_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-30_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-30_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-30_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-31_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-31_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-31_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-31_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-32_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-32_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-32_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-32_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-33_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-33_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-33_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-33_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-34_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-34_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-34_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-34_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-35_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-35_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-35_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-35_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-36_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-36_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-36_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-36_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-37_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-37_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-37_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-37_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-38_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-38_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-38_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-38_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-39_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-39_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-39_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-39_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-3_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-40_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-40_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-40_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-40_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-41_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-41_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-41_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-41_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-42_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-42_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-42_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-42_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-43_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-43_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-43_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-43_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-44_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-44_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-44_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-44_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-45_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-45_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-45_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-45_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-46_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-46_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-46_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-46_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-47_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-47_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-47_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-47_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-48_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-48_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-48_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-48_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-49_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-49_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-49_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-49_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-4_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-50_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-50_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-50_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-50_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-51_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-51_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-51_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-51_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-52_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-52_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-52_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-52_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-53_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-53_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-53_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-53_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-54_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-54_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-54_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-54_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-55_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-55_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-55_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-55_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-56_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-56_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-56_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-56_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-57_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-57_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-57_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-57_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-58_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-58_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-58_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-58_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-59_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-59_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-59_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-59_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-5_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-60_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-60_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-60_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-60_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-61_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-61_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-61_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-61_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-62_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-62_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-62_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-62_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-63_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-63_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-63_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-63_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-64_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-64_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-64_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-64_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-65_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-65_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-65_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-65_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-66_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-66_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-66_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-66_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-67_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-67_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-67_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-67_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-68_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-68_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-68_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-68_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-69_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-69_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-69_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-69_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-6_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-70_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-70_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-70_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-70_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-71_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-71_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-71_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-71_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-72_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-72_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-72_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-72_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-73_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-73_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-73_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-73_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-74_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-74_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-74_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-74_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-75_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-75_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-75_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-75_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-76_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-76_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-76_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-76_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-77_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-77_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-77_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-77_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-78_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-78_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-78_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-78_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-79_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-79_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-79_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-79_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-7_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-80_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-80_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-80_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-80_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-81_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-81_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-81_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-81_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-82_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-82_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-82_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-82_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-83_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-83_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-83_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-83_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-84_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-84_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-84_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-84_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-85_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-85_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-85_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-85_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-86_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-86_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-86_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-86_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-87_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-87_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-87_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-87_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-88_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-88_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-88_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-88_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-89_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-89_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-89_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-89_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-8_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-90_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-90_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-90_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-90_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-91_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-91_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-91_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-91_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-92_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-92_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-92_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-92_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-93_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-93_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-93_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-93_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-94_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-94_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-94_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-94_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-95_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-95_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-95_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-95_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-96_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-96_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-96_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-96_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-97_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-97_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-97_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-97_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-98_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-98_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-98_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-98_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-99_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-99_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-99_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-99_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay/Lightmap-9_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Position.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Position.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerPoints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIAtlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UIAtlas.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LoginController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LoginController.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LoginController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LoginController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PLayerInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PLayerInfo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInfo.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/FirebaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/FirebaseController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,7 +98,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCharacter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LoginController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PLayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleAnimations.cs" root0="FORCE_HIGHLIGHTING" />
@@ -596,7 +326,7 @@
       <workItem from="1690065478872" duration="18913000" />
       <workItem from="1690153650241" duration="11576000" />
       <workItem from="1690387620629" duration="12564000" />
-      <workItem from="1690670185090" duration="2351000" />
+      <workItem from="1690670185090" duration="8705000" />
     </task>
     <servers />
   </component>

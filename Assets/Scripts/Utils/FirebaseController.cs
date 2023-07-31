@@ -76,6 +76,7 @@ namespace Utils
         public async Task SignInFirebaseWithGoogle()
         {
             #if UNITY_EDITOR
+            await Task.Delay(1000);
             User = new MockFirebaseUser();
             return;
             #endif

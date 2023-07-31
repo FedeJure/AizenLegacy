@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PLayerInfo : MonoBehaviour
+public class PlayerInfo : MonoBehaviour
 {
     [SerializeField] private Button openButton;
     [SerializeField] private GameObject content;
@@ -29,5 +29,10 @@ public class PLayerInfo : MonoBehaviour
         maxHeight.text = stats.height.ToString();
         energy.text = stats.energy.ToString();
         energyRecovery.text = stats.energySpeedCharge.ToString();
+    }
+
+    public void Close()
+    {
+        content.SetActive(false);
     }
 }

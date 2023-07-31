@@ -1,6 +1,5 @@
 using System;
 using System.Threading.Tasks;
-using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 using Utils;
@@ -30,6 +29,7 @@ namespace Lobby
         public async void Login()
         {
             login.interactable = false;
+            spinner.SetActive(true);
             await PerformLogin();
             login.interactable = true;
             spinner.SetActive(false);
