@@ -1,12 +1,9 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Models;
 using TMPro;
-using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
-using Utils;
 
 namespace Character
 {
@@ -18,7 +15,7 @@ namespace Character
         [SerializeField] private TMP_Text totalPointText;
 
         [SerializeField] private Button okButton;
-        [SerializeField] private TMP_Text coinsEarned;
+        [SerializeField] private CoinView coinsEarned;
         [SerializeField] private TMP_Text pointTextTemplate;
         [SerializeField] private RankingInfoView rankingInfo;
 
@@ -39,6 +36,7 @@ namespace Character
             totalPointText.SetText($"{playerPoints.pointVariation}");
             
             rankingInfo.SetupPoints(playerPoints);
+            coinsEarned.Setup(playerPoints.rewards);
         }
 
         private void HandleOk()

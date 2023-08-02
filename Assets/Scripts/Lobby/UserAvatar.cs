@@ -5,9 +5,10 @@ using Utils;
 
 namespace Lobby
 {
-    public class UserHeaderController: MonoBehaviour
+    public class UserAvatar: MonoBehaviour
     {
-        [SerializeField] private RawImage avatar;
+        [SerializeField]private RawImage avatar;
+
         private async void OnEnable()
         {
             try

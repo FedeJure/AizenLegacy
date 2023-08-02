@@ -17,19 +17,24 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 20fcc7f0bf8db4b76881e98a8a42c63c, type: 3}
     text: Wood
     color: {r: 0.49056602, g: 0.19340613, b: 0, a: 1}
+    complexImage: {fileID: 0}
   - id: cooper
     image: {fileID: 21300000, guid: 20fcc7f0bf8db4b76881e98a8a42c63c, type: 3}
     text: Cooper
     color: {r: 0.5849056, g: 0.4403996, b: 0, a: 1}
+    complexImage: {fileID: 0}
   - id: brass
     image: {fileID: 21300000, guid: 20fcc7f0bf8db4b76881e98a8a42c63c, type: 3}
     text: Brass
     color: {r: 1, g: 0.53154665, b: 0, a: 1}
+    complexImage: {fileID: 0}
   - id: silver
     image: {fileID: 21300000, guid: 086e140a14a0044fc8c046e36892c472, type: 3}
     text: Silver
     color: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
+    complexImage: {fileID: 0}
   - id: gold
-    image: {fileID: 21300000, guid: 817e572d8239f4a75a84952defabc914, type: 3}
+    image: {fileID: 21300000, guid: 0927c47c64914417e9e6cceb09ae0258, type: 3}
     text: Gold
     color: {r: 0.9995657, g: 1, b: 0, a: 1}
+    complexImage: {fileID: 8137650519071837779, guid: 95bf325dfea15e84fa849ea0a830e041, type: 3}

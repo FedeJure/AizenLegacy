@@ -1,6 +1,6 @@
 ﻿using System;
+using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Character
 {
@@ -11,6 +11,7 @@ namespace Character
         public Sprite image;
         public string text;
         public Color color;
+        [CanBeNull] public GameObject complexImage;
     }
     [CreateAssetMenu(fileName = "Assets/LeageConfig", menuName = "ScriptableObjects/LeagueConfig", order = 0)]
     public class LeagueInfo: ScriptableObject

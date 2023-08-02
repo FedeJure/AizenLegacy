@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Models;
 using UnityEngine;
-using UnityEngine.UI;
 using Utils;
 
 namespace Character
@@ -27,6 +26,13 @@ namespace Character
         public void Load(List<PlayerPoints> leaderboardData)
         {
             var lastLeague = "";
+            var alreadyCreatedChilds = container.GetComponentsInChildren<Transform>();
+            foreach (var componentsInChild in alreadyCreatedChilds)
+            {
+                if (componentsInChild == container || componentsInChild == null) continue;
+                DestroyImmediate(componentsInChild.gameObject);
+            }
+            created = new List<PlayerLeaderboard>();
             leaderboardData.ForEach(ld =>
             {
                 if (lastLeague != "" && lastLeague != ld.league)

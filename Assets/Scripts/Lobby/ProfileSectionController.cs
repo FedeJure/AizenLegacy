@@ -1,4 +1,6 @@
-﻿using TMPro;
+﻿using Character;
+using Models;
+using TMPro;
 using UnityEngine;
 using Utils;
 
@@ -8,14 +10,21 @@ namespace Lobby
     {
         [SerializeField] private TMP_Text userName;
         [SerializeField] private TMP_Text email;
-
+        [SerializeField] private RankingInfoView rankingInfo;
+        [SerializeField] private LeaderboardView leaderboardView;
+        [SerializeField] private GameObject unrankedGameObject;
+        [SerializeField] private GameObject rankedGameObject;
         private void Awake()
         {
             gameObject.SetActive(false);
+            
         }
 
         private void OnEnable()
         {
+            unrankedGameObject.SetActive(false);
+            rankedGameObject.SetActive(true);
+            LoadRankingInfo();
             userName.text = FirebaseController.Instance.User.DisplayName;
             email.text = FirebaseController.Instance.User.Email;
         }
@@ -29,6 +38,23 @@ namespace Lobby
         {
             FirebaseController.Instance.LogOut();
             EventBus.EmitOnLogout();
+        }
+        
+        private async void LoadRankingInfo()
+        {
+            var playerPoints = await ApiController.GetPlayerPointsAsync();
+            if (playerPoints.Find(p => p.email == FirebaseController.Instance.User.Email) == null)
+            {
+                unrankedGameObject.SetActive(true);
+                rankedGameObject.SetActive(false);
+                return;
+            }
+            rankingInfo.SetupPoints(new PlayerPointsUpdateResponse()
+            {
+                leaderBoard = playerPoints.ToArray(),
+                pointVariation = 0f
+            });
+            leaderboardView.Load(playerPoints);
         }
     }
 }

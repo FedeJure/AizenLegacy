@@ -21,6 +21,7 @@ namespace Models
     {
         [SerializeField]public PlayerPoints[] leaderBoard;
         [SerializeField]public float pointVariation;
+        [SerializeField]public RankedReward[] rewards;
         public PlayerPointsUpdateResponse() {}
     }
     
