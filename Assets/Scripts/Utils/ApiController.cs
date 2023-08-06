@@ -19,12 +19,12 @@ namespace Utils
     public static class ApiController
     {
         
-        public static async Task<PlayerWallet> GetPlayerWallet()
+        public static async Task<PlayerInventory> GetPlayerInventory()
         {
             using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/wallet");
             AddHeaders(www);
             AvoidHttpsCert(www);
-            var tcs = new TaskCompletionSource<PlayerWallet>();
+            var tcs = new TaskCompletionSource<PlayerInventory>();
             www.SendWebRequest();
 
             while (!www.isDone)
@@ -41,7 +41,7 @@ namespace Utils
             {
                 var response = www.downloadHandler.text;
                 // var responseCured = $"{{ \"leaderboard\":  {response} }}";
-                var playerWallet = JsonUtility.FromJson<PlayerWallet>(response);
+                var playerWallet = JsonUtility.FromJson<PlayerInventory>(response);
                 tcs.SetResult(playerWallet);
             }
 

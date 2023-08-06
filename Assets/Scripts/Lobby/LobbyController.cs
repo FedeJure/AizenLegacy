@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using DataStore;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,7 +15,6 @@ namespace Lobby
         [SerializeField] private Button nextButton;
         [SerializeField] private Button backButton;
         [SerializeField] private LobbyCamera cameraView;
-        [SerializeField] private InventoryState inventory;
 
         private CharacterSelector currentPlayer;
         private int currentIndex = 0;
@@ -44,10 +44,7 @@ namespace Lobby
         {
             var energyUpdated =  await ApiController.CheckEnergy();
             Invoke("CheckEnergy", energyUpdated.nextUpdateOnMillis / 1000);
-            if (!energyUpdated.updated) return;
-            var wallet = await ApiController.GetPlayerWallet();
-            inventory.energy = wallet.rankedEnergy;
-
+            await InventoryDataStore.UpdateDatastore();
         }
 
         public void Play()

@@ -2,11 +2,11 @@
 {
     public class UserSessionState
     {
-        public PlayerWallet wallet;
+        public PlayerInventory Inventory;
 
-        public UserSessionState(PlayerWallet wallet)
+        public UserSessionState(PlayerInventory inventory)
         {
-            this.wallet = wallet;
+            this.Inventory = inventory;
         }
     }
 }

@@ -1,23 +1,19 @@
+using DataStore;
 using TMPro;
 using UnityEngine;
-using Utils;
+using UniRx;
 
 public class InventoryController : MonoBehaviour
 {
     [SerializeField] private TMP_Text coinsText;
     [SerializeField] private TMP_Text energyText;
-    [SerializeField] private InventoryState inventory;
-    public void OnEnable()
-    {
-        UpdateWallet();
-    }
 
-    async void UpdateWallet()
+    private void Awake()
     {
-        var wallet = await ApiController.GetPlayerWallet();
-        inventory.coins = wallet.coin;
-        inventory.energy = wallet.rankedEnergy;
-        coinsText.SetText(wallet.coin.ToString());
-        energyText.SetText(wallet.rankedEnergy.ToString());
+        InventoryDataStore.Inventory.Do(data =>
+        {
+            coinsText.SetText(data.coin.ToString());
+            energyText.SetText(data.rankedEnergy.ToString());
+        }).Subscribe();
     }
 }

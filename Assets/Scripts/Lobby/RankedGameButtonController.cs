@@ -1,4 +1,6 @@
-﻿using TMPro;
+﻿using DataStore;
+using TMPro;
+using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,17 +10,16 @@ namespace Lobby
     public class RankedGameButtonController: MonoBehaviour
     {
         private Button button;
-        [SerializeField] private InventoryState inventory;
         [SerializeField] private TMP_Text energy;
         private void Awake()
         {
             button = GetComponent<Button>();
-        }
 
-        private void OnEnable()
-        {
-            energy.SetText(inventory.energy.ToString());
-            button.interactable = inventory.energy >= 1;
+            InventoryDataStore.Inventory.Do(data =>
+            {
+                energy.SetText(data.rankedEnergy.ToString());
+                button.interactable = data.rankedEnergy >= 1;
+            }).Subscribe().AddTo(this);
         }
     }
 }

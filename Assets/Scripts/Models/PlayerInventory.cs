@@ -3,15 +3,10 @@
 namespace Models
 {
     [Serializable]
-    public class PlayerWallet
+    public class PlayerInventory
     {
         public string uid;
         public int coin;
         public int rankedEnergy;
-
-        public PlayerWallet(int points)
-        {
-            points = points;
-        }
     }
 }

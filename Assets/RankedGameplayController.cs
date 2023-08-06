@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Character;
+using DataStore;
 using Models;
 using UniRx;
 using UnityEngine;
@@ -67,6 +68,7 @@ public class RankedGameplayController : MonoBehaviour
     private async Task<PlayerPointsUpdateResponse> UpdatePoints(IObserver<PlayerPointsUpdateResponse> o, PlayerPointsUpdateRequest gameData)
     {
         var points = await ApiController.UpdatePlayerPoints(gameData);
+        await InventoryDataStore.UpdateDatastore();
         o.OnNext(points);
         o.OnCompleted();
         return points;
