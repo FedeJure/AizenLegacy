@@ -18,10 +18,10 @@ namespace Utils
         {
             try
             { 
-                var wallet = await DatabaseManager.Instance.Get<UserWallet>("wallet");
+                var wallet = await DatabaseManager.Instance.Get<PlayerWallet>("wallet");
                 if (wallet == null)
                 {
-                     wallet = new UserWallet(0);
+                     wallet = new PlayerWallet(0);
                      await DatabaseManager.Instance.Save("wallet", wallet);   
                 }
                 state = new UserSessionState(wallet);

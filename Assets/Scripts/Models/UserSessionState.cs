@@ -2,9 +2,9 @@
 {
     public class UserSessionState
     {
-        public UserWallet wallet;
+        public PlayerWallet wallet;
 
-        public UserSessionState(UserWallet wallet)
+        public UserSessionState(PlayerWallet wallet)
         {
             this.wallet = wallet;
         }

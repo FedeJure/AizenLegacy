@@ -17,6 +17,36 @@ namespace Utils
     }
     public static class ApiController
     {
+        
+        public static async Task<PlayerWallet> GetPlayerWallet()
+        {
+            using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/wallet");
+            AddHeaders(www);
+            AvoidHttpsCert(www);
+            var tcs = new TaskCompletionSource<PlayerWallet>();
+            www.SendWebRequest();
+
+            while (!www.isDone)
+            {
+                await Task.Yield();
+            }
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.LogError(www.error);
+                tcs.SetResult(null);
+            }
+            else
+            {
+                var response = www.downloadHandler.text;
+                // var responseCured = $"{{ \"leaderboard\":  {response} }}";
+                var playerWallet = JsonUtility.FromJson<PlayerWallet>(response);
+                tcs.SetResult(playerWallet);
+            }
+
+            return await tcs.Task;
+        }
+        
         public static async Task<List<PlayerPoints>> GetPlayerPointsAsync()
         {
             using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/leaderboard");

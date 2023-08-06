@@ -2,40 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Leagues.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Leagues/GoldLeague.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Leagues/GoldLeague.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Leagues/GoldLeague.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Leagues/GoldLeague.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Leagues/goldLeagueAnim.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/Leagues/goldLeagueAnim.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CoinView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CoinView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/UserAvatar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/UserAvatar.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/RankedReward.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/RankedReward.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/RewardType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/RewardType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/Avatar.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/Avatar.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/SideMenu.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/SideMenu.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/closeSideMenu.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/closeSideMenu.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/openSideMenu.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/openSideMenu.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/CloseButton.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/CloseButton.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/CoinView.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/CoinView.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/InventoryController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/InventoryController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/SideMenuController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/SideMenuController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MikadoBold.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MikadoBold.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MikadoBoldSpecial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MikadoBoldSpecial.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/GameSummary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/GameSummary.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/RankedGameplayController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/RankedGameplayController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/League/LeagueConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/League/LeagueConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/GameSummaryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/GameSummaryController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/LeaderboardView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/LeaderboardView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/LeagueInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/LeagueInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/RankingInfoView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/RankingInfoView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/ProfileSectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/ProfileSectionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/UserHeaderController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/UserHeaderController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Buildings Parts/BuildingParts_Spriteatlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Buildings Parts/BuildingParts_Spriteatlas.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Ground/Ground_spriteatlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Ground/Ground_spriteatlas.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Plants/plants_spriteatlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Plants/plants_spriteatlas.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Props/props_spriteatlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Props/props_spriteatlas.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Vehicles/vehicles_spriteatlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Vehicles/vehicles_spriteatlas.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_Spriteatlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResortTown/Textures/Walls/Walls_Spriteatlas.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/UserSessionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/UserSessionState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/UserWallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerWallet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/UserWallet.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerWallet.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/UserSessionRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/UserSessionRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/UI Atlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/UI Atlas.spriteatlas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UIAtlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UIAtlas.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2807ff4663ce407885c855e32b7f007813800/cb/64e5c5b7/IUserInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/_DemoStuff/Scripts/Customizations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CutOutMaskUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -114,6 +112,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/CharacterSelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/ConfigurationPopupController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/InventoryController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCharacter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -149,7 +148,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/UI_MagneticInfiniteScroll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/UI_TweenScale.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/BuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.0/InputSystem/Devices/Gamepad.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/ScrollRectEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -263,7 +261,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="E:\Users\Fede\Documents\Proyectos\Proyectos Unity 3d\2020.3.45f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2020.3.37f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -348,6 +346,8 @@
       <workItem from="1690153650241" duration="11576000" />
       <workItem from="1690387620629" duration="12564000" />
       <workItem from="1690670185090" duration="20035000" />
+      <workItem from="1691282744749" duration="1898000" />
+      <workItem from="1691299211364" duration="296000" />
     </task>
     <servers />
   </component>
@@ -377,28 +377,14 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs</url>
-          <line>38</line>
-          <properties documentPath="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame\Assets\Scripts\Character\JumpTracker.cs" initialLine="38" containingFunctionPresentation="method 'GetGameData'">
-            <startOffsets>
-              <option value="1020" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1127" />
-            </endOffsets>
-          </properties>
+          <line>40</line>
+          <properties documentPath="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame\Assets\Scripts\Character\JumpTracker.cs" initialLine="38" containingFunctionPresentation="method 'GetGameData'" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/EventBus.cs</url>
           <line>111</line>
-          <properties documentPath="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame\Assets\Scripts\EventBus.cs" initialLine="111" containingFunctionPresentation="method 'EmitOnGameEnd'">
-            <startOffsets>
-              <option value="3362" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3389" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame\Assets\Scripts\EventBus.cs" initialLine="111" containingFunctionPresentation="method 'EmitOnGameEnd'" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
