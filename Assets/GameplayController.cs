@@ -10,6 +10,7 @@ public class GameplayController : MonoBehaviour
     private void Awake()
     {
         exitButton.onClick.AddListener(HandleExit);
+        EventBus.EmitOnGameplayStart();
         EventBus.OnGameEnds()
             .Do(_ =>
             {

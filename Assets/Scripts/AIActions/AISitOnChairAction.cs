@@ -5,7 +5,6 @@ namespace AIActions
 {
     public class AISitOnChairAction: AIActionBehavior
     {
-        [SerializeField] private Animator anim;
         [SerializeField] private Transform rootCharacterTransform;
         private void OnTriggerEnter(Collider other)
         {
@@ -18,16 +17,18 @@ namespace AIActions
             if (!other.CompareTag("Chair")) return;
         }
 
-        public override Task RequestFinish()
+        public override async Task RequestFinish()
         {
+            anim.SetTrigger("standUp");
+            await Task.Delay(2000);
+            RecoverDefaultAnimator();
             gameObject.SetActive(false);
-            return Task.CompletedTask;
         }
 
         public override void StartAction()
         {
             gameObject.SetActive(true);
-
+            UseSelfAnimator();
             // void
         }
     }

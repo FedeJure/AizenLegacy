@@ -38,11 +38,6 @@ public class AICharacterController : MonoBehaviour
         clock = new FixedTimeClock(0.5f);
     }
 
-    private void OnEnable()
-    {
-        // ReadyToPerformNewAction(null);
-    }
-
     public void Init()
     {
         ReadyToPerformNewAction(null);

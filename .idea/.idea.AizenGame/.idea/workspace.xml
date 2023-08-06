@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/CheckEnergyResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/CheckEnergyResponse.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -324,7 +316,7 @@
       <workItem from="1690387620629" duration="12564000" />
       <workItem from="1690670185090" duration="20035000" />
       <workItem from="1691282744749" duration="1898000" />
-      <workItem from="1691299211364" duration="5268000" />
+      <workItem from="1691299211364" duration="5411000" />
     </task>
     <servers />
   </component>

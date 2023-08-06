@@ -35,6 +35,10 @@ namespace Lobby
             CheckEnergy();
         }
 
+        private void OnEnable()
+        {
+            EventBus.EmitEnterLobby();
+        }
 
         private async void CheckEnergy()
         {

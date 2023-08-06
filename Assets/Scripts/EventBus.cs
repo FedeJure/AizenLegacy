@@ -16,6 +16,7 @@ public static class EventBus
         private static ISubject<ProcessedJumpConfig> onJumpData = new Subject<ProcessedJumpConfig>();
         private static ISubject<Unit> onLogged = new Subject<Unit>();
         private static ISubject<Unit> onLogout = new Subject<Unit>();
+        private static ISubject<Unit> onEnterLobby = new Subject<Unit>();
 
         public static IObservable<Unit> OnPositionStarted()
         {
@@ -30,6 +31,11 @@ public static class EventBus
         public static IObservable<Unit> OnEnterTrampoline()
         {
                 return onEnterTrampoline;
+        }
+        
+        public static IObservable<Unit> OnEnterLobby()
+        {
+                return onEnterLobby;
         }
         
         public static IObservable<Unit> OnExitTrampoline()
@@ -135,6 +141,11 @@ public static class EventBus
         public static void EmitOnLogout()
         {
                 onLogout.OnNext(Unit.Default);
+        }
+        
+        public static void EmitEnterLobby()
+        {
+                onEnterLobby.OnNext(Unit.Default);
         }
         
 }

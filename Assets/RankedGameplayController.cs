@@ -17,6 +17,7 @@ public class RankedGameplayController : MonoBehaviour
     private void Awake()
     {
         exitButton.onClick.AddListener(Exit);
+        EventBus.EmitOnGameplayStart();
         EventBus.OnGameEnds()
             .Do(gameData =>
             {
