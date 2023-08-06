@@ -3588,6 +3588,7 @@ MonoBehaviour:
   nextButton: {fileID: 3088132183893286179}
   backButton: {fileID: 3088132185284518552}
   cameraView: {fileID: 3180670116785835486}
+  inventory: {fileID: 11400000, guid: b9242e4df8fbeca48a9b975af3a3d424, type: 2}
 --- !u!1 &3088132184295540361
 GameObject:
   m_ObjectHideFlags: 0

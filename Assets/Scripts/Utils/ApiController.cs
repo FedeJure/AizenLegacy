@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Models;
@@ -195,6 +196,33 @@ namespace Utils
         {
             request.SetRequestHeader("hash", ApiConfig.AppPrivateHash);
             request.SetRequestHeader("authorization", $"Bearer {FirebaseController.Instance.Token}");
+        }
+
+        public static async Task<CheckEnergyResponse> CheckEnergy()
+        {
+            using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/checkEnergy");
+            AddHeaders(www);
+            AvoidHttpsCert(www);
+            var tcs = new TaskCompletionSource<CheckEnergyResponse>();
+            www.SendWebRequest();
+
+            while (!www.isDone)
+            {
+                await Task.Yield();
+            }
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.LogError(www.error);
+                tcs.SetResult(null);
+            }
+            else
+            {
+                var response = JsonUtility.FromJson<CheckEnergyResponse>(www.downloadHandler.text); ;
+                tcs.SetResult(response);
+            }
+
+            return await tcs.Task;
         }
     }
 }

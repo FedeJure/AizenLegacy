@@ -4,6 +4,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Utils;
 
 namespace Lobby
 {
@@ -13,6 +14,7 @@ namespace Lobby
         [SerializeField] private Button nextButton;
         [SerializeField] private Button backButton;
         [SerializeField] private LobbyCamera cameraView;
+        [SerializeField] private InventoryState inventory;
 
         private CharacterSelector currentPlayer;
         private int currentIndex = 0;
@@ -26,6 +28,22 @@ namespace Lobby
             backButton.onClick.AddListener(() => MoveSelector(-1));
             cameraView.SetupTarget(currentPlayer.target);
             SelectedCharacterRepository.Set(currentPlayer.selection);
+        }
+
+        private void Start()
+        {
+            CheckEnergy();
+        }
+
+
+        private async void CheckEnergy()
+        {
+            var energyUpdated =  await ApiController.CheckEnergy();
+            Invoke("CheckEnergy", energyUpdated.nextUpdateOnMillis / 1000);
+            if (!energyUpdated.updated) return;
+            var wallet = await ApiController.GetPlayerWallet();
+            inventory.energy = wallet.rankedEnergy;
+
         }
 
         public void Play()
