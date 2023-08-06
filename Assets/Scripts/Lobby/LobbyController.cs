@@ -12,7 +12,6 @@ namespace Lobby
         private List<CharacterSelector> selectors;
         [SerializeField] private Button nextButton;
         [SerializeField] private Button backButton;
-        [SerializeField] private TextMeshProUGUI nameText;
         [SerializeField] private LobbyCamera cameraView;
 
         private CharacterSelector currentPlayer;
@@ -26,7 +25,6 @@ namespace Lobby
             nextButton.onClick.AddListener(() => MoveSelector(1));
             backButton.onClick.AddListener(() => MoveSelector(-1));
             cameraView.SetupTarget(currentPlayer.target);
-            nameText.text = currentPlayer.selection.characterName;
             SelectedCharacterRepository.Set(currentPlayer.selection);
         }
 
@@ -64,7 +62,6 @@ namespace Lobby
                 currentPlayer = selectors[currentIndex];
             }
             cameraView.SetupTarget(currentPlayer.target);
-            nameText.text = currentPlayer.selection.name;
             SelectedCharacterRepository.Set(currentPlayer.selection);
         }
     }

@@ -18,6 +18,7 @@ public class PlayerInfo : MonoBehaviour
         {
             content.SetActive(!content.activeSelf);
         });
+        InitStats(SelectedCharacterRepository.Get()?.characterStats);
         SelectedCharacterRepository.OnChange += () =>
         {
             InitStats(SelectedCharacterRepository.Get()?.characterStats);
