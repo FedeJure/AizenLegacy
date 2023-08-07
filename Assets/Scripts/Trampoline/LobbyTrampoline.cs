@@ -26,5 +26,13 @@ public class LobbyTrampoline : MonoBehaviour
                 gameObject.SetActive(true);
             })
             .Subscribe();
+        
+        EventBus.OnTutorialEnter()
+            .Do(_ =>
+            {
+                gameplayTrampoline.SetActive(true);
+                gameObject.SetActive(false);
+            })
+            .Subscribe();
     }
 }

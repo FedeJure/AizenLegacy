@@ -13,7 +13,6 @@ namespace Tutorial
     {
 
         [SerializeField] private Animator charAnimator;
-        [SerializeField] private Animator trampAnimator;
         [SerializeField] private CharacterInput input;
 
         [SerializeField] private List<string> stepMessages;
@@ -23,7 +22,8 @@ namespace Tutorial
         [SerializeField] private GameObject[] toHideOnFinish = new GameObject[0];
         [SerializeField] private GameObject successFeedback;
         [SerializeField] private GameObject failFeedback;
-        
+        private Animator trampAnimator;
+
         private Queue<string> stackMessages;
 
         private IDisposable _holdDisposer;
@@ -33,10 +33,12 @@ namespace Tutorial
 
         private void Awake()
         {
+            EventBus.EmitOnTutorialEnter();
             stackMessages = new Queue<string>(stepMessages);
             textContainer.SetActive(false);
             successFeedback.SetActive(false);
             failFeedback.SetActive(false);
+            trampAnimator = GameplayContext.GetInstance().trampolineTransform.GetComponent<Animator>();
         }
 
         public void PressCPositionAndHold()
@@ -191,7 +193,7 @@ namespace Tutorial
 
         public void GoToHome()
         {
-            SceneManager.LoadSceneAsync((int)Scenes.Main);
+            GameSceneManager.GetInstance().LoadLobbyScene();
         }
 
         private IObservable<string> GetNextString()

@@ -19,6 +19,7 @@ public static class EventBus
         private static ISubject<Unit> onEnterLobby = new Subject<Unit>();
         private static ISubject<Unit> onSerieEnds = new Subject<Unit>();
         private static ISubject<Unit> onSerieFails = new Subject<Unit>();
+        private static ISubject<Unit> onTutorialEnter = new Subject<Unit>();
         public static IObservable<Unit> OnPositionStarted()
         {
                 return onPositionStarted;
@@ -97,6 +98,16 @@ public static class EventBus
         public static IObservable<Unit> OnSerieFails()
         {
                 return onSerieFails;
+        }
+        
+        public static IObservable<Unit> OnTutorialEnter()
+        {
+                return onTutorialEnter;
+        }
+
+        public static void EmitOnTutorialEnter()
+        {
+                onTutorialEnter.OnNext(Unit.Default);
         }
 
         public static void EmitOnSerieFails()

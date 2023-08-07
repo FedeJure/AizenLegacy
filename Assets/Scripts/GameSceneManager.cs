@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UniRx;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 enum Scenes
 {
@@ -23,6 +22,8 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField] private GameObject loginControllerModel;
     [CanBeNull] private GameObject rankedsController = null;
     [SerializeField] private GameObject rankedsControllerModel;
+    [CanBeNull] private GameObject tutorialController = null;
+    [SerializeField] private GameObject tutorialControllerModel;
     private List<IDisposable> disposer = new List<IDisposable>();
 
     private GameObject currentGameplay;
@@ -43,7 +44,7 @@ public class GameSceneManager : MonoBehaviour
                     Destroy(lobbyController);
                     lobbyController = null;
                 }
-                lobbyController = Instantiate(lobbyControllerModel);
+                lobbyController = Instantiate(lobbyControllerModel, transform);
                 UnloadLoginScene();
                 LoadLobbyScene();
             }).Subscribe().AddTo(disposer);
@@ -92,10 +93,16 @@ public class GameSceneManager : MonoBehaviour
     public void LoadLobbyScene()
     {
         DestroyOngoingGame();
+        DestroyTutorial();
         if (lobbyController == null) return;
         lobbyController.SetActive(true);
     }
 
+    private void DestroyTutorial()
+    {
+        if (tutorialController != null) Destroy(tutorialController);
+        tutorialController = null;
+    }
     private void DestroyOngoingGame()
     {
         if (currentGameplay == null) return;
@@ -118,7 +125,9 @@ public class GameSceneManager : MonoBehaviour
 
     public void LoadTutorialScene()
     {
-        SceneManager.LoadScene((int)Scenes.Tutorial);
+        if (lobbyController != null) lobbyController.SetActive(false);
+        if (tutorialController != null) Destroy(tutorialController);
+        tutorialController = Instantiate(tutorialControllerModel, transform); 
     }
 
     private static IObservable<Unit> ShowTransition()

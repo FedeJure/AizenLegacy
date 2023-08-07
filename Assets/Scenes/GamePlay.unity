@@ -3456,6 +3456,7 @@ MonoBehaviour:
   lobbyControllerModel: {fileID: 3088132184111314959, guid: 3ca9e9b57334d8a4b843d9e7df967b64, type: 3}
   loginControllerModel: {fileID: 2804881668414371923, guid: d93385f2b54afd941b80f8783ef17fe2, type: 3}
   rankedsControllerModel: {fileID: 7915237201415197960, guid: 5d9e7688b39f5c44880bfb5dfd38829d, type: 3}
+  tutorialControllerModel: {fileID: 446436169366555756, guid: 5c4532c5da574f047925342bd9c863bd, type: 3}
 --- !u!4 &2114521602
 Transform:
   m_ObjectHideFlags: 0

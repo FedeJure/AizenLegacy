@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Tutorial
 {
@@ -7,7 +6,7 @@ namespace Tutorial
     {
         public void RestartTutorial()
         {
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+            GameSceneManager.GetInstance().LoadTutorialScene();
         }
     }
 }

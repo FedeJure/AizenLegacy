@@ -3,21 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameplayController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameplayController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/RankedGameplayController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/RankedGameplayController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RankedGameplayController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RankedGameplayController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/coin.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/coin.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/EnergyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/EnergyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PointsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PointsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialController.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialController.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialController.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/LobbyTrampoline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/LobbyTrampoline.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tutorial/CharacterTutorialEventDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial/CharacterTutorialEventDispatcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +128,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/UI_MagneticInfiniteScroll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/UI_TweenScale.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/BuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.8/Editor/Build/SceneManagerState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.8/Tests/Editor/DocExampleCode/ScriptReference/UsingInternalIdTransformFunc.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/ScrollRectEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
@@ -334,7 +329,7 @@
       <workItem from="1690387620629" duration="12564000" />
       <workItem from="1690670185090" duration="20035000" />
       <workItem from="1691282744749" duration="1898000" />
-      <workItem from="1691299211364" duration="19436000" />
+      <workItem from="1691299211364" duration="21738000" />
     </task>
     <servers />
   </component>
