@@ -11,7 +11,7 @@ public class GameplayController : MonoBehaviour
     {
         exitButton.onClick.AddListener(HandleExit);
         EventBus.EmitOnGameplayStart();
-        EventBus.OnGameEnds()
+        EventBus.OnSerieFails()
             .Do(_ =>
             {
                 Observable.Timer(TimeSpan.FromSeconds(4))

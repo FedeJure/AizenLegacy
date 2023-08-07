@@ -18,7 +18,7 @@ namespace Character
         private void Awake()
         {
             currentTarget = Target;
-            EventBus.OnGameEnds()
+            EventBus.OnSerieFails()
                 .Do(_ => { currentTarget = RagdollTarget; })
                 .Subscribe();
         }

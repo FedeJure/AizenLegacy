@@ -32,7 +32,7 @@ public class RagdollController : MonoBehaviour
     {
         EventBus.OnGameplayStart()
             .Subscribe(_ => direction = null);
-        EventBus.OnGameEnds()
+        EventBus.OnSerieFails()
             .Subscribe(_ => SetEnable(true))
             .AddTo(disposer);
     }

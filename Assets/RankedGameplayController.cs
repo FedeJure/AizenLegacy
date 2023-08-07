@@ -13,6 +13,7 @@ public class RankedGameplayController : MonoBehaviour
 {
     [SerializeField] private GameSummaryController _gameSummaryController;
     [SerializeField] private Button exitButton;
+    [SerializeField] private JumpTracker _jumpTracker;
 
     private readonly List<ProcessedJumpConfig> _jumps = new List<ProcessedJumpConfig>();
     private void Awake()
@@ -51,12 +52,26 @@ public class RankedGameplayController : MonoBehaviour
 
             })
             .Subscribe();
-        EventBus.OnJumpData()
-            .Do(jump =>
+
+        EventBus.OnSerieFails()
+            .Do(_ =>
             {
-                _jumps.Add(jump); 
-                    
+                EventBus.EmitOnGameEnd(_jumpTracker.GetGameData());
+            })
+            .Subscribe().AddTo(this);
+        
+        EventBus.OnJumpData()
+            .Do(async jump =>
+            {
+                _jumps.Add(jump);
+                if (_jumps.Count == 10) await HandleSerieEnds();
             }).Subscribe().AddTo(this);
+    }
+
+    private async Task HandleSerieEnds()
+    {
+        EventBus.EmitOnSerieEnds();
+        EventBus.EmitOnGameEnd(_jumpTracker.GetGameData());
     }
     private void Exit()
     {

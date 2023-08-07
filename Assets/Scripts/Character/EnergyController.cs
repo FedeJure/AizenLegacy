@@ -37,7 +37,7 @@ namespace Character
             bar.LeanScaleX(currentEnergy / maxEnergy, 0.1f);
             if (currentEnergy <= 0)
             {
-                EventBus.EmitOnGameEnd(jumpTracker.GetGameData());
+                EventBus.EmitOnSerieFails();
             }
         }
         

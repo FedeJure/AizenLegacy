@@ -2,23 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DataStore/DataStoreController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DataStore/InventoryDataStore.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DataStore/InventoryDataStore.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameplayController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameplayController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/RankedGameplayController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/RankedGameplayController.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/RankedGameplayController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RankedGameplayController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/InventoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/InventoryController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/RankedGameButtonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/RankedGameButtonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerWallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerInventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerWallet.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerInventory.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/UserSessionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/UserSessionState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DataStore.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/InventoryState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/InventoryState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DataStore/DataStoreController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/UserSessionRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/UserSessionRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/coin.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/coin.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterCameraFollowView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/EnergyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/EnergyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/IKCharacterView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/JumpTracker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/PointsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/PointsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/RagdollTrampolineView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/TrampolineView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,7 +334,7 @@
       <workItem from="1690387620629" duration="12564000" />
       <workItem from="1690670185090" duration="20035000" />
       <workItem from="1691282744749" duration="1898000" />
-      <workItem from="1691299211364" duration="11233000" />
+      <workItem from="1691299211364" duration="19436000" />
     </task>
     <servers />
   </component>

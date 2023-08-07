@@ -9,6 +9,7 @@ namespace Character
     public class JumpTracker: MonoBehaviour
     {
         [SerializeField] private Transform playerTransform;
+        [SerializeField] private bool isRanked;
         private float cummulativeAngle = 0;
         private float lastAngle = 0;
         private CharacterState state;
@@ -72,7 +73,9 @@ namespace Character
             CancelInvoke("ApplyHalfTwist");
             quarterSomersault = (int)Math.Round(completeAngles / 0.5f);
             var twistsCount = halfTwists.Aggregate(0, (a, b) => a + b);
-            if ((quarterSomersault > 0 || twistsCount > 0) && state.isStable)
+            var actionPerformed = (quarterSomersault > 0 || twistsCount > 0) && state.isStable;
+            
+            if (actionPerformed)
             {
                 var points = GetJumpPoints();
                 var key = $"{prefix},{GetSomersaultAndTwists()}";
@@ -99,6 +102,10 @@ namespace Character
                     position = state.lastPosition,
                     direction = prefix == "at"? Direction.Back : Direction.Forward 
                 });
+            }
+            else if (serie.Count > 0 && isRanked)
+            {
+                EventBus.EmitOnSerieFails();
             }
             
             halfTwists = new List<int>{0};

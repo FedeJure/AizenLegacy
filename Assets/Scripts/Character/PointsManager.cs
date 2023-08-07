@@ -13,11 +13,13 @@ namespace Character
         [SerializeField] private TMP_Text totalPointsText;
         [SerializeField] private TMP_Text floatingPoint;
         [SerializeField] private TMP_Text pointTextTemplate;
+        [SerializeField] private TMP_Text jumpsCountText;
         
         private int AddPointHash = Animator.StringToHash("addPoint");
 
         private ProcessedJumpConfig? lastConfig;
         private float totalPoints = 0;
+        private int jumpsCount = 0;
 
         private void Start()
         {
@@ -25,6 +27,7 @@ namespace Character
                 .Do(j =>
                 {
                     floatingPoint.text = $"+{j.points}";
+                    jumpsCountText.SetText($"{++jumpsCount}/10");
                     lastConfig = j;
                     floatingPoint.transform.parent.gameObject.SetActive(true);
                     anim.SetTrigger(AddPointHash);

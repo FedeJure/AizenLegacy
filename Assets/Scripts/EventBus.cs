@@ -17,7 +17,8 @@ public static class EventBus
         private static ISubject<Unit> onLogged = new Subject<Unit>();
         private static ISubject<Unit> onLogout = new Subject<Unit>();
         private static ISubject<Unit> onEnterLobby = new Subject<Unit>();
-
+        private static ISubject<Unit> onSerieEnds = new Subject<Unit>();
+        private static ISubject<Unit> onSerieFails = new Subject<Unit>();
         public static IObservable<Unit> OnPositionStarted()
         {
                 return onPositionStarted;
@@ -81,6 +82,26 @@ public static class EventBus
         public static IObservable<ProcessedJumpConfig> OnJumpData()
         {
                 return onJumpData;
+        }
+        
+        public static IObservable<Unit> OnSerieEnds()
+        {
+                return onSerieEnds;
+        }
+
+        public static void EmitOnSerieEnds()
+        {
+                onSerieEnds.OnNext(Unit.Default);
+        }
+        
+        public static IObservable<Unit> OnSerieFails()
+        {
+                return onSerieFails;
+        }
+
+        public static void EmitOnSerieFails()
+        {
+                onSerieFails.OnNext(Unit.Default);
         }
 
         public static void EmitOnJumpData(ProcessedJumpConfig processedJumpData)
