@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using JetBrains.Annotations;
 using UniRx;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 enum Scenes
 {
@@ -25,6 +27,8 @@ public class GameSceneManager : MonoBehaviour
     [CanBeNull] private GameObject tutorialController = null;
     [SerializeField] private GameObject tutorialControllerModel;
     private List<IDisposable> disposer = new List<IDisposable>();
+
+    private GameObject transition;
 
     private GameObject currentGameplay;
     private void Awake()
@@ -111,20 +115,23 @@ public class GameSceneManager : MonoBehaviour
         currentGameplay = null;
     }
     
-    public void LoadGamePlayScene()
+    public async void LoadGamePlayScene()
     {
+        await ShowTransitiion();
         if (lobbyController != null) lobbyController.SetActive(false);
         currentGameplay = Instantiate(gameplayController, transform);
     }
 
-    public void LoadRankedGameplayScene()
+    public async void LoadRankedGameplayScene()
     {
+        await ShowTransitiion();
         if (lobbyController != null) lobbyController.SetActive(false);
         currentGameplay = Instantiate(rankedsControllerModel, transform); 
     }
 
-    public void LoadTutorialScene()
+    public async void LoadTutorialScene()
     {
+        await ShowTransitiion();
         if (lobbyController != null) lobbyController.SetActive(false);
         if (tutorialController != null) Destroy(tutorialController);
         tutorialController = Instantiate(tutorialControllerModel, transform); 
@@ -138,6 +145,16 @@ public class GameSceneManager : MonoBehaviour
     public static GameSceneManager GetInstance()
     {
         return instance;
+    }
+
+    private async Task ShowTransitiion()
+    {
+        if (transition == null)
+        {
+            transition = Instantiate(await Addressables.LoadAssetAsync<GameObject>("Assets/UI/Transition.prefab").Task);
+        }
+        transition.SetActive(true);
+        await Task.Delay(500);
     }
 
     

@@ -3,15 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialController.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/TutorialController.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Sprite/Demo/Demo_Background/Background_Vs_Left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Sprite/Demo/Demo_Background/Background_Vs_Left.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Sprite/Demo/Demo_Background/Background_Vs_Right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Sprite/Demo/Demo_Background/Background_Vs_Right.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventBus.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSceneManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampoline/LobbyTrampoline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampoline/LobbyTrampoline.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tutorial/CharacterTutorialEventDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial/CharacterTutorialEventDispatcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +23,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/_DemoStuff/Scripts/Customizations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CutOutMaskUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -116,6 +116,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UGUIKit Flat/Content/Scripts/bl_ToggleSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI/DisableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Resources/Shaders/UIMultiply.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/Accordion/AccordionElement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Controls/Accordion/Tweening/TweenRunner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -260,10 +261,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7196">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="7196" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -329,7 +330,9 @@
       <workItem from="1690387620629" duration="12564000" />
       <workItem from="1690670185090" duration="20035000" />
       <workItem from="1691282744749" duration="1898000" />
-      <workItem from="1691299211364" duration="21738000" />
+      <workItem from="1691299211364" duration="22158000" />
+      <workItem from="1691447547983" duration="657000" />
+      <workItem from="1691499051605" duration="1835000" />
     </task>
     <servers />
   </component>

@@ -29,20 +29,21 @@ namespace Lobby
             SelectedCharacterRepository.Set(currentPlayer.selection);
         }
 
-        private void Start()
-        {
-            CheckEnergy();
-        }
-
         private void OnEnable()
         {
             EventBus.EmitEnterLobby();
+            CheckEnergy();
+        }
+
+        private void OnDisable()
+        {
+            CancelInvoke("CheckEnergy");
         }
 
         private async void CheckEnergy()
         {
             var energyUpdated =  await ApiController.CheckEnergy();
-            Invoke("CheckEnergy", energyUpdated.nextUpdateOnMillis / 1000);
+            Invoke("CheckEnergy", (float)energyUpdated.nextUpdateOnMillis / 1000);
             await InventoryDataStore.UpdateDatastore();
         }
 
