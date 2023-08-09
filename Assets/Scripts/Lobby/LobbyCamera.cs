@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Lobby
 {
@@ -7,6 +8,8 @@ namespace Lobby
         private Transform Target;
         public float SmoothTime = 0.3f;
         [SerializeField] private float distance = 1;
+        [SerializeField] private float minDistance = 2;
+        [SerializeField] private float maxDistance = 8;
         [SerializeField] private Vector3 offset;
         [SerializeField] private GameObject gameSection;
  
@@ -47,9 +50,19 @@ namespace Lobby
                 }
                 else if (touch.phase == TouchPhase.Moved)
                 {
-                    float swipeDistance = touch.position.x - touchStartPosition.x;
-                    float rotationAmount = swipeDistance * rotationSpeed * Time.deltaTime;
-                    transform.RotateAround(Target.position, Vector3.up, rotationAmount);
+                    float horizontalSwipeDistance = touch.position.x - touchStartPosition.x;
+                    float verticalSwipeDistance = touch.position.y - touchStartPosition.y;
+
+                    if (Math.Abs(horizontalSwipeDistance) > Math.Abs(verticalSwipeDistance))
+                    {
+                        float rotationAmount = horizontalSwipeDistance * rotationSpeed * Time.deltaTime;
+                        transform.RotateAround(Target.position, Vector3.up, rotationAmount);
+                    }
+                    else
+                    {
+                        distance = Math.Min(maxDistance, Math.Max(distance + verticalSwipeDistance/3, minDistance));
+                    }
+                    
                 }
                 else if (touch.phase == TouchPhase.Ended)
                 {
@@ -63,9 +76,20 @@ namespace Lobby
             }
             else if (Input.GetMouseButton(0) && isSwiping)
             {
-                float swipeDistance = Input.mousePosition.x - touchStartPosition.x;
-                float rotationAmount = swipeDistance * rotationSpeed * Time.deltaTime;
-                transform.RotateAround(Target.position, Vector3.up, rotationAmount);
+                float horizontalSwipeDistance = Input.mousePosition.x - touchStartPosition.x;
+                float verticalSwipeDistance = Input.mousePosition.y - touchStartPosition.y;
+
+                if (Math.Abs(horizontalSwipeDistance) > Math.Abs(verticalSwipeDistance))
+                {
+                   float rotationAmount = horizontalSwipeDistance * rotationSpeed * Time.deltaTime;
+                   transform.RotateAround(Target.position, Vector3.up, rotationAmount); 
+                }
+                else
+                {
+                    distance = Math.Min(maxDistance, Math.Max(distance + verticalSwipeDistance/3, minDistance));
+                }
+                
+                
             }
             else if (Input.GetMouseButtonUp(0))
             {
