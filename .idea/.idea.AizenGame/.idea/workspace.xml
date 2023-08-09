@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/AICharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/AICharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AITraining1.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AITraining1.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AITraining2.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AITraining2.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Avatar.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Avatar.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Bicycle Crunch.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Bicycle Crunch.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Situp To Idle.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Situp To Idle.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Situps.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Situps.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/bicycle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/bicycle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/situps.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/situps.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/situpsToIdle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/situpsToIdle.anim.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,6 +341,7 @@
       <workItem from="1691447547983" duration="657000" />
       <workItem from="1691499051605" duration="2033000" />
       <workItem from="1691539133988" duration="5837000" />
+      <workItem from="1691615502438" duration="827000" />
     </task>
     <servers />
   </component>

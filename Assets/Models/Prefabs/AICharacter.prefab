@@ -5717,6 +5717,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 4962250858109206654}
   customAnimator: {fileID: 9100000, guid: 7b2c20c8cb668dc4f9274a34a4173c23, type: 2}
+  controllers:
+  - {fileID: 9100000, guid: 7b2c20c8cb668dc4f9274a34a4173c23, type: 2}
+  - {fileID: 9100000, guid: 3f69f8a66e9ae624d967741e39e49f87, type: 2}
+  - {fileID: 9100000, guid: a364a7f85f899fb4396f2a9f61c274c1, type: 2}
 --- !u!1 &8918589417607207982
 GameObject:
   m_ObjectHideFlags: 0
