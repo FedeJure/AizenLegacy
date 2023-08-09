@@ -3560,7 +3560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3088132184111314959}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.0017133, y: 0, z: -0.84322506}
+  m_LocalPosition: {x: 3, y: -1.09, z: -0.84322506}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3088132184295540366}
@@ -3588,7 +3588,6 @@ MonoBehaviour:
   nextButton: {fileID: 3088132183893286179}
   backButton: {fileID: 3088132185284518552}
   cameraView: {fileID: 3180670116785835486}
-  inventory: {fileID: 11400000, guid: b9242e4df8fbeca48a9b975af3a3d424, type: 2}
 --- !u!1 &3088132184295540361
 GameObject:
   m_ObjectHideFlags: 0
@@ -3620,7 +3619,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3088132184295540361}
   m_LocalRotation: {x: 0.000000034244323, y: 0.7071068, z: -0.00000003770168, w: 0.70710677}
-  m_LocalPosition: {x: -24.06575, y: 0.5670002, z: -5.857223}
+  m_LocalPosition: {x: -13.09, y: 1.37, z: -5.857223}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3088132184111314958}
@@ -3689,10 +3688,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 878a002c53984801a30e64f8bc730aee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pivotePoint: {fileID: 7831547085208883662}
   SmoothTime: 0.6
-  distance: 3
+  distance: 5
   offset: {x: 0, y: 0.5, z: 0}
+  gameSection: {fileID: 3032040535850115877}
+  rotationSpeed: 5
 --- !u!65 &812448457323292336
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8691,7 +8691,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinsText: {fileID: 1244056203008811041}
   energyText: {fileID: 8066947612778612540}
-  inventory: {fileID: 11400000, guid: b9242e4df8fbeca48a9b975af3a3d424, type: 2}
 --- !u!1 &6634654028933292253
 GameObject:
   m_ObjectHideFlags: 0
@@ -12036,8 +12035,7 @@ PrefabInstance:
       value: "\nBinding warning: Some generic clip(s) animate transforms that are
         already bound by a Humanoid avatar. These transforms can only be changed
         by Humanoid clips.\n\tTransform 'Pelvis'\n\tTransform 'Clavicle_l'\n\tTransform
-        'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'\n\tFrom animation clip
-        'HumanoidIdle'"
+        'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'"
       objectReference: {fileID: 0}
     - target: {fileID: 5027641852733449350, guid: 4c557049f1964bf47b3bdc81be2784ef, type: 3}
       propertyPath: m_Center.y
@@ -12991,8 +12989,7 @@ PrefabInstance:
       value: "\nBinding warning: Some generic clip(s) animate transforms that are
         already bound by a Humanoid avatar. These transforms can only be changed
         by Humanoid clips.\n\tTransform 'Pelvis'\n\tTransform 'Clavicle_l'\n\tTransform
-        'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'\n\tFrom animation clip
-        'HumanoidIdle'"
+        'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'"
       objectReference: {fileID: 0}
     - target: {fileID: 5027641852733449350, guid: 4c557049f1964bf47b3bdc81be2784ef, type: 3}
       propertyPath: m_Center.y
@@ -14296,8 +14293,7 @@ PrefabInstance:
       value: "\nBinding warning: Some generic clip(s) animate transforms that are
         already bound by a Humanoid avatar. These transforms can only be changed
         by Humanoid clips.\n\tTransform 'Pelvis'\n\tTransform 'Clavicle_l'\n\tTransform
-        'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'\n\tFrom animation clip
-        'HumanoidIdle'"
+        'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'"
       objectReference: {fileID: 0}
     - target: {fileID: 5027641852733449350, guid: 4c557049f1964bf47b3bdc81be2784ef, type: 3}
       propertyPath: m_Center.y
@@ -16218,8 +16214,7 @@ PrefabInstance:
       value: "\nBinding warning: Some generic clip(s) animate transforms that are
         already bound by a Humanoid avatar. These transforms can only be changed
         by Humanoid clips.\n\tTransform 'Pelvis'\n\tTransform 'Clavicle_l'\n\tTransform
-        'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'\n\tFrom animation clip
-        'HumanoidIdle'"
+        'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'"
       objectReference: {fileID: 0}
     - target: {fileID: 5027641852733449350, guid: 4c557049f1964bf47b3bdc81be2784ef, type: 3}
       propertyPath: m_Center.y
@@ -17173,8 +17168,7 @@ PrefabInstance:
       value: "\nBinding warning: Some generic clip(s) animate transforms that are
         already bound by a Humanoid avatar. These transforms can only be changed
         by Humanoid clips.\n\tTransform 'Pelvis'\n\tTransform 'Clavicle_l'\n\tTransform
-        'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'\n\tFrom animation clip
-        'HumanoidIdle'"
+        'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'"
       objectReference: {fileID: 0}
     - target: {fileID: 5027641852733449350, guid: 4c557049f1964bf47b3bdc81be2784ef, type: 3}
       propertyPath: m_Center.y

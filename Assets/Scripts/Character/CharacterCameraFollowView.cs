@@ -30,7 +30,7 @@ namespace Character
 
         private void Start()
         {
-            Offset = camTransform.position - Target.position;
+            Offset += camTransform.position - Target.position;
         }
  
         private void LateUpdate()

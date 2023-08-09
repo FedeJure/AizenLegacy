@@ -62,6 +62,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: b45190335f498d24bb7a9c27717ac943, type: 3}
   - {fileID: 21300000, guid: 67944153aee54a94f8be38a6f94e468a, type: 3}
   - {fileID: 21300000, guid: 605fb124dee609345bbe08f49cf8a37e, type: 3}
+  - {fileID: 21300000, guid: 4ad9090514e3d9c42be0db4d10b07ee5, type: 3}
   - {fileID: 21300000, guid: cd6e54394e9e36c40af965c4aad86849, type: 3}
   - {fileID: 21300000, guid: 15a112ff45ba05648af234985013d6ac, type: 3}
   m_PackedSpriteNamesToIndex:
@@ -70,6 +71,7 @@ SpriteAtlas:
   - Google_icon
   - PS4_Cross 1
   - trampGym
+  - Emojis
   - PS4_Triangle 1
   - Steam_ArrowLeft 1
   m_RenderDataMap: {}
