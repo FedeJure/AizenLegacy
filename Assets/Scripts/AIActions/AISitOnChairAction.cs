@@ -6,12 +6,17 @@ namespace AIActions
     public class AISitOnChairAction: AIActionBehavior
     {
         [SerializeField] private Transform rootCharacterTransform;
+        [SerializeField] private Transform pelvisBone;
+
+        private bool started = false;
         private void OnTriggerEnter(Collider other)
         {
-            if (!other.CompareTag("Chair")) return;
+            if (!other.CompareTag("Chair") || started) return;
+            started = true;
             rootCharacterTransform.rotation = other.transform.rotation;
             anim.SetTrigger(Animator.StringToHash("sitOnChair"));
         }
+        
         private void OnTriggerExit(Collider other)
         {
             if (!other.CompareTag("Chair")) return;
@@ -22,6 +27,7 @@ namespace AIActions
             anim.SetTrigger("standUp");
             await Task.Delay(2000);
             RecoverDefaultAnimator();
+            started = false;
             gameObject.SetActive(false);
         }
 

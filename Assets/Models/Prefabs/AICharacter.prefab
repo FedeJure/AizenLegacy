@@ -327,6 +327,7 @@ MonoBehaviour:
   anim: {fileID: 4962250858109206654}
   customAnimator: {fileID: 9100000, guid: 80397b33e8f3be349bb548409612a0f8, type: 2}
   rootCharacterTransform: {fileID: 467275578587171657}
+  pelvisBone: {fileID: 6328322470055781541}
 --- !u!65 &8169099927477464165
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5314,7 +5315,7 @@ Animator:
   m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
     are already bound by a Humanoid avatar. These transforms can only be changed
     by Humanoid clips.\n\tTransform 'Pelvis'\n\tTransform 'Clavicle_l'\n\tTransform
-    'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'\n\tFrom animation clip 'HumanoidIdle'"
+    'Clavicle_l'\n\tFrom animation clip 'HumanoidIdle'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -5361,7 +5362,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: -0.95, z: 0}
+  m_Center: {x: 0, y: 0.06, z: 0}
 --- !u!195 &8517971123455685643
 NavMeshAgent:
   m_ObjectHideFlags: 0

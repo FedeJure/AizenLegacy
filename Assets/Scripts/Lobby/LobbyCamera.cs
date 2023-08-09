@@ -60,7 +60,7 @@ namespace Lobby
                     }
                     else
                     {
-                        distance = Math.Min(maxDistance, Math.Max(distance + verticalSwipeDistance/3, minDistance));
+                        distance = Math.Min(maxDistance, Math.Max(distance + verticalSwipeDistance/10, minDistance));
                     }
                     
                 }
@@ -86,7 +86,7 @@ namespace Lobby
                 }
                 else
                 {
-                    distance = Math.Min(maxDistance, Math.Max(distance + verticalSwipeDistance/3, minDistance));
+                    distance = Math.Min(maxDistance, Math.Max(distance + verticalSwipeDistance/10, minDistance));
                 }
                 
                 

@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/AICharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/AICharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -325,7 +328,7 @@
       <workItem from="1691299211364" duration="22158000" />
       <workItem from="1691447547983" duration="657000" />
       <workItem from="1691499051605" duration="2033000" />
-      <workItem from="1691539133988" duration="3292000" />
+      <workItem from="1691539133988" duration="5837000" />
     </task>
     <servers />
   </component>
