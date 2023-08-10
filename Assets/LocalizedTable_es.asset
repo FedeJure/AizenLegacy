@@ -87,7 +87,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 151437656944570368
-    m_Localized: "\r\xA1Prueba otro de mis juegos!"
+    m_Localized: "\r\n\xA1Prueba otro de mis juegos!"
     m_Metadata:
       m_Items: []
   - m_Id: 163398481942966272
@@ -120,6 +120,46 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 163404712229236736
     m_Localized: "Estad\xEDsticas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241139694343585792
+    m_Localized: "Iniciar sesi\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140477529194496
+    m_Localized: Perfil de usuario
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140874629120000
+    m_Localized: Puntos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140922536460288
+    m_Localized: Nombre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140969772711936
+    m_Localized: "Cerrar sesi\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141106909675520
+    m_Localized: Inventario
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141703092240384
+    m_Localized: Total
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141797988368384
+    m_Localized: Resumen del juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141827407216640
+    m_Localized: Recompensa recibida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141985343733760
+    m_Localized: OK
     m_Metadata:
       m_Items: []
   references:

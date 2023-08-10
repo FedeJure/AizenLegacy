@@ -99,11 +99,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 151433857949528064
-    m_Localized: "Im Player Store \xF6ffnen\r"
+    m_Localized: "Im Player Store \xF6ffnen\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 151437656944570368
-    m_Localized: "Probieren Sie eines meiner Spiele aus!\r"
+    m_Localized: 'Probieren Sie eines meiner Spiele aus!
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 163398481942966272
@@ -123,19 +125,61 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 163399243204947968
-    m_Localized: "maximale H\xF6he\r"
+    m_Localized: "maximale H\xF6he\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 163399365619904512
-    m_Localized: "Energier\xFCckgewinnung\r"
+    m_Localized: "Energier\xFCckgewinnung\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 163399450990768128
-    m_Localized: "kommt bald\r"
+    m_Localized: 'kommt bald
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 163404712229236736
     m_Localized: Statistiken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241139694343585792
+    m_Localized: Anmeldung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140477529194496
+    m_Localized: Benutzerprofil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140874629120000
+    m_Localized: Punkte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140922536460288
+    m_Localized: Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140969772711936
+    m_Localized: Abmelden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141106909675520
+    m_Localized: Inventar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141703092240384
+    m_Localized: Gesamt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141797988368384
+    m_Localized: Spielzusammenfassung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141827407216640
+    m_Localized: Belohnung erhalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141985343733760
+    m_Localized: OK
     m_Metadata:
       m_Items: []
   references:

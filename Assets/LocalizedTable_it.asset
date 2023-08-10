@@ -93,7 +93,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1938775203840
-    m_Localized: "Tocca <sprite=5> x2 e rilascia <sprite=1>\r"
+    m_Localized: 'Tocca <sprite=5> x2 e rilascia <sprite=1>
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 162012252463104
@@ -105,11 +107,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 151433857949528064
-    m_Localized: "Apri nel negozio del giocatore\r"
+    m_Localized: 'Apri nel negozio del giocatore
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 151437656944570368
-    m_Localized: "Prova un altro dei miei giochi!\r"
+    m_Localized: 'Prova un altro dei miei giochi!
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 163398481942966272
@@ -125,15 +131,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 163399212456505344
-    m_Localized: "modalit\xE0 di gioco\r"
+    m_Localized: "modalit\xE0 di gioco\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 163399243204947968
-    m_Localized: "altezza massima\r"
+    m_Localized: 'altezza massima
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 163399365619904512
-    m_Localized: "Recupero di energia\r"
+    m_Localized: 'Recupero di energia
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 163399450990768128
@@ -142,6 +152,46 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 163404712229236736
     m_Localized: Statistiche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241139694343585792
+    m_Localized: Accesso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140477529194496
+    m_Localized: Profilo utente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140874629120000
+    m_Localized: Punti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140922536460288
+    m_Localized: Nome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140969772711936
+    m_Localized: Esci
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141106909675520
+    m_Localized: Inventario
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141703092240384
+    m_Localized: Totale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141797988368384
+    m_Localized: Riepilogo del gioco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141827407216640
+    m_Localized: Ricompensa ricevuta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141985343733760
+    m_Localized: OK
     m_Metadata:
       m_Items: []
   references:

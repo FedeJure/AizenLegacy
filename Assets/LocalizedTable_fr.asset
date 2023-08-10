@@ -93,11 +93,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 151433857949528064
-    m_Localized: "Ouvrir dans la boutique du joueur\r"
+    m_Localized: 'Ouvrir dans la boutique du joueur
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 151437656944570368
-    m_Localized: "Essayez un autre de mes jeux !\r"
+    m_Localized: 'Essayez un autre de mes jeux !
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 163398481942966272
@@ -113,23 +117,67 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 163399212456505344
-    m_Localized: "Modes de jeu\r"
+    m_Localized: 'Modes de jeu
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 163399243204947968
-    m_Localized: "hauteur maximum\r"
+    m_Localized: 'hauteur maximum
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 163399365619904512
-    m_Localized: "R\xE9cup\xE9ration d'\xE9nergie\r"
+    m_Localized: "R\xE9cup\xE9ration d'\xE9nergie\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 163399450990768128
-    m_Localized: "Bient\xF4t disponible\r"
+    m_Localized: "Bient\xF4t disponible\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 163404712229236736
     m_Localized: Statistiques
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241139694343585792
+    m_Localized: Connexion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140477529194496
+    m_Localized: Profil utilisateur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140874629120000
+    m_Localized: Points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140922536460288
+    m_Localized: Nom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241140969772711936
+    m_Localized: "D\xE9connexion"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141106909675520
+    m_Localized: Inventaire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141703092240384
+    m_Localized: Total
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141797988368384
+    m_Localized: "R\xE9sum\xE9 du jeu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141827407216640
+    m_Localized: "R\xE9compense de classement re\xE7ue"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241141985343733760
+    m_Localized: OK
     m_Metadata:
       m_Items: []
   references:
