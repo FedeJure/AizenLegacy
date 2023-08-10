@@ -1,0 +1,198 @@
+﻿Key,Id,Arabic(ar),Chinese (Simplified)(zh-Hans),English(en),French(fr),German(de),Hindi(hi),Italian(it),Japanese(ja),Korean(ko),Russian(ru),Spanish(es)
+"tid_play",36859666432,"يلعب","玩","Play","Jouer","Spiel","खेल","Giocare a","演奏する","놀다","Играть","Jugar"
+"tid_tutorial",1117480148992,"الدورة التعليمية","教程","Tutorial","Didacticiel","Lernprogramm","
+ट्यूटोरियल","Tutorial","チュートリアル","지도 시간","Руководство","Tutorial"
+"tid_tutorial_step_1",1655152173056,"اضغط على <sprite=0> واستمر في الضغط عليه
+","按 <sprite=0> 并按住它","Press <sprite=0> and hold it","
+Appuyez sur <sprite=0> et maintenez-le","Drücke <sprite=0> und halte es gedrückt
+","<sprite=0> दबाएं और इसे दबाए रखें
+","Premi <sprite=0> e tieni premuto
+","<sprite=0>を押したままにします
+","<sprite=0>을 누르고 있으십시오.
+","Нажмите <sprite=0> и удерживайте
+","Presiona <sprite=0> y mantenlo"
+"tid_tutorial_step_2",1743215779840,"الآن ، انقر فوق <sprite=4>
+","现在，点击 <sprite=4>","Now, tap <sprite=4>","Maintenant, appuyez sur <sprite=4>
+","Tippen Sie nun auf <sprite=4>
+","अब, <sprite=4> पर टैप करें
+","Ora tocca <sprite=4>
+","次に、<sprite=4>をタップします
+","이제 <sprite=4>를 탭합니다.
+","Теперь нажмите <sprite=4>
+","Ahora, presiona <sprite=4>"
+"tid_tutorial_step_3",1773964222464,"استخدم <sprite=5> وحرر <sprite=0>
+","
+使用 <sprite=5> 并释放 <sprite=0>","Use <sprite=5> and release the <sprite=0>","Utilisez <sprite=5> et relâchez le <sprite=0>
+","Verwenden Sie <sprite=5> und lassen Sie das <sprite=0> los
+","<sprite=5> का उपयोग करें और <sprite=0> को छोड़ दें
+","Usa <sprite=5> e rilascia lo <sprite=0>
+","<sprite=5>を使用して、<sprite=0>を解放します
+","<sprite=5>를 사용하고 <sprite=0>을 해제합니다.
+","Используйте <sprite=5> и отпустите <sprite = 0>
+","Presiona <sprite=5> y suelta <sprite=0>"
+"tid_tutorial_step_4",1787813814272,"اضغط على <sprite=0> واستمر في الضغط عليه
+","
+按 <sprite=0> 并按住它","Press <sprite=0> and hold it","Appuyez sur <sprite=0> et maintenez-le
+","Drücke <sprite=0> und halte es gedrückt
+","
+<sprite=0> दबाएं और इसे दबाए रखें","Premi <sprite=0> e tieni premuto
+","<sprite=0>を押したままにします
+","<sprite=0>을 누르고 있으십시오.
+","Нажмите <sprite=0> и удерживайте
+","Presiona <sprite=0> y mantenlo"
+"tid_tutorial_step_5",1802951057408,"حدد باللمس <sprite=4> x2
+","点击 <sprite=4> x2","Tap <sprite=4> x2","Appuyez sur <sprite=4> x2
+","Tippen Sie auf <sprite=4> x2
+","<sprite=4> x2 . पर टैप करें
+","Tocca <sprite=4> x2
+","<sprite=4> x2をタップします
+","<sprite=4> x2 누르기
+","Коснитесь <sprite=4> x2.
+","Presiona <sprite=4> x2"
+"tid_tutorial_step_6",1817119416320,"حرر <sprite=0>
+","
+发布 <sprite=0>","Release <sprite=0>","Relâchez <sprite=0>
+","<sprite=0> loslassen
+","रिलीज <sprite=0>
+","Rilascia <sprite=0>
+","<sprite=0>を解放します
+","<sprite=0> 해제
+","Выпуск <sprite=0>
+","Suelta <sprite=0>"
+"tid_tutorial_step_7",1833351372800,"اضغط على <sprite=1> واستمر في الضغط عليه
+","
+按 <sprite=1> 并按住它","Press <sprite=1> and hold it","Appuyez sur <sprite=1> et maintenez-le enfoncé
+","Drücke <sprite=1> und halte es gedrückt
+","<sprite=1> दबाएं और इसे दबाए रखें
+","Premi <sprite=1> e tieni premuto
+","<sprite=1>を押したままにします
+","<sprite=1>을 누르고 있으십시오.
+","Нажмите <sprite=1> и удерживайте
+","Presiona <sprite=1> y mantenlo"
+"tid_tutorial_step_8",1847733641216,"حدد باللمس <sprite=3>
+","
+点按 <sprite=3>","Tap <sprite=3>","Appuyez sur <sprite=3>
+","Tippe auf <sprite=3>
+","टैप करें <sprite=3>
+","Tocca <sprite=3>
+","<sprite=3>をタップします
+","<sprite=3>을 탭합니다.
+","Коснитесь <sprite=3>.
+","Presiona <sprite=3>"
+"tid_tutorial_step_9",1861897805824,"حرر <sprite=1> وانقر على <sprite=5>
+","
+释放 <sprite=1> 并点击 <sprite=5>","Release <sprite=1> and tap <sprite=5>","Relâchez <sprite=1> et appuyez sur <sprite=5>
+","Lass <sprite=1> los und tippe auf <sprite=5>
+","रिलीज <sprite=1> और टैप करें <sprite=5>
+","Rilascia <sprite=1> e tocca <sprite=5>
+","<sprite=1>を放し、<sprite=5>をタップします
+","<sprite=1>을 놓고 <sprite=5>를 탭합니다.
+","Отпустите <sprite=1> и коснитесь <sprite=5>.
+","Suelta <sprite=1> y presiona <sprite=5>"
+"tid_tutorial_step_10",1884786122752,"اضغط على <sprite=1> واستمر في الضغط عليه
+","
+按 <sprite=1> 并按住它","Press <sprite=1> and hold it","Appuyez sur <sprite=1> et maintenez-le enfoncé
+","Drücke <sprite=1> und halte es gedrückt
+","<sprite=1> दबाएं और इसे दबाए रखें
+","Premi <sprite=1> e tieni premuto
+","<sprite=1>を押したままにします
+","<sprite=1>을 누르고 있으십시오.
+","Нажмите <sprite=1> и удерживайте
+","Presiona <sprite=1> y mantenlo"
+"tid_tutorial_step_11",1915568119808,"حدد باللمس <sprite=3>
+","
+点按 <sprite=3>","Tap <sprite=3>","Appuyez sur <sprite=3>
+","Tippe auf <sprite=3>
+","टैप करें <sprite=3>
+","Tocca <sprite=3>
+","<sprite=3>をタップします
+","<sprite=3>을 탭합니다.
+","Коснитесь <sprite=3>.
+","Presiona <sprite=3>"
+"tid_tutorial_step_12",1938775203840,"اضغط على <sprite=5> x2 ثم حرر <sprite=1>
+","
+点击 <sprite=5> x2 并释放 <sprite=1>","Tap <sprite=5> x2 and release <sprite=1>","Appuyez sur <sprite=5> x2 et relâchez <sprite=1>
+","Tippe <sprite=5> x2 und lasse <sprite=1> los
+","<sprite=5> x2 पर टैप करें और <sprite=1> को छोड़ें
+","Tocca <sprite=5> x2 e rilascia <sprite=1>
+","<sprite=5> x2をタップし、<sprite=1>を放します
+","<sprite=5> x2를 누르고 <sprite=1>을 놓습니다.
+","Нажмите <sprite=5> x2 и отпустите <sprite=1>.
+","Presiona <sprite=5> x2 y suelta <sprite=1>"
+"tid_language",162012252463104,"لغة","语","Language","Langue","Sprache","भाषा","Lingua","言語","언어","Язык","Idioma"
+"tid_energy",4479749502132224,"طاقة","
+活力","Energy","énergie","Énergie","ऊर्जा","Energia","エネルギー","에너지","Энергия","Energía"
+"tid_navigate_to_playstore",151433857949528064,"فتح في المتجر
+","在播放器商店中打开
+","Open in Play Store","Ouvrir dans la boutique du joueur
+","Im Player Store öffnen
+","प्लेयर स्टोर में खोलें
+","Apri nel negozio del giocatore
+","プレイヤーストアで開く
+","플레이어 스토어에서 열기
+","Открыть в магазине плееров
+","Abrir en Play Store"
+"tid_try_game",151437656944570368,"جرب واحدة أخرى من ألعابي!
+","试试我的另一个游戏！
+","Try another one of my games!","Essayez un autre de mes jeux !
+","Probieren Sie eines meiner Spiele aus!
+","मेरा एक और गेम आज़माएं!
+","Prova un altro dei miei giochi!
+","私のゲームの別の 1 つを試してください!
+","내 게임 중 하나를 더 시도해 보세요!
+","Попробуйте еще одну из моих игр!
+","
+¡Prueba otro de mis juegos!"
+"tid_training",163398481942966272,"تمرين","
+训练","Training","Formation","Ausbildung","प्रशिक्षण","Formazione","トレーニング","훈련","Подготовка","Entrenamiento"
+"tid_competition",163399088825200640,"منافسة","竞赛","Competition","Compétition","Wettbewerb","मुकाबला","concorrenza","コンペ","경쟁
+","Соревнование","Competición"
+"tid_tutoria",163399169536192512,"الدورة التعليمية","教程","Tutorial","Didacticiel","Lernprogramm","ट्यूटोरियल","Esercitazione","チュートリアル
+","지도 시간
+","Руководство
+","Tutorial"
+"tid_game_modes",163399212456505344,"انماط اللعب","游戏模式","Game modes","Modes de jeu
+","Spielmodi","खेल के अंदाज़ में
+","modalità di gioco
+","ゲームモード
+","게임 모드
+","режимы игры
+","Modos de juego"
+"tid_max_height",163399243204947968,"أقصى ارتفاع","最大高度
+","Max height","hauteur maximum
+","maximale Höhe
+","अधिकतम ऊँचाई
+","altezza massima
+","最大高さ
+","최대 높이
+","максимальная высота
+","Altura máxima"
+"tid_energy_recovery",163399365619904512,"استعادة الطاقة","能量恢复
+","Energy recovery","Récupération d'énergie
+","Energierückgewinnung
+","ऊर्जा पुनःप्राप्ति
+","Recupero di energia
+","エネルギー回収
+","에너지 회수
+","Восстановление энергии
+","Recuperación de energía"
+"tid_comming_soon",163399450990768128,"قريبا
+","快来了
+","Comming soon","Bientôt disponible
+","kommt bald
+","जल्द आ रहा है
+","Prossimamente","近日公開
+","곧 출시
+","Скоро будет
+","Próximamente"
+"tid_stats",163404712229236736,"احصائيات","统计数据","Stats","Statistiques","Statistiken","आँकड़े","Statistiche","統計","통계","Статистика","Estadísticas"
+"tid_login",241139694343585792,"تسجيل الدخول","登录","Login","Connexion","Anmeldung","लॉगिन","Accesso","ログイン","로그인","Вход","Iniciar sesión"
+"tid_user_profile_title",241140477529194496,"ملف المستخدم","用户资料","User profile","Profil utilisateur","Benutzerprofil","उपयोगकर्ता प्रोफ़ाइल","Profilo utente","ユーザープロフィール","사용자 프로필","Профиль пользователя","Perfil de usuario"
+"tid_points",241140874629120000,"النقاط","积分","Points","Points","Punkte","अंक","Punti","ポイント","포인트","Очки","Puntos"
+"tid_name",241140922536460288,"الاسم","名称","Name","Nom","Name","नाम","Nome","名前","이름","Имя","Nombre"
+"tid_log_out",241140969772711936,"تسجيل الخروج","登出","Log out","Déconnexion","Abmelden","लॉग आउट","Esci","ログアウト","로그 아웃","Выйти","Cerrar sesión"
+"tid_invetory",241141106909675520,"المخزون","库存","Inventory","Inventaire","Inventar","इन्वेंटरी","Inventario","在庫","재고","Инвентарь","Inventario"
+"tid_total",241141703092240384,"المجموع","总计","Total","Total","Gesamt","कुल","Totale","合計","합계","Всего","Total"
+"tid_game_summary",241141797988368384,"ملخص اللعبة","游戏摘要","Game summary","Résumé du jeu","Spielzusammenfassung","खेल सारांश","Riepilogo del gioco","ゲームの概要","게임 요약","Резюме игры","Resumen del juego"
+"tid_reward_received",241141827407216640,"تم استلام الجائزة","奖励已领取","Ranking reward received","Récompense de classement reçue","Belohnung erhalten","पुरस्कार प्राप्त हुआ","Ricompensa ricevuta","ランキング報酬を受け取りました","랭킹 보상 받음","Награда получена","Recompensa recibida"
+"tid_ok",241141985343733760,"موافق","好","OK","OK","OK","ठीक है","OK","OK","OK","OK","OK"

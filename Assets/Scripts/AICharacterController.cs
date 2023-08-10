@@ -31,6 +31,7 @@ public class AICharacterController : MonoBehaviour
     private AICurrentAction? actionInProgress;
     private FixedTimeClock clock;
     private bool actionInitted;
+    private bool playingAction;
 
     private void Awake()
     {
@@ -45,12 +46,13 @@ public class AICharacterController : MonoBehaviour
 
     private void Update()
     {
+        if (playingAction) return;
         anim.SetFloat(Animator.StringToHash("velocity"), agent.velocity.magnitude);
     }
 
     private void LateUpdate()
     {
-        if (!clock.ReachTime()) return;
+        if (!clock.ReachTime() || playingAction) return;
         if (!actionInitted && actionInProgress != null && agent.velocity.magnitude == 0)
         {
             actionInitted = true;
@@ -93,6 +95,7 @@ public class AICharacterController : MonoBehaviour
         if (!actionInProgress.HasValue) ReadyToPerformNewAction(null);
         await actionInProgress?.action.behavior?.RequestFinish();
         ReadyToPerformNewAction(actionInProgress?.location);
+        playingAction = false;
     }
 
     private void InitAction()
@@ -100,6 +103,7 @@ public class AICharacterController : MonoBehaviour
         if (!actionInProgress.HasValue || actionInProgress.Value.action.behavior == null) throw new Exception("There is no action in progress");
         var action = actionInProgress.Value.action;
         action.behavior.StartAction();
+        playingAction = true;
         Invoke("SearchForNewAction", Random.Range(action.minDuration, action.maxDuration));
     }
 

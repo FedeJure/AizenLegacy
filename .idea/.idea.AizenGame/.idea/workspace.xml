@@ -2,24 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AITraining1.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AITraining1.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AITraining2.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AITraining2.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Avatar.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Avatar.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Bicycle Crunch.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Bicycle Crunch.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Situp To Idle.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Situp To Idle.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Situps.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/Situps.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/bicycle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/bicycle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/situps.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/situps.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/situpsToIdle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/situpsToIdle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/music_electro1.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/music_electro1.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/LocalizedTable.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/LocalizedTable.csv.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Arabic (ar).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Arabic (ar).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Chinese (Simplified) (zh-Hans).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Chinese (Simplified) (zh-Hans).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-French (fr).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-French (fr).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-German (de).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-German (de).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Hindi (hi).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Hindi (hi).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Italian (it).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Italian (it).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Japanese (ja).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Japanese (ja).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Korean (ko).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Korean (ko).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Russian (ru).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Russian (ru).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Spanish (es).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Spanish (es).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/AIActions/AIIdleController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AIIdleController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/AIActions/AISitOnChair.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/AIActions/AISitOnChair.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/idle_lookAround.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/idle_lookAround.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/situps.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/situps.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Mixamo/situpsToIdle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Mixamo/situpsToIdle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Noto_Sans_JP/NotoSansJP-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Noto_Sans_JP/NotoSansJP-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_en.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/AICharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/AICharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIActions/AISitOnChairAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AICharacterController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,7 +351,8 @@
       <workItem from="1691447547983" duration="657000" />
       <workItem from="1691499051605" duration="2033000" />
       <workItem from="1691539133988" duration="5837000" />
-      <workItem from="1691615502438" duration="827000" />
+      <workItem from="1691615502438" duration="1323000" />
+      <workItem from="1691635168438" duration="3955000" />
     </task>
     <servers />
   </component>

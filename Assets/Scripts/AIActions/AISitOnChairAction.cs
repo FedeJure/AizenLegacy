@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using UniRx;
 using UnityEngine;
 
 namespace AIActions
@@ -6,7 +7,6 @@ namespace AIActions
     public class AISitOnChairAction: AIActionBehavior
     {
         [SerializeField] private Transform rootCharacterTransform;
-        [SerializeField] private Transform pelvisBone;
 
         private bool started = false;
         private void OnTriggerEnter(Collider other)
@@ -14,7 +14,6 @@ namespace AIActions
             if (!other.CompareTag("Chair") || started) return;
             started = true;
             rootCharacterTransform.rotation = other.transform.rotation;
-            anim.SetTrigger(Animator.StringToHash("sitOnChair"));
         }
         
         private void OnTriggerExit(Collider other)

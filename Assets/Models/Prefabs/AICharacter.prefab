@@ -327,7 +327,6 @@ MonoBehaviour:
   anim: {fileID: 4962250858109206654}
   customAnimator: {fileID: 9100000, guid: 80397b33e8f3be349bb548409612a0f8, type: 2}
   rootCharacterTransform: {fileID: 467275578587171657}
-  pelvisBone: {fileID: 6328322470055781541}
 --- !u!65 &8169099927477464165
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2726,7 +2725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 4962250858109206654}
-  customAnimator: {fileID: 0}
+  customAnimator: {fileID: 9100000, guid: 2affad208d8c45f448ec07b82bf3fb62, type: 2}
   animationTriggers:
   - idle1
   - idle2
