@@ -43,6 +43,7 @@ namespace Lobby
         private async void CheckEnergy()
         {
             var energyUpdated =  await ApiController.CheckEnergy();
+            if (energyUpdated == null) return;
             Invoke("CheckEnergy", (float)energyUpdated.nextUpdateOnMillis / 1000);
             await InventoryDataStore.UpdateDatastore();
         }

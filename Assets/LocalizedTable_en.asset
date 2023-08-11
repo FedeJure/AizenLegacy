@@ -162,5 +162,13 @@ MonoBehaviour:
     m_Localized: Game summary
     m_Metadata:
       m_Items: []
+  - m_Id: 241489362755813376
+    m_Localized: Loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241496667404664832
+    m_Localized: No notifications
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -1,10 +1,8 @@
 ﻿Key,Id,Arabic(ar),Chinese (Simplified)(zh-Hans),English(en),French(fr),German(de),Hindi(hi),Italian(it),Japanese(ja),Korean(ko),Russian(ru),Spanish(es)
 "tid_play",36859666432,"يلعب","玩","Play","Jouer","Spiel","खेल","Giocare a","演奏する","놀다","Играть","Jugar"
-"tid_tutorial",1117480148992,"الدورة التعليمية","教程","Tutorial","Didacticiel","Lernprogramm","
-ट्यूटोरियल","Tutorial","チュートリアル","지도 시간","Руководство","Tutorial"
+"tid_tutorial",1117480148992,"الدورة التعليمية","教程","Tutorial","Didacticiel","Lernprogramm","ट्यूटोरियल","Tutorial","チュートリアル","지도 시간","Руководство","Tutorial"
 "tid_tutorial_step_1",1655152173056,"اضغط على <sprite=0> واستمر في الضغط عليه
-","按 <sprite=0> 并按住它","Press <sprite=0> and hold it","
-Appuyez sur <sprite=0> et maintenez-le","Drücke <sprite=0> und halte es gedrückt
+","按 <sprite=0> 并按住它","Press <sprite=0> and hold it","Appuyez sur <sprite=0> et maintenez-le","Drücke <sprite=0> und halte es gedrückt
 ","<sprite=0> दबाएं और इसे दबाए रखें
 ","Premi <sprite=0> e tieni premuto
 ","<sprite=0>を押したままにします
@@ -21,8 +19,7 @@ Appuyez sur <sprite=0> et maintenez-le","Drücke <sprite=0> und halte es gedrüc
 ","Теперь нажмите <sprite=4>
 ","Ahora, presiona <sprite=4>"
 "tid_tutorial_step_3",1773964222464,"استخدم <sprite=5> وحرر <sprite=0>
-","
-使用 <sprite=5> 并释放 <sprite=0>","Use <sprite=5> and release the <sprite=0>","Utilisez <sprite=5> et relâchez le <sprite=0>
+","使用 <sprite=5> 并释放 <sprite=0>","Use <sprite=5> and release the <sprite=0>","Utilisez <sprite=5> et relâchez le <sprite=0>
 ","Verwenden Sie <sprite=5> und lassen Sie das <sprite=0> los
 ","<sprite=5> का उपयोग करें और <sprite=0> को छोड़ दें
 ","Usa <sprite=5> e rilascia lo <sprite=0>
@@ -70,8 +67,7 @@ Appuyez sur <sprite=0> et maintenez-le","Drücke <sprite=0> und halte es gedrüc
 ","Нажмите <sprite=1> и удерживайте
 ","Presiona <sprite=1> y mantenlo"
 "tid_tutorial_step_8",1847733641216,"حدد باللمس <sprite=3>
-","
-点按 <sprite=3>","Tap <sprite=3>","Appuyez sur <sprite=3>
+","点按 <sprite=3>","Tap <sprite=3>","Appuyez sur <sprite=3>
 ","Tippe auf <sprite=3>
 ","टैप करें <sprite=3>
 ","Tocca <sprite=3>
@@ -90,8 +86,7 @@ Appuyez sur <sprite=0> et maintenez-le","Drücke <sprite=0> und halte es gedrüc
 ","Отпустите <sprite=1> и коснитесь <sprite=5>.
 ","Suelta <sprite=1> y presiona <sprite=5>"
 "tid_tutorial_step_10",1884786122752,"اضغط على <sprite=1> واستمر في الضغط عليه
-","
-按 <sprite=1> 并按住它","Press <sprite=1> and hold it","Appuyez sur <sprite=1> et maintenez-le enfoncé
+","按 <sprite=1> 并按住它","Press <sprite=1> and hold it","Appuyez sur <sprite=1> et maintenez-le enfoncé
 ","Drücke <sprite=1> und halte es gedrückt
 ","<sprite=1> दबाएं और इसे दबाए रखें
 ","Premi <sprite=1> e tieni premuto
@@ -110,8 +105,7 @@ Appuyez sur <sprite=0> et maintenez-le","Drücke <sprite=0> und halte es gedrüc
 ","Коснитесь <sprite=3>.
 ","Presiona <sprite=3>"
 "tid_tutorial_step_12",1938775203840,"اضغط على <sprite=5> x2 ثم حرر <sprite=1>
-","
-点击 <sprite=5> x2 并释放 <sprite=1>","Tap <sprite=5> x2 and release <sprite=1>","Appuyez sur <sprite=5> x2 et relâchez <sprite=1>
+","点击 <sprite=5> x2 并释放 <sprite=1>","Tap <sprite=5> x2 and release <sprite=1>","Appuyez sur <sprite=5> x2 et relâchez <sprite=1>
 ","Tippe <sprite=5> x2 und lasse <sprite=1> los
 ","<sprite=5> x2 पर टैप करें और <sprite=1> को छोड़ें
 ","Tocca <sprite=5> x2 e rilascia <sprite=1>
@@ -120,8 +114,7 @@ Appuyez sur <sprite=0> et maintenez-le","Drücke <sprite=0> und halte es gedrüc
 ","Нажмите <sprite=5> x2 и отпустите <sprite=1>.
 ","Presiona <sprite=5> x2 y suelta <sprite=1>"
 "tid_language",162012252463104,"لغة","语","Language","Langue","Sprache","भाषा","Lingua","言語","언어","Язык","Idioma"
-"tid_energy",4479749502132224,"طاقة","
-活力","Energy","énergie","Énergie","ऊर्जा","Energia","エネルギー","에너지","Энергия","Energía"
+"tid_energy",4479749502132224,"طاقة","活力","Energy","énergie","Énergie","ऊर्जा","Energia","エネルギー","에너지","Энергия","Energía"
 "tid_navigate_to_playstore",151433857949528064,"فتح في المتجر
 ","在播放器商店中打开
 ","Open in Play Store","Ouvrir dans la boutique du joueur
@@ -143,8 +136,7 @@ Appuyez sur <sprite=0> et maintenez-le","Drücke <sprite=0> und halte es gedrüc
 ","Попробуйте еще одну из моих игр!
 ","
 ¡Prueba otro de mis juegos!"
-"tid_training",163398481942966272,"تمرين","
-训练","Training","Formation","Ausbildung","प्रशिक्षण","Formazione","トレーニング","훈련","Подготовка","Entrenamiento"
+"tid_training",163398481942966272,"تمرين","训练","Training","Formation","Ausbildung","प्रशिक्षण","Formazione","トレーニング","훈련","Подготовка","Entrenamiento"
 "tid_competition",163399088825200640,"منافسة","竞赛","Competition","Compétition","Wettbewerb","मुकाबला","concorrenza","コンペ","경쟁
 ","Соревнование","Competición"
 "tid_tutoria",163399169536192512,"الدورة التعليمية","教程","Tutorial","Didacticiel","Lernprogramm","ट्यूटोरियल","Esercitazione","チュートリアル
@@ -196,3 +188,5 @@ Appuyez sur <sprite=0> et maintenez-le","Drücke <sprite=0> und halte es gedrüc
 "tid_game_summary",241141797988368384,"ملخص اللعبة","游戏摘要","Game summary","Résumé du jeu","Spielzusammenfassung","खेल सारांश","Riepilogo del gioco","ゲームの概要","게임 요약","Резюме игры","Resumen del juego"
 "tid_reward_received",241141827407216640,"تم استلام الجائزة","奖励已领取","Ranking reward received","Récompense de classement reçue","Belohnung erhalten","पुरस्कार प्राप्त हुआ","Ricompensa ricevuta","ランキング報酬を受け取りました","랭킹 보상 받음","Награда получена","Recompensa recibida"
 "tid_ok",241141985343733760,"موافق","好","OK","OK","OK","ठीक है","OK","OK","OK","OK","OK"
+"tid_loading",241489362755813376,"تحميل","加载中","Loading","Chargement","Laden","लोड हो रहा है","Caricamento","読み込み中","로딩 중","Загрузка","Cargando"
+"tid_no_notifications",241496667404664832,"لا توجد إشعارات","没有通知","No notifications","Aucune notification","Keine Benachrichtigungen","कोई सूचनाएं नहीं","Nessuna notifica","通知なし","알림 없음","Нет уведомлений","No hay notificaciones"

@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1655152173056
-    m_Localized: "\rAppuyez sur <sprite=0> et maintenez-le"
+    m_Localized: Appuyez sur <sprite=0> et maintenez-le
     m_Metadata:
       m_Items: []
   - m_Id: 1743215779840
@@ -178,6 +178,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 241141985343733760
     m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241489362755813376
+    m_Localized: Chargement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241496667404664832
+    m_Localized: Aucune notification
     m_Metadata:
       m_Items: []
   references:

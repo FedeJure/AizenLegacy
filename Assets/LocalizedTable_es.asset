@@ -162,5 +162,13 @@ MonoBehaviour:
     m_Localized: OK
     m_Metadata:
       m_Items: []
+  - m_Id: 241489362755813376
+    m_Localized: Cargando
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241496667404664832
+    m_Localized: No hay notificaciones
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

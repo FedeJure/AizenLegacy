@@ -173,5 +173,13 @@ MonoBehaviour:
     m_Localized: "\u0920\u0940\u0915 \u0939\u0948"
     m_Metadata:
       m_Items: []
+  - m_Id: 241489362755813376
+    m_Localized: "\u0932\u094B\u0921 \u0939\u094B \u0930\u0939\u093E \u0939\u0948"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241496667404664832
+    m_Localized: "\u0915\u094B\u0908 \u0938\u0942\u091A\u0928\u093E\u090F\u0902 \u0928\u0939\u0940\u0902"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

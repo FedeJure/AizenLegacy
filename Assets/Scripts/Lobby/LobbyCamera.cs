@@ -15,7 +15,7 @@ namespace Lobby
  
         private Vector3 velocity = Vector3.zero;
         private bool initted;
-        public float rotationSpeed = 5;
+        public float rotationSpeed = 2;
         private Vector2 touchStartPosition;
         private bool isSwiping = false;
 
@@ -60,7 +60,7 @@ namespace Lobby
                     }
                     else
                     {
-                        distance = Math.Min(maxDistance, Math.Max(distance + verticalSwipeDistance/10, minDistance));
+                        distance = Math.Min(maxDistance, Math.Max(distance + verticalSwipeDistance/1000, minDistance));
                     }
                     
                 }
@@ -86,7 +86,7 @@ namespace Lobby
                 }
                 else
                 {
-                    distance = Math.Min(maxDistance, Math.Max(distance + verticalSwipeDistance/10, minDistance));
+                    distance = Math.Min(maxDistance, Math.Max(distance + verticalSwipeDistance/1000, minDistance));
                 }
                 
                 

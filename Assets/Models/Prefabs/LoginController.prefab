@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 2804881668348689317}
   - component: {fileID: 2804881668348689315}
   - component: {fileID: 2804881668348689316}
+  - component: {fileID: 807862924}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -243,7 +244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Logging in...
+  m_text: Loading
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4866a2f24903b4950bb1400725eedb16, type: 2}
   m_sharedMaterial: {fileID: 21313559344558168, guid: 4866a2f24903b4950bb1400725eedb16, type: 2}
@@ -312,6 +313,45 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &807862924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2804881668348689318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:231534bff6c2d7f4e8de460a9f8e7cb0
+    m_TableEntryReference:
+      m_KeyId: 241489362755813376
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2804881668348689316}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 1
 --- !u!1 &2804881668378477211
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,8 +618,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Login
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ae154be121cf92641a000c8136ef4086, type: 2}
-  m_sharedMaterial: {fileID: -4838704252988090607, guid: ae154be121cf92641a000c8136ef4086, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4866a2f24903b4950bb1400725eedb16, type: 2}
+  m_sharedMaterial: {fileID: 21313559344558168, guid: 4866a2f24903b4950bb1400725eedb16, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

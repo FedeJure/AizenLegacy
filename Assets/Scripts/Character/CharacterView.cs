@@ -41,6 +41,8 @@ namespace Character
         [SerializeField] private AudioSource source;
         [SerializeField] private Transform leftFeetBone;
         [SerializeField] private JumpTracker jumpTracker;
+
+        private int straigthTwistsCount = 0;
         
         private int velocityKey = Animator.StringToHash("verticalVelocity");
         private int heightFactor = Animator.StringToHash("heightFactor");
@@ -269,6 +271,7 @@ namespace Character
             actions.Add( new FrontAction(transform, state));
             animator.SetBool(positionKeyMap[state.currentPosition.Value], true);
             rotatingForward = true;
+            straigthTwistsCount = 0;
             EventBus.EmitConsumeEnergy(10);
         }
 
@@ -278,6 +281,7 @@ namespace Character
             actions.Add(new BackAction(transform, state));
             animator.SetBool(positionKeyMap[state.currentPosition.Value], true);
             rotatingForward = false;
+            straigthTwistsCount = 0;
             EventBus.EmitConsumeEnergy(10);
         }
 
@@ -287,7 +291,7 @@ namespace Character
             actions.Add(new HalfTwistAction(pivotModel.transform, state, jumpTracker));
             EventBus.EmitOnSideChange();
             RemovePositions();
-            EventBus.EmitConsumeEnergy(5);
+            EventBus.EmitConsumeEnergy(5 + straigthTwistsCount * 2.5f);
         }
 
         private void OnDisable()

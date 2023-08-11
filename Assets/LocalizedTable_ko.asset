@@ -163,5 +163,13 @@ MonoBehaviour:
     m_Localized: OK
     m_Metadata:
       m_Items: []
+  - m_Id: 241489362755813376
+    m_Localized: "\uB85C\uB529 \uC911"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241496667404664832
+    m_Localized: "\uC54C\uB9BC \uC5C6\uC74C"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
