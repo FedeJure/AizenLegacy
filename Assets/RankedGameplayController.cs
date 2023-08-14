@@ -21,8 +21,9 @@ public class RankedGameplayController : MonoBehaviour
         exitButton.onClick.AddListener(Exit);
         EventBus.EmitOnGameplayStart();
         EventBus.OnGameEnds()
-            .Do(gameData =>
+            .First(gameData =>
             {
+                Debug.Log("OnGameEnds called");
                 PlayerPointsUpdateResponse response = null;
                 var startTime = Time.time;
                 const int maxtime = 4000;
@@ -49,6 +50,7 @@ public class RankedGameplayController : MonoBehaviour
                         
                     })
                     .Subscribe();
+                return true;
 
             })
             .Subscribe();
