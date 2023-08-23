@@ -2,49 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/DiscordAnimation.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/DiscordAnimation.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/Image.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UIAnimations/Image.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/DiscordButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/DiscordButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/NotificationView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/NotificationView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/NotificationElementView.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/NotificationElementView.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/discordIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/discordIcon.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MikadoBold.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MikadoBold.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MikadoBoldSpecial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MikadoBoldSpecial.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Noto_Sans_JP/NotoSansJP-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Noto_Sans_JP/NotoSansJP-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable Shared Data.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_ar.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_ar.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_de.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_de.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_en.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_es.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_es.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_fr.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_fr.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_hi.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_hi.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_it.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_it.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_ja.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_ja.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_ko.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_ko.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_ru.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_ru.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_zh-Hans.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_zh-Hans.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LoginController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LoginController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml.DISABLED" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml.DISABLED.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RankedGameplayController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RankedGameplayController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/UI Atlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/UI Atlas.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -372,6 +333,7 @@
       <workItem from="1691615502438" duration="1323000" />
       <workItem from="1691635168438" duration="5210000" />
       <workItem from="1691713111877" duration="6269000" />
+      <workItem from="1692378300750" duration="1984000" />
     </task>
     <servers />
   </component>

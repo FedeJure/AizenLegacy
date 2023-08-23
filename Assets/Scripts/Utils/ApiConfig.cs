@@ -18,11 +18,16 @@ namespace Utils
                 return hashedToken;
             }
         }
-#if UNITY_EDITOR
-        public static string ApiUrl = "http://localhost:3000";
-#else
-        public static string ApiUrl = "https://api.aizengame.tech";
-#endif
+
         public static bool MockApi = false;
+#if  UNITY_EDITOR
+        private static bool LocalApi = true;
+#else
+        private static bool LocalApi = false;
+#endif
+        
+        public static string ApiUrl = LocalApi 
+            ? "http://localhost:3000" 
+            : "https://api.aizengame.tech";
     }
 }
