@@ -3,9 +3,39 @@
   <component name="ChangeListManager">
     <list default="true" id="3f3ab623-44a0-4c80-a971-e2c04cbacef6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AizenGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LobbyController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Hind/Hind-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Hind/Hind-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MikadoBold.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MikadoBold.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MikadoBoldSpecial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MikadoBoldSpecial.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular SDF-Special.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular SDF-Special.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/NicoMoji-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Noto_Sans_JP/NotoSansJP-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Noto_Sans_JP/NotoSansJP-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Noto_Sans_KR/NotoSansKR-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Noto_Sans_KR/NotoSansKR-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Sprite/Demo/Demo_Image/Image_Effect_Rainbow_DemoSample1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Sprite/Demo/Demo_Image/Image_Effect_Rainbow_DemoSample1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Sprite/Demo/Demo_Image/Image_Effect_Rainbow_DemoSample2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Sprite/Demo/Demo_Image/Image_Effect_Rainbow_DemoSample2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Sprite/Demo/Demo_Image/Image_Effect_Rainbow_DemoSample3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Simple Casual/Sprite/Demo/Demo_Image/Image_Effect_Rainbow_DemoSample3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_ar.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_ar.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_de.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_de.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_en.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_es.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_es.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_fr.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_fr.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_hi.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_hi.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_it.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_it.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_ja.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_ja.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_ko.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_ko.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_ru.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_ru.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizedTable_zh-Hans.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LocalizedTable_zh-Hans.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Prefabs/LoginController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Prefabs/LoginController.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Music/geovane-bruno-daily-success.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Music/geovane-bruno-daily-success.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Music/happy-day.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Music/happy-day.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Music/sport-action-big-beat.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Music/sport-action-big-beat.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Music/summer-adventures.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Music/summer-adventures.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Music/trailer-sport-action-motivational.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Music/trailer-sport-action-motivational.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Music/unlimited-motivation-background-vlog-music.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Music/unlimited-motivation-background-vlog-music.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/SkinModels/BahichSkin.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/SkinModels/BahichSkin.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lobby/LoginController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lobby/LoginController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ApiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +46,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2807ff4663ce407885c855e32b7f007813800/cb/64e5c5b7/IUserInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ad957488d3d547379d2fbeaf64725f392be00/20/70a1a628/FirebaseApp.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/aff4d75d2e164343ad300a8b20b95f4715e00/92/d6da1615/AppOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/aff4d75d2e164343ad300a8b20b95f4715e00/f1/e978fbcf/FirebaseApp.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dc28434fa61c4453b887bdc67f5934aa574bb0/d3/0c7a1000/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Akishaqs/Characters/_CommonFiles/_DemoStuff/Scripts/Customizations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Confetti FX/Prefabs/2D.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CutOutMaskUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -90,7 +123,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyCharacter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LobbyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/LoginController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/NotificationView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/NotificationView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lobby/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RagdollController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectedCharacterRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -107,6 +141,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/AnimationRecord.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/ComponentGetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/HeadBoneFollowTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/RandomSoundLoop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/SoundController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" root0="FORCE_HIGHLIGHTING" />
@@ -126,7 +162,6 @@
     <setting file="file://$PROJECT_DIR$/Library/BuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.8/Editor/Build/SceneManagerState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.8/Tests/Editor/DocExampleCode/ScriptReference/UsingInternalIdTransformFunc.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.0/InputSystem/Devices/Gamepad.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/ScrollRectEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -240,7 +275,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="E:\Users\Fede\Documents\Proyectos\Proyectos Unity 3d\2020.3.45f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2020.3.37f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Users\Fede\Documents\Proyectos\AizenGame\AizenGame" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -334,6 +369,13 @@
       <workItem from="1691635168438" duration="5210000" />
       <workItem from="1691713111877" duration="6269000" />
       <workItem from="1692378300750" duration="1984000" />
+      <workItem from="1692900898457" duration="12014000" />
+      <workItem from="1692931933039" duration="2889000" />
+      <workItem from="1693006702758" duration="5344000" />
+      <workItem from="1693068561343" duration="1813000" />
+      <workItem from="1693175512475" duration="4302000" />
+      <workItem from="1693267226243" duration="1201000" />
+      <workItem from="1693426059955" duration="2460000" />
     </task>
     <servers />
   </component>
@@ -364,6 +406,7 @@
         <watch expression="this.enable" />
         <watch expression="this.container.anchoredPosition" />
         <watch expression="energyUpdated" />
+        <watch expression="s.materials" />
       </configuration>
     </watches-manager>
   </component>

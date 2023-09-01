@@ -16,30 +16,36 @@ MonoBehaviour:
   - mesh: {fileID: -2113134154381033435, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - material: {fileID: 2100000, guid: 21d0f356efac6024fb1c0d569bbd6a34, type: 2}
-      color: {r: 0.14150941, g: 0.12482198, b: 0.12482198, a: 0}
+      color: {r: 0.14150941, g: 0.12482198, b: 0.12482198, a: 1}
+      overrideMaterialColor: 1
     bodyPart: 0
   - mesh: {fileID: -8839368762345780380, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - material: {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
       color: {r: 0.93725497, g: 0.76470596, b: 0.6666667, a: 1}
+      overrideMaterialColor: 1
     bodyPart: 1
   - mesh: {fileID: 7666266049737368757, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - material: {fileID: 2100000, guid: fb4110c6cb676914881901f9e03459f2, type: 2}
       color: {r: 0.40000004, g: 0.6392157, b: 0.8862746, a: 0}
+      overrideMaterialColor: 0
     bodyPart: 2
   - mesh: {fileID: -278085929633702562, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - material: {fileID: 2100000, guid: 21d0f356efac6024fb1c0d569bbd6a34, type: 2}
-      color: {r: 0.6415094, g: 0.442754, b: 0.2208971, a: 0}
+      color: {r: 0.6415094, g: 0.442754, b: 0.2208971, a: 1}
+      overrideMaterialColor: 1
     bodyPart: 3
   - mesh: {fileID: 2959467708922500008, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - material: {fileID: 2100000, guid: 21d0f356efac6024fb1c0d569bbd6a34, type: 2}
-      color: {r: 0.93725497, g: 0.76470596, b: 0.6666667, a: 0}
+      color: {r: 0.93725497, g: 0.76470596, b: 0.6666667, a: 1}
+      overrideMaterialColor: 1
     bodyPart: 4
   - mesh: {fileID: 2346716986137308042, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - material: {fileID: 2100000, guid: fb4110c6cb676914881901f9e03459f2, type: 2}
-      color: {r: 0.4811321, g: 0.10666607, b: 0.10666607, a: 0}
+      color: {r: 0.4811321, g: 0.10666607, b: 0.10666607, a: 1}
+      overrideMaterialColor: 1
     bodyPart: 5

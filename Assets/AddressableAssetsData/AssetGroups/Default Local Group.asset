@@ -17,7 +17,7 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: a164a51dd8266cc43a5013a4ac4818b3
   m_SerializeEntries:
-  - m_GUID: e12b6c0c7fada94409971801dd203620
+  - m_GUID: 3ec263b130f16e6439683eae3a849112
     m_Address: Assets/UI/Transition.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []

@@ -170,5 +170,17 @@ MonoBehaviour:
     m_Localized: No notifications
     m_Metadata:
       m_Items: []
+  - m_Id: 248644317019144192
+    m_Localized: An error occurred authenticating your google account
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248643732689682432
+    m_Localized: The server is under maintenance. Please try again later.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248648118430105600
+    m_Localized: An error occurred
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

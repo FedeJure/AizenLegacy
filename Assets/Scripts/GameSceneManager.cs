@@ -154,7 +154,8 @@ public class GameSceneManager : MonoBehaviour
             transition = Instantiate(await Addressables.LoadAssetAsync<GameObject>("Assets/UI/Transition.prefab").Task);
         }
         transition.SetActive(true);
-        await Task.Delay(500);
+        await Task.Delay(650);
+        transition.SetActive(false);
     }
 
     

@@ -38,7 +38,7 @@ namespace Lobby
 
         private void Update()
         {
-            if (!initted || gameSection.activeSelf) return;
+            if (!initted || PopupsController.Open) return;
             if (Input.touchCount > 0)
             {
                 Touch touch = Input.GetTouch(0);

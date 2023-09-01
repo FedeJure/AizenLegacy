@@ -202,5 +202,18 @@ MonoBehaviour:
     m_Localized: Nessuna notifica
     m_Metadata:
       m_Items: []
+  - m_Id: 248644317019144192
+    m_Localized: "Si \xE8 verificato un errore durante l'autenticazione del tuo account
+      Google"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248643732689682432
+    m_Localized: "Il server \xE8 in manutenzione. Si prega di riprovare pi\xF9 tardi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248648118430105600
+    m_Localized: "Si \xE8 verificato un errore"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

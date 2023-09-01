@@ -84,8 +84,8 @@ public class AICharacterController : MonoBehaviour
 
     public void SetupInitialLocation(AILocation location)
     {
-        transform.position = location.location.position;
-        transform.rotation = location.location.rotation;
+        // transform.position = location.location.position;
+        // transform.rotation = location.location.rotation;
         SetupNewLocation(location);
         // InitAction();
     }

@@ -188,5 +188,18 @@ MonoBehaviour:
     m_Localized: Aucune notification
     m_Metadata:
       m_Items: []
+  - m_Id: 248644317019144192
+    m_Localized: Une erreur s'est produite lors de l'authentification de votre compte
+      Google
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248643732689682432
+    m_Localized: "Le serveur est en maintenance. Veuillez r\xE9essayer plus tard."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248648118430105600
+    m_Localized: Une erreur s'est produite
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

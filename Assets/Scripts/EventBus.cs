@@ -1,5 +1,4 @@
 ﻿using System;
-using Character;
 using Models;
 using UniRx;
 public static class EventBus

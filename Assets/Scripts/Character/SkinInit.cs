@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Character
@@ -11,7 +12,8 @@ namespace Character
         Pants,
         Shoes,
         Body,
-        Torso
+        Torso,
+        Hands
     }
     public class SkinInit : MonoBehaviour
     {
@@ -37,13 +39,18 @@ namespace Character
             foreach (var s in skin.skines)
             {
                 indexed[s.bodyPart].location.sharedMesh = s.mesh;
+                var materials = s.materials.Length == 0 
+                    ? indexed[s.bodyPart].location.materials.ToList() 
+                    : new List<Material>();
                 for (var i = 0; i < s.materials.Length; i++)
                 {
-                    var mats = indexed[s.bodyPart].location.materials;
-                    mats[i] = Instantiate<Material>(s.materials[i].material);
-                    mats[i].color = s.materials[i].color;
-                    indexed[s.bodyPart].location.materials = mats;
+                    var materialInfo = s.materials[i];
+                    var material = Instantiate(materialInfo.material);
+                    if (materialInfo.overrideMaterialColor)
+                        material.color = materialInfo.color;
+                    materials.Add(material);
                 }
+                indexed[s.bodyPart].location.materials = materials.ToArray();
             }
         }
     }

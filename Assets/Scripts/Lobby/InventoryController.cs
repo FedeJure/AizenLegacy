@@ -1,3 +1,4 @@
+using System;
 using DataStore;
 using TMPro;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class InventoryController : MonoBehaviour
 {
     [SerializeField] private TMP_Text coinsText;
     [SerializeField] private TMP_Text energyText;
+    
 
     private void Awake()
     {

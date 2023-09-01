@@ -21,5 +21,6 @@ namespace Character
     {
         public Material material;
         public Color color;
+        public bool overrideMaterialColor;
     }
 }

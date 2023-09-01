@@ -8,7 +8,6 @@ using Random = UnityEngine.Random;
 public class AIIdleAction : AIActionBehavior
 {
     [SerializeField] private List<string> animationTriggers;
-    [SerializeField] private Animator anim;
     [SerializeField] private Transform rootCharacterTransform;
     private Transform? cameraTransform;
     

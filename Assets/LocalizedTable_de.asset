@@ -190,5 +190,17 @@ MonoBehaviour:
     m_Localized: Keine Benachrichtigungen
     m_Metadata:
       m_Items: []
+  - m_Id: 248644317019144192
+    m_Localized: Bei der Authentifizierung Ihres Google-Kontos ist ein Fehler aufgetreten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248643732689682432
+    m_Localized: "Der Server wird gewartet. Bitte versuchen Sie es sp\xE4ter erneut."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248648118430105600
+    m_Localized: Ein Fehler ist aufgetreten
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

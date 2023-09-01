@@ -65,7 +65,7 @@ namespace Character
             var finalSomersaultPoints = somersaultPoints + somersaultBonus;
 
             var halfTwistsCount = halfTwists.Aggregate(0, (a, b) => a + b);
-            return finalSomersaultPoints + halfTwistsCount;
+            return finalSomersaultPoints + halfTwistsCount * 0.1f;
         }
 
         public void Reset()
@@ -103,7 +103,7 @@ namespace Character
                     direction = prefix == "at"? Direction.Back : Direction.Forward 
                 });
             }
-            else if (serie.Count > 0 && isRanked)
+            else if (serie.Count > 0 && serie.Count != 10 && isRanked)
             {
                 EventBus.EmitOnSerieFails();
             }

@@ -1,4 +1,5 @@
-﻿using Character;
+﻿using System;
+using Character;
 using Models;
 using TMPro;
 using UnityEngine;
@@ -14,10 +15,10 @@ namespace Lobby
         [SerializeField] private LeaderboardView leaderboardView;
         [SerializeField] private GameObject unrankedGameObject;
         [SerializeField] private GameObject rankedGameObject;
-        private void Awake()
+
+        private void Start()
         {
             gameObject.SetActive(false);
-            
         }
 
         private void OnEnable()
@@ -42,19 +43,28 @@ namespace Lobby
         
         private async void LoadRankingInfo()
         {
-            var playerPoints = await ApiController.GetPlayerPointsAsync();
-            if (playerPoints.Find(p => p.email == FirebaseController.Instance.User.Email) == null)
+            try
             {
-                unrankedGameObject.SetActive(true);
-                rankedGameObject.SetActive(false);
-                return;
+                var playerPoints = await ApiController.GetPlayerPointsAsync();
+                if (playerPoints.Find(p => p.email == FirebaseController.Instance.User.Email) == null)
+                {
+                    unrankedGameObject.SetActive(true);
+                    rankedGameObject.SetActive(false);
+                    return;
+                }
+                rankingInfo.SetupPoints(new PlayerPointsUpdateResponse()
+                {
+                    leaderBoard = playerPoints.ToArray(),
+                    pointVariation = 0f
+                });
+                leaderboardView.Load(playerPoints);
             }
-            rankingInfo.SetupPoints(new PlayerPointsUpdateResponse()
+            catch (Exception e)
             {
-                leaderBoard = playerPoints.ToArray(),
-                pointVariation = 0f
-            });
-            leaderboardView.Load(playerPoints);
+                // ignored
+            }
+
+            
         }
     }
 }

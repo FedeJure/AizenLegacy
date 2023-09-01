@@ -18,7 +18,30 @@ namespace Utils
     }
     public static class ApiController
     {
-        
+        public static async Task<bool> HelthCheck()
+        {
+            using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/healthCheck");
+            AddHeaders(www);
+            AvoidHttpsCert(www);
+            var tcs = new TaskCompletionSource<bool>();
+            www.SendWebRequest();
+            
+            while (!www.isDone)
+            {
+                await Task.Yield();
+            }
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                tcs.SetResult(false);
+            }
+            else
+            {
+                var response = Boolean.Parse(www.downloadHandler.text);
+                tcs.SetResult(response);
+            }
+            
+            return await tcs.Task;
+        }
         public static async Task<PlayerInventory> GetPlayerInventory()
         {
             using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/wallet");
@@ -50,7 +73,7 @@ namespace Utils
         
         public static async Task<List<PlayerPoints>> GetPlayerPointsAsync()
         {
-            using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/leaderboard");
+            using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/player/leaderboard");
             AddHeaders(www);
             AvoidHttpsCert(www);
             var tcs = new TaskCompletionSource<List<PlayerPoints>>();
@@ -200,7 +223,7 @@ namespace Utils
 
         public static async Task<CheckEnergyResponse> CheckEnergy()
         {
-            using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/checkEnergy");
+            using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/energy/check");
             AddHeaders(www);
             AvoidHttpsCert(www);
             var tcs = new TaskCompletionSource<CheckEnergyResponse>();

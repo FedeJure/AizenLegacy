@@ -17,29 +17,35 @@ MonoBehaviour:
     materials:
     - material: {fileID: 2100000, guid: 481d68d4d15076441b3430b6fcb4aef1, type: 2}
       color: {r: 0.509434, g: 0.2797221, b: 0, a: 0}
+      overrideMaterialColor: 1
     bodyPart: 0
   - mesh: {fileID: -715292015238113374, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - material: {fileID: 2100000, guid: 3f0f942e223694c4db6036ffc3ea18eb, type: 2}
       color: {r: 1, g: 1, b: 1, a: 1}
+      overrideMaterialColor: 1
     bodyPart: 1
   - mesh: {fileID: -7155806808695923677, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - material: {fileID: 2100000, guid: 21d0f356efac6024fb1c0d569bbd6a34, type: 2}
       color: {r: 0.93725497, g: 0.76470596, b: 0.6666667, a: 1}
+      overrideMaterialColor: 1
     bodyPart: 2
   - mesh: {fileID: -278085929633702562, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - material: {fileID: 2100000, guid: 21d0f356efac6024fb1c0d569bbd6a34, type: 2}
       color: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
+      overrideMaterialColor: 1
     bodyPart: 3
   - mesh: {fileID: -610665004268261847, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - material: {fileID: 2100000, guid: 55f265591941d9f4ab68c6650c2c2be8, type: 2}
       color: {r: 0.93725497, g: 0.76470596, b: 0.6666667, a: 1}
+      overrideMaterialColor: 1
     bodyPart: 4
   - mesh: {fileID: 7430753375882632759, guid: 8293b24f148363d48bd536cb47ad3755, type: 3}
     materials:
     - material: {fileID: 2100000, guid: db804af7e674ce245b740d49a1920972, type: 2}
       color: {r: 0.8962264, g: 0.012682426, b: 0.38334334, a: 1}
+      overrideMaterialColor: 1
     bodyPart: 5

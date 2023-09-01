@@ -1,15 +1,10 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
 public class GameSection : MonoBehaviour
 {
     private string key = "first_time_playing";
-    private Animator anim;
-
-    private void Awake()
-    {
-        anim = GetComponent<Animator>();
-    }
+    [SerializeField]private Animator anim;
+  
 
     private void OnEnable()
     {

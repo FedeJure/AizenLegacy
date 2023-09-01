@@ -170,5 +170,18 @@ MonoBehaviour:
     m_Localized: No hay notificaciones
     m_Metadata:
       m_Items: []
+  - m_Id: 248644317019144192
+    m_Localized: "Ocurri\xF3 un error al autenticar tu cuenta de Google"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248643732689682432
+    m_Localized: "El servidor est\xE1 en mantenimiento. Por favor, int\xE9ntalo de
+      nuevo m\xE1s tarde."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248648118430105600
+    m_Localized: Se produjo un error
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
