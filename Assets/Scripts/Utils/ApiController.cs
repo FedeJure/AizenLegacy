@@ -54,9 +54,9 @@ namespace Utils
             {
                 var result = Get(
                     "/player/leaderboard", 
-                    JsonUtility.FromJson<List<PlayerPoints>>,
+                    JsonUtility.FromJson<PlayerPointsGetResponse>,
                     response => $"{{ \"leaderboard\":  {response} }}");
-                return await result;
+                return (await result).leaderboard;
             }
             catch (Exception e)
             {
