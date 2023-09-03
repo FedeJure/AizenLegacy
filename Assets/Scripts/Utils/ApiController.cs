@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Models;
 using UnityEngine;
+using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.Networking;
 
 namespace Utils
@@ -18,86 +19,50 @@ namespace Utils
     }
     public static class ApiController
     {
+        
         public static async Task<bool> HelthCheck()
         {
-            using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/healthCheck");
-            AddHeaders(www);
-            AvoidHttpsCert(www);
-            var tcs = new TaskCompletionSource<bool>();
-            www.SendWebRequest();
-            
-            while (!www.isDone)
+            try
             {
-                await Task.Yield();
+                var result = Get("/healthCheck", Boolean.Parse);
+                return await result;
             }
-            if (www.result != UnityWebRequest.Result.Success)
+            catch (Exception e)
             {
-                tcs.SetResult(false);
+                Debug.LogError(e);
+                return false;
             }
-            else
-            {
-                var response = Boolean.Parse(www.downloadHandler.text);
-                tcs.SetResult(response);
-            }
-            
-            return await tcs.Task;
+          
         }
         public static async Task<PlayerInventory> GetPlayerInventory()
         {
-            using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/wallet");
-            AddHeaders(www);
-            AvoidHttpsCert(www);
-            var tcs = new TaskCompletionSource<PlayerInventory>();
-            www.SendWebRequest();
-
-            while (!www.isDone)
+            try
             {
-                await Task.Yield();
+                var result = Get("/wallet", JsonUtility.FromJson<PlayerInventory>);
+                return await result;
             }
-
-            if (www.result != UnityWebRequest.Result.Success)
+            catch (Exception e)
             {
-                Debug.LogError(www.error);
-                tcs.SetResult(null);
+                Debug.LogError(e);
+                return null;
             }
-            else
-            {
-                var response = www.downloadHandler.text;
-                // var responseCured = $"{{ \"leaderboard\":  {response} }}";
-                var playerWallet = JsonUtility.FromJson<PlayerInventory>(response);
-                tcs.SetResult(playerWallet);
-            }
-
-            return await tcs.Task;
         }
         
         public static async Task<List<PlayerPoints>> GetPlayerPointsAsync()
         {
-            using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/player/leaderboard");
-            AddHeaders(www);
-            AvoidHttpsCert(www);
-            var tcs = new TaskCompletionSource<List<PlayerPoints>>();
-            www.SendWebRequest();
-
-            while (!www.isDone)
+            try
             {
-                await Task.Yield();
+                var result = Get(
+                    "/player/leaderboard", 
+                    JsonUtility.FromJson<List<PlayerPoints>>,
+                    response => $"{{ \"leaderboard\":  {response} }}");
+                return await result;
             }
-
-            if (www.result != UnityWebRequest.Result.Success)
+            catch (Exception e)
             {
-                Debug.LogError(www.error);
-                tcs.SetResult(null);
+                Debug.LogError(e);
+                return null;
             }
-            else
-            {
-                var response = www.downloadHandler.text;
-                var responseCured = $"{{ \"leaderboard\":  {response} }}";
-                var playerPointsList = JsonUtility.FromJson<PlayerPointsGetResponse>(responseCured);
-                tcs.SetResult(playerPointsList.leaderboard);
-            }
-
-            return await tcs.Task;
         }
 
         private static void AvoidHttpsCert(UnityWebRequest www)
@@ -183,36 +148,18 @@ namespace Utils
                     leaderBoard = mockLeaderBoard.ToArray(),
                 };
             }
-            var www = new UnityWebRequest();
-            www.url = ApiConfig.ApiUrl + "/player/update";
-            www.method = "POST";
-            www.uploadHandler = new UploadHandlerRaw(Encoding.UTF8.GetBytes(JsonUtility.ToJson(data)) );
-            www.uploadHandler.contentType = "application/json";
-            www.downloadHandler = new DownloadHandlerBuffer();
-            AddHeaders(www);
-            AvoidHttpsCert(www);
-            var tcs = new TaskCompletionSource<PlayerPointsUpdateResponse>();
 
-            www.SendWebRequest();
-
-            while (!www.isDone)
+            try
             {
-                await Task.Yield();
+                var result = Post<PlayerPointsUpdateResponse>("/player/update", data);
+                return await result;
             }
-
-            if (www.result != UnityWebRequest.Result.Success)
+            catch (Exception)
             {
-                Debug.LogError(www.error);
-                tcs.SetResult(null);
+                return null;
             }
-            else
-            {
-                var response = www.downloadHandler.text;
-                var playerPointsList = JsonUtility.FromJson<PlayerPointsUpdateResponse>(response);
-                tcs.SetResult(playerPointsList);
-            }
-                
-            return await tcs.Task;
+            
+            
         }
 
         private static void AddHeaders(UnityWebRequest request)
@@ -223,10 +170,28 @@ namespace Utils
 
         public static async Task<CheckEnergyResponse> CheckEnergy()
         {
-            using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + "/energy/check");
+            try
+            {
+                return await Get("energy/check", JsonUtility.FromJson<CheckEnergyResponse>);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+
+        }
+        private static async Task<T> Post<T>(string endpoint, object payload)
+        {
+            var www = new UnityWebRequest();
+            www.url = ApiConfig.ApiUrl + endpoint;
+            www.method = "POST";
+            www.uploadHandler = new UploadHandlerRaw(Encoding.UTF8.GetBytes(JsonUtility.ToJson(payload)) );
+            www.uploadHandler.contentType = "application/json";
+            www.downloadHandler = new DownloadHandlerBuffer();
             AddHeaders(www);
             AvoidHttpsCert(www);
-            var tcs = new TaskCompletionSource<CheckEnergyResponse>();
+            var tcs = new TaskCompletionSource<T>();
+
             www.SendWebRequest();
 
             while (!www.isDone)
@@ -236,15 +201,43 @@ namespace Utils
 
             if (www.result != UnityWebRequest.Result.Success)
             {
-                Debug.LogError(www.error);
-                tcs.SetResult(null);
+                var errorMessage = $"[POST | {endpoint}] Error: {www.error}";
+                Debug.LogError(errorMessage);
+                throw new Exception(errorMessage);
             }
-            else
+            
+            var response = www.downloadHandler.text;
+            var playerPointsList = JsonUtility.FromJson<T>(response);
+            tcs.SetResult(playerPointsList);
+                
+            return await tcs.Task;
+        }
+        private static async Task<T> Get<T>(string endpoint, Func<string, T> parser, Func<string, string> processRawResponse = null)
+        {
+            using var www = UnityWebRequest.Get(ApiConfig.ApiUrl + endpoint);
+            AddHeaders(www);
+            AvoidHttpsCert(www);
+            var tcs = new TaskCompletionSource<T>();
+            www.SendWebRequest();
+            
+            while (!www.isDone)
             {
-                var response = JsonUtility.FromJson<CheckEnergyResponse>(www.downloadHandler.text); ;
-                tcs.SetResult(response);
+                await Task.Yield();
+            }
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                var errorMessage = $"[GET | {endpoint}] Error: {www.error}";
+                Debug.LogError(errorMessage);
+                throw new Exception(errorMessage);
             }
 
+            var textResponse = processRawResponse != null
+                ? processRawResponse(www.downloadHandler.text)
+                : www.downloadHandler.text;
+            var response = parser(textResponse);
+            tcs.SetResult(response);
+            
+            
             return await tcs.Task;
         }
     }

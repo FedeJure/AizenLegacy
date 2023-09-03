@@ -38,6 +38,7 @@ namespace Lobby
             spinner.SetActive(true);
             await PerformLogin();
             var apiHealthCheck = await ApiController.HelthCheck();
+            Debug.Log($"Äpi health check: {apiHealthCheck}");
             login.interactable = true;
             spinner.SetActive(false);
             
