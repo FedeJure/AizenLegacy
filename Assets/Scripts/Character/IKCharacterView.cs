@@ -52,7 +52,7 @@ namespace Character
                 .Subscribe()
                 .AddTo(disposer);
             
-            ResetPosition();
+            // ResetPosition();
             isIKActive = true;
             disabled = false;
             isStable = true;

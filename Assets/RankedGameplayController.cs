@@ -63,17 +63,7 @@ public class RankedGameplayController : MonoBehaviour
             .Subscribe().AddTo(this);
         
         EventBus.OnJumpData()
-            .Do(async jump =>
-            {
-                _jumps.Add(jump);
-                if (_jumps.Count == 10) await HandleSerieEnds();
-            }).Subscribe().AddTo(this);
-    }
-
-    private async Task HandleSerieEnds()
-    {
-        EventBus.EmitOnSerieEnds();
-        EventBus.EmitOnGameEnd(_jumpTracker.GetGameData());
+            .Do(_jumps.Add).Subscribe().AddTo(this);
     }
     private void Exit()
     {

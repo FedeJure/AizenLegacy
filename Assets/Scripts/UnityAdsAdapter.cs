@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections;
 using GoogleMobileAds.Api;
 using UnityEngine;
-using UnityEngine.Advertisements;
 
 public class UnityAdsAdapter : MonoBehaviour
 {
@@ -39,7 +37,7 @@ public class UnityAdsAdapter : MonoBehaviour
     public void RequestBanner()
     {
         #if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+        string adUnitId = bannerId;
         #else
         string adUnitId = "unexpected_platform";
         #endif
@@ -49,13 +47,14 @@ public class UnityAdsAdapter : MonoBehaviour
         AdRequest request = new AdRequest.Builder().Build();
 
         bannerView.LoadAd(request);
+        bannerView.Show();
     }
     
 
     private void LoadInstertitial()
     {
         #if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-6600322930699427/8539430806";
+        string adUnitId = intestitialId;
         #else
         string adUnitId = "unexpected_platform";
         #endif

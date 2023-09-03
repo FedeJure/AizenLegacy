@@ -172,7 +172,7 @@ namespace Utils
         {
             try
             {
-                return await Get("energy/check", JsonUtility.FromJson<CheckEnergyResponse>);
+                return await Get("/energy/check", JsonUtility.FromJson<CheckEnergyResponse>);
             }
             catch (Exception)
             {

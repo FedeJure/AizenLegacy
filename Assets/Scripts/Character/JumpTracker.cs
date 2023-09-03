@@ -102,6 +102,11 @@ namespace Character
                     position = state.lastPosition,
                     direction = prefix == "at"? Direction.Back : Direction.Forward 
                 });
+                if (isRanked && serie.Count == 10)
+                {
+                    EventBus.EmitOnSerieEnds();
+                    EventBus.EmitOnGameEnd(GetGameData());
+                }
             }
             else if (serie.Count > 0 && serie.Count != 10 && isRanked)
             {
