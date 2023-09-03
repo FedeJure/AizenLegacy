@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
-using UnityEngine.Localization.Tables;
 using UnityEngine.UI;
 using Utils;
 
@@ -13,8 +12,6 @@ namespace Lobby
     {
         [SerializeField] private GameObject spinner;
         [SerializeField] private Button login;
-        [SerializeField] private GameObject errorPopup;
-        [SerializeField] private TMP_Text errorMessage;
 
         private void OnEnable() 
         {
@@ -24,7 +21,6 @@ namespace Lobby
         private void Awake()
         {
             gameObject.SetActive(true);
-            errorPopup.SetActive(false);
         }
 
         private void Start()
@@ -44,14 +40,16 @@ namespace Lobby
             
             if (FirebaseController.Instance.Token == "")
             {
-                errorMessage.SetText(LocalizationSettings.StringDatabase.GetLocalizedString("LocalizedTable","tid_authentication_error"));
-                errorPopup.SetActive(true);
+                DialogController.ShowDialog(LocalizationSettings.StringDatabase.GetLocalizedString("LocalizedTable","tid_error_title"),
+                    LocalizationSettings.StringDatabase.GetLocalizedString("LocalizedTable","tid_authentication_error"),
+                    DialogStatus.Error);
                 return;
             }
             if (!apiHealthCheck)
             {
-                errorMessage.SetText(LocalizationSettings.StringDatabase.GetLocalizedString("LocalizedTable","tid_server_maintenance"));
-                errorPopup.SetActive(true);
+                DialogController.ShowDialog(LocalizationSettings.StringDatabase.GetLocalizedString("LocalizedTable","tid_error_title"),
+                    LocalizationSettings.StringDatabase.GetLocalizedString("LocalizedTable","tid_server_maintenance"),
+                    DialogStatus.Error);
                 return;
             }
             

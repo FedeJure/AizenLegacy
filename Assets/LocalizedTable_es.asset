@@ -183,5 +183,9 @@ MonoBehaviour:
     m_Localized: Se produjo un error
     m_Metadata:
       m_Items: []
+  - m_Id: 249862250144788480
+    m_Localized: "Se produjo un error. vuelve a intentarlo m\xE1s tarde."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -15,6 +15,10 @@ MonoBehaviour:
   m_TableCollectionName: LocalizedTable
   m_TableCollectionNameGuidString: 231534bff6c2d7f4e8de460a9f8e7cb0
   m_Entries:
+  - m_Id: 249862250144788480
+    m_Key: tid_generic_error
+    m_Metadata:
+      m_Items: []
   - m_Id: 248648118430105600
     m_Key: tid_error_title
     m_Metadata:

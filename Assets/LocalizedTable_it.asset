@@ -215,5 +215,9 @@ MonoBehaviour:
     m_Localized: "Si \xE8 verificato un errore"
     m_Metadata:
       m_Items: []
+  - m_Id: 249862250144788480
+    m_Localized: "Si \xE8 verificato un errore. riprova pi\xF9 tardi."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

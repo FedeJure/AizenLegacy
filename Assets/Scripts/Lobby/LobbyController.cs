@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using DataStore;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 using Utils;
 
@@ -52,8 +53,16 @@ namespace Lobby
         {
             GameSceneManager.GetInstance().LoadGamePlayScene();
         }
-        public void PlayRenked()
+        public async void PlayRenked()
         {
+            var result = await ApiController.EnterRankedGame();
+            if (!result)
+            {
+                DialogController.ShowDialog(LocalizationSettings.StringDatabase.GetLocalizedString("LocalizedTable","tid_error_title"),
+                    LocalizationSettings.StringDatabase.GetLocalizedString("LocalizedTable","tid_generic_error"),
+                    DialogStatus.Error);
+                return;
+            }
             GameSceneManager.GetInstance().LoadRankedGameplayScene();
         }
 

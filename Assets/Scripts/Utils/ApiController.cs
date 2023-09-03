@@ -34,6 +34,19 @@ namespace Utils
             }
           
         }
+
+        public static async Task<bool> EnterRankedGame()
+        {
+            try
+            {
+                var result = Post<bool>("/player/update");
+                return await result;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
         public static async Task<PlayerInventory> GetPlayerInventory()
         {
             try
@@ -180,14 +193,18 @@ namespace Utils
             }
 
         }
-        private static async Task<T> Post<T>(string endpoint, object payload)
+        private static async Task<T> Post<T>(string endpoint, object payload = null)
         {
             var www = new UnityWebRequest();
             www.url = ApiConfig.ApiUrl + endpoint;
             www.method = "POST";
-            www.uploadHandler = new UploadHandlerRaw(Encoding.UTF8.GetBytes(JsonUtility.ToJson(payload)) );
-            www.uploadHandler.contentType = "application/json";
-            www.downloadHandler = new DownloadHandlerBuffer();
+            if (payload != null)
+            {
+                www.uploadHandler = new UploadHandlerRaw(Encoding.UTF8.GetBytes(JsonUtility.ToJson(payload)) );
+                www.uploadHandler.contentType = "application/json";
+                www.downloadHandler = new DownloadHandlerBuffer();
+            }
+            
             AddHeaders(www);
             AvoidHttpsCert(www);
             var tcs = new TaskCompletionSource<T>();
